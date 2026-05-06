@@ -34,7 +34,7 @@
     "faqs": [
       {
         "q": "How much should I spend on Google Ads?",
-        "a": "Budget depends on your industry and goals. We recommend starting with at least ,000/month in ad spend to gather meaningful data. Our management fee starts at \u0000/month."
+        "a": "Budget depends on your industry and goals. We recommend starting with at least $1,000/month in ad spend to gather meaningful data. Our management fee starts at $500/month."
       },
       {
         "q": "How quickly will I see results from Google Ads?",
@@ -102,7 +102,7 @@
     "process_steps": [
       {
         "title": "Audience Segmentation",
-        "desc": "We segment your website visitors by behavior—pages visited, time on site, cart abandonment, and engagement level."
+        "desc": "We segment your website visitors by behavior\u2014pages visited, time on site, cart abandonment, and engagement level."
       },
       {
         "title": "Creative Strategy",
@@ -210,7 +210,7 @@
       },
       {
         "q": "How much do local search ads cost?",
-        "a": "Costs vary by industry and location. Google Local Service Ads typically cost \u0005-50 per lead. Traditional local PPC can be managed effectively with budgets starting at \u0000/month."
+        "a": "Costs vary by industry and location. Google Local Service Ads typically cost $5-50 per lead. Traditional local PPC can be managed effectively with budgets starting at $500/month."
       }
     ]
   }
