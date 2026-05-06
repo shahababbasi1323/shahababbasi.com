@@ -1,0 +1,80 @@
+[
+  {
+    "slug": "seo-prompt-pack",
+    "title": "SEO Prompt Pack (20 ChatGPT Prompts)",
+    "category": "AI Prompts",
+    "description": "20 copy-paste ChatGPT prompts that automate keyword research, content writing, technical audits, and competitor analysis. Save 15+ hours per week."
+  },
+  {
+    "slug": "technical-seo-checklist-resource",
+    "title": "Technical SEO Audit Checklist",
+    "category": "Checklists",
+    "description": "50+ point technical SEO checklist covering crawlability, indexation, Core Web Vitals, structured data, and security."
+  },
+  {
+    "slug": "keyword-research-template",
+    "title": "Keyword Research Template",
+    "category": "Templates",
+    "description": "Spreadsheet template for organizing keyword research with columns for volume, difficulty, intent, and content mapping."
+  },
+  {
+    "slug": "content-brief-template",
+    "title": "SEO Content Brief Template",
+    "category": "Templates",
+    "description": "Complete content brief template with sections for target keywords, search intent, outline, word count, and internal linking."
+  },
+  {
+    "slug": "seo-strategy-guide-resource",
+    "title": "SEO Strategy Blueprint",
+    "category": "Strategy Guides",
+    "description": "Step-by-step SEO strategy guide covering keyword research, on-page optimization, link building, and content planning."
+  },
+  {
+    "slug": "link-building-outreach-templates",
+    "title": "Link Building Outreach Templates",
+    "category": "Templates",
+    "description": "10 proven outreach email templates for guest posting, broken link building, and resource page link acquisition."
+  },
+  {
+    "slug": "local-seo-checklist-resource",
+    "title": "Local SEO Optimization Checklist",
+    "category": "Checklists",
+    "description": "Complete local SEO checklist covering Google Business Profile, citations, reviews, and local content optimization."
+  },
+  {
+    "slug": "geo-prompt-pack",
+    "title": "GEO Optimization Prompt Pack",
+    "category": "AI Prompts",
+    "description": "15 ChatGPT prompts specifically designed for Generative Engine Optimization and AI search visibility."
+  },
+  {
+    "slug": "seo-reporting-template",
+    "title": "SEO Monthly Reporting Template",
+    "category": "Templates",
+    "description": "Professional SEO reporting template with sections for traffic, rankings, backlinks, and ROI calculations."
+  },
+  {
+    "slug": "ecommerce-seo-checklist",
+    "title": "E-commerce SEO Checklist",
+    "category": "Checklists",
+    "description": "Comprehensive checklist for optimizing online stores including product pages, category pages, and schema markup."
+  },
+  {
+    "slug": "on-page-seo-checklist",
+    "title": "On-Page SEO Checklist",
+    "category": "Checklists",
+    "description": "Page-by-page on-page SEO checklist covering title tags, meta descriptions, headers, content, and internal linking."
+  },
+  {
+    "slug": "competitor-analysis-template",
+    "title": "SEO Competitor Analysis Template",
+    "category": "Templates",
+    "description": "Structured template for analyzing competitor SEO strategies including keyword gaps, backlink analysis, and content comparison."
+  },
+  {
+    "slug": "seo-career-guide",
+    "title": "SEO Career Guide",
+    "category": "Career",
+    "description": "Comprehensive guide to building a career in SEO including skills needed, certifications, salary expectations, and growth paths."
+  }
+]

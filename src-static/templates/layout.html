@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <link rel="canonical" href="{{canonical}}">
+  <meta property="og:title" content="{{og_title}}">
+  <meta property="og:description" content="{{og_description}}">
+  <meta property="og:url" content="{{og_url}}">
+  <meta property="og:type" content="{{og_type}}">
+  <meta property="og:image" content="{{og_image}}">
+  <meta property="og:site_name" content="Shahab Abbasi">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{og_title}}">
+  <meta name="twitter:description" content="{{og_description}}">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  {{schema_markup}}
+  {{extra_head}}
+</head>
+<body>
+  {{header}}
+  <main>
+    {{content}}
+  </main>
+  {{footer}}
+  <script>
+  document.querySelectorAll('.faq-question').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var item=this.parentElement;
+      var isOpen=item.classList.contains('open');
+      item.parentElement.querySelectorAll('.faq-item.open').forEach(function(el){el.classList.remove('open');});
+      if(!isOpen) item.classList.add('open');
+    });
+  });
+  </script>
+  {{extra_scripts}}
+</body>
+</html>

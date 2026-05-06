@@ -1,0 +1,184 @@
+[
+  {
+    "slug": "usa",
+    "name": "United States",
+    "country_code": "US",
+    "meta_title": "SEO & Digital Marketing Agency in the USA | 20 Cities Served",
+    "meta_description": "Expert SEO, PPC, and digital marketing across 20 major US cities. Data-driven strategies tailored for American businesses. Free audit.",
+    "hero_heading": "Digital Marketing Across the United States",
+    "hero_description": "From New York to Los Angeles, we help American businesses dominate search engines with data-driven SEO, PPC, and content strategies.",
+    "why_content": [
+      "The US digital market is the most competitive globally. Ranking on Google in American cities requires sophisticated multi-channel approaches combining technical SEO, high-authority link building, and conversion-focused content.",
+      "We understand local search nuances across the US—from hyper-competitive NYC to emerging tech hubs like Austin and Denver. Our strategies account for regional search behavior and city-level competition.",
+      "Whether you are a startup in San Francisco or a service provider in Chicago, our digital marketing services deliver measurable ROI in the American market."
+    ]
+  },
+  {
+    "slug": "uk",
+    "name": "United Kingdom",
+    "country_code": "GB",
+    "meta_title": "SEO & Digital Marketing Agency in the UK | 12 Cities Served",
+    "meta_description": "Professional SEO, PPC, and digital marketing across 12 UK cities. London, Manchester, Birmingham & more. Free growth audit.",
+    "hero_heading": "Digital Marketing Across the United Kingdom",
+    "hero_description": "We serve businesses in 12 major UK cities with expert SEO, Google Ads, web design, and content strategy tailored for British markets.",
+    "why_content": [
+      "The UK is Europe's most mature digital advertising market. Standing out requires precise keyword targeting, authoritative backlink profiles, and content that resonates with British consumers.",
+      "Each UK city demands bespoke strategies built on local market intelligence—from London's ultra-competitive financial sector to Manchester's thriving tech scene.",
+      "Our UK-focused services span technical SEO audits, Google Ads campaigns, and social media growth across all major British cities."
+    ]
+  },
+  {
+    "slug": "canada",
+    "name": "Canada",
+    "country_code": "CA",
+    "meta_title": "SEO & Digital Marketing Agency in Canada | 8 Cities Served",
+    "meta_description": "Expert SEO, PPC, and content marketing across 8 Canadian cities. Bilingual strategies for English and French markets. Free audit.",
+    "hero_heading": "Digital Marketing Across Canada",
+    "hero_description": "From Toronto to Vancouver, we deliver bilingual SEO, PPC, and content strategies that drive growth for Canadian businesses.",
+    "why_content": [
+      "Canada's bilingual market requires unique SEO strategies. We optimize for both English and French searches, targeting the right language variants for each province.",
+      "Canadian consumers trust locally-relevant content. Our strategies incorporate Canadian spelling conventions, local references, and region-specific keywords.",
+      "We serve major Canadian cities with comprehensive digital marketing services including SEO, Google Ads, content writing, and social media management."
+    ]
+  },
+  {
+    "slug": "australia",
+    "name": "Australia",
+    "country_code": "AU",
+    "meta_title": "SEO & Digital Marketing Agency in Australia | 6 Cities Served",
+    "meta_description": "Professional SEO and digital marketing across 6 Australian cities. Sydney, Melbourne, Brisbane & more. Free audit available.",
+    "hero_heading": "Digital Marketing Across Australia",
+    "hero_description": "Expert SEO, PPC, and content strategies for Australian businesses. We help you dominate search results in the competitive Australian market.",
+    "why_content": [
+      "Australia's digital market is highly competitive, with businesses fighting for visibility in a market with high search engine adoption and tech-savvy consumers.",
+      "Our Australian SEO strategies account for local search patterns, seasonal trends, and the unique competitive dynamics of each Australian city.",
+      "From Sydney's corporate market to Melbourne's creative industries, we tailor digital strategies to each city's business ecosystem."
+    ]
+  },
+  {
+    "slug": "uae",
+    "name": "United Arab Emirates",
+    "country_code": "AE",
+    "meta_title": "SEO & Digital Marketing Agency in UAE | 7 Cities Served",
+    "meta_description": "Expert SEO and digital marketing across 7 UAE cities. Dubai, Abu Dhabi, Sharjah & more. Bilingual Arabic-English strategies.",
+    "hero_heading": "Digital Marketing Across the UAE",
+    "hero_description": "We help UAE businesses achieve search dominance with bilingual SEO, PPC, and content strategies tailored for the Middle Eastern market.",
+    "why_content": [
+      "The UAE is the Middle East's most dynamic digital market, with Dubai and Abu Dhabi leading in e-commerce and digital adoption across the region.",
+      "Bilingual SEO in Arabic and English is essential for UAE businesses. We optimize for both languages with culturally appropriate content and keyword strategies.",
+      "Our UAE clients benefit from strategies that combine international best practices with deep understanding of Gulf-region consumer behavior and search patterns."
+    ]
+  },
+  {
+    "slug": "pakistan",
+    "name": "Pakistan",
+    "country_code": "PK",
+    "meta_title": "SEO & Digital Marketing Agency in Pakistan | 8 Cities Served",
+    "meta_description": "Top SEO agency in Pakistan serving 8 major cities. Islamabad, Lahore, Karachi & more. Local expertise with global standards.",
+    "hero_heading": "Digital Marketing Across Pakistan",
+    "hero_description": "As Pakistan's leading SEO agency, we help businesses across 8 major cities achieve higher rankings, more traffic, and measurable growth.",
+    "why_content": [
+      "Pakistan's digital market is growing rapidly, with millions of businesses moving online. Ranking in competitive Pakistani cities requires local expertise combined with global SEO standards.",
+      "Based in Islamabad, we understand the Pakistani market intimately—from Lahore's manufacturing sector to Karachi's financial services industry.",
+      "Our Pakistani clients benefit from competitive pricing, local market knowledge, and strategies proven effective across international markets."
+    ]
+  },
+  {
+    "slug": "new-zealand",
+    "name": "New Zealand",
+    "country_code": "NZ",
+    "meta_title": "SEO & Digital Marketing Agency in New Zealand | 3 Cities Served",
+    "meta_description": "Professional SEO services across 3 New Zealand cities. Auckland, Wellington, Christchurch. Expert digital marketing. Free audit.",
+    "hero_heading": "Digital Marketing Across New Zealand",
+    "hero_description": "Grow your New Zealand business with expert SEO, PPC, and content strategies tailored for the competitive Kiwi market.",
+    "why_content": [
+      "New Zealand's small but competitive market means every ranking position matters. Our strategies help Kiwi businesses punch above their weight in search results.",
+      "We understand the NZ market's unique characteristics—from the concentrated Auckland market to Wellington's government sector and Christchurch's rebuilding economy.",
+      "Our NZ-focused digital marketing combines local market insights with proven international SEO methodologies."
+    ]
+  },
+  {
+    "slug": "saudi-arabia",
+    "name": "Saudi Arabia",
+    "country_code": "SA",
+    "meta_title": "SEO & Digital Marketing Agency in Saudi Arabia | 3 Cities Served",
+    "meta_description": "Expert SEO and digital marketing in Saudi Arabia. Riyadh, Jeddah, Dammam. Arabic-English bilingual strategies. Free audit.",
+    "hero_heading": "Digital Marketing Across Saudi Arabia",
+    "hero_description": "Help your Saudi business achieve online dominance with bilingual SEO strategies designed for the rapidly evolving Saudi digital market.",
+    "why_content": [
+      "Saudi Arabia's Vision 2030 is driving massive digital transformation. Businesses that invest in SEO now will capture the growing wave of online consumers.",
+      "We provide bilingual Arabic-English SEO tailored for Saudi search behavior, cultural preferences, and the unique competitive dynamics of each Saudi city.",
+      "Our Saudi SEO strategies align with local regulations and cultural norms while implementing global best practices for sustainable organic growth."
+    ]
+  },
+  {
+    "slug": "south-africa",
+    "name": "South Africa",
+    "country_code": "ZA",
+    "meta_title": "SEO & Digital Marketing Agency in South Africa | 3 Cities Served",
+    "meta_description": "Professional SEO services in South Africa. Johannesburg, Cape Town, Durban. Expert digital marketing. Free consultation.",
+    "hero_heading": "Digital Marketing Across South Africa",
+    "hero_description": "Grow your South African business with expert SEO, PPC, and digital strategies tailored for the dynamic SA market.",
+    "why_content": [
+      "South Africa is Africa's most developed digital market, with Johannesburg and Cape Town leading in online business adoption and e-commerce growth.",
+      "Our South African strategies account for the multi-language market, regional competition differences, and the unique mobile-first search behavior of SA consumers.",
+      "We help South African businesses compete nationally and internationally with SEO strategies proven effective across global markets."
+    ]
+  },
+  {
+    "slug": "malaysia",
+    "name": "Malaysia",
+    "country_code": "MY",
+    "meta_title": "SEO & Digital Marketing Agency in Malaysia | 3 Cities Served",
+    "meta_description": "Expert SEO services in Malaysia. Kuala Lumpur, Penang, Johor Bahru. Multilingual strategies for the Malaysian market.",
+    "hero_heading": "Digital Marketing Across Malaysia",
+    "hero_description": "Expert SEO and digital marketing for Malaysian businesses. Multilingual strategies covering Malay, English, and Chinese search markets.",
+    "why_content": [
+      "Malaysia's multilingual digital market requires SEO strategies that address Malay, English, and Chinese search queries effectively.",
+      "We understand the Malaysian market from KL's corporate sector to Penang's tech corridor, tailoring strategies to each city's unique business landscape.",
+      "Our Malaysian clients benefit from strategies combining Southeast Asian market expertise with proven global SEO methodologies."
+    ]
+  },
+  {
+    "slug": "singapore-hub",
+    "name": "Singapore",
+    "country_code": "SG",
+    "meta_title": "SEO & Digital Marketing in Singapore | Expert SEO Agency",
+    "meta_description": "Expert SEO services in Singapore. Technical SEO, content strategy, and link building for the competitive Singaporean market.",
+    "hero_heading": "Digital Marketing in Singapore",
+    "hero_description": "Achieve search dominance in Singapore's hyper-competitive market with expert SEO, PPC, and content strategies.",
+    "why_content": [
+      "Singapore is Southeast Asia's most competitive digital market, with the highest internet penetration and digital ad spend per capita in the region.",
+      "The Singaporean market demands precision SEO with multilingual considerations—English, Chinese, Malay, and Tamil search behaviors all play a role.",
+      "Our Singapore clients benefit from strategies designed for a small but highly competitive market where every ranking position directly impacts revenue."
+    ]
+  },
+  {
+    "slug": "ireland",
+    "name": "Ireland",
+    "country_code": "IE",
+    "meta_title": "SEO & Digital Marketing in Ireland | Dublin & Cork SEO",
+    "meta_description": "Professional SEO services in Ireland. Dublin & Cork. Expert digital marketing tailored for Irish businesses. Free audit.",
+    "hero_heading": "Digital Marketing in Ireland",
+    "hero_description": "Grow your Irish business with expert SEO, PPC, and content strategies designed for the competitive Irish market.",
+    "why_content": [
+      "Ireland's tech-savvy market and status as a European tech hub make it a competitive digital landscape requiring expert SEO.",
+      "We help Irish businesses leverage both domestic and international SEO strategies, targeting UK and US markets alongside Irish searches.",
+      "Our Irish SEO strategies account for the unique competitive dynamics of Dublin's corporate market and Cork's growing tech scene."
+    ]
+  },
+  {
+    "slug": "nigeria",
+    "name": "Nigeria",
+    "country_code": "NG",
+    "meta_title": "SEO & Digital Marketing in Nigeria | Lagos & Abuja SEO",
+    "meta_description": "Expert SEO services in Nigeria. Lagos & Abuja. Digital marketing strategies for Africa's largest economy. Free consultation.",
+    "hero_heading": "Digital Marketing in Nigeria",
+    "hero_description": "Dominate search results in Nigeria with expert SEO and digital marketing strategies tailored for Africa's largest online market.",
+    "why_content": [
+      "Nigeria is Africa's largest digital economy with explosive growth in online searches and e-commerce adoption.",
+      "We understand the Nigerian market's mobile-first search behavior and help businesses capture the growing wave of Nigerian online consumers.",
+      "Our Nigerian SEO strategies combine local market insights with international standards to help businesses scale both domestically and across Africa."
+    ]
+  }
+]

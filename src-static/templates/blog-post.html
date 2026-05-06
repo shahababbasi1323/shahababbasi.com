@@ -1,0 +1,40 @@
+<article class="blog-post-page">
+  <section class="hero hero-sm">
+    <div class="container">
+      <nav class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/blog">Blog</a> &rsaquo; <span>{{title}}</span></nav>
+      <h1>{{title}}</h1>
+      <div class="blog-meta">
+        <span>By {{author}}</span>
+        <span>{{date}}</span>
+        <span>{{read_time}}</span>
+        <span>{{category}}</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container content-narrow">
+      <div class="blog-toc">
+        <h3>Table of Contents</h3>
+        <ol>{{toc_html}}</ol>
+      </div>
+
+      <div class="blog-post-content">
+        {{sections_html}}
+      </div>
+
+      <div class="faq-section" style="margin-top:3rem;">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list">{{faq_html}}</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container" style="text-align:center;">
+      <h2>Need Help Implementing These Strategies?</h2>
+      <p>Get expert SEO services that deliver measurable results.</p>
+      <a href="/free-seo-audit" class="btn btn-white">Get Free SEO Audit</a>
+    </div>
+  </section>
+</article>

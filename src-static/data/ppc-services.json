@@ -1,0 +1,217 @@
+[
+  {
+    "slug": "google-ads-management",
+    "name": "Google Ads Management",
+    "meta_title": "Google Ads Management Services | Expert PPC Campaign Management",
+    "meta_description": "Expert Google Ads management: campaign setup, keyword targeting, ad copy optimization, bid management, and conversion tracking for maximum ROAS.",
+    "hero_description": "Maximize your Google Ads ROI with expert campaign management. We handle strategy, setup, optimization, and reporting so every dollar drives results.",
+    "features": [
+      "Campaign strategy and structure",
+      "Keyword research and negative keyword management",
+      "Ad copy A/B testing",
+      "Bid and budget optimization",
+      "Conversion tracking setup",
+      "Monthly performance reports"
+    ],
+    "process_steps": [
+      {
+        "title": "Account Audit",
+        "desc": "We analyze your current Google Ads setup, identify waste, and find optimization opportunities."
+      },
+      {
+        "title": "Campaign Restructuring",
+        "desc": "We build a clean account structure with tight ad groups, targeted keywords, and compelling ad copy."
+      },
+      {
+        "title": "Optimization Cycle",
+        "desc": "Weekly bid adjustments, search query reviews, and ad copy testing to continuously improve performance."
+      },
+      {
+        "title": "Reporting",
+        "desc": "Monthly reports with key metrics: cost per acquisition, conversion rate, ROAS, and actionable insights."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How much should I spend on Google Ads?",
+        "a": "Budget depends on your industry and goals. We recommend starting with at least ,000/month in ad spend to gather meaningful data. Our management fee starts at \u0000/month."
+      },
+      {
+        "q": "How quickly will I see results from Google Ads?",
+        "a": "Google Ads can drive traffic immediately after launch. Optimization typically takes 2-4 weeks to dial in targeting and improve conversion rates."
+      }
+    ]
+  },
+  {
+    "slug": "social-media-ads",
+    "name": "Social Media Advertising",
+    "meta_title": "Social Media Advertising Services | Facebook, Instagram, LinkedIn Ads",
+    "meta_description": "Expert social media advertising across Facebook, Instagram, LinkedIn, and TikTok. Audience targeting, creative production, and conversion optimization.",
+    "hero_description": "Reach your ideal audience where they spend their time. We create and manage high-converting social media ad campaigns across all major platforms.",
+    "features": [
+      "Platform selection strategy",
+      "Audience targeting and lookalikes",
+      "Creative design and copywriting",
+      "A/B testing and optimization",
+      "Retargeting campaigns",
+      "Monthly analytics reports"
+    ],
+    "process_steps": [
+      {
+        "title": "Audience Research",
+        "desc": "We define your ideal customer profiles and build targeted audiences on each platform."
+      },
+      {
+        "title": "Creative Production",
+        "desc": "Our team creates scroll-stopping ad creatives and compelling copy tailored to each platform."
+      },
+      {
+        "title": "Launch & Optimize",
+        "desc": "Campaigns go live with structured A/B testing. We optimize daily based on performance data."
+      },
+      {
+        "title": "Scale & Report",
+        "desc": "We scale winning campaigns and provide detailed monthly reports with actionable insights."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Which social media platform should I advertise on?",
+        "a": "It depends on your audience. B2B businesses often see best results on LinkedIn. B2C brands typically perform well on Facebook/Instagram. We recommend starting where your audience is most active."
+      },
+      {
+        "q": "What ad creative formats work best?",
+        "a": "Video ads generally outperform static images across platforms. Short-form video (15-30 seconds) drives the highest engagement and conversion rates."
+      }
+    ]
+  },
+  {
+    "slug": "remarketing-retargeting",
+    "name": "Remarketing & Retargeting",
+    "meta_title": "Remarketing & Retargeting Services | Re-Engage Lost Visitors",
+    "meta_description": "Expert remarketing services: bring back website visitors who did not convert. Google Ads remarketing, Facebook retargeting, and cross-platform campaigns.",
+    "hero_description": "97% of website visitors leave without converting. Remarketing brings them back with targeted ads that turn browsers into buyers.",
+    "features": [
+      "Google Display remarketing",
+      "Facebook/Instagram retargeting",
+      "Dynamic product remarketing",
+      "Email remarketing sequences",
+      "Cross-device targeting",
+      "Conversion path analysis"
+    ],
+    "process_steps": [
+      {
+        "title": "Audience Segmentation",
+        "desc": "We segment your website visitors by behavior—pages visited, time on site, cart abandonment, and engagement level."
+      },
+      {
+        "title": "Creative Strategy",
+        "desc": "Personalized ad creatives for each audience segment, addressing their specific stage in the buying journey."
+      },
+      {
+        "title": "Multi-Platform Deployment",
+        "desc": "Campaigns run across Google Display, YouTube, Facebook, Instagram, and LinkedIn for maximum reach."
+      },
+      {
+        "title": "Optimization",
+        "desc": "Frequency capping, bid optimization, and creative rotation to prevent ad fatigue and maximize conversions."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How does remarketing work?",
+        "a": "We place a tracking pixel on your website. When visitors leave without converting, we show them targeted ads as they browse other websites and social media, reminding them to return and complete their action."
+      },
+      {
+        "q": "Is remarketing worth the investment?",
+        "a": "Remarketing typically delivers 2-5x higher conversion rates than standard display advertising, making it one of the highest-ROI paid advertising strategies available."
+      }
+    ]
+  },
+  {
+    "slug": "ppc-audit-strategy",
+    "name": "PPC Audit & Strategy",
+    "meta_title": "PPC Audit & Strategy Services | Optimize Your Paid Advertising",
+    "meta_description": "Comprehensive PPC audit and strategy: identify wasted spend, find optimization opportunities, and develop a data-driven paid advertising strategy.",
+    "hero_description": "Stop wasting money on underperforming ads. Our PPC audit identifies exactly where your budget is leaking and how to fix it for better returns.",
+    "features": [
+      "Account structure review",
+      "Keyword and targeting analysis",
+      "Ad copy performance evaluation",
+      "Landing page assessment",
+      "Competitor benchmarking",
+      "Strategy recommendations"
+    ],
+    "process_steps": [
+      {
+        "title": "Account Review",
+        "desc": "Comprehensive analysis of your current PPC account structure, settings, and performance across all campaigns."
+      },
+      {
+        "title": "Waste Identification",
+        "desc": "We identify wasted spend from poor targeting, irrelevant keywords, and underperforming ads."
+      },
+      {
+        "title": "Opportunity Analysis",
+        "desc": "We find untapped opportunities: new keywords, audience segments, and ad formats you should be testing."
+      },
+      {
+        "title": "Strategy Delivery",
+        "desc": "A detailed report with prioritized recommendations and a 90-day optimization roadmap."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How much can a PPC audit save me?",
+        "a": "Our audits typically identify 15-30% wasted spend. For a ,000/month budget, that translates to (-1,500 in savings that can be redirected to high-performing campaigns."
+      },
+      {
+        "q": "Can you audit accounts on any platform?",
+        "a": "We audit Google Ads, Facebook Ads, Microsoft Ads, LinkedIn Ads, and Amazon Advertising accounts."
+      }
+    ]
+  },
+  {
+    "slug": "local-search-ads",
+    "name": "Local Search Ads",
+    "meta_title": "Local Search Ads Management | Google Local Service Ads",
+    "meta_description": "Expert local search ad management: Google Local Service Ads, local PPC campaigns, and geo-targeted advertising to drive calls and walk-ins.",
+    "hero_description": "Capture local customers at the exact moment they search. Our local ad campaigns drive phone calls, direction requests, and walk-in traffic.",
+    "features": [
+      "Google Local Service Ads setup",
+      "Geo-targeted PPC campaigns",
+      "Local extension optimization",
+      "Call tracking implementation",
+      "Location-based bid strategies",
+      "Local competitor analysis"
+    ],
+    "process_steps": [
+      {
+        "title": "Local Market Analysis",
+        "desc": "We analyze your local competition, search demand, and ideal target radius for advertising."
+      },
+      {
+        "title": "Campaign Setup",
+        "desc": "We create geo-targeted campaigns with local keywords, ad extensions, and location targeting."
+      },
+      {
+        "title": "Call & Lead Tracking",
+        "desc": "Every call and lead is tracked back to specific ads and keywords for clear ROI measurement."
+      },
+      {
+        "title": "Local Optimization",
+        "desc": "Ongoing optimization of bids, targeting, and ad copy based on local performance data."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What are Google Local Service Ads?",
+        "a": "Local Service Ads appear at the very top of Google search results for local service queries. You pay per lead (call or message) rather than per click, making them highly cost-effective."
+      },
+      {
+        "q": "How much do local search ads cost?",
+        "a": "Costs vary by industry and location. Google Local Service Ads typically cost \u0005-50 per lead. Traditional local PPC can be managed effectively with budgets starting at \u0000/month."
+      }
+    ]
+  }
+]

@@ -1,0 +1,785 @@
+[
+  {
+    "slug": "word-counter",
+    "name": "Word Counter",
+    "category": "Content & Writing",
+    "description": "Count words, characters, sentences, paragraphs, and estimate reading time instantly.",
+    "meta_description": "Count words, characters, sentences, paragraphs, and estimate reading time instantly.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "character-counter",
+    "name": "Character Counter",
+    "category": "Content & Writing",
+    "description": "Count characters with and without spaces. Perfect for social media character limits.",
+    "meta_description": "Count characters with and without spaces. Perfect for social media character limits.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "keyword-density-checker",
+    "name": "Keyword Density Checker",
+    "category": "Content & Writing",
+    "description": "Analyze keyword frequency, density percentage, and top keywords in your content.",
+    "meta_description": "Analyze keyword frequency, density percentage, and top keywords in your content.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "readability-checker",
+    "name": "Readability Checker",
+    "category": "Content & Writing",
+    "description": "Check your content's readability score using Flesch-Kincaid and other formulas.",
+    "meta_description": "Check your content's readability score using Flesch-Kincaid and other formulas.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "plagiarism-sentence-checker",
+    "name": "Plagiarism Sentence Checker",
+    "category": "Content & Writing",
+    "description": "Check individual sentences for potential plagiarism and duplicate content issues.",
+    "meta_description": "Check individual sentences for potential plagiarism and duplicate content issues.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "lorem-ipsum-generator",
+    "name": "Lorem Ipsum Generator",
+    "category": "Content & Writing",
+    "description": "Generate placeholder text in various lengths for design mockups and layouts.",
+    "meta_description": "Generate placeholder text in various lengths for design mockups and layouts.",
+    "has_js": true,
+    "tool_type": "form"
+  },
+  {
+    "slug": "text-case-converter",
+    "name": "Text Case Converter",
+    "category": "Content & Writing",
+    "description": "Convert text between uppercase, lowercase, title case, sentence case, and more.",
+    "meta_description": "Convert text between uppercase, lowercase, title case, sentence case, and more.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "article-rewriter-helper",
+    "name": "Article Rewriter Helper",
+    "category": "Content & Writing",
+    "description": "Get suggestions to rephrase and improve your article content for uniqueness.",
+    "meta_description": "Get suggestions to rephrase and improve your article content for uniqueness.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "headline-analyzer",
+    "name": "Headline Analyzer",
+    "category": "Content & Writing",
+    "description": "Analyze your headline for emotional impact, word balance, and click potential.",
+    "meta_description": "Analyze your headline for emotional impact, word balance, and click potential.",
+    "has_js": true,
+    "tool_type": "input"
+  },
+  {
+    "slug": "grammar-checker",
+    "name": "Grammar Checker",
+    "category": "Content & Writing",
+    "description": "Check your text for grammar, spelling, and punctuation errors.",
+    "meta_description": "Check your text for grammar, spelling, and punctuation errors.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "meta-tag-generator",
+    "name": "Meta Tag Generator",
+    "category": "Meta & On-Page SEO",
+    "description": "Generate optimized meta title and description tags for your web pages.",
+    "meta_description": "Generate optimized meta title and description tags for your web pages.",
+    "has_js": true,
+    "tool_type": "form"
+  },
+  {
+    "slug": "google-serp-preview",
+    "name": "Google Serp Preview",
+    "category": "Meta & On-Page SEO",
+    "description": "Preview how your page will appear in Google search results before publishing.",
+    "meta_description": "Preview how your page will appear in Google search results before publishing.",
+    "has_js": true,
+    "tool_type": "form"
+  },
+  {
+    "slug": "bulk-title-checker",
+    "name": "Bulk Title Checker",
+    "category": "Meta & On-Page SEO",
+    "description": "Check multiple page titles for length, keywords, and optimization best practices.",
+    "meta_description": "Check multiple page titles for length, keywords, and optimization best practices.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "meta-description-checker",
+    "name": "Meta Description Checker",
+    "category": "Meta & On-Page SEO",
+    "description": "Analyze your meta descriptions for length, keyword usage, and call-to-action presence.",
+    "meta_description": "Analyze your meta descriptions for length, keyword usage, and call-to-action presence.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "heading-analyzer",
+    "name": "Heading Analyzer",
+    "category": "Meta & On-Page SEO",
+    "description": "Analyze your page heading structure (H1-H6) for SEO best practices.",
+    "meta_description": "Analyze your page heading structure (H1-H6) for SEO best practices.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "image-alt-text-generator",
+    "name": "Image Alt Text Generator",
+    "category": "Meta & On-Page SEO",
+    "description": "Generate descriptive, SEO-friendly alt text for your images.",
+    "meta_description": "Generate descriptive, SEO-friendly alt text for your images.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "canonical-tag-generator",
+    "name": "Canonical Tag Generator",
+    "category": "Meta & On-Page SEO",
+    "description": "Generate proper canonical tags to prevent duplicate content issues.",
+    "meta_description": "Generate proper canonical tags to prevent duplicate content issues.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "open-graph-preview",
+    "name": "Open Graph Preview",
+    "category": "Meta & On-Page SEO",
+    "description": "Preview how your content will appear when shared on social media platforms.",
+    "meta_description": "Preview how your content will appear when shared on social media platforms.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "google-index-checker",
+    "name": "Google Index Checker",
+    "category": "Meta & On-Page SEO",
+    "description": "Check if a specific URL is indexed by Google.",
+    "meta_description": "Check if a specific URL is indexed by Google.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "bulk-index-checker",
+    "name": "Bulk Index Checker",
+    "category": "Meta & On-Page SEO",
+    "description": "Check multiple URLs at once for Google indexing status.",
+    "meta_description": "Check multiple URLs at once for Google indexing status.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "serp-checker",
+    "name": "Serp Checker",
+    "category": "Meta & On-Page SEO",
+    "description": "Check your current search engine ranking position for specific keywords.",
+    "meta_description": "Check your current search engine ranking position for specific keywords.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "robots-txt-generator",
+    "name": "Robots Txt Generator",
+    "category": "Technical SEO",
+    "description": "Generate a properly formatted robots.txt file for your website.",
+    "meta_description": "Generate a properly formatted robots.txt file for your website.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "sitemap-generator",
+    "name": "Sitemap Generator",
+    "category": "Technical SEO",
+    "description": "Create an XML sitemap for your website to improve search engine crawling.",
+    "meta_description": "Create an XML sitemap for your website to improve search engine crawling.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "htaccess-redirect-generator",
+    "name": "Htaccess Redirect Generator",
+    "category": "Technical SEO",
+    "description": "Generate .htaccess redirect rules for URL migrations and restructuring.",
+    "meta_description": "Generate .htaccess redirect rules for URL migrations and restructuring.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "schema-generator",
+    "name": "Schema Generator",
+    "category": "Technical SEO",
+    "description": "Generate JSON-LD structured data markup for rich search results.",
+    "meta_description": "Generate JSON-LD structured data markup for rich search results.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "json-ld-validator",
+    "name": "Json Ld Validator",
+    "category": "Technical SEO",
+    "description": "Validate your JSON-LD structured data for syntax and schema.org compliance.",
+    "meta_description": "Validate your JSON-LD structured data for syntax and schema.org compliance.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "hreflang-tag-generator",
+    "name": "Hreflang Tag Generator",
+    "category": "Technical SEO",
+    "description": "Generate hreflang tags for multilingual and multi-regional websites.",
+    "meta_description": "Generate hreflang tags for multilingual and multi-regional websites.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "slug-generator",
+    "name": "Slug Generator",
+    "category": "Technical SEO",
+    "description": "Convert any text into SEO-friendly URL slugs.",
+    "meta_description": "Convert any text into SEO-friendly URL slugs.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "url-encoder-decoder",
+    "name": "Url Encoder Decoder",
+    "category": "Technical SEO",
+    "description": "Encode or decode URLs for safe web transmission.",
+    "meta_description": "Encode or decode URLs for safe web transmission.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "http-status-checker",
+    "name": "Http Status Checker",
+    "category": "Technical SEO",
+    "description": "Check the HTTP status code of any URL for errors or redirects.",
+    "meta_description": "Check the HTTP status code of any URL for errors or redirects.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "page-size-checker",
+    "name": "Page Size Checker",
+    "category": "Technical SEO",
+    "description": "Analyze total page size including HTML, CSS, JS, and images.",
+    "meta_description": "Analyze total page size including HTML, CSS, JS, and images.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "core-web-vitals-guide",
+    "name": "Core Web Vitals Guide",
+    "category": "Technical SEO",
+    "description": "Interactive guide to understanding and improving Core Web Vitals metrics.",
+    "meta_description": "Interactive guide to understanding and improving Core Web Vitals metrics.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "page-speed-analyzer",
+    "name": "Page Speed Analyzer",
+    "category": "Technical SEO",
+    "description": "Analyze page speed metrics and get optimization recommendations.",
+    "meta_description": "Analyze page speed metrics and get optimization recommendations.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "xml-to-url-converter",
+    "name": "Xml To Url Converter",
+    "category": "Technical SEO",
+    "description": "Extract all URLs from an XML sitemap file for analysis.",
+    "meta_description": "Extract all URLs from an XML sitemap file for analysis.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "keyword-suggestion-tool",
+    "name": "Keyword Suggestion Tool",
+    "category": "Keyword & Research",
+    "description": "Get keyword ideas and suggestions based on your seed keywords.",
+    "meta_description": "Get keyword ideas and suggestions based on your seed keywords.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "lsi-keyword-generator",
+    "name": "Lsi Keyword Generator",
+    "category": "Keyword & Research",
+    "description": "Generate LSI (Latent Semantic Indexing) keywords for topical depth.",
+    "meta_description": "Generate LSI (Latent Semantic Indexing) keywords for topical depth.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "question-generator",
+    "name": "Question Generator",
+    "category": "Keyword & Research",
+    "description": "Generate question-based keywords from any topic for FAQ and content ideas.",
+    "meta_description": "Generate question-based keywords from any topic for FAQ and content ideas.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "competitor-keyword-gap-planner",
+    "name": "Competitor Keyword Gap Planner",
+    "category": "Keyword & Research",
+    "description": "Identify keyword opportunities your competitors rank for but you don't.",
+    "meta_description": "Identify keyword opportunities your competitors rank for but you don't.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "search-intent-classifier",
+    "name": "Search Intent Classifier",
+    "category": "Keyword & Research",
+    "description": "Classify keywords by search intent: informational, commercial, transactional, navigational.",
+    "meta_description": "Classify keywords by search intent: informational, commercial, transactional, navigational.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "keyword-grouper",
+    "name": "Keyword Grouper",
+    "category": "Keyword & Research",
+    "description": "Group keywords into clusters based on semantic similarity and search intent.",
+    "meta_description": "Group keywords into clusters based on semantic similarity and search intent.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "bulk-keyword-checker",
+    "name": "Bulk Keyword Checker",
+    "category": "Keyword & Research",
+    "description": "Check search volume and competition metrics for multiple keywords at once.",
+    "meta_description": "Check search volume and competition metrics for multiple keywords at once.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "linkedin-post-formatter",
+    "name": "Linkedin Post Formatter",
+    "category": "Social Media & LinkedIn",
+    "description": "Format and optimize your LinkedIn posts for maximum engagement and reach.",
+    "meta_description": "Format and optimize your LinkedIn posts for maximum engagement and reach.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "linkedin-headline-generator",
+    "name": "Linkedin Headline Generator",
+    "category": "Social Media & LinkedIn",
+    "description": "Generate compelling LinkedIn headlines that attract profile views.",
+    "meta_description": "Generate compelling LinkedIn headlines that attract profile views.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "linkedin-summary-generator",
+    "name": "Linkedin Summary Generator",
+    "category": "Social Media & LinkedIn",
+    "description": "Create a professional LinkedIn summary that showcases your expertise.",
+    "meta_description": "Create a professional LinkedIn summary that showcases your expertise.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "twitter-thread-formatter",
+    "name": "Twitter Thread Formatter",
+    "category": "Social Media & LinkedIn",
+    "description": "Format your content into engaging Twitter/X thread format.",
+    "meta_description": "Format your content into engaging Twitter/X thread format.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "social-media-image-size-guide",
+    "name": "Social Media Image Size Guide",
+    "category": "Social Media & LinkedIn",
+    "description": "Reference guide for optimal image sizes across all social media platforms.",
+    "meta_description": "Reference guide for optimal image sizes across all social media platforms.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "hashtag-generator",
+    "name": "Hashtag Generator",
+    "category": "Social Media & LinkedIn",
+    "description": "Generate relevant hashtags for your social media posts by topic.",
+    "meta_description": "Generate relevant hashtags for your social media posts by topic.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "instagram-bio-generator",
+    "name": "Instagram Bio Generator",
+    "category": "Social Media & LinkedIn",
+    "description": "Create an engaging Instagram bio that attracts followers.",
+    "meta_description": "Create an engaging Instagram bio that attracts followers.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "social-post-scheduler-planner",
+    "name": "Social Post Scheduler Planner",
+    "category": "Social Media & LinkedIn",
+    "description": "Plan and schedule your social media content calendar.",
+    "meta_description": "Plan and schedule your social media content calendar.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "google-business-profile-audit",
+    "name": "Google Business Profile Audit",
+    "category": "Local SEO",
+    "description": "Audit your Google Business Profile for optimization opportunities.",
+    "meta_description": "Audit your Google Business Profile for optimization opportunities.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "local-citation-finder",
+    "name": "Local Citation Finder",
+    "category": "Local SEO",
+    "description": "Find local citation opportunities and directory listings for your business.",
+    "meta_description": "Find local citation opportunities and directory listings for your business.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "nap-consistency-checker",
+    "name": "Nap Consistency Checker",
+    "category": "Local SEO",
+    "description": "Check your Name, Address, Phone consistency across online directories.",
+    "meta_description": "Check your Name, Address, Phone consistency across online directories.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "review-response-generator",
+    "name": "Review Response Generator",
+    "category": "Local SEO",
+    "description": "Generate professional responses to customer reviews.",
+    "meta_description": "Generate professional responses to customer reviews.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "local-keyword-generator",
+    "name": "Local Keyword Generator",
+    "category": "Local SEO",
+    "description": "Generate location-specific keywords for local SEO targeting.",
+    "meta_description": "Generate location-specific keywords for local SEO targeting.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "gbp-keyword-checker",
+    "name": "Gbp Keyword Checker",
+    "category": "Local SEO",
+    "description": "Check how your Google Business Profile ranks for local keywords.",
+    "meta_description": "Check how your Google Business Profile ranks for local keywords.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "ai-search-prompt-tester",
+    "name": "Ai Search Prompt Tester",
+    "category": "GEO & AI Search",
+    "description": "Test how AI search engines respond to prompts about your brand.",
+    "meta_description": "Test how AI search engines respond to prompts about your brand.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "ai-content-optimizer",
+    "name": "Ai Content Optimizer",
+    "category": "GEO & AI Search",
+    "description": "Optimize your content structure for AI search engine comprehension.",
+    "meta_description": "Optimize your content structure for AI search engine comprehension.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "brand-mention-tracker-guide",
+    "name": "Brand Mention Tracker Guide",
+    "category": "GEO & AI Search",
+    "description": "Guide to tracking your brand mentions across AI and traditional search.",
+    "meta_description": "Guide to tracking your brand mentions across AI and traditional search.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "anchor-text-analyzer",
+    "name": "Anchor Text Analyzer",
+    "category": "Backlink & Off-Page",
+    "description": "Analyze your backlink anchor text distribution for optimization.",
+    "meta_description": "Analyze your backlink anchor text distribution for optimization.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "guest-post-pitch-generator",
+    "name": "Guest Post Pitch Generator",
+    "category": "Backlink & Off-Page",
+    "description": "Generate personalized guest post pitch emails for outreach.",
+    "meta_description": "Generate personalized guest post pitch emails for outreach.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "broken-link-outreach-template",
+    "name": "Broken Link Outreach Template",
+    "category": "Backlink & Off-Page",
+    "description": "Create outreach templates for broken link building campaigns.",
+    "meta_description": "Create outreach templates for broken link building campaigns.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "backlink-quality-checklist",
+    "name": "Backlink Quality Checklist",
+    "category": "Backlink & Off-Page",
+    "description": "Evaluate backlink quality with our comprehensive quality checklist.",
+    "meta_description": "Evaluate backlink quality with our comprehensive quality checklist.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "disavow-file-generator",
+    "name": "Disavow File Generator",
+    "category": "Backlink & Off-Page",
+    "description": "Generate a Google disavow file to remove toxic backlink signals.",
+    "meta_description": "Generate a Google disavow file to remove toxic backlink signals.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "product-description-optimizer",
+    "name": "Product Description Optimizer",
+    "category": "Ecommerce SEO",
+    "description": "Optimize product descriptions for SEO and conversion.",
+    "meta_description": "Optimize product descriptions for SEO and conversion.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "ecommerce-schema-generator",
+    "name": "Ecommerce Schema Generator",
+    "category": "Ecommerce SEO",
+    "description": "Generate Product schema markup for e-commerce rich snippets.",
+    "meta_description": "Generate Product schema markup for e-commerce rich snippets.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "category-page-optimizer",
+    "name": "Category Page Optimizer",
+    "category": "Ecommerce SEO",
+    "description": "Optimize e-commerce category pages for better organic rankings.",
+    "meta_description": "Optimize e-commerce category pages for better organic rankings.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "seo-roi-calculator",
+    "name": "Seo Roi Calculator",
+    "category": "Reporting & Calculation",
+    "description": "Calculate the return on investment of your SEO campaigns.",
+    "meta_description": "Calculate the return on investment of your SEO campaigns.",
+    "has_js": true,
+    "tool_type": "form"
+  },
+  {
+    "slug": "cpc-savings-calculator",
+    "name": "Cpc Savings Calculator",
+    "category": "Reporting & Calculation",
+    "description": "Calculate how much you save on PPC by ranking organically.",
+    "meta_description": "Calculate how much you save on PPC by ranking organically.",
+    "has_js": true,
+    "tool_type": "form"
+  },
+  {
+    "slug": "domain-age-checker",
+    "name": "Domain Age Checker",
+    "category": "Reporting & Calculation",
+    "description": "Check the registration age and history of any domain name.",
+    "meta_description": "Check the registration age and history of any domain name.",
+    "has_js": true,
+    "tool_type": "input"
+  },
+  {
+    "slug": "website-cost-estimator",
+    "name": "Website Cost Estimator",
+    "category": "Reporting & Calculation",
+    "description": "Estimate the cost of building or redesigning a website.",
+    "meta_description": "Estimate the cost of building or redesigning a website.",
+    "has_js": true,
+    "tool_type": "form"
+  },
+  {
+    "slug": "cta-generator",
+    "name": "Cta Generator",
+    "category": "Conversion & UX",
+    "description": "Generate compelling calls-to-action for your website and landing pages.",
+    "meta_description": "Generate compelling calls-to-action for your website and landing pages.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "ab-test-duration-calculator",
+    "name": "Ab Test Duration Calculator",
+    "category": "Conversion & UX",
+    "description": "Calculate how long to run your A/B test for statistical significance.",
+    "meta_description": "Calculate how long to run your A/B test for statistical significance.",
+    "has_js": true,
+    "tool_type": "form"
+  },
+  {
+    "slug": "color-contrast-checker",
+    "name": "Color Contrast Checker",
+    "category": "Conversion & UX",
+    "description": "Check text and background color contrast for WCAG accessibility compliance.",
+    "meta_description": "Check text and background color contrast for WCAG accessibility compliance.",
+    "has_js": true,
+    "tool_type": "form"
+  },
+  {
+    "slug": "page-speed-checklist",
+    "name": "Page Speed Checklist",
+    "category": "Conversion & UX",
+    "description": "Comprehensive checklist for optimizing page load performance.",
+    "meta_description": "Comprehensive checklist for optimizing page load performance.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "email-subject-line-tester",
+    "name": "Email Subject Line Tester",
+    "category": "Email & Outreach",
+    "description": "Test and score your email subject lines for open rate potential.",
+    "meta_description": "Test and score your email subject lines for open rate potential.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "cold-email-generator",
+    "name": "Cold Email Generator",
+    "category": "Email & Outreach",
+    "description": "Generate personalized cold outreach emails for link building and business development.",
+    "meta_description": "Generate personalized cold outreach emails for link building and business development.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "google-ads-budget-calculator",
+    "name": "Google Ads Budget Calculator",
+    "category": "PPC & Paid Ads",
+    "description": "Calculate your ideal Google Ads budget based on your goals and industry.",
+    "meta_description": "Calculate your ideal Google Ads budget based on your goals and industry.",
+    "has_js": true,
+    "tool_type": "form"
+  },
+  {
+    "slug": "roas-calculator",
+    "name": "Roas Calculator",
+    "category": "PPC & Paid Ads",
+    "description": "Calculate your Return on Ad Spend for paid advertising campaigns.",
+    "meta_description": "Calculate your Return on Ad Spend for paid advertising campaigns.",
+    "has_js": true,
+    "tool_type": "form"
+  },
+  {
+    "slug": "ad-copy-generator",
+    "name": "Ad Copy Generator",
+    "category": "PPC & Paid Ads",
+    "description": "Generate compelling ad copy for Google Ads and social media campaigns.",
+    "meta_description": "Generate compelling ad copy for Google Ads and social media campaigns.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "quality-score-estimator",
+    "name": "Quality Score Estimator",
+    "category": "PPC & Paid Ads",
+    "description": "Estimate your Google Ads Quality Score and get improvement tips.",
+    "meta_description": "Estimate your Google Ads Quality Score and get improvement tips.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "ppc-campaign-audit-checklist",
+    "name": "Ppc Campaign Audit Checklist",
+    "category": "PPC & Paid Ads",
+    "description": "Comprehensive checklist for auditing your PPC campaigns.",
+    "meta_description": "Comprehensive checklist for auditing your PPC campaigns.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "bulk-expired-domain-checker",
+    "name": "Bulk Expired Domain Checker",
+    "category": "Domain & URL Tools",
+    "description": "Check multiple domains for expiration status and availability.",
+    "meta_description": "Check multiple domains for expiration status and availability.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "domain-authority-checker",
+    "name": "Domain Authority Checker",
+    "category": "Domain & URL Tools",
+    "description": "Check the domain authority score of any website.",
+    "meta_description": "Check the domain authority score of any website.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "redirect-chain-checker",
+    "name": "Redirect Chain Checker",
+    "category": "Domain & URL Tools",
+    "description": "Detect and analyze redirect chains that waste crawl budget.",
+    "meta_description": "Detect and analyze redirect chains that waste crawl budget.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "broken-link-checker",
+    "name": "Broken Link Checker",
+    "category": "Domain & URL Tools",
+    "description": "Find broken links on any web page that need fixing.",
+    "meta_description": "Find broken links on any web page that need fixing.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "bulk-url-issue-checker",
+    "name": "Bulk Url Issue Checker",
+    "category": "Domain & URL Tools",
+    "description": "Check multiple URLs for common technical issues.",
+    "meta_description": "Check multiple URLs for common technical issues.",
+    "has_js": true,
+    "tool_type": "textarea"
+  },
+  {
+    "slug": "force-google-indexing",
+    "name": "Force Google Indexing",
+    "category": "Domain & URL Tools",
+    "description": "Guide and tools to request Google to index or re-index your pages.",
+    "meta_description": "Guide and tools to request Google to index or re-index your pages.",
+    "has_js": true,
+    "tool_type": "textarea"
+  }
+]

@@ -1,0 +1,44 @@
+<section class="hero hero-sm">
+  <div class="container">
+    <nav class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/tools">Tools</a> &rsaquo; <span>{{name}}</span></nav>
+    <h1>{{name}}</h1>
+    <p class="hero-subtitle">{{description}}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container content-narrow">
+    <div class="tool-container">
+      <div class="tool-input-area">
+        <label for="tool-input"><strong>Enter your content below:</strong></label>
+        <textarea id="tool-input" rows="8" placeholder="Paste or type your content here..."></textarea>
+        <button class="btn btn-primary" onclick="runTool()">Analyze</button>
+      </div>
+      <div id="tool-result" class="tool-result" style="display:none;">
+        <h3>Results</h3>
+        <div id="tool-output"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container content-narrow">
+    <h2>About This Tool</h2>
+    <p>{{description}} This free online tool requires no signup, no login, and no payment. Use it as many times as you need for your SEO and content optimization workflow.</p>
+    <h3>How to Use</h3>
+    <ol>
+      <li>Enter or paste your content in the text area above</li>
+      <li>Click the Analyze button to process your input</li>
+      <li>Review the results and use them to improve your content</li>
+    </ol>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container" style="text-align:center;">
+    <h2>Need Professional SEO Help?</h2>
+    <p>Free tools are a great start. For comprehensive SEO services, get expert help.</p>
+    <a href="/services" class="btn btn-white">View SEO Services</a>
+  </div>
+</section>
