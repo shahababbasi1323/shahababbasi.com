@@ -1,0 +1,28 @@
+{% extends "_base.html" %}
+{% block breadcrumbs %}{% include "_partials/breadcrumbs.html" %}{% endblock %}
+{% block content %}
+<section class="section-padding">
+  <div class="container-tight">
+    <div class="max-w-3xl">
+      <p class="text-xs uppercase tracking-widest text-accent">Industries</p>
+      <h1 class="mt-2 font-display text-4xl md:text-6xl font-bold tracking-tight">Industry-specific playbooks for {{ industries|length }}+ verticals.</h1>
+      <p class="mt-4 text-foreground/80">SEO, PPC, and content marketing tuned to the regulations, buyer behavior, and ranking dynamics of your industry. Pick yours.</p>
+    </div>
+
+    {% for cat in industryCategories %}
+    <div class="mt-14">
+      <h2 class="font-display text-2xl font-bold">{{ cat.name }}</h2>
+      <div class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {% for ind in industries if ind.parentCategory == cat.slug %}
+        <a href="{{ url('/industries/' ~ ind.slug ~ '.html') }}" class="glass p-5 hover:border-accent/40 transition">
+          <p class="font-display font-semibold">{{ ind.name }}</p>
+          <p class="mt-2 text-sm text-foreground/70">{{ ind.shortDescription }}</p>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% include "_partials/cta_block.html" %}
+{% endblock %}

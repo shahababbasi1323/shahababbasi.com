@@ -1,0 +1,22 @@
+{% extends "_base.html" %}
+{% block breadcrumbs %}{% include "_partials/breadcrumbs.html" %}{% endblock %}
+{% block content %}
+<section class="container-tight max-w-3xl py-16 md:py-20">
+  <p class="text-xs uppercase tracking-widest text-accent">Free Resource</p>
+  <h1 class="mt-2 font-display text-3xl md:text-5xl font-bold tracking-tight">{{ item.name or item.title }}</h1>
+  <p class="mt-4 text-foreground/80">{{ item.shortDescription or item.description or '' }}</p>
+  <form class="mt-8 glass p-6 grid gap-4" action="https://formsubmit.co/{{ brand.email }}" method="POST">
+    <input type="hidden" name="_subject" value="Resource Request - {{ item.name or item.title }}">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="true">
+    <input type="hidden" name="_next" value="{{ brand.url }}/thank-you.html">
+    <input type="hidden" name="resource" value="{{ item.name or item.title }}">
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+    <label class="grid gap-1 text-sm">Full name<input required name="name" class="h-11 rounded-lg bg-card/60 border border-border px-3"></label>
+    <label class="grid gap-1 text-sm">Work email<input required type="email" name="email" class="h-11 rounded-lg bg-card/60 border border-border px-3"></label>
+    <button type="submit" class="h-11 rounded-xl bg-gradient-brand font-medium shadow-glow-primary">Send me {{ item.name or item.title }}</button>
+    <p class="text-xs text-foreground/60">No spam. Unsubscribe anytime.</p>
+  </form>
+</section>
+{% include "_partials/cta_block.html" %}
+{% endblock %}

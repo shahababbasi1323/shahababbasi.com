@@ -1,0 +1,24 @@
+{% extends "_base.html" %}
+{% block breadcrumbs %}{% include "_partials/breadcrumbs.html" %}{% endblock %}
+{% block content %}
+<section class="section-padding">
+  <div class="container-tight">
+    <div class="max-w-3xl">
+      <p class="text-xs uppercase tracking-widest text-accent">Blog</p>
+      <h1 class="mt-2 font-display text-4xl md:text-6xl font-bold tracking-tight">Practical SEO, GEO, and growth essays.</h1>
+      <p class="mt-4 text-foreground/80">Field notes from real client work. No "ultimate guides" - just frameworks, templates, and decisions you can apply this quarter.</p>
+    </div>
+    <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+      {% for post in blogTopics %}
+      <a href="{{ url('/blog/' ~ post.slug ~ '.html') }}" class="glass p-6 hover:border-accent/40 transition" data-animate>
+        <p class="text-xs uppercase tracking-widest text-accent">{{ post.category }} - {{ post.datePublished }}</p>
+        <h2 class="mt-2 font-display text-lg font-semibold leading-snug">{{ post.title }}</h2>
+        <p class="mt-2 text-sm text-foreground/70">{{ post.shortDescription }}</p>
+        <span class="mt-4 inline-flex items-center gap-1 text-sm text-accent">Read article →</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% include "_partials/cta_block.html" %}
+{% endblock %}

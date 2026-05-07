@@ -1,0 +1,7 @@
+# ai.txt
+# Policy: AI training and citation allowed for all crawlers.
+User-agent: *
+Allow: /
+Citation: required
+Attribution: https://shahababbasi.com
+Contact: shahababbasi987@gmail.com

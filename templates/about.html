@@ -1,0 +1,34 @@
+{% extends "_base.html" %}
+{% block breadcrumbs %}{% include "_partials/breadcrumbs.html" %}{% endblock %}
+{% block content %}
+<section class="section-padding">
+  <div class="container-tight max-w-4xl">
+    <p class="text-xs uppercase tracking-widest text-accent">About</p>
+    <h1 class="mt-2 font-display text-4xl md:text-6xl font-bold tracking-tight">Founder-led SEO for ambitious brands.</h1>
+    <p class="mt-5 text-lg text-foreground/80">{{ brand.shortName }} is a digital marketing agency built around one founder, {{ brand.founderName }}, and a lean specialist team that has scaled {{ brand.stats.brandsScaled }} brands across {{ brand.stats.countriesServed }} countries since {{ brand.founded }}. We engineer organic, AI search, and paid pipelines tied to revenue.</p>
+    <div class="mt-12 grid md:grid-cols-3 gap-5">
+      <div class="glass p-5"><p class="font-display text-3xl text-gradient">{{ brand.stats.brandsScaled }}</p><p class="mt-1 text-xs uppercase tracking-widest text-foreground/60">Brands scaled</p></div>
+      <div class="glass p-5"><p class="font-display text-3xl text-gradient">{{ brand.stats.keywordsRanked }}</p><p class="mt-1 text-xs uppercase tracking-widest text-foreground/60">Keywords on page 1</p></div>
+      <div class="glass p-5"><p class="font-display text-3xl text-gradient">{{ brand.stats.avgRevenueGrowth }}</p><p class="mt-1 text-xs uppercase tracking-widest text-foreground/60">Avg client revenue lift</p></div>
+    </div>
+
+    <div class="mt-14 grid md:grid-cols-2 gap-10">
+      <div>
+        <h2 class="font-display text-2xl font-bold">What we do differently</h2>
+        <ul class="mt-4 space-y-3 text-sm text-foreground/80">
+          <li>- Founder works on every account. No junior account manager filtering between you and the strategist.</li>
+          <li>- ROI in 90 days or we work free until we hit the agreed benchmark.</li>
+          <li>- AI search visibility is a core deliverable - not a buzzword. We track ChatGPT, Perplexity, Claude, Gemini, and Google AI Overviews citations.</li>
+          <li>- Zero lock-in contracts. You can leave any month. Most do not.</li>
+          <li>- Transparent reporting tied to pipeline metrics, not vanity traffic.</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-display text-2xl font-bold">Industries and stages</h2>
+        <p class="mt-4 text-sm text-foreground/80">We work best with B2B SaaS, e-commerce DTC, professional services (legal, healthcare, finance), home services, and ambitious startups raising or scaling revenue. We do not pitch and dump - we partner with founders who want to compound results.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% include "_partials/cta_block.html" %}
+{% endblock %}

@@ -1,23 +1,1413 @@
 [
-  {"slug":"technical-seo","name":"Technical SEO","meta_title":"Technical SEO Services | Site Audits, Core Web Vitals & Crawlability","meta_description":"Expert technical SEO services: comprehensive site audits, Core Web Vitals optimization, crawlability fixes, and site architecture improvements for higher rankings.","hero_title":"Technical SEO Services","hero_description":"Build an airtight technical foundation so search engines can discover, crawl, and rank every page on your site without friction.","what_is_title":"What Is Technical SEO?","what_is_desc":"Technical SEO addresses the infrastructure layer of your website—everything from how Googlebot crawls your pages to how quickly they load on a mobile device. Without a solid technical base, even the best content will struggle to surface in search results.","benefits":["Ensures all important pages are discoverable and indexable","Accelerates page load times and improves Core Web Vitals scores","Eliminates crawl errors, redirect chains, and orphan pages","Implements clean site architecture and XML sitemaps","Configures proper canonical tags to prevent duplicate content","Strengthens mobile responsiveness and structured data"],"process_steps":[{"title":"Deep-Dive Technical Audit","desc":"We spider your entire domain using Screaming Frog, Sitebulb, and Google Search Console to map every crawl issue, broken link, and rendering bottleneck."},{"title":"Prioritized Action Roadmap","desc":"Issues are scored by SEO impact and implementation difficulty so your team sees the highest-value fixes first."},{"title":"Implementation & QA","desc":"Our engineers resolve critical issues—site speed, indexation, structured data, and Core Web Vitals—with careful staging and rollback plans."},{"title":"Continuous Monitoring","desc":"Post-launch, we track crawl stats, index coverage, and CWV metrics weekly, alerting you to regressions before they hurt rankings."}],"tools_used":["Screaming Frog","Google Search Console","PageSpeed Insights","GTmetrix","Ahrefs Site Audit","Chrome DevTools","Schema Validator","Sitebulb"],"deliverables":["100+ checkpoint technical audit report","Core Web Vitals optimization","Crawl error and redirect fixes","XML sitemap & robots.txt configuration","Structured data implementation","Monthly technical health dashboard"],"pricing":"Starting at $500/month","pricing_note":"Included in all SEO packages. Standalone audits from $300.","faqs":[{"q":"How long does a full technical audit take?","a":"A thorough audit typically requires 3-5 business days depending on site size. We examine 100+ technical factors and deliver a prioritized report with clear next steps."},{"q":"Will technical changes break my live site?","a":"We follow strict change-management protocols—staging environments, documented rollback plans, and incremental deployments—so your live site stays stable throughout."},{"q":"How often should I repeat a technical audit?","a":"We recommend monthly health checks and a comprehensive audit every quarter. Ongoing monitoring catches regressions before they impact rankings."},{"q":"What are Core Web Vitals?","a":"Core Web Vitals are Google's user-experience metrics: Largest Contentful Paint (loading), Interaction to Next Paint (responsiveness), and Cumulative Layout Shift (visual stability). They are a confirmed ranking signal."}],"related_services":["on-page-seo","speed-optimization","schema-markup"]},
-  {"slug":"on-page-seo","name":"On-Page SEO","meta_title":"On-Page SEO Services | Content Optimization, Meta Tags & Internal Linking","meta_description":"Professional on-page SEO: keyword-optimized content, meta tags, header hierarchy, internal linking, and image optimization to maximize every page's ranking potential.","hero_title":"On-Page SEO Optimization","hero_description":"Transform each page into a search-engine magnet with precision keyword placement, compelling meta data, and a content structure designed for both users and algorithms.","what_is_title":"What Is On-Page SEO?","what_is_desc":"On-page SEO is the practice of optimizing individual web pages so they rank higher and earn more relevant traffic. It covers everything a user or crawler can see on the page—title tags, headings, body copy, images, and internal links.","benefits":["Keyword-mapped title tags and meta descriptions that improve CTR","Logical header hierarchy (H1–H6) for semantic clarity","Strategic internal linking that distributes authority","Image optimization with descriptive alt text and modern formats","Content depth calibrated to match search intent","URL structures that are short, readable, and keyword-rich"],"process_steps":[{"title":"Content & Keyword Audit","desc":"We map every existing page against target keywords, identify content gaps, and flag cannibalization issues."},{"title":"On-Page Blueprint","desc":"Each page receives a custom optimization spec covering title tag, meta description, header structure, word count target, and internal link recommendations."},{"title":"Content Enhancement","desc":"We rewrite or enrich body copy, add semantic variations, and embed multimedia elements that satisfy user intent and increase dwell time."},{"title":"Performance Tracking","desc":"Post-optimization, we monitor ranking changes, CTR shifts, and engagement metrics to measure impact and iterate."}],"tools_used":["Surfer SEO","Clearscope","Google Search Console","Ahrefs","SEMrush","Yoast SEO"],"deliverables":["Per-page optimization blueprint","Title tag & meta description rewrites","Header structure overhaul","Internal linking plan","Image alt text optimization","Monthly ranking & CTR report"],"pricing":"Starting at $400/month","pricing_note":"Included in Growth and Enterprise plans.","faqs":[{"q":"How many pages can you optimize per month?","a":"Our Growth plan covers up to 25 pages/month, Enterprise is unlimited. Standalone projects are scoped individually."},{"q":"Do you write the content or just optimize existing copy?","a":"Both. We can optimize your existing content or create new, keyword-targeted pages from scratch through our content writing add-on."}],"related_services":["technical-seo","seo-content-strategy","keyword-research"]},
-  {"slug":"off-page-seo","name":"Off-Page SEO & Link Building","meta_title":"Off-Page SEO & Link Building Services | White-Hat Authority Building","meta_description":"Ethical off-page SEO and link building: earn high-authority backlinks through outreach, guest posting, digital PR, and strategic content partnerships.","hero_title":"Off-Page SEO & Link Building","hero_description":"Earn trust signals that Google cannot ignore—high-authority backlinks, brand mentions, and digital PR placements that compound your domain authority over time.","what_is_title":"What Is Off-Page SEO?","what_is_desc":"Off-page SEO encompasses every action taken outside your own website to improve its search rankings. The most influential factor is backlinks—links from other sites that signal trust and relevance to search engines.","benefits":["Increases Domain Authority and referral traffic","Earns editorially placed links from niche-relevant sites","Builds brand visibility through digital PR and mentions","Diversifies anchor text profile for natural link signals","Creates lasting relationships with publishers and influencers","Supports E-E-A-T signals for YMYL niches"],"process_steps":[{"title":"Link Profile Audit","desc":"We analyze your existing backlink profile for toxic links, anchor text distribution, and competitor gap opportunities."},{"title":"Prospecting & Outreach","desc":"Custom outreach campaigns target relevant publishers, resource pages, and industry blogs with value-driven pitches."},{"title":"Content-Led Acquisition","desc":"We create linkable assets—data studies, infographics, expert roundups—that naturally attract editorial links."},{"title":"Monitoring & Disavow","desc":"Monthly reporting on new links acquired, referring domain growth, and proactive disavow of any harmful links."}],"tools_used":["Ahrefs","Majestic","BuzzStream","Hunter.io","HARO","Pitchbox"],"deliverables":["Backlink audit & gap analysis","Monthly link acquisition (10-25 links)","Guest post placements","Digital PR outreach","Anchor text optimization","Monthly link report"],"pricing":"Starting at $600/month","pricing_note":"Available as standalone or bundled with SEO packages.","faqs":[{"q":"Are the links you build safe and white-hat?","a":"Absolutely. We only pursue editorially earned links from real, relevant websites. No PBNs, no paid link schemes, no link farms."},{"q":"How many backlinks will I get per month?","a":"Depending on your plan, expect 10-25 high-quality links per month. Quality always takes priority over quantity."}],"related_services":["link-building","seo-content-strategy","seo-consulting"]},
-  {"slug":"local-seo","name":"Local SEO","meta_title":"Local SEO Services | Google Maps, GBP Optimization & Local Rankings","meta_description":"Dominate local search with expert Local SEO: Google Business Profile optimization, local citations, review management, and geo-targeted keyword strategies.","hero_title":"Local SEO Services","hero_description":"Put your business on the map—literally. We optimize your local presence so customers in your area find you first on Google Maps and local search results.","what_is_title":"What Is Local SEO?","what_is_desc":"Local SEO focuses on optimizing your online presence to attract business from relevant local searches. This includes Google Business Profile management, local citation building, review acquisition, and geo-targeted content.","benefits":["Appear in Google's Local Pack and Maps results","Optimize Google Business Profile for maximum visibility","Build consistent NAP citations across directories","Generate and manage authentic customer reviews","Target city-specific and neighborhood keywords","Track local ranking positions across multiple locations"],"process_steps":[{"title":"Local Audit","desc":"We assess your Google Business Profile, citation consistency, review profile, and local keyword rankings against competitors."},{"title":"GBP Optimization","desc":"Full optimization of your Google Business Profile—categories, attributes, photos, posts, Q&A, and service areas."},{"title":"Citation Building","desc":"We build and clean citations across 50+ authoritative local directories to strengthen NAP consistency."},{"title":"Review Strategy","desc":"We implement systems to generate authentic reviews and craft professional responses that build trust."}],"tools_used":["Google Business Profile","BrightLocal","Whitespark","Moz Local","Google Search Console"],"deliverables":["GBP optimization","50+ citation submissions","Review generation strategy","Local keyword tracking","Monthly local ranking report","Competitor benchmarking"],"pricing":"Starting at $400/month","pricing_note":"Included in Growth and Enterprise plans.","faqs":[{"q":"How quickly can I rank in the Local Pack?","a":"Many businesses see Local Pack improvements within 4-8 weeks of GBP optimization and citation building. Competitive markets may take longer."},{"q":"Do you handle multiple locations?","a":"Yes. We manage multi-location local SEO with individual GBP profiles, location-specific landing pages, and area-targeted strategies."}],"related_services":["gbp-optimization","on-page-seo","seo-consulting"]},
-  {"slug":"ecommerce-seo","name":"E-commerce SEO","meta_title":"E-commerce SEO Services | Product Page Optimization & Rich Snippets","meta_description":"Specialized e-commerce SEO for Shopify, WooCommerce & custom stores. Product page optimization, category structure, rich snippets, and conversion-focused strategies.","hero_title":"E-commerce SEO Services","hero_description":"Turn your online store into an organic revenue engine with product page optimization, category architecture, and rich snippet implementation that drives clicks and sales.","what_is_title":"What Is E-commerce SEO?","what_is_desc":"E-commerce SEO optimizes online stores so product and category pages rank higher in organic search. It covers product schema markup, faceted navigation, inventory management for SEO, and conversion rate optimization.","benefits":["Product-level keyword targeting for buyer-intent searches","Rich snippet implementation for star ratings and pricing","Category page optimization with faceted navigation best practices","Duplicate content resolution across product variants","Site speed optimization for large product catalogs","Shopping feed optimization for Google Merchant Center"],"process_steps":[{"title":"Store Audit","desc":"We analyze product taxonomy, URL structure, duplicate content issues, and competitor product ranking strategies."},{"title":"Product Page Optimization","desc":"Every product page gets unique titles, descriptions, schema markup, optimized images, and internal cross-links."},{"title":"Category Architecture","desc":"We restructure category and filter pages to maximize crawl efficiency and prevent index bloat."},{"title":"Conversion Tracking","desc":"We set up enhanced e-commerce tracking so you can measure organic revenue attribution down to the product level."}],"tools_used":["Screaming Frog","Google Merchant Center","Ahrefs","Google Analytics 4","Schema.org Product Markup"],"deliverables":["Product page optimization","Category structure audit","Product schema implementation","Faceted navigation fixes","Shopping feed optimization","Monthly revenue attribution report"],"pricing":"Starting at $800/month","pricing_note":"Custom pricing for stores with 1,000+ products.","faqs":[{"q":"Which e-commerce platforms do you work with?","a":"We optimize Shopify, WooCommerce, Magento, BigCommerce, and custom-built stores. Platform-specific expertise ensures we address unique technical challenges."},{"q":"Can SEO really drive e-commerce sales?","a":"Absolutely. Organic search drives 33% of all e-commerce traffic on average, and SEO traffic converts at 2-3x the rate of social media traffic."}],"related_services":["shopify-seo","technical-seo","schema-markup"]},
-  {"slug":"geo-optimization","name":"GEO Optimization","meta_title":"GEO Optimization Services | AI Search Visibility for ChatGPT, Perplexity & Google AI","meta_description":"Generative Engine Optimization (GEO) services to get your brand cited by ChatGPT, Perplexity, Google AI Overviews and other AI-powered search engines.","hero_title":"GEO Optimization","hero_description":"The next frontier of search visibility is here. We optimize your content to be cited, referenced, and recommended by AI-powered search engines and answer platforms.","what_is_title":"What Is GEO (Generative Engine Optimization)?","what_is_desc":"GEO is the practice of optimizing your digital presence so that AI-powered search engines—ChatGPT, Perplexity, Google AI Overviews, Claude—cite and recommend your brand when users ask relevant questions.","benefits":["Appear in AI-generated answers and citations","Structure content for large language model comprehension","Build entity authority across knowledge graphs","Optimize for conversational and question-based queries","Create authoritative, citable content formats","Monitor brand mentions across AI platforms"],"process_steps":[{"title":"AI Visibility Audit","desc":"We test your brand's current visibility across ChatGPT, Perplexity, Google AI Overviews, and other LLM-powered platforms."},{"title":"Content Restructuring","desc":"We restructure your content with clear entity definitions, cited statistics, FAQ blocks, and authoritative source references."},{"title":"Entity & Authority Building","desc":"We strengthen your brand's entity signals through structured data, Wikipedia-style content, and authoritative backlinks."},{"title":"AI Monitoring","desc":"Ongoing tracking of how AI platforms reference your brand, with iterative content updates to maintain and improve citations."}],"tools_used":["ChatGPT","Perplexity","Google AI Overviews","Ahrefs","Schema.org","Knowledge Graph API"],"deliverables":["AI visibility audit report","Content restructuring plan","Entity optimization","FAQ & Q&A content creation","Monthly AI citation tracking","Structured data for LLM comprehension"],"pricing":"Starting at $700/month","pricing_note":"Available as standalone or bundled with SEO packages.","faqs":[{"q":"Is GEO different from traditional SEO?","a":"GEO complements traditional SEO. While SEO targets search engine result pages, GEO specifically targets AI-generated answers. The content principles overlap but the optimization tactics differ."},{"q":"Can you guarantee my brand appears in ChatGPT answers?","a":"No one can guarantee AI citations, as LLMs constantly evolve. However, our structured approach significantly increases the probability of being cited by building the signals these models rely on."}],"related_services":["aeo","seo-content-strategy","schema-markup"]},
-  {"slug":"aeo","name":"AEO - Answer Engine Optimization","meta_title":"AEO Services | Featured Snippets, Voice Search & Answer Engine Optimization","meta_description":"Answer Engine Optimization (AEO) services: get your content featured in Google's answer boxes, featured snippets, voice search results, and AI-powered answers.","hero_title":"Answer Engine Optimization","hero_description":"Position your content as THE answer. AEO focuses on winning featured snippets, People Also Ask boxes, voice search results, and AI answer citations.","what_is_title":"What Is AEO?","what_is_desc":"Answer Engine Optimization (AEO) is the practice of structuring your content to directly answer user questions, making it the preferred source for featured snippets, voice assistants, and AI-generated responses.","benefits":["Win Google's Featured Snippet (Position Zero)","Appear in People Also Ask (PAA) boxes","Optimize for voice search on Alexa, Siri, and Google Assistant","Structure content for AI answer citations","Build topical authority through comprehensive Q&A content","Increase organic CTR through enhanced SERP features"],"process_steps":[{"title":"Question Research","desc":"We identify the exact questions your audience asks using PAA data, autocomplete suggestions, and conversational query analysis."},{"title":"Answer Content Creation","desc":"We create concise, authoritative answers structured with schema markup, tables, and lists that search engines prefer for snippets."},{"title":"Schema Implementation","desc":"FAQPage, HowTo, and Q&A schema markup is implemented to signal answer-ready content to search engines."},{"title":"Snippet Monitoring","desc":"We track featured snippet wins, PAA appearances, and voice search triggers with monthly optimization cycles."}],"tools_used":["Ahrefs Questions","AlsoAsked","AnswerThePublic","Google Search Console","Schema Validator"],"deliverables":["Question opportunity analysis","FAQ content creation","Schema markup implementation","Featured snippet optimization","Voice search readiness audit","Monthly snippet tracking report"],"pricing":"Starting at $500/month","pricing_note":"Best combined with GEO optimization for comprehensive AI search coverage.","faqs":[{"q":"How does AEO differ from GEO?","a":"AEO focuses on traditional answer features like featured snippets and voice search, while GEO targets AI-generated answers in platforms like ChatGPT and Perplexity. Together, they cover the full answer-engine landscape."},{"q":"How long until I see featured snippet results?","a":"Snippet optimization can show results within 2-6 weeks for lower-competition queries. Highly competitive snippets may take 2-3 months of sustained optimization."}],"related_services":["geo-optimization","on-page-seo","seo-content-strategy"]},
-  {"slug":"seo-content-strategy","name":"SEO Content Strategy","meta_title":"SEO Content Strategy Services | Topic Clusters, Content Calendars & Authority Building","meta_description":"Data-driven SEO content strategy: topic cluster planning, content calendars, keyword mapping, pillar page creation, and topical authority building for sustainable organic growth.","hero_title":"SEO Content Strategy","hero_description":"Build topical authority that compounds month over month. Our content strategies turn your website into a comprehensive resource that both users and search engines trust.","what_is_title":"What Is SEO Content Strategy?","what_is_desc":"SEO content strategy is a systematic approach to planning, creating, and optimizing content that targets specific search queries, builds topical authority, and drives organic traffic growth over time.","benefits":["Topic cluster architecture for topical authority","Keyword-mapped content calendars","Pillar page and supporting content frameworks","Content gap analysis vs competitors","Search intent alignment for every page","Internal linking strategy for authority distribution"],"process_steps":[{"title":"Content Audit","desc":"We analyze your existing content library for gaps, cannibalization, thin pages, and optimization opportunities."},{"title":"Topic Cluster Planning","desc":"We map your content into pillar-cluster architectures that build comprehensive topical authority around your core services."},{"title":"Content Calendar","desc":"A 6-12 month editorial calendar with keyword targets, content types, word counts, and publishing cadence."},{"title":"Content Creation & Optimization","desc":"Our writers create expert-level content that satisfies search intent, incorporates semantic keywords, and engages readers."}],"tools_used":["Surfer SEO","Clearscope","Ahrefs Content Explorer","MarketMuse","Google Trends","BuzzSumo"],"deliverables":["Content audit report","Topic cluster map","6-month content calendar","Pillar page briefs","Monthly content performance report","Internal linking blueprint"],"pricing":"Starting at $600/month","pricing_note":"Content writing available as add-on from $150/article.","faqs":[{"q":"Do you write the content or just plan it?","a":"We do both. Our strategy service includes planning, keyword mapping, and content briefs. Content writing is available as an add-on at $150-300/article."},{"q":"How many blog posts do you recommend per month?","a":"For most businesses, 4-8 high-quality posts per month builds momentum. Competitive niches may require more. Quality always trumps quantity."}],"related_services":["on-page-seo","keyword-research","link-building"]},
-  {"slug":"shopify-seo","name":"Shopify SEO","meta_title":"Shopify SEO Services | Expert Shopify Store Optimization","meta_description":"Specialized Shopify SEO services: fix platform-specific issues, optimize product pages, improve speed, resolve duplicate content, and drive organic sales.","hero_title":"Shopify SEO Services","hero_description":"Unlock your Shopify store's organic potential. We address platform-specific limitations and optimize every product page for maximum search visibility and conversions.","what_is_title":"Why Shopify Needs Specialized SEO","what_is_desc":"Shopify has unique technical challenges—rigid URL structures, auto-generated duplicate content from collections, limited robots.txt control, and theme-dependent speed issues. Generic SEO approaches miss these platform-specific problems.","benefits":["Fix Shopify-specific duplicate content issues","Optimize collection and product page URLs","Improve Shopify theme speed and Core Web Vitals","Implement Product schema for rich snippets","Optimize Shopify's auto-generated sitemaps","Configure proper canonical tags across variants"],"process_steps":[{"title":"Shopify Technical Audit","desc":"We identify platform-specific issues: duplicate /collections/ URLs, paginated content, variant canonicalization, and theme bloat."},{"title":"Theme Optimization","desc":"Speed improvements through theme code optimization, lazy loading, image compression, and critical CSS extraction."},{"title":"Product & Collection SEO","desc":"Unique titles, descriptions, and schema markup for every product page, with proper canonical handling across variants."},{"title":"App & Integration Audit","desc":"We review installed Shopify apps for SEO impact—removing speed-killing scripts and recommending SEO-friendly alternatives."}],"tools_used":["Screaming Frog","Google PageSpeed Insights","Shopify Theme Inspector","Ahrefs","Google Merchant Center"],"deliverables":["Shopify-specific technical audit","Theme speed optimization","Product page optimization","Collection page SEO","Variant canonical configuration","Monthly organic revenue report"],"pricing":"Starting at $600/month","pricing_note":"Custom pricing for stores with 500+ products.","faqs":[{"q":"Can Shopify stores rank well on Google?","a":"Absolutely. With proper optimization, Shopify stores can rank just as well as any platform. The key is addressing Shopify's specific technical quirks that generic SEO misses."},{"q":"Do I need to change my Shopify theme?","a":"Usually not. We optimize your existing theme's code for speed and SEO. Theme changes are only recommended when the current theme has fundamental performance issues."}],"related_services":["ecommerce-seo","technical-seo","speed-optimization"]},
-  {"slug":"wordpress-seo","name":"WordPress SEO","meta_title":"WordPress SEO Services | Expert WordPress Optimization","meta_description":"Expert WordPress SEO: plugin configuration, theme optimization, speed improvements, security hardening, and content optimization for higher rankings.","hero_title":"WordPress SEO Services","hero_description":"Maximize your WordPress site's search potential. From plugin configuration to theme optimization, we ensure WordPress works for your rankings, not against them.","what_is_title":"Why WordPress Needs Expert SEO","what_is_desc":"WordPress powers 43% of the web, but most sites barely scratch the surface of its SEO potential. Misconfigured plugins, bloated themes, and poor hosting choices leave massive ranking opportunities on the table.","benefits":["Expert Yoast/RankMath configuration","Theme speed optimization and Core Web Vitals","Plugin audit for SEO compatibility","WordPress-specific schema implementation","Security hardening for SEO protection","Database optimization and caching setup"],"process_steps":[{"title":"WordPress Audit","desc":"Full analysis of your WordPress setup: theme performance, plugin conflicts, database health, security vulnerabilities, and SEO configuration."},{"title":"Plugin Optimization","desc":"We configure or replace SEO plugins, remove bloated scripts, and set up proper caching, CDN, and image optimization."},{"title":"Content Structure","desc":"We optimize your WordPress taxonomy, categories, tags, and permalink structure for maximum SEO benefit."},{"title":"Ongoing Maintenance","desc":"Monthly WordPress updates, security monitoring, performance checks, and SEO health reviews."}],"tools_used":["Yoast SEO","RankMath","WP Rocket","Cloudflare","Screaming Frog","Query Monitor"],"deliverables":["WordPress technical audit","Plugin optimization","Theme speed improvements","Security hardening","Content structure optimization","Monthly maintenance report"],"pricing":"Starting at $400/month","pricing_note":"One-time WordPress optimization projects available from $500.","faqs":[{"q":"Which WordPress SEO plugin do you recommend?","a":"Both Yoast SEO and RankMath are excellent. We recommend based on your specific needs—Yoast for simplicity, RankMath for advanced features. What matters most is proper configuration."}],"related_services":["technical-seo","speed-optimization","on-page-seo"]},
-  {"slug":"international-seo","name":"International SEO","meta_title":"International SEO Services | Hreflang, Multi-Language & Global Strategy","meta_description":"Expand globally with expert international SEO: hreflang implementation, multi-language strategy, ccTLD management, and market-specific keyword research.","hero_title":"International SEO Services","hero_description":"Expand your global reach with strategies tailored to every target market. From hreflang implementation to culturally adapted content, we make your brand discoverable worldwide.","what_is_title":"What Is International SEO?","what_is_desc":"International SEO optimizes your website to serve multiple countries, languages, and regions. It involves hreflang tags, content localization, ccTLD or subdomain strategy, and market-specific keyword research.","benefits":["Proper hreflang implementation for multi-language sites","Market-specific keyword research and content localization","Country targeting via ccTLD, subdomain, or subdirectory strategy","Geo-targeted link building for each market","Multi-language content strategy","International search engine optimization (Baidu, Yandex, Naver)"],"process_steps":[{"title":"Market Analysis","desc":"We analyze target markets for search behavior, competition levels, and platform preferences (Google vs Baidu vs Yandex)."},{"title":"Technical Architecture","desc":"We recommend and implement the optimal URL structure—ccTLDs, subdomains, or subdirectories—with proper hreflang configuration."},{"title":"Content Localization","desc":"Beyond translation: we adapt content for cultural context, local search intent, and market-specific keywords."},{"title":"Local Authority Building","desc":"Market-specific link building, citation development, and local directory submissions for each target country."}],"tools_used":["Ahrefs","SEMrush","Hreflang Tags Generator","Google Search Console","DeepL"],"deliverables":["International SEO strategy","Hreflang implementation","Market-specific keyword research","Content localization plan","Geo-targeted link building","Multi-market ranking report"],"pricing":"Starting at $1,000/month","pricing_note":"Pricing depends on number of target markets.","faqs":[{"q":"Should I use subdomains or subdirectories for international SEO?","a":"For most businesses, subdirectories (example.com/fr/) offer the best balance of SEO benefit and manageability. ccTLDs (example.fr) are strongest for geo-targeting but require more resources."}],"related_services":["technical-seo","seo-content-strategy","local-seo"]},
-  {"slug":"seo-audit","name":"Professional SEO Audit","meta_title":"Professional SEO Audit Service | 100+ Point Website Analysis","meta_description":"Comprehensive 100+ point SEO audit covering technical health, on-page optimization, backlink profile, content quality, and competitive analysis with actionable recommendations.","hero_title":"Professional SEO Audit","hero_description":"Get a clear picture of your website's SEO health with a 100+ checkpoint audit that reveals exactly what's holding your rankings back and how to fix it.","what_is_title":"What Does an SEO Audit Include?","what_is_desc":"Our professional SEO audit is a comprehensive analysis of your website's technical health, on-page optimization, backlink profile, content quality, and competitive positioning. It serves as the foundation for any successful SEO strategy.","benefits":["100+ technical checkpoints analyzed","On-page optimization scoring for key pages","Backlink profile health assessment","Content quality and gap analysis","Competitive benchmarking","Prioritized action plan with estimated impact"],"process_steps":[{"title":"Technical Crawl","desc":"We crawl your entire site to identify indexation issues, crawl errors, speed problems, and structural weaknesses."},{"title":"On-Page Analysis","desc":"Every key page is evaluated for title tags, meta descriptions, header structure, content quality, and keyword optimization."},{"title":"Backlink Review","desc":"Your link profile is analyzed for toxic links, anchor text distribution, referring domain quality, and competitor comparison."},{"title":"Recommendations Report","desc":"A detailed report with prioritized recommendations, estimated traffic impact, and implementation guidance."}],"tools_used":["Screaming Frog","Ahrefs","Google Search Console","PageSpeed Insights","Sitebulb","SEMrush"],"deliverables":["100+ point audit report","Technical issues spreadsheet","On-page optimization scores","Backlink health report","Competitor gap analysis","90-day action plan"],"pricing":"One-time from $300","pricing_note":"Included free with all monthly SEO packages.","faqs":[{"q":"How is your audit different from free SEO tools?","a":"Free tools scan surface-level issues. Our audit combines multiple professional tools with expert analysis to identify root causes, prioritize by impact, and provide specific implementation guidance."},{"q":"Can I implement the recommendations myself?","a":"Absolutely. Our audit reports are designed to be actionable whether you implement in-house or hire us to execute."}],"related_services":["technical-seo","on-page-seo","keyword-research"]},
-  {"slug":"keyword-research","name":"Keyword Research","meta_title":"Professional Keyword Research Service | Find High-Value Keywords","meta_description":"Data-driven keyword research service: discover high-intent, low-competition keywords that drive qualified traffic and conversions for your business.","hero_title":"Keyword Research Service","hero_description":"Discover the exact search terms your ideal customers use—then build a strategy to own them. Our keyword research goes beyond volume to uncover intent, opportunity, and revenue potential.","what_is_title":"Why Professional Keyword Research Matters","what_is_desc":"Keyword research is the foundation of every successful SEO campaign. It determines which pages you build, what content you create, and how you structure your site. Getting it wrong means months of wasted effort targeting the wrong terms.","benefits":["Intent-classified keyword opportunities","Long-tail variations with high conversion potential","Competitor keyword gap analysis","Topic cluster keyword mapping","Search volume and difficulty scoring","Revenue-potential prioritization"],"process_steps":[{"title":"Seed Discovery","desc":"We start with your products, services, and customer language to build comprehensive seed keyword lists."},{"title":"Expansion & Analysis","desc":"Using professional tools, we expand seeds into thousands of variations, filtering by volume, difficulty, and intent."},{"title":"Intent Classification","desc":"Every keyword is classified by search intent: informational, navigational, commercial, or transactional."},{"title":"Strategic Mapping","desc":"Keywords are mapped to specific pages or content types, forming the blueprint for your content strategy."}],"tools_used":["Ahrefs","SEMrush","Google Keyword Planner","AnswerThePublic","Google Trends","AlsoAsked"],"deliverables":["500+ keyword opportunities","Intent classification","Difficulty & volume analysis","Competitor keyword gap report","Content mapping spreadsheet","Quarterly keyword refresh"],"pricing":"One-time from $250","pricing_note":"Included in all monthly SEO packages.","faqs":[{"q":"How many keywords will I receive?","a":"Typically 500+ keyword opportunities organized by topic cluster, search intent, and priority. The exact number depends on your industry and scope."}],"related_services":["seo-content-strategy","on-page-seo","seo-audit"]},
-  {"slug":"gbp-optimization","name":"Google Business Profile Optimization","meta_title":"Google Business Profile Optimization | Local Maps & Pack Rankings","meta_description":"Maximize your Google Business Profile visibility with expert optimization: complete setup, regular posting, review management, and local pack ranking strategies.","hero_title":"Google Business Profile Optimization","hero_description":"Turn your Google Business Profile into a lead-generating machine. We optimize every element to boost your visibility in Maps, Local Pack, and local search results.","what_is_title":"Why GBP Optimization Is Critical","what_is_desc":"Your Google Business Profile is often the first thing potential customers see. A fully optimized GBP can drive phone calls, direction requests, and website visits—often before users even reach your website.","benefits":["Complete GBP profile optimization","Weekly Google Posts for engagement","Review generation and response management","Photo and video optimization","Q&A monitoring and optimization","Category and attribute optimization"],"process_steps":[{"title":"Profile Audit","desc":"We review your current GBP setup against best practices and competitor profiles."},{"title":"Full Optimization","desc":"Every field is optimized: business description, categories, attributes, service areas, photos, and products/services."},{"title":"Content Calendar","desc":"Weekly Google Posts with images, offers, and updates to keep your profile active and engaging."},{"title":"Review Management","desc":"We implement review generation systems and craft professional responses to every review."}],"tools_used":["Google Business Profile","BrightLocal","Whitespark","Google Search Console"],"deliverables":["GBP optimization","Weekly posting calendar","Review response templates","Photo optimization","Monthly GBP performance report","Competitor benchmarking"],"pricing":"Starting at $300/month","pricing_note":"Included in Local SEO packages.","faqs":[{"q":"How quickly will I see results from GBP optimization?","a":"Most businesses see increased impressions and actions within 2-4 weeks of optimization. Map Pack ranking improvements typically follow within 4-8 weeks."}],"related_services":["local-seo","on-page-seo","seo-audit"]},
-  {"slug":"link-building","name":"Link Building","meta_title":"Link Building Services | Earn High-Authority Backlinks","meta_description":"Professional link building services: editorial outreach, guest posting, digital PR, HARO, and content-driven link acquisition from relevant, authoritative websites.","hero_title":"Link Building Services","hero_description":"Earn the backlinks that move the needle. Our white-hat link building focuses on relevance, authority, and sustainability—no shortcuts, no risks.","what_is_title":"Why Link Building Still Matters","what_is_desc":"Backlinks remain one of Google's top three ranking factors. Quality links from authoritative, relevant websites signal trust and authority that directly translate into higher rankings and more organic traffic.","benefits":["Editorially earned links from real websites","Niche-relevant placements that drive referral traffic","Diversified anchor text for natural profiles","Scalable outreach processes","Digital PR for brand visibility","HARO and journalist outreach for authority links"],"process_steps":[{"title":"Link Gap Analysis","desc":"We identify the link types and sources your competitors have that you're missing."},{"title":"Prospect Research","desc":"Custom prospect lists of relevant publishers, bloggers, and resource pages in your niche."},{"title":"Outreach & Acquisition","desc":"Personalized outreach campaigns with value propositions tailored to each prospect."},{"title":"Quality Assurance","desc":"Every acquired link is verified for relevance, authority, and placement quality before reporting."}],"tools_used":["Ahrefs","BuzzStream","Hunter.io","HARO","Pitchbox","Majestic"],"deliverables":["Link gap analysis","Custom prospect lists","Monthly link reports","Anchor text monitoring","Referral traffic tracking","Quarterly link profile review"],"pricing":"Starting at $500/month","pricing_note":"10-25 high-quality links per month depending on plan.","faqs":[{"q":"What types of links do you build?","a":"Editorial guest posts, resource page links, HARO mentions, broken link replacements, digital PR placements, and niche-relevant directory submissions."},{"q":"Do you guarantee specific domain authority scores?","a":"We focus on relevance and quality rather than arbitrary DA thresholds. A DA 30 link from a highly relevant niche site often outperforms a DA 70 link from an unrelated source."}],"related_services":["off-page-seo","seo-content-strategy","seo-consulting"]},
-  {"slug":"seo-consulting","name":"SEO Consulting","meta_title":"SEO Consulting Services | Expert Strategy & Guidance","meta_description":"Expert SEO consulting for businesses and marketing teams: strategy development, second opinions, team training, and ongoing advisory relationships.","hero_title":"SEO Consulting","hero_description":"Get expert SEO guidance without a full-service commitment. Whether you need a strategy review, a second opinion, or ongoing advisory support, we provide clarity and direction.","what_is_title":"When Do You Need SEO Consulting?","what_is_desc":"SEO consulting is ideal when you have an in-house team that needs strategic direction, want a second opinion on your current approach, or need expert guidance on specific technical challenges.","benefits":["Strategic SEO roadmap development","Second opinions on existing strategies","In-house team mentoring and training","Technical challenge resolution","Algorithm update impact assessment","Vendor evaluation and management"],"process_steps":[{"title":"Discovery Call","desc":"We learn about your business, current SEO efforts, team capabilities, and specific challenges."},{"title":"Assessment","desc":"We review your current strategy, technical setup, content approach, and competitive position."},{"title":"Strategic Recommendations","desc":"Detailed recommendations with prioritization, resource estimates, and expected outcomes."},{"title":"Ongoing Advisory","desc":"Regular check-ins, strategy reviews, and on-demand expert guidance as your team executes."}],"tools_used":["Ahrefs","Google Search Console","Screaming Frog","Google Analytics","Looker Studio"],"deliverables":["SEO strategy document","Prioritized recommendations","Team training sessions","Monthly advisory calls","Quarterly strategy reviews","On-demand expert support"],"pricing":"Starting at $200/hour","pricing_note":"Monthly retainer options available from $800/mo.","faqs":[{"q":"Is consulting right for me or should I hire full-service SEO?","a":"Consulting is ideal if you have in-house capacity to execute but need strategic direction. Full-service is better if you need both strategy and hands-on implementation."}],"related_services":["seo-audit","seo-training","keyword-research"]},
-  {"slug":"speed-optimization","name":"Website Speed Optimization","meta_title":"Website Speed Optimization | Core Web Vitals & Page Load Performance","meta_description":"Lightning-fast websites rank higher and convert better. Expert speed optimization for Core Web Vitals, page load times, mobile performance, and user experience.","hero_title":"Website Speed Optimization","hero_description":"Speed is a ranking factor and a conversion multiplier. We optimize your Core Web Vitals and page load performance so your site loads in under 2 seconds on any device.","what_is_title":"Why Site Speed Matters for SEO","what_is_desc":"Google has confirmed site speed as a ranking factor through Core Web Vitals. Studies show that a 1-second delay in page load time reduces conversions by 7%. Fast sites rank higher, engage users longer, and convert more visitors into customers.","benefits":["Core Web Vitals optimization (LCP, INP, CLS)","Image compression and modern format conversion","Critical CSS extraction and render-blocking elimination","Server response time optimization","Lazy loading and code splitting","CDN configuration and caching strategy"],"process_steps":[{"title":"Speed Audit","desc":"We measure current performance across PageSpeed Insights, GTmetrix, and WebPageTest for both mobile and desktop."},{"title":"Quick Wins","desc":"Image optimization, browser caching, and compression are implemented first for immediate improvements."},{"title":"Deep Optimization","desc":"Critical rendering path optimization, JavaScript deferral, CSS extraction, and server-side improvements."},{"title":"Performance Monitoring","desc":"Ongoing CWV monitoring with alerts for regressions and quarterly optimization passes."}],"tools_used":["Google PageSpeed Insights","GTmetrix","WebPageTest","Chrome DevTools","Lighthouse","Cloudflare"],"deliverables":["Speed audit report","Image optimization","Caching configuration","Core Web Vitals fixes","CDN setup","Monthly performance monitoring"],"pricing":"One-time from $500","pricing_note":"Included in Technical SEO packages.","faqs":[{"q":"How fast should my website load?","a":"Aim for under 2.5 seconds for Largest Contentful Paint (LCP). Google considers LCP under 2.5s as 'good,' 2.5-4s as 'needs improvement,' and over 4s as 'poor.'"}],"related_services":["technical-seo","shopify-seo","wordpress-seo"]},
-  {"slug":"schema-markup","name":"Schema Markup Implementation","meta_title":"Schema Markup & Structured Data Implementation | Rich Snippets","meta_description":"Expert schema markup implementation: JSON-LD structured data for rich snippets, knowledge panels, and enhanced SERP features across all schema types.","hero_title":"Schema Markup Implementation","hero_description":"Stand out in search results with rich snippets. We implement structured data that helps search engines understand your content and display enhanced listings.","what_is_title":"What Is Schema Markup?","what_is_desc":"Schema markup is structured data vocabulary (JSON-LD) that helps search engines understand the meaning behind your content. It enables rich snippets like star ratings, FAQ dropdowns, how-to steps, and product pricing directly in search results.","benefits":["Rich snippet eligibility for enhanced SERP listings","FAQ, HowTo, Product, and Review schema types","LocalBusiness schema for local search features","Article and BlogPosting schema for content","Event and Course schema for educational content","BreadcrumbList for enhanced navigation display"],"process_steps":[{"title":"Schema Audit","desc":"We review existing structured data for errors, missing types, and optimization opportunities."},{"title":"Schema Strategy","desc":"We identify the most impactful schema types for your content and business model."},{"title":"JSON-LD Implementation","desc":"Clean JSON-LD code is implemented across your site, validated, and tested for rich result eligibility."},{"title":"Monitoring","desc":"We monitor rich result status in Google Search Console and iterate based on performance."}],"tools_used":["Google Rich Results Test","Schema.org","Schema Validator","Google Search Console","Screaming Frog"],"deliverables":["Schema audit report","JSON-LD implementation","Rich Results Test validation","GSC monitoring","Monthly rich snippet report","Schema updates for new content"],"pricing":"One-time from $300","pricing_note":"Included in Technical SEO packages.","faqs":[{"q":"Which schema types do I need?","a":"It depends on your content. Most sites benefit from Organization, BreadcrumbList, and FAQPage. E-commerce sites need Product schema, service businesses need LocalBusiness and Service schema, and blogs need Article schema."}],"related_services":["technical-seo","on-page-seo","aeo"]},
-  {"slug":"seo-training","name":"SEO Training & Workshops","meta_title":"SEO Training & Workshops | Learn SEO from Industry Experts","meta_description":"Comprehensive SEO training for individuals, marketing teams, and organizations. Hands-on workshops covering technical SEO, content strategy, and link building.","hero_title":"SEO Training & Workshops","hero_description":"Learn SEO from an industry practitioner, not a textbook. Our training programs give your team the skills to execute SEO confidently and independently.","what_is_title":"Why Invest in SEO Training?","what_is_desc":"SEO knowledge is a competitive advantage. Teams that understand search optimization make better content decisions, avoid costly mistakes, and can evaluate agency work more effectively. Our training turns your team into in-house SEO experts.","benefits":["Hands-on, practical training with real websites","Customized curriculum for your industry and skill level","Live workshops with Q&A and exercises","Recorded sessions for future reference","Ongoing support after training completion","Certification of completion"],"process_steps":[{"title":"Skills Assessment","desc":"We evaluate your team's current SEO knowledge and identify learning gaps."},{"title":"Custom Curriculum","desc":"Training content is tailored to your industry, tools, and specific challenges."},{"title":"Live Workshops","desc":"Interactive sessions combining theory, demonstrations, and hands-on exercises."},{"title":"Follow-Up Support","desc":"Post-training support includes recorded sessions, reference materials, and 30 days of Q&A access."}],"tools_used":["Google Search Console","Google Analytics","Ahrefs","Screaming Frog","SEMrush"],"deliverables":["Custom training curriculum","Live workshop sessions","Recorded sessions","Reference materials","Hands-on exercises","30-day post-training support"],"pricing":"From $500 per session","pricing_note":"Custom pricing for multi-day programs and ongoing training retainers.","faqs":[{"q":"Who is the training suitable for?","a":"Our training is designed for marketing teams, content writers, developers, business owners, and anyone who wants to understand and implement SEO effectively."},{"q":"Can you train remote teams?","a":"Yes. We deliver training via video conferencing with screen sharing, interactive exercises, and breakout sessions. All sessions are recorded for team members who can't attend live."}],"related_services":["seo-consulting","seo-audit","keyword-research"]},
-  {"slug":"content-writing","name":"SEO Content Writing","meta_title":"SEO Content Writing Services | Blog Posts, Landing Pages & Copywriting","meta_description":"Professional SEO content writing: blog posts, landing pages, product descriptions, and conversion-focused copywriting optimized for search engines and users.","hero_title":"SEO Content Writing","hero_description":"Words that rank and convert. Our content writers create search-optimized articles, landing pages, and copy that attract organic traffic and turn readers into customers.","what_is_title":"Why SEO Content Writing Matters","what_is_desc":"Content is the backbone of SEO. Without well-written, keyword-optimized content, even perfect technical SEO cannot deliver results. Our writers combine search optimization expertise with compelling storytelling.","benefits":["Keyword-optimized blog posts and articles","Conversion-focused landing page copy","Product descriptions for e-commerce","Content briefs based on SERP analysis","Semantic keyword integration","Reader-first writing that also satisfies algorithms"],"process_steps":[{"title":"Content Brief","desc":"Every piece starts with a detailed brief covering target keywords, search intent, competitors, word count, and content structure."},{"title":"Expert Writing","desc":"Our writers create original, well-researched content that demonstrates expertise and satisfies search intent."},{"title":"SEO Optimization","desc":"Content is optimized for target keywords, semantic variations, header structure, and internal linking."},{"title":"Quality Review","desc":"Every piece undergoes editorial review for accuracy, readability, and SEO compliance before delivery."}],"tools_used":["Surfer SEO","Clearscope","Grammarly","Hemingway","Google Trends"],"deliverables":["Keyword-optimized articles","Landing page copy","Product descriptions","Content briefs","Meta tag copy","Monthly content packages"],"pricing":"From $150/article","pricing_note":"Bulk pricing available for monthly content packages.","faqs":[{"q":"What topics can you write about?","a":"Our writers cover a wide range of industries. For highly technical topics, we work with subject matter experts to ensure accuracy and depth."}],"related_services":["seo-content-strategy","on-page-seo","keyword-research"]},
-  {"slug":"social-media-management","name":"Social Media Management","meta_title":"Social Media Management Services | Strategy, Content & Growth","meta_description":"Professional social media management: content creation, scheduling, community engagement, and growth strategies across Instagram, LinkedIn, Facebook, and TikTok.","hero_title":"Social Media Management","hero_description":"Build a social presence that amplifies your brand. We handle strategy, content creation, scheduling, and community management so you can focus on your business.","what_is_title":"Why Social Media Management Matters","what_is_desc":"Social media is a critical brand touchpoint that influences search visibility, builds trust, and drives website traffic. Consistent, strategic social media management supports your SEO and overall digital marketing goals.","benefits":["Platform-specific content strategies","Professional content creation and design","Consistent posting schedules","Community engagement and response management","Hashtag and trending topic optimization","Monthly analytics and growth reporting"],"process_steps":[{"title":"Social Audit","desc":"We analyze your current social presence, audience demographics, competitor activity, and content performance."},{"title":"Strategy Development","desc":"A custom social media strategy aligned with your brand voice, target audience, and business goals."},{"title":"Content Creation","desc":"Professional graphics, copy, and video content tailored to each platform's best practices."},{"title":"Management & Reporting","desc":"Daily community management, engagement optimization, and monthly performance reporting."}],"tools_used":["Buffer","Canva","Later","Hootsuite","Google Analytics"],"deliverables":["Social media strategy","Monthly content calendars","Professional content creation","Community management","Monthly analytics report","Quarterly strategy reviews"],"pricing":"Starting at $400/month","pricing_note":"Custom pricing for multi-platform management.","faqs":[{"q":"Which platforms do you manage?","a":"We manage Instagram, LinkedIn, Facebook, TikTok, and X (Twitter). We recommend platforms based on where your target audience is most active."}],"related_services":["seo-content-strategy","link-building","seo-consulting"]}
+  {
+    "slug": "technical-seo",
+    "name": "Technical SEO",
+    "meta_title": "Technical SEO Services | Site Audits, Core Web Vitals & Crawlability",
+    "meta_description": "Expert technical SEO services: comprehensive site audits, Core Web Vitals optimization, crawlability fixes, and site architecture improvements for higher rankings.",
+    "hero_title": "Technical SEO Services",
+    "hero_description": "Build an airtight technical foundation so search engines can discover, crawl, and rank every page on your site without friction.",
+    "what_is_title": "What Is Technical SEO?",
+    "what_is_desc": "Technical SEO addresses the infrastructure layer of your website - everything from how Googlebot crawls your pages to how quickly they load on a mobile device. Without a solid technical base, even the best content will struggle to surface in search results.",
+    "benefits": [
+      "Ensures all important pages are discoverable and indexable",
+      "Accelerates page load times and improves Core Web Vitals scores",
+      "Eliminates crawl errors, redirect chains, and orphan pages",
+      "Implements clean site architecture and XML sitemaps",
+      "Configures proper canonical tags to prevent duplicate content",
+      "Strengthens mobile responsiveness and structured data"
+    ],
+    "process_steps": [
+      {
+        "title": "Deep-Dive Technical Audit",
+        "desc": "We spider your entire domain using Screaming Frog, Sitebulb, and Google Search Console to map every crawl issue, broken link, and rendering bottleneck."
+      },
+      {
+        "title": "Prioritized Action Roadmap",
+        "desc": "Issues are scored by SEO impact and implementation difficulty so your team sees the highest-value fixes first."
+      },
+      {
+        "title": "Implementation & QA",
+        "desc": "Our engineers resolve critical issues - site speed, indexation, structured data, and Core Web Vitals - with careful staging and rollback plans."
+      },
+      {
+        "title": "Continuous Monitoring",
+        "desc": "Post-launch, we track crawl stats, index coverage, and CWV metrics weekly, alerting you to regressions before they hurt rankings."
+      }
+    ],
+    "tools_used": [
+      "Screaming Frog",
+      "Google Search Console",
+      "PageSpeed Insights",
+      "GTmetrix",
+      "Ahrefs Site Audit",
+      "Chrome DevTools",
+      "Schema Validator",
+      "Sitebulb"
+    ],
+    "deliverables": [
+      "100+ checkpoint technical audit report",
+      "Core Web Vitals optimization",
+      "Crawl error and redirect fixes",
+      "XML sitemap & robots.txt configuration",
+      "Structured data implementation",
+      "Monthly technical health dashboard"
+    ],
+    "pricing": "Starting at $500/month",
+    "pricing_note": "Included in all SEO packages. Standalone audits from $300.",
+    "faqs": [
+      {
+        "q": "How long does a full technical audit take?",
+        "a": "A thorough audit typically requires 3-5 business days depending on site size. We examine 100+ technical factors and deliver a prioritized report with clear next steps."
+      },
+      {
+        "q": "Will technical changes break my live site?",
+        "a": "We follow strict change-management protocols - staging environments, documented rollback plans, and incremental deployments - so your live site stays stable throughout."
+      },
+      {
+        "q": "How often should I repeat a technical audit?",
+        "a": "We recommend monthly health checks and a comprehensive audit every quarter. Ongoing monitoring catches regressions before they impact rankings."
+      },
+      {
+        "q": "What are Core Web Vitals?",
+        "a": "Core Web Vitals are Google's user-experience metrics: Largest Contentful Paint (loading), Interaction to Next Paint (responsiveness), and Cumulative Layout Shift (visual stability). They are a confirmed ranking signal."
+      }
+    ],
+    "related_services": [
+      "on-page-seo",
+      "speed-optimization",
+      "schema-markup"
+    ]
+  },
+  {
+    "slug": "on-page-seo",
+    "name": "On-Page SEO",
+    "meta_title": "On-Page SEO Services | Content Optimization, Meta Tags & Internal Linking",
+    "meta_description": "Professional on-page SEO: keyword-optimized content, meta tags, header hierarchy, internal linking, and image optimization to maximize every page's ranking potential.",
+    "hero_title": "On-Page SEO Optimization",
+    "hero_description": "Transform each page into a search-engine magnet with precision keyword placement, compelling meta data, and a content structure designed for both users and algorithms.",
+    "what_is_title": "What Is On-Page SEO?",
+    "what_is_desc": "On-page SEO is the practice of optimizing individual web pages so they rank higher and earn more relevant traffic. It covers everything a user or crawler can see on the page - title tags, headings, body copy, images, and internal links.",
+    "benefits": [
+      "Keyword-mapped title tags and meta descriptions that improve CTR",
+      "Logical header hierarchy (H1-H6) for semantic clarity",
+      "Strategic internal linking that distributes authority",
+      "Image optimization with descriptive alt text and modern formats",
+      "Content depth calibrated to match search intent",
+      "URL structures that are short, readable, and keyword-rich"
+    ],
+    "process_steps": [
+      {
+        "title": "Content & Keyword Audit",
+        "desc": "We map every existing page against target keywords, identify content gaps, and flag cannibalization issues."
+      },
+      {
+        "title": "On-Page Blueprint",
+        "desc": "Each page receives a custom optimization spec covering title tag, meta description, header structure, word count target, and internal link recommendations."
+      },
+      {
+        "title": "Content Enhancement",
+        "desc": "We rewrite or enrich body copy, add semantic variations, and embed multimedia elements that satisfy user intent and increase dwell time."
+      },
+      {
+        "title": "Performance Tracking",
+        "desc": "Post-optimization, we monitor ranking changes, CTR shifts, and engagement metrics to measure impact and iterate."
+      }
+    ],
+    "tools_used": [
+      "Surfer SEO",
+      "Clearscope",
+      "Google Search Console",
+      "Ahrefs",
+      "SEMrush",
+      "Yoast SEO"
+    ],
+    "deliverables": [
+      "Per-page optimization blueprint",
+      "Title tag & meta description rewrites",
+      "Header structure overhaul",
+      "Internal linking plan",
+      "Image alt text optimization",
+      "Monthly ranking & CTR report"
+    ],
+    "pricing": "Starting at $400/month",
+    "pricing_note": "Included in Growth and Enterprise plans.",
+    "faqs": [
+      {
+        "q": "How many pages can you optimize per month?",
+        "a": "Our Growth plan covers up to 25 pages/month, Enterprise is unlimited. Standalone projects are scoped individually."
+      },
+      {
+        "q": "Do you write the content or just optimize existing copy?",
+        "a": "Both. We can optimize your existing content or create new, keyword-targeted pages from scratch through our content writing add-on."
+      }
+    ],
+    "related_services": [
+      "technical-seo",
+      "seo-content-strategy",
+      "keyword-research"
+    ]
+  },
+  {
+    "slug": "off-page-seo",
+    "name": "Off-Page SEO & Link Building",
+    "meta_title": "Off-Page SEO & Link Building Services | White-Hat Authority Building",
+    "meta_description": "Ethical off-page SEO and link building: earn high-authority backlinks through outreach, guest posting, digital PR, and strategic content partnerships.",
+    "hero_title": "Off-Page SEO & Link Building",
+    "hero_description": "Earn trust signals that Google cannot ignore - high-authority backlinks, brand mentions, and digital PR placements that compound your domain authority over time.",
+    "what_is_title": "What Is Off-Page SEO?",
+    "what_is_desc": "Off-page SEO encompasses every action taken outside your own website to improve its search rankings. The most influential factor is backlinks - links from other sites that signal trust and relevance to search engines.",
+    "benefits": [
+      "Increases Domain Authority and referral traffic",
+      "Earns editorially placed links from niche-relevant sites",
+      "Builds brand visibility through digital PR and mentions",
+      "Diversifies anchor text profile for natural link signals",
+      "Creates lasting relationships with publishers and influencers",
+      "Supports E-E-A-T signals for YMYL niches"
+    ],
+    "process_steps": [
+      {
+        "title": "Link Profile Audit",
+        "desc": "We analyze your existing backlink profile for toxic links, anchor text distribution, and competitor gap opportunities."
+      },
+      {
+        "title": "Prospecting & Outreach",
+        "desc": "Custom outreach campaigns target relevant publishers, resource pages, and industry blogs with value-driven pitches."
+      },
+      {
+        "title": "Content-Led Acquisition",
+        "desc": "We create linkable assets - data studies, infographics, expert roundups - that naturally attract editorial links."
+      },
+      {
+        "title": "Monitoring & Disavow",
+        "desc": "Monthly reporting on new links acquired, referring domain growth, and proactive disavow of any harmful links."
+      }
+    ],
+    "tools_used": [
+      "Ahrefs",
+      "Majestic",
+      "BuzzStream",
+      "Hunter.io",
+      "HARO",
+      "Pitchbox"
+    ],
+    "deliverables": [
+      "Backlink audit & gap analysis",
+      "Monthly link acquisition (10-25 links)",
+      "Guest post placements",
+      "Digital PR outreach",
+      "Anchor text optimization",
+      "Monthly link report"
+    ],
+    "pricing": "Starting at $600/month",
+    "pricing_note": "Available as standalone or bundled with SEO packages.",
+    "faqs": [
+      {
+        "q": "Are the links you build safe and white-hat?",
+        "a": "Absolutely. We only pursue editorially earned links from real, relevant websites. No PBNs, no paid link schemes, no link farms."
+      },
+      {
+        "q": "How many backlinks will I get per month?",
+        "a": "Depending on your plan, expect 10-25 high-quality links per month. Quality always takes priority over quantity."
+      }
+    ],
+    "related_services": [
+      "link-building",
+      "seo-content-strategy",
+      "seo-consulting"
+    ]
+  },
+  {
+    "slug": "local-seo",
+    "name": "Local SEO",
+    "meta_title": "Local SEO Services | Google Maps, GBP Optimization & Local Rankings",
+    "meta_description": "Dominate local search with expert Local SEO: Google Business Profile optimization, local citations, review management, and geo-targeted keyword strategies.",
+    "hero_title": "Local SEO Services",
+    "hero_description": "Put your business on the map - literally. We optimize your local presence so customers in your area find you first on Google Maps and local search results.",
+    "what_is_title": "What Is Local SEO?",
+    "what_is_desc": "Local SEO focuses on optimizing your online presence to attract business from relevant local searches. This includes Google Business Profile management, local citation building, review acquisition, and geo-targeted content.",
+    "benefits": [
+      "Appear in Google's Local Pack and Maps results",
+      "Optimize Google Business Profile for maximum visibility",
+      "Build consistent NAP citations across directories",
+      "Generate and manage authentic customer reviews",
+      "Target city-specific and neighborhood keywords",
+      "Track local ranking positions across multiple locations"
+    ],
+    "process_steps": [
+      {
+        "title": "Local Audit",
+        "desc": "We assess your Google Business Profile, citation consistency, review profile, and local keyword rankings against competitors."
+      },
+      {
+        "title": "GBP Optimization",
+        "desc": "Full optimization of your Google Business Profile - categories, attributes, photos, posts, Q&A, and service areas."
+      },
+      {
+        "title": "Citation Building",
+        "desc": "We build and clean citations across 50+ authoritative local directories to strengthen NAP consistency."
+      },
+      {
+        "title": "Review Strategy",
+        "desc": "We implement systems to generate authentic reviews and craft professional responses that build trust."
+      }
+    ],
+    "tools_used": [
+      "Google Business Profile",
+      "BrightLocal",
+      "Whitespark",
+      "Moz Local",
+      "Google Search Console"
+    ],
+    "deliverables": [
+      "GBP optimization",
+      "50+ citation submissions",
+      "Review generation strategy",
+      "Local keyword tracking",
+      "Monthly local ranking report",
+      "Competitor benchmarking"
+    ],
+    "pricing": "Starting at $400/month",
+    "pricing_note": "Included in Growth and Enterprise plans.",
+    "faqs": [
+      {
+        "q": "How quickly can I rank in the Local Pack?",
+        "a": "Many businesses see Local Pack improvements within 4-8 weeks of GBP optimization and citation building. Competitive markets may take longer."
+      },
+      {
+        "q": "Do you handle multiple locations?",
+        "a": "Yes. We manage multi-location local SEO with individual GBP profiles, location-specific landing pages, and area-targeted strategies."
+      }
+    ],
+    "related_services": [
+      "gbp-optimization",
+      "on-page-seo",
+      "seo-consulting"
+    ]
+  },
+  {
+    "slug": "ecommerce-seo",
+    "name": "E-commerce SEO",
+    "meta_title": "E-commerce SEO Services | Product Page Optimization & Rich Snippets",
+    "meta_description": "Specialized e-commerce SEO for Shopify, WooCommerce & custom stores. Product page optimization, category structure, rich snippets, and conversion-focused strategies.",
+    "hero_title": "E-commerce SEO Services",
+    "hero_description": "Turn your online store into an organic revenue engine with product page optimization, category architecture, and rich snippet implementation that drives clicks and sales.",
+    "what_is_title": "What Is E-commerce SEO?",
+    "what_is_desc": "E-commerce SEO optimizes online stores so product and category pages rank higher in organic search. It covers product schema markup, faceted navigation, inventory management for SEO, and conversion rate optimization.",
+    "benefits": [
+      "Product-level keyword targeting for buyer-intent searches",
+      "Rich snippet implementation for star ratings and pricing",
+      "Category page optimization with faceted navigation best practices",
+      "Duplicate content resolution across product variants",
+      "Site speed optimization for large product catalogs",
+      "Shopping feed optimization for Google Merchant Center"
+    ],
+    "process_steps": [
+      {
+        "title": "Store Audit",
+        "desc": "We analyze product taxonomy, URL structure, duplicate content issues, and competitor product ranking strategies."
+      },
+      {
+        "title": "Product Page Optimization",
+        "desc": "Every product page gets unique titles, descriptions, schema markup, optimized images, and internal cross-links."
+      },
+      {
+        "title": "Category Architecture",
+        "desc": "We restructure category and filter pages to maximize crawl efficiency and prevent index bloat."
+      },
+      {
+        "title": "Conversion Tracking",
+        "desc": "We set up enhanced e-commerce tracking so you can measure organic revenue attribution down to the product level."
+      }
+    ],
+    "tools_used": [
+      "Screaming Frog",
+      "Google Merchant Center",
+      "Ahrefs",
+      "Google Analytics 4",
+      "Schema.org Product Markup"
+    ],
+    "deliverables": [
+      "Product page optimization",
+      "Category structure audit",
+      "Product schema implementation",
+      "Faceted navigation fixes",
+      "Shopping feed optimization",
+      "Monthly revenue attribution report"
+    ],
+    "pricing": "Starting at $800/month",
+    "pricing_note": "Custom pricing for stores with 1,000+ products.",
+    "faqs": [
+      {
+        "q": "Which e-commerce platforms do you work with?",
+        "a": "We optimize Shopify, WooCommerce, Magento, BigCommerce, and custom-built stores. Platform-specific expertise ensures we address unique technical challenges."
+      },
+      {
+        "q": "Can SEO really drive e-commerce sales?",
+        "a": "Absolutely. Organic search drives 33% of all e-commerce traffic on average, and SEO traffic converts at 2-3x the rate of social media traffic."
+      }
+    ],
+    "related_services": [
+      "shopify-seo",
+      "technical-seo",
+      "schema-markup"
+    ]
+  },
+  {
+    "slug": "geo-optimization",
+    "name": "GEO Optimization",
+    "meta_title": "GEO Optimization Services | AI Search Visibility for ChatGPT, Perplexity & Google AI",
+    "meta_description": "Generative Engine Optimization (GEO) services to get your brand cited by ChatGPT, Perplexity, Google AI Overviews and other AI-powered search engines.",
+    "hero_title": "GEO Optimization",
+    "hero_description": "The next frontier of search visibility is here. We optimize your content to be cited, referenced, and recommended by AI-powered search engines and answer platforms.",
+    "what_is_title": "What Is GEO (Generative Engine Optimization)?",
+    "what_is_desc": "GEO is the practice of optimizing your digital presence so that AI-powered search engines - ChatGPT, Perplexity, Google AI Overviews, Claude - cite and recommend your brand when users ask relevant questions.",
+    "benefits": [
+      "Appear in AI-generated answers and citations",
+      "Structure content for large language model comprehension",
+      "Build entity authority across knowledge graphs",
+      "Optimize for conversational and question-based queries",
+      "Create authoritative, citable content formats",
+      "Monitor brand mentions across AI platforms"
+    ],
+    "process_steps": [
+      {
+        "title": "AI Visibility Audit",
+        "desc": "We test your brand's current visibility across ChatGPT, Perplexity, Google AI Overviews, and other LLM-powered platforms."
+      },
+      {
+        "title": "Content Restructuring",
+        "desc": "We restructure your content with clear entity definitions, cited statistics, FAQ blocks, and authoritative source references."
+      },
+      {
+        "title": "Entity & Authority Building",
+        "desc": "We strengthen your brand's entity signals through structured data, Wikipedia-style content, and authoritative backlinks."
+      },
+      {
+        "title": "AI Monitoring",
+        "desc": "Ongoing tracking of how AI platforms reference your brand, with iterative content updates to maintain and improve citations."
+      }
+    ],
+    "tools_used": [
+      "ChatGPT",
+      "Perplexity",
+      "Google AI Overviews",
+      "Ahrefs",
+      "Schema.org",
+      "Knowledge Graph API"
+    ],
+    "deliverables": [
+      "AI visibility audit report",
+      "Content restructuring plan",
+      "Entity optimization",
+      "FAQ & Q&A content creation",
+      "Monthly AI citation tracking",
+      "Structured data for LLM comprehension"
+    ],
+    "pricing": "Starting at $700/month",
+    "pricing_note": "Available as standalone or bundled with SEO packages.",
+    "faqs": [
+      {
+        "q": "Is GEO different from traditional SEO?",
+        "a": "GEO complements traditional SEO. While SEO targets search engine result pages, GEO specifically targets AI-generated answers. The content principles overlap but the optimization tactics differ."
+      },
+      {
+        "q": "Can you guarantee my brand appears in ChatGPT answers?",
+        "a": "No one can guarantee AI citations, as LLMs constantly evolve. However, our structured approach significantly increases the probability of being cited by building the signals these models rely on."
+      }
+    ],
+    "related_services": [
+      "aeo",
+      "seo-content-strategy",
+      "schema-markup"
+    ]
+  },
+  {
+    "slug": "aeo",
+    "name": "AEO - Answer Engine Optimization",
+    "meta_title": "AEO Services | Featured Snippets, Voice Search & Answer Engine Optimization",
+    "meta_description": "Answer Engine Optimization (AEO) services: get your content featured in Google's answer boxes, featured snippets, voice search results, and AI-powered answers.",
+    "hero_title": "Answer Engine Optimization",
+    "hero_description": "Position your content as THE answer. AEO focuses on winning featured snippets, People Also Ask boxes, voice search results, and AI answer citations.",
+    "what_is_title": "What Is AEO?",
+    "what_is_desc": "Answer Engine Optimization (AEO) is the practice of structuring your content to directly answer user questions, making it the preferred source for featured snippets, voice assistants, and AI-generated responses.",
+    "benefits": [
+      "Win Google's Featured Snippet (Position Zero)",
+      "Appear in People Also Ask (PAA) boxes",
+      "Optimize for voice search on Alexa, Siri, and Google Assistant",
+      "Structure content for AI answer citations",
+      "Build topical authority through comprehensive Q&A content",
+      "Increase organic CTR through enhanced SERP features"
+    ],
+    "process_steps": [
+      {
+        "title": "Question Research",
+        "desc": "We identify the exact questions your audience asks using PAA data, autocomplete suggestions, and conversational query analysis."
+      },
+      {
+        "title": "Answer Content Creation",
+        "desc": "We create concise, authoritative answers structured with schema markup, tables, and lists that search engines prefer for snippets."
+      },
+      {
+        "title": "Schema Implementation",
+        "desc": "FAQPage, HowTo, and Q&A schema markup is implemented to signal answer-ready content to search engines."
+      },
+      {
+        "title": "Snippet Monitoring",
+        "desc": "We track featured snippet wins, PAA appearances, and voice search triggers with monthly optimization cycles."
+      }
+    ],
+    "tools_used": [
+      "Ahrefs Questions",
+      "AlsoAsked",
+      "AnswerThePublic",
+      "Google Search Console",
+      "Schema Validator"
+    ],
+    "deliverables": [
+      "Question opportunity analysis",
+      "FAQ content creation",
+      "Schema markup implementation",
+      "Featured snippet optimization",
+      "Voice search readiness audit",
+      "Monthly snippet tracking report"
+    ],
+    "pricing": "Starting at $500/month",
+    "pricing_note": "Best combined with GEO optimization for comprehensive AI search coverage.",
+    "faqs": [
+      {
+        "q": "How does AEO differ from GEO?",
+        "a": "AEO focuses on traditional answer features like featured snippets and voice search, while GEO targets AI-generated answers in platforms like ChatGPT and Perplexity. Together, they cover the full answer-engine landscape."
+      },
+      {
+        "q": "How long until I see featured snippet results?",
+        "a": "Snippet optimization can show results within 2-6 weeks for lower-competition queries. Highly competitive snippets may take 2-3 months of sustained optimization."
+      }
+    ],
+    "related_services": [
+      "geo-optimization",
+      "on-page-seo",
+      "seo-content-strategy"
+    ]
+  },
+  {
+    "slug": "seo-content-strategy",
+    "name": "SEO Content Strategy",
+    "meta_title": "SEO Content Strategy Services | Topic Clusters, Content Calendars & Authority Building",
+    "meta_description": "Data-driven SEO content strategy: topic cluster planning, content calendars, keyword mapping, pillar page creation, and topical authority building for sustainable organic growth.",
+    "hero_title": "SEO Content Strategy",
+    "hero_description": "Build topical authority that compounds month over month. Our content strategies turn your website into a comprehensive resource that both users and search engines trust.",
+    "what_is_title": "What Is SEO Content Strategy?",
+    "what_is_desc": "SEO content strategy is a systematic approach to planning, creating, and optimizing content that targets specific search queries, builds topical authority, and drives organic traffic growth over time.",
+    "benefits": [
+      "Topic cluster architecture for topical authority",
+      "Keyword-mapped content calendars",
+      "Pillar page and supporting content frameworks",
+      "Content gap analysis vs competitors",
+      "Search intent alignment for every page",
+      "Internal linking strategy for authority distribution"
+    ],
+    "process_steps": [
+      {
+        "title": "Content Audit",
+        "desc": "We analyze your existing content library for gaps, cannibalization, thin pages, and optimization opportunities."
+      },
+      {
+        "title": "Topic Cluster Planning",
+        "desc": "We map your content into pillar-cluster architectures that build comprehensive topical authority around your core services."
+      },
+      {
+        "title": "Content Calendar",
+        "desc": "A 6-12 month editorial calendar with keyword targets, content types, word counts, and publishing cadence."
+      },
+      {
+        "title": "Content Creation & Optimization",
+        "desc": "Our writers create expert-level content that satisfies search intent, incorporates semantic keywords, and engages readers."
+      }
+    ],
+    "tools_used": [
+      "Surfer SEO",
+      "Clearscope",
+      "Ahrefs Content Explorer",
+      "MarketMuse",
+      "Google Trends",
+      "BuzzSumo"
+    ],
+    "deliverables": [
+      "Content audit report",
+      "Topic cluster map",
+      "6-month content calendar",
+      "Pillar page briefs",
+      "Monthly content performance report",
+      "Internal linking blueprint"
+    ],
+    "pricing": "Starting at $600/month",
+    "pricing_note": "Content writing available as add-on from $150/article.",
+    "faqs": [
+      {
+        "q": "Do you write the content or just plan it?",
+        "a": "We do both. Our strategy service includes planning, keyword mapping, and content briefs. Content writing is available as an add-on at $150-300/article."
+      },
+      {
+        "q": "How many blog posts do you recommend per month?",
+        "a": "For most businesses, 4-8 high-quality posts per month builds momentum. Competitive niches may require more. Quality always trumps quantity."
+      }
+    ],
+    "related_services": [
+      "on-page-seo",
+      "keyword-research",
+      "link-building"
+    ]
+  },
+  {
+    "slug": "shopify-seo",
+    "name": "Shopify SEO",
+    "meta_title": "Shopify SEO Services | Expert Shopify Store Optimization",
+    "meta_description": "Specialized Shopify SEO services: fix platform-specific issues, optimize product pages, improve speed, resolve duplicate content, and drive organic sales.",
+    "hero_title": "Shopify SEO Services",
+    "hero_description": "Unlock your Shopify store's organic potential. We address platform-specific limitations and optimize every product page for maximum search visibility and conversions.",
+    "what_is_title": "Why Shopify Needs Specialized SEO",
+    "what_is_desc": "Shopify has unique technical challenges - rigid URL structures, auto-generated duplicate content from collections, limited robots.txt control, and theme-dependent speed issues. Generic SEO approaches miss these platform-specific problems.",
+    "benefits": [
+      "Fix Shopify-specific duplicate content issues",
+      "Optimize collection and product page URLs",
+      "Improve Shopify theme speed and Core Web Vitals",
+      "Implement Product schema for rich snippets",
+      "Optimize Shopify's auto-generated sitemaps",
+      "Configure proper canonical tags across variants"
+    ],
+    "process_steps": [
+      {
+        "title": "Shopify Technical Audit",
+        "desc": "We identify platform-specific issues: duplicate /collections/ URLs, paginated content, variant canonicalization, and theme bloat."
+      },
+      {
+        "title": "Theme Optimization",
+        "desc": "Speed improvements through theme code optimization, lazy loading, image compression, and critical CSS extraction."
+      },
+      {
+        "title": "Product & Collection SEO",
+        "desc": "Unique titles, descriptions, and schema markup for every product page, with proper canonical handling across variants."
+      },
+      {
+        "title": "App & Integration Audit",
+        "desc": "We review installed Shopify apps for SEO impact - removing speed-killing scripts and recommending SEO-friendly alternatives."
+      }
+    ],
+    "tools_used": [
+      "Screaming Frog",
+      "Google PageSpeed Insights",
+      "Shopify Theme Inspector",
+      "Ahrefs",
+      "Google Merchant Center"
+    ],
+    "deliverables": [
+      "Shopify-specific technical audit",
+      "Theme speed optimization",
+      "Product page optimization",
+      "Collection page SEO",
+      "Variant canonical configuration",
+      "Monthly organic revenue report"
+    ],
+    "pricing": "Starting at $600/month",
+    "pricing_note": "Custom pricing for stores with 500+ products.",
+    "faqs": [
+      {
+        "q": "Can Shopify stores rank well on Google?",
+        "a": "Absolutely. With proper optimization, Shopify stores can rank just as well as any platform. The key is addressing Shopify's specific technical quirks that generic SEO misses."
+      },
+      {
+        "q": "Do I need to change my Shopify theme?",
+        "a": "Usually not. We optimize your existing theme's code for speed and SEO. Theme changes are only recommended when the current theme has fundamental performance issues."
+      }
+    ],
+    "related_services": [
+      "ecommerce-seo",
+      "technical-seo",
+      "speed-optimization"
+    ]
+  },
+  {
+    "slug": "wordpress-seo",
+    "name": "WordPress SEO",
+    "meta_title": "WordPress SEO Services | Expert WordPress Optimization",
+    "meta_description": "Expert WordPress SEO: plugin configuration, theme optimization, speed improvements, security hardening, and content optimization for higher rankings.",
+    "hero_title": "WordPress SEO Services",
+    "hero_description": "Maximize your WordPress site's search potential. From plugin configuration to theme optimization, we ensure WordPress works for your rankings, not against them.",
+    "what_is_title": "Why WordPress Needs Expert SEO",
+    "what_is_desc": "WordPress powers 43% of the web, but most sites barely scratch the surface of its SEO potential. Misconfigured plugins, bloated themes, and poor hosting choices leave massive ranking opportunities on the table.",
+    "benefits": [
+      "Expert Yoast/RankMath configuration",
+      "Theme speed optimization and Core Web Vitals",
+      "Plugin audit for SEO compatibility",
+      "WordPress-specific schema implementation",
+      "Security hardening for SEO protection",
+      "Database optimization and caching setup"
+    ],
+    "process_steps": [
+      {
+        "title": "WordPress Audit",
+        "desc": "Full analysis of your WordPress setup: theme performance, plugin conflicts, database health, security vulnerabilities, and SEO configuration."
+      },
+      {
+        "title": "Plugin Optimization",
+        "desc": "We configure or replace SEO plugins, remove bloated scripts, and set up proper caching, CDN, and image optimization."
+      },
+      {
+        "title": "Content Structure",
+        "desc": "We optimize your WordPress taxonomy, categories, tags, and permalink structure for maximum SEO benefit."
+      },
+      {
+        "title": "Ongoing Maintenance",
+        "desc": "Monthly WordPress updates, security monitoring, performance checks, and SEO health reviews."
+      }
+    ],
+    "tools_used": [
+      "Yoast SEO",
+      "RankMath",
+      "WP Rocket",
+      "Cloudflare",
+      "Screaming Frog",
+      "Query Monitor"
+    ],
+    "deliverables": [
+      "WordPress technical audit",
+      "Plugin optimization",
+      "Theme speed improvements",
+      "Security hardening",
+      "Content structure optimization",
+      "Monthly maintenance report"
+    ],
+    "pricing": "Starting at $400/month",
+    "pricing_note": "One-time WordPress optimization projects available from $500.",
+    "faqs": [
+      {
+        "q": "Which WordPress SEO plugin do you recommend?",
+        "a": "Both Yoast SEO and RankMath are excellent. We recommend based on your specific needs - Yoast for simplicity, RankMath for advanced features. What matters most is proper configuration."
+      }
+    ],
+    "related_services": [
+      "technical-seo",
+      "speed-optimization",
+      "on-page-seo"
+    ]
+  },
+  {
+    "slug": "international-seo",
+    "name": "International SEO",
+    "meta_title": "International SEO Services | Hreflang, Multi-Language & Global Strategy",
+    "meta_description": "Expand globally with expert international SEO: hreflang implementation, multi-language strategy, ccTLD management, and market-specific keyword research.",
+    "hero_title": "International SEO Services",
+    "hero_description": "Expand your global reach with strategies tailored to every target market. From hreflang implementation to culturally adapted content, we make your brand discoverable worldwide.",
+    "what_is_title": "What Is International SEO?",
+    "what_is_desc": "International SEO optimizes your website to serve multiple countries, languages, and regions. It involves hreflang tags, content localization, ccTLD or subdomain strategy, and market-specific keyword research.",
+    "benefits": [
+      "Proper hreflang implementation for multi-language sites",
+      "Market-specific keyword research and content localization",
+      "Country targeting via ccTLD, subdomain, or subdirectory strategy",
+      "Geo-targeted link building for each market",
+      "Multi-language content strategy",
+      "International search engine optimization (Baidu, Yandex, Naver)"
+    ],
+    "process_steps": [
+      {
+        "title": "Market Analysis",
+        "desc": "We analyze target markets for search behavior, competition levels, and platform preferences (Google vs Baidu vs Yandex)."
+      },
+      {
+        "title": "Technical Architecture",
+        "desc": "We recommend and implement the optimal URL structure - ccTLDs, subdomains, or subdirectories - with proper hreflang configuration."
+      },
+      {
+        "title": "Content Localization",
+        "desc": "Beyond translation: we adapt content for cultural context, local search intent, and market-specific keywords."
+      },
+      {
+        "title": "Local Authority Building",
+        "desc": "Market-specific link building, citation development, and local directory submissions for each target country."
+      }
+    ],
+    "tools_used": [
+      "Ahrefs",
+      "SEMrush",
+      "Hreflang Tags Generator",
+      "Google Search Console",
+      "DeepL"
+    ],
+    "deliverables": [
+      "International SEO strategy",
+      "Hreflang implementation",
+      "Market-specific keyword research",
+      "Content localization plan",
+      "Geo-targeted link building",
+      "Multi-market ranking report"
+    ],
+    "pricing": "Starting at $1,000/month",
+    "pricing_note": "Pricing depends on number of target markets.",
+    "faqs": [
+      {
+        "q": "Should I use subdomains or subdirectories for international SEO?",
+        "a": "For most businesses, subdirectories (example.com/fr/) offer the best balance of SEO benefit and manageability. ccTLDs (example.fr) are strongest for geo-targeting but require more resources."
+      }
+    ],
+    "related_services": [
+      "technical-seo",
+      "seo-content-strategy",
+      "local-seo"
+    ]
+  },
+  {
+    "slug": "seo-audit",
+    "name": "Professional SEO Audit",
+    "meta_title": "Professional SEO Audit Service | 100+ Point Website Analysis",
+    "meta_description": "Comprehensive 100+ point SEO audit covering technical health, on-page optimization, backlink profile, content quality, and competitive analysis with actionable recommendations.",
+    "hero_title": "Professional SEO Audit",
+    "hero_description": "Get a clear picture of your website's SEO health with a 100+ checkpoint audit that reveals exactly what's holding your rankings back and how to fix it.",
+    "what_is_title": "What Does an SEO Audit Include?",
+    "what_is_desc": "Our professional SEO audit is a comprehensive analysis of your website's technical health, on-page optimization, backlink profile, content quality, and competitive positioning. It serves as the foundation for any successful SEO strategy.",
+    "benefits": [
+      "100+ technical checkpoints analyzed",
+      "On-page optimization scoring for key pages",
+      "Backlink profile health assessment",
+      "Content quality and gap analysis",
+      "Competitive benchmarking",
+      "Prioritized action plan with estimated impact"
+    ],
+    "process_steps": [
+      {
+        "title": "Technical Crawl",
+        "desc": "We crawl your entire site to identify indexation issues, crawl errors, speed problems, and structural weaknesses."
+      },
+      {
+        "title": "On-Page Analysis",
+        "desc": "Every key page is evaluated for title tags, meta descriptions, header structure, content quality, and keyword optimization."
+      },
+      {
+        "title": "Backlink Review",
+        "desc": "Your link profile is analyzed for toxic links, anchor text distribution, referring domain quality, and competitor comparison."
+      },
+      {
+        "title": "Recommendations Report",
+        "desc": "A detailed report with prioritized recommendations, estimated traffic impact, and implementation guidance."
+      }
+    ],
+    "tools_used": [
+      "Screaming Frog",
+      "Ahrefs",
+      "Google Search Console",
+      "PageSpeed Insights",
+      "Sitebulb",
+      "SEMrush"
+    ],
+    "deliverables": [
+      "100+ point audit report",
+      "Technical issues spreadsheet",
+      "On-page optimization scores",
+      "Backlink health report",
+      "Competitor gap analysis",
+      "90-day action plan"
+    ],
+    "pricing": "One-time from $300",
+    "pricing_note": "Included free with all monthly SEO packages.",
+    "faqs": [
+      {
+        "q": "How is your audit different from free SEO tools?",
+        "a": "Free tools scan surface-level issues. Our audit combines multiple professional tools with expert analysis to identify root causes, prioritize by impact, and provide specific implementation guidance."
+      },
+      {
+        "q": "Can I implement the recommendations myself?",
+        "a": "Absolutely. Our audit reports are designed to be actionable whether you implement in-house or hire us to execute."
+      }
+    ],
+    "related_services": [
+      "technical-seo",
+      "on-page-seo",
+      "keyword-research"
+    ]
+  },
+  {
+    "slug": "keyword-research",
+    "name": "Keyword Research",
+    "meta_title": "Professional Keyword Research Service | Find High-Value Keywords",
+    "meta_description": "Data-driven keyword research service: discover high-intent, low-competition keywords that drive qualified traffic and conversions for your business.",
+    "hero_title": "Keyword Research Service",
+    "hero_description": "Discover the exact search terms your ideal customers use - then build a strategy to own them. Our keyword research goes beyond volume to uncover intent, opportunity, and revenue potential.",
+    "what_is_title": "Why Professional Keyword Research Matters",
+    "what_is_desc": "Keyword research is the foundation of every successful SEO campaign. It determines which pages you build, what content you create, and how you structure your site. Getting it wrong means months of wasted effort targeting the wrong terms.",
+    "benefits": [
+      "Intent-classified keyword opportunities",
+      "Long-tail variations with high conversion potential",
+      "Competitor keyword gap analysis",
+      "Topic cluster keyword mapping",
+      "Search volume and difficulty scoring",
+      "Revenue-potential prioritization"
+    ],
+    "process_steps": [
+      {
+        "title": "Seed Discovery",
+        "desc": "We start with your products, services, and customer language to build comprehensive seed keyword lists."
+      },
+      {
+        "title": "Expansion & Analysis",
+        "desc": "Using professional tools, we expand seeds into thousands of variations, filtering by volume, difficulty, and intent."
+      },
+      {
+        "title": "Intent Classification",
+        "desc": "Every keyword is classified by search intent: informational, navigational, commercial, or transactional."
+      },
+      {
+        "title": "Strategic Mapping",
+        "desc": "Keywords are mapped to specific pages or content types, forming the blueprint for your content strategy."
+      }
+    ],
+    "tools_used": [
+      "Ahrefs",
+      "SEMrush",
+      "Google Keyword Planner",
+      "AnswerThePublic",
+      "Google Trends",
+      "AlsoAsked"
+    ],
+    "deliverables": [
+      "500+ keyword opportunities",
+      "Intent classification",
+      "Difficulty & volume analysis",
+      "Competitor keyword gap report",
+      "Content mapping spreadsheet",
+      "Quarterly keyword refresh"
+    ],
+    "pricing": "One-time from $250",
+    "pricing_note": "Included in all monthly SEO packages.",
+    "faqs": [
+      {
+        "q": "How many keywords will I receive?",
+        "a": "Typically 500+ keyword opportunities organized by topic cluster, search intent, and priority. The exact number depends on your industry and scope."
+      }
+    ],
+    "related_services": [
+      "seo-content-strategy",
+      "on-page-seo",
+      "seo-audit"
+    ]
+  },
+  {
+    "slug": "gbp-optimization",
+    "name": "Google Business Profile Optimization",
+    "meta_title": "Google Business Profile Optimization | Local Maps & Pack Rankings",
+    "meta_description": "Maximize your Google Business Profile visibility with expert optimization: complete setup, regular posting, review management, and local pack ranking strategies.",
+    "hero_title": "Google Business Profile Optimization",
+    "hero_description": "Turn your Google Business Profile into a lead-generating machine. We optimize every element to boost your visibility in Maps, Local Pack, and local search results.",
+    "what_is_title": "Why GBP Optimization Is Critical",
+    "what_is_desc": "Your Google Business Profile is often the first thing potential customers see. A fully optimized GBP can drive phone calls, direction requests, and website visits - often before users even reach your website.",
+    "benefits": [
+      "Complete GBP profile optimization",
+      "Weekly Google Posts for engagement",
+      "Review generation and response management",
+      "Photo and video optimization",
+      "Q&A monitoring and optimization",
+      "Category and attribute optimization"
+    ],
+    "process_steps": [
+      {
+        "title": "Profile Audit",
+        "desc": "We review your current GBP setup against best practices and competitor profiles."
+      },
+      {
+        "title": "Full Optimization",
+        "desc": "Every field is optimized: business description, categories, attributes, service areas, photos, and products/services."
+      },
+      {
+        "title": "Content Calendar",
+        "desc": "Weekly Google Posts with images, offers, and updates to keep your profile active and engaging."
+      },
+      {
+        "title": "Review Management",
+        "desc": "We implement review generation systems and craft professional responses to every review."
+      }
+    ],
+    "tools_used": [
+      "Google Business Profile",
+      "BrightLocal",
+      "Whitespark",
+      "Google Search Console"
+    ],
+    "deliverables": [
+      "GBP optimization",
+      "Weekly posting calendar",
+      "Review response templates",
+      "Photo optimization",
+      "Monthly GBP performance report",
+      "Competitor benchmarking"
+    ],
+    "pricing": "Starting at $300/month",
+    "pricing_note": "Included in Local SEO packages.",
+    "faqs": [
+      {
+        "q": "How quickly will I see results from GBP optimization?",
+        "a": "Most businesses see increased impressions and actions within 2-4 weeks of optimization. Map Pack ranking improvements typically follow within 4-8 weeks."
+      }
+    ],
+    "related_services": [
+      "local-seo",
+      "on-page-seo",
+      "seo-audit"
+    ]
+  },
+  {
+    "slug": "link-building",
+    "name": "Link Building",
+    "meta_title": "Link Building Services | Earn High-Authority Backlinks",
+    "meta_description": "Professional link building services: editorial outreach, guest posting, digital PR, HARO, and content-driven link acquisition from relevant, authoritative websites.",
+    "hero_title": "Link Building Services",
+    "hero_description": "Earn the backlinks that move the needle. Our white-hat link building focuses on relevance, authority, and sustainability - no shortcuts, no risks.",
+    "what_is_title": "Why Link Building Still Matters",
+    "what_is_desc": "Backlinks remain one of Google's top three ranking factors. Quality links from authoritative, relevant websites signal trust and authority that directly translate into higher rankings and more organic traffic.",
+    "benefits": [
+      "Editorially earned links from real websites",
+      "Niche-relevant placements that drive referral traffic",
+      "Diversified anchor text for natural profiles",
+      "Scalable outreach processes",
+      "Digital PR for brand visibility",
+      "HARO and journalist outreach for authority links"
+    ],
+    "process_steps": [
+      {
+        "title": "Link Gap Analysis",
+        "desc": "We identify the link types and sources your competitors have that you're missing."
+      },
+      {
+        "title": "Prospect Research",
+        "desc": "Custom prospect lists of relevant publishers, bloggers, and resource pages in your niche."
+      },
+      {
+        "title": "Outreach & Acquisition",
+        "desc": "Personalized outreach campaigns with value propositions tailored to each prospect."
+      },
+      {
+        "title": "Quality Assurance",
+        "desc": "Every acquired link is verified for relevance, authority, and placement quality before reporting."
+      }
+    ],
+    "tools_used": [
+      "Ahrefs",
+      "BuzzStream",
+      "Hunter.io",
+      "HARO",
+      "Pitchbox",
+      "Majestic"
+    ],
+    "deliverables": [
+      "Link gap analysis",
+      "Custom prospect lists",
+      "Monthly link reports",
+      "Anchor text monitoring",
+      "Referral traffic tracking",
+      "Quarterly link profile review"
+    ],
+    "pricing": "Starting at $500/month",
+    "pricing_note": "10-25 high-quality links per month depending on plan.",
+    "faqs": [
+      {
+        "q": "What types of links do you build?",
+        "a": "Editorial guest posts, resource page links, HARO mentions, broken link replacements, digital PR placements, and niche-relevant directory submissions."
+      },
+      {
+        "q": "Do you guarantee specific domain authority scores?",
+        "a": "We focus on relevance and quality rather than arbitrary DA thresholds. A DA 30 link from a highly relevant niche site often outperforms a DA 70 link from an unrelated source."
+      }
+    ],
+    "related_services": [
+      "off-page-seo",
+      "seo-content-strategy",
+      "seo-consulting"
+    ]
+  },
+  {
+    "slug": "seo-consulting",
+    "name": "SEO Consulting",
+    "meta_title": "SEO Consulting Services | Expert Strategy & Guidance",
+    "meta_description": "Expert SEO consulting for businesses and marketing teams: strategy development, second opinions, team training, and ongoing advisory relationships.",
+    "hero_title": "SEO Consulting",
+    "hero_description": "Get expert SEO guidance without a full-service commitment. Whether you need a strategy review, a second opinion, or ongoing advisory support, we provide clarity and direction.",
+    "what_is_title": "When Do You Need SEO Consulting?",
+    "what_is_desc": "SEO consulting is ideal when you have an in-house team that needs strategic direction, want a second opinion on your current approach, or need expert guidance on specific technical challenges.",
+    "benefits": [
+      "Strategic SEO roadmap development",
+      "Second opinions on existing strategies",
+      "In-house team mentoring and training",
+      "Technical challenge resolution",
+      "Algorithm update impact assessment",
+      "Vendor evaluation and management"
+    ],
+    "process_steps": [
+      {
+        "title": "Discovery Call",
+        "desc": "We learn about your business, current SEO efforts, team capabilities, and specific challenges."
+      },
+      {
+        "title": "Assessment",
+        "desc": "We review your current strategy, technical setup, content approach, and competitive position."
+      },
+      {
+        "title": "Strategic Recommendations",
+        "desc": "Detailed recommendations with prioritization, resource estimates, and expected outcomes."
+      },
+      {
+        "title": "Ongoing Advisory",
+        "desc": "Regular check-ins, strategy reviews, and on-demand expert guidance as your team executes."
+      }
+    ],
+    "tools_used": [
+      "Ahrefs",
+      "Google Search Console",
+      "Screaming Frog",
+      "Google Analytics",
+      "Looker Studio"
+    ],
+    "deliverables": [
+      "SEO strategy document",
+      "Prioritized recommendations",
+      "Team training sessions",
+      "Monthly advisory calls",
+      "Quarterly strategy reviews",
+      "On-demand expert support"
+    ],
+    "pricing": "Starting at $200/hour",
+    "pricing_note": "Monthly retainer options available from $800/mo.",
+    "faqs": [
+      {
+        "q": "Is consulting right for me or should I hire full-service SEO?",
+        "a": "Consulting is ideal if you have in-house capacity to execute but need strategic direction. Full-service is better if you need both strategy and hands-on implementation."
+      }
+    ],
+    "related_services": [
+      "seo-audit",
+      "seo-training",
+      "keyword-research"
+    ]
+  },
+  {
+    "slug": "speed-optimization",
+    "name": "Website Speed Optimization",
+    "meta_title": "Website Speed Optimization | Core Web Vitals & Page Load Performance",
+    "meta_description": "Lightning-fast websites rank higher and convert better. Expert speed optimization for Core Web Vitals, page load times, mobile performance, and user experience.",
+    "hero_title": "Website Speed Optimization",
+    "hero_description": "Speed is a ranking factor and a conversion multiplier. We optimize your Core Web Vitals and page load performance so your site loads in under 2 seconds on any device.",
+    "what_is_title": "Why Site Speed Matters for SEO",
+    "what_is_desc": "Google has confirmed site speed as a ranking factor through Core Web Vitals. Studies show that a 1-second delay in page load time reduces conversions by 7%. Fast sites rank higher, engage users longer, and convert more visitors into customers.",
+    "benefits": [
+      "Core Web Vitals optimization (LCP, INP, CLS)",
+      "Image compression and modern format conversion",
+      "Critical CSS extraction and render-blocking elimination",
+      "Server response time optimization",
+      "Lazy loading and code splitting",
+      "CDN configuration and caching strategy"
+    ],
+    "process_steps": [
+      {
+        "title": "Speed Audit",
+        "desc": "We measure current performance across PageSpeed Insights, GTmetrix, and WebPageTest for both mobile and desktop."
+      },
+      {
+        "title": "Quick Wins",
+        "desc": "Image optimization, browser caching, and compression are implemented first for immediate improvements."
+      },
+      {
+        "title": "Deep Optimization",
+        "desc": "Critical rendering path optimization, JavaScript deferral, CSS extraction, and server-side improvements."
+      },
+      {
+        "title": "Performance Monitoring",
+        "desc": "Ongoing CWV monitoring with alerts for regressions and quarterly optimization passes."
+      }
+    ],
+    "tools_used": [
+      "Google PageSpeed Insights",
+      "GTmetrix",
+      "WebPageTest",
+      "Chrome DevTools",
+      "Lighthouse",
+      "Cloudflare"
+    ],
+    "deliverables": [
+      "Speed audit report",
+      "Image optimization",
+      "Caching configuration",
+      "Core Web Vitals fixes",
+      "CDN setup",
+      "Monthly performance monitoring"
+    ],
+    "pricing": "One-time from $500",
+    "pricing_note": "Included in Technical SEO packages.",
+    "faqs": [
+      {
+        "q": "How fast should my website load?",
+        "a": "Aim for under 2.5 seconds for Largest Contentful Paint (LCP). Google considers LCP under 2.5s as 'good,' 2.5-4s as 'needs improvement,' and over 4s as 'poor.'"
+      }
+    ],
+    "related_services": [
+      "technical-seo",
+      "shopify-seo",
+      "wordpress-seo"
+    ]
+  },
+  {
+    "slug": "schema-markup",
+    "name": "Schema Markup Implementation",
+    "meta_title": "Schema Markup & Structured Data Implementation | Rich Snippets",
+    "meta_description": "Expert schema markup implementation: JSON-LD structured data for rich snippets, knowledge panels, and enhanced SERP features across all schema types.",
+    "hero_title": "Schema Markup Implementation",
+    "hero_description": "Stand out in search results with rich snippets. We implement structured data that helps search engines understand your content and display enhanced listings.",
+    "what_is_title": "What Is Schema Markup?",
+    "what_is_desc": "Schema markup is structured data vocabulary (JSON-LD) that helps search engines understand the meaning behind your content. It enables rich snippets like star ratings, FAQ dropdowns, how-to steps, and product pricing directly in search results.",
+    "benefits": [
+      "Rich snippet eligibility for enhanced SERP listings",
+      "FAQ, HowTo, Product, and Review schema types",
+      "LocalBusiness schema for local search features",
+      "Article and BlogPosting schema for content",
+      "Event and Course schema for educational content",
+      "BreadcrumbList for enhanced navigation display"
+    ],
+    "process_steps": [
+      {
+        "title": "Schema Audit",
+        "desc": "We review existing structured data for errors, missing types, and optimization opportunities."
+      },
+      {
+        "title": "Schema Strategy",
+        "desc": "We identify the most impactful schema types for your content and business model."
+      },
+      {
+        "title": "JSON-LD Implementation",
+        "desc": "Clean JSON-LD code is implemented across your site, validated, and tested for rich result eligibility."
+      },
+      {
+        "title": "Monitoring",
+        "desc": "We monitor rich result status in Google Search Console and iterate based on performance."
+      }
+    ],
+    "tools_used": [
+      "Google Rich Results Test",
+      "Schema.org",
+      "Schema Validator",
+      "Google Search Console",
+      "Screaming Frog"
+    ],
+    "deliverables": [
+      "Schema audit report",
+      "JSON-LD implementation",
+      "Rich Results Test validation",
+      "GSC monitoring",
+      "Monthly rich snippet report",
+      "Schema updates for new content"
+    ],
+    "pricing": "One-time from $300",
+    "pricing_note": "Included in Technical SEO packages.",
+    "faqs": [
+      {
+        "q": "Which schema types do I need?",
+        "a": "It depends on your content. Most sites benefit from Organization, BreadcrumbList, and FAQPage. E-commerce sites need Product schema, service businesses need LocalBusiness and Service schema, and blogs need Article schema."
+      }
+    ],
+    "related_services": [
+      "technical-seo",
+      "on-page-seo",
+      "aeo"
+    ]
+  },
+  {
+    "slug": "seo-training",
+    "name": "SEO Training & Workshops",
+    "meta_title": "SEO Training & Workshops | Learn SEO from Industry Experts",
+    "meta_description": "Comprehensive SEO training for individuals, marketing teams, and organizations. Hands-on workshops covering technical SEO, content strategy, and link building.",
+    "hero_title": "SEO Training & Workshops",
+    "hero_description": "Learn SEO from an industry practitioner, not a textbook. Our training programs give your team the skills to execute SEO confidently and independently.",
+    "what_is_title": "Why Invest in SEO Training?",
+    "what_is_desc": "SEO knowledge is a competitive advantage. Teams that understand search optimization make better content decisions, avoid costly mistakes, and can evaluate agency work more effectively. Our training turns your team into in-house SEO experts.",
+    "benefits": [
+      "Hands-on, practical training with real websites",
+      "Customized curriculum for your industry and skill level",
+      "Live workshops with Q&A and exercises",
+      "Recorded sessions for future reference",
+      "Ongoing support after training completion",
+      "Certification of completion"
+    ],
+    "process_steps": [
+      {
+        "title": "Skills Assessment",
+        "desc": "We evaluate your team's current SEO knowledge and identify learning gaps."
+      },
+      {
+        "title": "Custom Curriculum",
+        "desc": "Training content is tailored to your industry, tools, and specific challenges."
+      },
+      {
+        "title": "Live Workshops",
+        "desc": "Interactive sessions combining theory, demonstrations, and hands-on exercises."
+      },
+      {
+        "title": "Follow-Up Support",
+        "desc": "Post-training support includes recorded sessions, reference materials, and 30 days of Q&A access."
+      }
+    ],
+    "tools_used": [
+      "Google Search Console",
+      "Google Analytics",
+      "Ahrefs",
+      "Screaming Frog",
+      "SEMrush"
+    ],
+    "deliverables": [
+      "Custom training curriculum",
+      "Live workshop sessions",
+      "Recorded sessions",
+      "Reference materials",
+      "Hands-on exercises",
+      "30-day post-training support"
+    ],
+    "pricing": "From $500 per session",
+    "pricing_note": "Custom pricing for multi-day programs and ongoing training retainers.",
+    "faqs": [
+      {
+        "q": "Who is the training suitable for?",
+        "a": "Our training is designed for marketing teams, content writers, developers, business owners, and anyone who wants to understand and implement SEO effectively."
+      },
+      {
+        "q": "Can you train remote teams?",
+        "a": "Yes. We deliver training via video conferencing with screen sharing, interactive exercises, and breakout sessions. All sessions are recorded for team members who can't attend live."
+      }
+    ],
+    "related_services": [
+      "seo-consulting",
+      "seo-audit",
+      "keyword-research"
+    ]
+  },
+  {
+    "slug": "content-writing",
+    "name": "SEO Content Writing",
+    "meta_title": "SEO Content Writing Services | Blog Posts, Landing Pages & Copywriting",
+    "meta_description": "Professional SEO content writing: blog posts, landing pages, product descriptions, and conversion-focused copywriting optimized for search engines and users.",
+    "hero_title": "SEO Content Writing",
+    "hero_description": "Words that rank and convert. Our content writers create search-optimized articles, landing pages, and copy that attract organic traffic and turn readers into customers.",
+    "what_is_title": "Why SEO Content Writing Matters",
+    "what_is_desc": "Content is the backbone of SEO. Without well-written, keyword-optimized content, even perfect technical SEO cannot deliver results. Our writers combine search optimization expertise with compelling storytelling.",
+    "benefits": [
+      "Keyword-optimized blog posts and articles",
+      "Conversion-focused landing page copy",
+      "Product descriptions for e-commerce",
+      "Content briefs based on SERP analysis",
+      "Semantic keyword integration",
+      "Reader-first writing that also satisfies algorithms"
+    ],
+    "process_steps": [
+      {
+        "title": "Content Brief",
+        "desc": "Every piece starts with a detailed brief covering target keywords, search intent, competitors, word count, and content structure."
+      },
+      {
+        "title": "Expert Writing",
+        "desc": "Our writers create original, well-researched content that demonstrates expertise and satisfies search intent."
+      },
+      {
+        "title": "SEO Optimization",
+        "desc": "Content is optimized for target keywords, semantic variations, header structure, and internal linking."
+      },
+      {
+        "title": "Quality Review",
+        "desc": "Every piece undergoes editorial review for accuracy, readability, and SEO compliance before delivery."
+      }
+    ],
+    "tools_used": [
+      "Surfer SEO",
+      "Clearscope",
+      "Grammarly",
+      "Hemingway",
+      "Google Trends"
+    ],
+    "deliverables": [
+      "Keyword-optimized articles",
+      "Landing page copy",
+      "Product descriptions",
+      "Content briefs",
+      "Meta tag copy",
+      "Monthly content packages"
+    ],
+    "pricing": "From $150/article",
+    "pricing_note": "Bulk pricing available for monthly content packages.",
+    "faqs": [
+      {
+        "q": "What topics can you write about?",
+        "a": "Our writers cover a wide range of industries. For highly technical topics, we work with subject matter experts to ensure accuracy and depth."
+      }
+    ],
+    "related_services": [
+      "seo-content-strategy",
+      "on-page-seo",
+      "keyword-research"
+    ]
+  },
+  {
+    "slug": "social-media-management",
+    "name": "Social Media Management",
+    "meta_title": "Social Media Management Services | Strategy, Content & Growth",
+    "meta_description": "Professional social media management: content creation, scheduling, community engagement, and growth strategies across Instagram, LinkedIn, Facebook, and TikTok.",
+    "hero_title": "Social Media Management",
+    "hero_description": "Build a social presence that amplifies your brand. We handle strategy, content creation, scheduling, and community management so you can focus on your business.",
+    "what_is_title": "Why Social Media Management Matters",
+    "what_is_desc": "Social media is a critical brand touchpoint that influences search visibility, builds trust, and drives website traffic. Consistent, strategic social media management supports your SEO and overall digital marketing goals.",
+    "benefits": [
+      "Platform-specific content strategies",
+      "Professional content creation and design",
+      "Consistent posting schedules",
+      "Community engagement and response management",
+      "Hashtag and trending topic optimization",
+      "Monthly analytics and growth reporting"
+    ],
+    "process_steps": [
+      {
+        "title": "Social Audit",
+        "desc": "We analyze your current social presence, audience demographics, competitor activity, and content performance."
+      },
+      {
+        "title": "Strategy Development",
+        "desc": "A custom social media strategy aligned with your brand voice, target audience, and business goals."
+      },
+      {
+        "title": "Content Creation",
+        "desc": "Professional graphics, copy, and video content tailored to each platform's best practices."
+      },
+      {
+        "title": "Management & Reporting",
+        "desc": "Daily community management, engagement optimization, and monthly performance reporting."
+      }
+    ],
+    "tools_used": [
+      "Buffer",
+      "Canva",
+      "Later",
+      "Hootsuite",
+      "Google Analytics"
+    ],
+    "deliverables": [
+      "Social media strategy",
+      "Monthly content calendars",
+      "Professional content creation",
+      "Community management",
+      "Monthly analytics report",
+      "Quarterly strategy reviews"
+    ],
+    "pricing": "Starting at $400/month",
+    "pricing_note": "Custom pricing for multi-platform management.",
+    "faqs": [
+      {
+        "q": "Which platforms do you manage?",
+        "a": "We manage Instagram, LinkedIn, Facebook, TikTok, and X (Twitter). We recommend platforms based on where your target audience is most active."
+      }
+    ],
+    "related_services": [
+      "seo-content-strategy",
+      "link-building",
+      "seo-consulting"
+    ]
+  }
 ]

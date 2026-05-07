@@ -1,0 +1,42 @@
+{% extends "_base.html" %}
+{% block breadcrumbs %}{% include "_partials/breadcrumbs.html" %}{% endblock %}
+{% block content %}
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-20 pointer-events-none"></div>
+  <div class="absolute inset-0 bg-gradient-radial pointer-events-none"></div>
+  <div class="container-tight relative pt-12 pb-16 md:pt-20 md:pb-24">
+    <p class="text-xs uppercase tracking-widest text-accent">{{ item.region|replace('-', ' ')|title }} - Country hub</p>
+    <h1 class="mt-2 font-display text-4xl md:text-6xl font-bold tracking-tight max-w-4xl">SEO services in {{ item.name }}.</h1>
+    <p class="mt-5 max-w-2xl text-lg text-foreground/85">{{ item.shortDescription }}</p>
+    <div class="mt-7 flex flex-wrap items-center gap-3">
+      <a href="{{ url('/free-seo-audit.html') }}" class="rounded-xl bg-gradient-brand px-5 py-3 font-medium shadow-glow-primary">Free Audit in {{ item.name }}</a>
+      <a href="{{ url('/contact.html') }}" class="rounded-xl border border-border/60 px-5 py-3 font-medium hover:bg-white/5">Talk to a strategist</a>
+    </div>
+  </div>
+</section>
+
+<section class="container-tight pb-16">
+  <h2 class="font-display text-2xl font-bold">Cities in {{ item.name }}</h2>
+  <p class="mt-2 text-foreground/70">Each city page covers local SEO, services available, and local FAQ.</p>
+  <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+    {% for city in country_cities %}
+    <a href="{{ url('/' ~ city.slug ~ '.html') }}" class="glass p-4 hover:border-accent/40 transition"><p class="font-display font-semibold text-sm">{{ city.name }}</p><p class="mt-1 text-xs text-foreground/60">{{ city.primaryKeyword }}</p></a>
+    {% endfor %}
+    {% if country_cities|length == 0 %}
+    <p class="text-sm text-foreground/70">We serve clients across {{ item.name }} - <a href="{{ url('/contact.html') }}" class="text-accent">contact us</a> to discuss your specific city or region.</p>
+    {% endif %}
+  </div>
+
+  <h2 class="font-display text-2xl font-bold mt-14">Services available in {{ item.name }}</h2>
+  <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+    {% for s in services %}
+    <a href="{{ url('/services/' ~ s.slug ~ '.html') }}" class="glass p-4 hover:border-accent/40 transition"><p class="font-display font-semibold text-sm">{{ s.name }}</p></a>
+    {% endfor %}
+  </div>
+
+  <h2 class="font-display text-2xl font-bold mt-14">Pricing in {{ item.name }} ({{ item.currency }})</h2>
+  <p class="mt-2 text-foreground/75 text-sm">Retainers from {{ item.currency }} 1,750/mo. Custom packages available for combined SEO + PPC engagements.</p>
+</section>
+
+{% include "_partials/cta_block.html" %}
+{% endblock %}

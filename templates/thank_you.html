@@ -1,0 +1,32 @@
+{% extends "_base.html" %}
+{% block content %}
+<section class="section-padding">
+  <div class="container-tight max-w-2xl text-center">
+    <p class="text-xs uppercase tracking-widest text-accent">Message received</p>
+    <h1 class="mt-2 font-display text-4xl md:text-5xl font-bold tracking-tight">Thanks. We will reply within one business day.</h1>
+    <p class="mt-4 text-foreground/80">Your message just landed in our inbox. {{ brand.founderName }} or a senior strategist will respond personally within 24 hours, usually faster.</p>
+    <p class="mt-2 text-foreground/70 text-sm">Need an answer right now? Ping us on WhatsApp - we usually reply in minutes.</p>
+    <div class="mt-8 flex items-center justify-center gap-3 flex-wrap">
+      <a href="https://wa.me/{{ brand.whatsapp }}?text=Hi%20{{ brand.shortName|urlencode }}%2C%20I%20just%20submitted%20a%20form%20on%20your%20site%20and%20wanted%20to%20follow%20up." target="_blank" rel="noopener" class="h-11 px-6 inline-flex items-center justify-center rounded-xl bg-[#25D366] font-medium hover:scale-105 transition">Chat on WhatsApp</a>
+      <a href="{{ url('/') }}" class="h-11 px-6 inline-flex items-center justify-center rounded-xl border border-border/60 hover:bg-white/5">Back to home</a>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-3 gap-4 text-left">
+      <a href="{{ url('/services.html') }}" class="glass p-4 rounded-xl hover:border-primary/40 transition">
+        <p class="text-xs uppercase tracking-widest text-accent">While you wait</p>
+        <p class="mt-1 font-display font-semibold">Browse all SEO services</p>
+        <p class="mt-1 text-sm text-foreground/70">28 programs across SEO, AI search, and content.</p>
+      </a>
+      <a href="{{ url('/blog.html') }}" class="glass p-4 rounded-xl hover:border-primary/40 transition">
+        <p class="text-xs uppercase tracking-widest text-accent">Read first</p>
+        <p class="mt-1 font-display font-semibold">Our growth playbook</p>
+        <p class="mt-1 text-sm text-foreground/70">Tactics we use to put clients on Page 1.</p>
+      </a>
+      <a href="{{ url('/free-seo-resources.html') }}" class="glass p-4 rounded-xl hover:border-primary/40 transition">
+        <p class="text-xs uppercase tracking-widest text-accent">Free downloads</p>
+        <p class="mt-1 font-display font-semibold">Templates, audits, checklists</p>
+        <p class="mt-1 text-sm text-foreground/70">All free, no signup required for most.</p>
+      </a>
+    </div>
+  </div>
+</section>
+{% endblock %}

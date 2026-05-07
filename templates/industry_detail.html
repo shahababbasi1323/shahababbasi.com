@@ -1,0 +1,81 @@
+{% extends "_base.html" %}
+{% block breadcrumbs %}{% include "_partials/breadcrumbs.html" %}{% endblock %}
+{% block content %}
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-20 pointer-events-none"></div>
+  <div class="absolute inset-0 bg-gradient-radial pointer-events-none"></div>
+  <div class="container-tight relative pt-12 pb-16 md:pt-20 md:pb-24">
+    <p class="text-xs uppercase tracking-widest text-accent">{{ item.parentCategory|replace('-', ' ')|title }}</p>
+    <h1 class="mt-2 font-display text-4xl md:text-6xl font-bold tracking-tight max-w-4xl">SEO and digital marketing for {{ item.name|lower }}.</h1>
+    <p class="mt-5 max-w-2xl text-lg text-foreground/85">{{ item.shortDescription }}</p>
+    <div class="mt-7 flex flex-wrap items-center gap-3">
+      <a href="{{ url('/free-seo-audit.html') }}" class="rounded-xl bg-gradient-brand px-5 py-3 font-medium shadow-glow-primary">Free Audit for {{ item.name }}</a>
+      <a href="{{ url('/contact.html') }}" class="rounded-xl border border-border/60 px-5 py-3 font-medium hover:bg-white/5">Talk to a strategist</a>
+    </div>
+  </div>
+</section>
+
+<div class="container-tight pb-16 grid lg:grid-cols-[220px,1fr] gap-10">
+  <aside class="hidden lg:block sticky top-24 self-start text-sm">
+    <p class="text-xs uppercase tracking-widest text-accent mb-3">On this page</p>
+    <ul class="space-y-2 border-l border-border/60">
+      <li><a href="#why-niche" class="block px-3 py-1 hover:text-accent border-l-2 border-transparent">Why niche SEO</a></li>
+      <li><a href="#services" class="block px-3 py-1 hover:text-accent border-l-2 border-transparent">Services we run</a></li>
+      <li><a href="#playbook" class="block px-3 py-1 hover:text-accent border-l-2 border-transparent">Playbook</a></li>
+      <li><a href="#locations" class="block px-3 py-1 hover:text-accent border-l-2 border-transparent">Locations</a></li>
+      <li><a href="#tools" class="block px-3 py-1 hover:text-accent border-l-2 border-transparent">Related tools</a></li>
+      <li><a href="#faq" class="block px-3 py-1 hover:text-accent border-l-2 border-transparent">FAQ</a></li>
+    </ul>
+  </aside>
+  <div>
+    <section id="why-niche" class="scroll-mt-20 mb-14">
+      <h2 class="font-display text-3xl font-bold">Why {{ item.name|lower }} need niche-trained SEO</h2>
+      <p class="mt-4 text-foreground/85">Generic agencies treat every site the same. We do not. {{ item.name }} have unique buyer behavior, compliance constraints, and conversion patterns. Our playbook is tuned to {{ item.lsiKeywords|join(', ') }}, with content, schema, and link tactics that actually move pipeline for your category.</p>
+      <p class="mt-3 text-foreground/85">We work with {{ item.name|lower }} across {{ countries|length }}+ countries, from local single-location operators to multi-region category leaders.</p>
+    </section>
+
+    <section id="services" class="scroll-mt-20 mb-14">
+      <h2 class="font-display text-3xl font-bold">Services we run for {{ item.name|lower }}</h2>
+      <div class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        {% for s in related_services %}
+        <a href="{{ url('/services/' ~ s.slug ~ '.html') }}" class="glass p-4 hover:border-accent/40 transition"><p class="font-display font-semibold text-sm">{{ s.name }}</p><p class="mt-1 text-xs text-foreground/70">{{ s.shortDescription }}</p></a>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section id="playbook" class="scroll-mt-20 mb-14">
+      <h2 class="font-display text-3xl font-bold">Our {{ item.name|lower }} growth playbook</h2>
+      <ol class="mt-4 space-y-3 text-foreground/85 text-sm">
+        <li><strong>1. Web design and dev for conversion:</strong> Map the journey, fix friction, hard-wire booking and lead intents.</li>
+        <li><strong>2. On-page SEO:</strong> Service pages and category architecture engineered to match {{ item.name|lower }} buyer queries.</li>
+        <li><strong>3. Technical SEO:</strong> Crawl, indexation, structured data, and schema for trust.</li>
+        <li><strong>4. PPC and paid social:</strong> Budget allocation that complements organic, not duplicates it.</li>
+        <li><strong>5. Local SEO and Map Pack:</strong> GBP and citations tuned to your service areas.</li>
+        <li><strong>6. AI / GEO / AEO optimization:</strong> Get cited inside ChatGPT, Perplexity, and Google AI Overviews answers.</li>
+        <li><strong>7. Reporting:</strong> Pipeline-tied dashboards, no vanity numbers.</li>
+      </ol>
+    </section>
+
+    <section id="locations" class="scroll-mt-20 mb-14">
+      <h2 class="font-display text-3xl font-bold">Locations</h2>
+      <div class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        {% for c in related_locations %}
+        <a href="{{ url('/locations/' ~ c.slug ~ '.html') }}" class="glass p-4 hover:border-accent/40 transition"><p class="font-display font-semibold text-sm">{{ c.name }}</p></a>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section id="tools" class="scroll-mt-20 mb-14">
+      <h2 class="font-display text-3xl font-bold">Related tools</h2>
+      <div class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        {% for tl in related_tools %}
+        <a href="{{ url('/tools/' ~ tl.slug ~ '.html') }}" class="glass p-4 hover:border-accent/40 transition"><p class="font-display font-semibold text-sm">{{ tl.name }}</p></a>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+</div>
+
+{% include "_partials/faq_block.html" %}
+{% include "_partials/cta_block.html" %}
+{% endblock %}

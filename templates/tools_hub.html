@@ -1,0 +1,30 @@
+{% extends "_base.html" %}
+{% block breadcrumbs %}{% include "_partials/breadcrumbs.html" %}{% endblock %}
+{% block content %}
+<section class="section-padding">
+  <div class="container-tight">
+    <div class="max-w-3xl">
+      <p class="text-xs uppercase tracking-widest text-accent">Free Tools</p>
+      <h1 class="mt-2 font-display text-4xl md:text-6xl font-bold tracking-tight">{{ tools|length }}+ free SEO and marketing tools.</h1>
+      <p class="mt-4 text-foreground/80">Audit your SEO, generate meta tags, calculate ad ROI, validate schema, and more. Everything runs in your browser. No signup. No fluff.</p>
+    </div>
+    {% for cat in toolCategories %}
+    {% set cat_tools = tools|selectattr('parentCategory', 'equalto', cat.slug)|list %}
+    {% if cat_tools|length > 0 %}
+    <div class="mt-14">
+      <h2 class="font-display text-2xl font-bold">{{ cat.name }}</h2>
+      <div class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        {% for tl in cat_tools %}
+        <a href="{{ url('/tools/' ~ tl.slug ~ '.html') }}" class="glass p-4 hover:border-accent/40 transition">
+          <p class="font-display font-semibold text-sm">{{ tl.name }}</p>
+          <p class="mt-1 text-xs text-foreground/60">{{ tl.shortDescription }}</p>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>
+{% include "_partials/cta_block.html" %}
+{% endblock %}

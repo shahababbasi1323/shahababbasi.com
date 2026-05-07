@@ -1,0 +1,181 @@
+{# Sticky transparent-to-solid navbar with 4 mega menus, mobile drawer.
+   Variables: brand, nav (dict with mega menu data), lang_dir, lang_links, t (i18n strings)#}
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-primary text-white px-3 py-2 rounded">Skip to main content</a>
+<header id="site-header" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+  <div class="border-b border-border/40 bg-background/70 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60">
+    <div class="container-tight flex h-16 items-center justify-between gap-4">
+      <a href="{{ url('/') }}" class="flex items-center gap-2 group" aria-label="{{ brand.shortName }} home">
+        <span class="inline-flex h-9 w-9 rounded-xl bg-gradient-brand items-center justify-center font-display font-bold text-white shadow-glow-primary">SA</span>
+        <span class="font-display font-bold text-lg tracking-tight">{{ brand.shortName }}</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-1" aria-label="Primary">
+        <div class="relative group">
+          <button class="nav-trigger inline-flex items-center gap-1 px-3 py-2 rounded-lg text-sm hover:bg-white/5" aria-haspopup="true" aria-expanded="false">
+            {{ t.nav_services|default('Services') }}
+            <svg class="icon-rotate w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.24 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+          </button>
+          <div class="mega absolute left-0 top-full mt-2 w-[640px] grid-cols-2 gap-6 p-6 glass-strong rounded-2xl shadow-2xl">
+            <div>
+              <p class="text-xs uppercase tracking-widest text-accent mb-3">{{ t.col_seo|default('SEO Services') }}</p>
+              <ul class="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+                {% for s in services %}
+                <li><a href="{{ url('/services/' ~ s.slug ~ '.html') }}" class="text-foreground/90 hover:text-accent transition-colors">{{ s.name }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+            <div>
+              <p class="text-xs uppercase tracking-widest text-accent mb-3">{{ t.col_ppc|default('PPC and Paid') }}</p>
+              <ul class="grid gap-y-2 text-sm">
+                {% for s in ppcServices %}
+                <li><a href="{{ url('/ppc/' ~ s.slug ~ '.html') }}" class="text-foreground/90 hover:text-accent transition-colors">{{ s.name }}</a></li>
+                {% endfor %}
+                <li class="pt-2 border-t border-border/40 mt-2"><a href="{{ url('/services.html') }}" class="text-accent inline-flex items-center gap-1">{{ t.see_all|default('See all services') }} →</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <button class="nav-trigger inline-flex items-center gap-1 px-3 py-2 rounded-lg text-sm hover:bg-white/5">
+            {{ t.nav_industries|default('Industries') }}
+            <svg class="icon-rotate w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.24 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+          </button>
+          <div class="mega absolute left-0 top-full mt-2 w-[820px] grid-cols-5 gap-6 p-6 glass-strong rounded-2xl shadow-2xl">
+            {% for cat in industryCategories %}
+            <div>
+              <p class="text-xs uppercase tracking-widest text-accent mb-3">{{ cat.name }}</p>
+              <ul class="space-y-1.5 text-sm">
+                {% for ind in industries if ind.parentCategory == cat.slug %}
+                {% if loop.index <= 6 %}
+                <li><a href="{{ url('/industries/' ~ ind.slug ~ '.html') }}" class="text-foreground/85 hover:text-accent transition-colors">{{ ind.name }}</a></li>
+                {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+            {% endfor %}
+            <div class="col-span-5 pt-3 border-t border-border/40 flex items-center justify-between">
+              <a href="{{ url('/industries.html') }}" class="text-accent text-sm inline-flex items-center gap-1">{{ t.all_industries|default('Browse all industries') }} →</a>
+              <span class="text-xs text-muted-foreground">{{ industries|length }} verticals served</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <button class="nav-trigger inline-flex items-center gap-1 px-3 py-2 rounded-lg text-sm hover:bg-white/5">
+            {{ t.nav_locations|default('Locations') }}
+            <svg class="icon-rotate w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.24 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+          </button>
+          <div class="mega absolute left-0 top-full mt-2 w-[920px] grid-cols-4 gap-6 p-6 glass-strong rounded-2xl shadow-2xl">
+            {% for region in regions %}
+            <div>
+              <p class="text-xs uppercase tracking-widest text-accent mb-3">{{ region.name }}</p>
+              <ul class="space-y-1.5 text-sm">
+                {% for c in countries if c.region == region.slug %}
+                {% if loop.index <= 6 %}
+                <li><a href="{{ url('/locations/' ~ c.slug ~ '.html') }}" class="text-foreground/85 hover:text-accent transition-colors">{{ c.name }}</a></li>
+                {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+            {% endfor %}
+            <div class="col-span-4 pt-3 border-t border-border/40 flex items-center justify-between">
+              <a href="{{ url('/locations.html') }}" class="text-accent text-sm inline-flex items-center gap-1">{{ t.all_locations|default('All locations') }} →</a>
+              <span class="text-xs text-muted-foreground">{{ countries|length }} countries served</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <button class="nav-trigger inline-flex items-center gap-1 px-3 py-2 rounded-lg text-sm hover:bg-white/5">
+            {{ t.nav_tools|default('Free Tools') }}
+            <svg class="icon-rotate w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.24 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+          </button>
+          <div class="mega absolute right-0 top-full mt-2 w-[760px] grid-cols-3 gap-6 p-6 glass-strong rounded-2xl shadow-2xl">
+            {% for cat in toolCategories %}
+            <div>
+              <p class="text-xs uppercase tracking-widest text-accent mb-3">{{ cat.name }}</p>
+              <ul class="space-y-1.5 text-sm">
+                {% for tl in tools if tl.parentCategory == cat.slug %}
+                {% if loop.index <= 5 %}
+                <li><a href="{{ url('/tools/' ~ tl.slug ~ '.html') }}" class="text-foreground/85 hover:text-accent transition-colors">{{ tl.name }}</a></li>
+                {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+            {% endfor %}
+            <div class="col-span-3 pt-3 border-t border-border/40 flex items-center justify-between">
+              <a href="{{ url('/tools.html') }}" class="text-accent text-sm inline-flex items-center gap-1">{{ t.all_tools|default('Browse all tools') }} →</a>
+              <span class="text-xs text-muted-foreground">{{ tools|length }}+ free tools</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="{{ url('/blog.html') }}" class="px-3 py-2 rounded-lg text-sm hover:bg-white/5">{{ t.nav_blog|default('Blog') }}</a>
+        <a href="{{ url('/pricing.html') }}" class="px-3 py-2 rounded-lg text-sm hover:bg-white/5">{{ t.nav_pricing|default('Pricing') }}</a>
+        <a href="{{ url('/about.html') }}" class="px-3 py-2 rounded-lg text-sm hover:bg-white/5">{{ t.nav_about|default('About') }}</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-2">
+        <details class="relative">
+          <summary class="inline-flex items-center gap-1 px-3 py-2 rounded-lg text-sm hover:bg-white/5">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 0v20M2 12h20"/></svg>
+            {{ page.lang|default('en')|upper }}
+            <svg class="w-3 h-3" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.24 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"/></svg>
+          </summary>
+          <ul class="absolute right-0 mt-2 w-56 p-2 glass-strong rounded-xl shadow-2xl text-sm grid grid-cols-2 gap-1 z-30">
+            {% for l in languages %}
+            <li><a href="{{ alternates.get(l.code, '/') if alternates else '/' }}" hreflang="{{ l.code }}" class="block px-2 py-1 rounded hover:bg-white/10">{{ l.nativeName }}</a></li>
+            {% endfor %}
+          </ul>
+        </details>
+        <a href="{{ url('/free-seo-audit.html') }}" class="inline-flex items-center gap-2 rounded-xl bg-gradient-brand px-4 py-2 font-medium text-sm shadow-glow-primary hover:scale-[1.02] transition">
+          {{ t.cta_audit|default('Free Audit') }}
+        </a>
+      </div>
+
+      <button id="mobile-toggle" class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg hover:bg-white/5" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-drawer" class="lg:hidden hidden border-b border-border/40 bg-background/95 backdrop-blur-xl">
+    <div class="container-tight py-4 grid gap-2 text-sm">
+      <details class="rounded-lg border border-border/50">
+        <summary class="px-3 py-2 flex items-center justify-between"><span>{{ t.nav_services|default('Services') }}</span><svg class="icon-rotate w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.24 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg></summary>
+        <ul class="px-4 pb-3 grid grid-cols-2 gap-y-1.5">
+          {% for s in services %}<li><a class="hover:text-accent" href="{{ url('/services/' ~ s.slug ~ '.html') }}">{{ s.name }}</a></li>{% endfor %}
+          {% for s in ppcServices %}<li><a class="hover:text-accent" href="{{ url('/ppc/' ~ s.slug ~ '.html') }}">{{ s.name }}</a></li>{% endfor %}
+        </ul>
+      </details>
+      <details class="rounded-lg border border-border/50">
+        <summary class="px-3 py-2 flex items-center justify-between"><span>{{ t.nav_industries|default('Industries') }}</span><svg class="icon-rotate w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.24 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg></summary>
+        <ul class="px-4 pb-3 grid grid-cols-2 gap-y-1.5">
+          {% for i in industries %}{% if loop.index <= 24 %}<li><a class="hover:text-accent" href="{{ url('/industries/' ~ i.slug ~ '.html') }}">{{ i.name }}</a></li>{% endif %}{% endfor %}
+          <li class="col-span-2 pt-1 border-t border-border/40 mt-1"><a class="text-accent" href="{{ url('/industries.html') }}">{{ t.all_industries|default('All industries') }} →</a></li>
+        </ul>
+      </details>
+      <details class="rounded-lg border border-border/50">
+        <summary class="px-3 py-2 flex items-center justify-between"><span>{{ t.nav_locations|default('Locations') }}</span><svg class="icon-rotate w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.24 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg></summary>
+        <ul class="px-4 pb-3 grid grid-cols-2 gap-y-1.5">
+          {% for c in countries %}{% if loop.index <= 24 %}<li><a class="hover:text-accent" href="{{ url('/locations/' ~ c.slug ~ '.html') }}">{{ c.name }}</a></li>{% endif %}{% endfor %}
+          <li class="col-span-2 pt-1 border-t border-border/40 mt-1"><a class="text-accent" href="{{ url('/locations.html') }}">{{ t.all_locations|default('All countries') }} →</a></li>
+        </ul>
+      </details>
+      <details class="rounded-lg border border-border/50">
+        <summary class="px-3 py-2 flex items-center justify-between"><span>{{ t.nav_tools|default('Free Tools') }}</span><svg class="icon-rotate w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.24 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg></summary>
+        <ul class="px-4 pb-3 grid grid-cols-2 gap-y-1.5">
+          {% for tl in tools %}{% if loop.index <= 24 %}<li><a class="hover:text-accent" href="{{ url('/tools/' ~ tl.slug ~ '.html') }}">{{ tl.name }}</a></li>{% endif %}{% endfor %}
+          <li class="col-span-2 pt-1 border-t border-border/40 mt-1"><a class="text-accent" href="{{ url('/tools.html') }}">{{ t.all_tools|default('All tools') }} →</a></li>
+        </ul>
+      </details>
+      <a class="px-3 py-2 rounded-lg hover:bg-white/5" href="{{ url('/blog.html') }}">{{ t.nav_blog|default('Blog') }}</a>
+      <a class="px-3 py-2 rounded-lg hover:bg-white/5" href="{{ url('/pricing.html') }}">{{ t.nav_pricing|default('Pricing') }}</a>
+      <a class="px-3 py-2 rounded-lg hover:bg-white/5" href="{{ url('/about.html') }}">{{ t.nav_about|default('About') }}</a>
+      <a class="px-3 py-2 rounded-lg hover:bg-white/5" href="{{ url('/contact.html') }}">{{ t.nav_contact|default('Contact') }}</a>
+      <a href="{{ url('/free-seo-audit.html') }}" class="mt-2 inline-flex items-center justify-center rounded-xl bg-gradient-brand px-4 py-2 font-medium shadow-glow-primary">{{ t.cta_audit|default('Claim Free Audit') }}</a>
+    </div>
+  </div>
+</header>
+<div aria-hidden="true" class="h-16"></div>

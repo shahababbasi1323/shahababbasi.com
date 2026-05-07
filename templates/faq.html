@@ -1,0 +1,13 @@
+{% extends "_base.html" %}
+{% block breadcrumbs %}{% include "_partials/breadcrumbs.html" %}{% endblock %}
+{% block content %}
+<section class="section-padding">
+  <div class="container-tight max-w-3xl">
+    <p class="text-xs uppercase tracking-widest text-accent">FAQ</p>
+    <h1 class="mt-2 font-display text-4xl md:text-5xl font-bold tracking-tight">Answers to the questions buyers ask most.</h1>
+    <p class="mt-4 text-foreground/80">If your question is not here, drop us a note. We reply within one business day.</p>
+  </div>
+</section>
+{% include "_partials/faq_block.html" %}
+{% include "_partials/cta_block.html" %}
+{% endblock %}

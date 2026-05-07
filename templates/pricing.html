@@ -1,0 +1,64 @@
+{% extends "_base.html" %}
+{% block breadcrumbs %}{% include "_partials/breadcrumbs.html" %}{% endblock %}
+{% block content %}
+<section class="section-padding">
+  <div class="container-tight">
+    <div class="max-w-2xl">
+      <p class="text-xs uppercase tracking-widest text-accent">Pricing</p>
+      <h1 class="mt-2 font-display text-4xl md:text-5xl font-bold tracking-tight">Pricing that pays for itself in 90 days.</h1>
+      <p class="mt-4 text-foreground/80">Three transparent tiers. Custom retainers available. {{ brand.promise }}.</p>
+    </div>
+    <div class="mt-12 grid md:grid-cols-3 gap-5">
+      <div class="glass p-7 flex flex-col">
+        <p class="font-display font-semibold">Starter</p>
+        <p class="mt-2 text-foreground/70 text-sm">Founder-led SEO for early-stage brands.</p>
+        <p class="mt-6 font-display text-4xl font-bold">$1,750<span class="text-base font-normal text-foreground/60">/mo</span></p>
+        <ul class="mt-6 space-y-2 text-sm">
+          <li>- Technical SEO audit and fixes</li>
+          <li>- 6 keyword cluster strategy</li>
+          <li>- 4 content pieces per month</li>
+          <li>- GBP and on-page optimization</li>
+          <li>- Monthly performance reporting</li>
+        </ul>
+        <a href="{{ url('/contact.html') }}" class="mt-7 inline-flex justify-center items-center rounded-xl border border-border/60 px-5 py-3 font-medium hover:bg-white/5">Get started</a>
+      </div>
+      <div class="glass p-7 flex flex-col border-accent/40 ring-1 ring-accent/30 relative">
+        <span class="absolute -top-3 right-6 inline-flex bg-gradient-brand text-xs px-2 py-1 rounded-md shadow-glow-primary">Most popular</span>
+        <p class="font-display font-semibold">Growth</p>
+        <p class="mt-2 text-foreground/70 text-sm">For brands chasing 10x traffic and pipeline.</p>
+        <p class="mt-6 font-display text-4xl font-bold">$4,500<span class="text-base font-normal text-foreground/60">/mo</span></p>
+        <ul class="mt-6 space-y-2 text-sm">
+          <li>- Everything in Starter</li>
+          <li>- 12 content pieces per month</li>
+          <li>- Authority link acquisition</li>
+          <li>- Programmatic SEO at scale</li>
+          <li>- AI search visibility tracking</li>
+          <li>- Bi-weekly strategy calls</li>
+        </ul>
+        <a href="{{ url('/contact.html') }}" class="mt-7 inline-flex justify-center items-center rounded-xl bg-gradient-brand px-5 py-3 font-medium shadow-glow-primary">Get started</a>
+      </div>
+      <div class="glass p-7 flex flex-col">
+        <p class="font-display font-semibold">Scale</p>
+        <p class="mt-2 text-foreground/70 text-sm">Enterprise-grade execution for category leaders.</p>
+        <p class="mt-6 font-display text-4xl font-bold">$12,500<span class="text-base font-normal text-foreground/60">/mo</span></p>
+        <ul class="mt-6 space-y-2 text-sm">
+          <li>- Everything in Growth</li>
+          <li>- Dedicated strategist and content team</li>
+          <li>- International / multi-region rollout</li>
+          <li>- Advanced schema and entity optimization</li>
+          <li>- CRO and lifecycle integration</li>
+          <li>- Quarterly executive review</li>
+        </ul>
+        <a href="{{ url('/contact.html') }}" class="mt-7 inline-flex justify-center items-center rounded-xl border border-border/60 px-5 py-3 font-medium hover:bg-white/5">Talk to sales</a>
+      </div>
+    </div>
+
+    <div class="mt-12 glass p-6 text-sm text-foreground/80">
+      <p class="font-display font-semibold">PPC and paid media: managed retainers from $750/mo + 10-15% of ad spend.</p>
+      <p class="mt-2">Custom packages available for combined SEO + PPC engagements with discounted rates.</p>
+    </div>
+  </div>
+</section>
+{% include "_partials/faq_block.html" %}
+{% include "_partials/cta_block.html" %}
+{% endblock %}
