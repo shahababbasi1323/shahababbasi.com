@@ -811,6 +811,17 @@ def render_404(env, data, lang, default_lang, brand_url):
     write_page(file_rel, env.get_template("404.html").render(**ctx))
 
 
+def render_thank_you(env, data, lang, default_lang, brand_url):
+    lang_obj = lang_obj_for(data, lang)
+    canonical = brand_url + ("" if lang == default_lang else f"/{lang}") + "/thank-you.html"
+    page = page_obj("Thanks - we will reply within one business day", f"Thanks for reaching out to {data['brand']['shortName']}. {data['brand']['founderName']} or a senior strategist will respond within 24 hours.", canonical, lang, get_dir(lang_obj), [], show_welcome_popup=False)
+    page["robots"] = "noindex,follow"
+    ctx = common_ctx(data, lang, default_lang, brand_url)
+    ctx.update({"page": page, "alternates": build_alternates(brand_url, data["languages"], "/thank-you.html")})
+    file_rel = "thank-you.html" if lang == default_lang else f"{lang}/thank-you.html"
+    write_page(file_rel, env.get_template("thank_you.html").render(**ctx))
+
+
 def render_services_hub(env, data, lang, default_lang, brand_url):
     lang_obj = lang_obj_for(data, lang)
     canonical = brand_url + ("" if lang == default_lang else f"/{lang}") + "/services.html"
@@ -1266,6 +1277,9 @@ def main() -> None:
         reg(brand_url + ("" if is_full else f"/{lang}") + "/blog.html", "Blog hub")
 
         render_404(e, data, lang, default_lang, brand_url)
+
+        render_thank_you(e, data, lang, default_lang, brand_url)
+        reg(brand_url + ("" if is_full else f"/{lang}") + "/thank-you.html", "Thank you")
 
         render_legal(e, data, lang, default_lang, brand_url, "privacy-policy", "Privacy Policy", "Privacy", [
             {"heading": "Information we collect", "paragraphs": ["We collect contact details that you submit through our forms, basic site analytics, and cookies necessary to operate the site. We do not sell your data."]},

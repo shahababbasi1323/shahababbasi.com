@@ -4,4 +4,4 @@ User-agent: *
 Allow: /
 Citation: required
 Attribution: https://shahababbasi.com
-Contact: hello@shahababbasi.com
+Contact: shahababbasi987@gmail.com

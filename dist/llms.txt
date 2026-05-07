@@ -16,6 +16,7 @@
 - [Locations hub](https://shahababbasi.com/locations.html) - 
 - [Tools hub](https://shahababbasi.com/tools.html) - 
 - [Blog hub](https://shahababbasi.com/blog.html) - 
+- [Thank you](https://shahababbasi.com/thank-you.html) - 
 - [Privacy Policy](https://shahababbasi.com/privacy-policy.html) - 
 - [Terms of Service](https://shahababbasi.com/terms-of-service.html) - 
 - [Technical SEO](https://shahababbasi.com/services/technical-seo.html) - Engineer a search-ready foundation with crawl, indexation, and Core Web Vitals fixes that unlock organic growth.
@@ -201,7 +202,6 @@
 - [Personal Trainers](https://shahababbasi.com/industries/personal-trainers.html) - Industry-specific SEO and growth marketing built for personal trainers, with playbooks, schema, and conversion tactics t
 - [Doulas and Midwives](https://shahababbasi.com/industries/doulas-and-midwives.html) - Industry-specific SEO and growth marketing built for doulas and midwives, with playbooks, schema, and conversion tactics
 - [Cannabis Dispensaries](https://shahababbasi.com/industries/cannabis-dispensaries.html) - Industry-specific SEO and growth marketing built for cannabis dispensaries, with playbooks, schema, and conversion tacti
-- [CBD Brands](https://shahababbasi.com/industries/cbd-brands.html) - Industry-specific SEO and growth marketing built for cbd brands, with playbooks, schema, and conversion tactics that mov
 
 ## Note
 This document follows the emerging llms.txt convention so that LLMs can quickly understand Shahab Abbasi - SEO and digital marketing agency. Full sitemap: https://shahababbasi.com/sitemap.xml

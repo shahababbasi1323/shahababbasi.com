@@ -13,7 +13,12 @@
         <li class="flex items-center gap-3"><span class="w-9 h-9 rounded-lg bg-card border border-border inline-flex items-center justify-center"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg></span>{{ brand.address.city }}, {{ brand.address.country }}</li>
       </ul>
     </div>
-    <form class="glass p-6 grid gap-4" action="mailto:{{ brand.email }}" method="post" enctype="text/plain" aria-label="Contact form">
+    <form class="glass p-6 grid gap-4" action="https://formsubmit.co/{{ brand.email }}" method="POST" aria-label="Contact form">
+      <input type="hidden" name="_subject" value="New contact form submission - shahababbasi.com">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="hidden" name="_next" value="{{ brand.url }}/thank-you.html">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <label class="grid gap-1 text-sm">Full name<input required name="name" autocomplete="name" class="h-11 rounded-lg bg-card/60 border border-border px-3 outline-none focus:ring-2 focus:ring-primary"></label>
       <label class="grid gap-1 text-sm">Work email<input required type="email" name="email" autocomplete="email" class="h-11 rounded-lg bg-card/60 border border-border px-3 outline-none focus:ring-2 focus:ring-primary"></label>
       <label class="grid gap-1 text-sm">Website URL<input name="website" placeholder="https://" class="h-11 rounded-lg bg-card/60 border border-border px-3 outline-none focus:ring-2 focus:ring-primary"></label>
