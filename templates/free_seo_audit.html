@@ -1,0 +1,31 @@
+{% extends "_base.html" %}
+{% block breadcrumbs %}{% include "_partials/breadcrumbs.html" %}{% endblock %}
+{% block content %}
+<section class="section-padding">
+  <div class="container-tight grid lg:grid-cols-2 gap-12 items-start">
+    <div>
+      <p class="text-xs uppercase tracking-widest text-accent">Free Growth Audit</p>
+      <h1 class="mt-2 font-display text-4xl md:text-5xl font-bold tracking-tight">A custom SEO and growth audit. No charge, no pitch.</h1>
+      <p class="mt-4 text-foreground/80">In 5 working days you receive a 25+ page audit covering rankings, technical health, content gaps, backlink profile, AI search visibility, and a prioritized 90-day roadmap with revenue projections.</p>
+      <ul class="mt-6 space-y-2 text-sm text-foreground/85">
+        <li>- Technical SEO and Core Web Vitals analysis</li>
+        <li>- Keyword and content gap analysis</li>
+        <li>- Backlink profile and authority benchmark</li>
+        <li>- AI search visibility audit (ChatGPT, Perplexity, Google AI Overviews)</li>
+        <li>- 90-day priority roadmap with effort and ROI estimates</li>
+      </ul>
+      <p class="mt-6 text-sm text-foreground/60">Spots are limited each month. We turn down clients we cannot move the needle for.</p>
+    </div>
+    <form class="glass p-6 grid gap-4" action="mailto:{{ brand.email }}?subject=Free%20Growth%20Audit%20Request" method="post" enctype="text/plain">
+      <label class="grid gap-1 text-sm">Full name<input required name="name" autocomplete="name" class="h-11 rounded-lg bg-card/60 border border-border px-3 outline-none focus:ring-2 focus:ring-primary"></label>
+      <label class="grid gap-1 text-sm">Work email<input required type="email" name="email" autocomplete="email" class="h-11 rounded-lg bg-card/60 border border-border px-3 outline-none focus:ring-2 focus:ring-primary"></label>
+      <label class="grid gap-1 text-sm">Website URL<input required name="website" placeholder="https://" class="h-11 rounded-lg bg-card/60 border border-border px-3 outline-none focus:ring-2 focus:ring-primary"></label>
+      <label class="grid gap-1 text-sm">Industry<input name="industry" class="h-11 rounded-lg bg-card/60 border border-border px-3 outline-none focus:ring-2 focus:ring-primary"></label>
+      <label class="grid gap-1 text-sm">Top 3 competitors<input name="competitors" class="h-11 rounded-lg bg-card/60 border border-border px-3 outline-none focus:ring-2 focus:ring-primary"></label>
+      <label class="grid gap-1 text-sm">Goals for the next 90 days<textarea name="goals" rows="4" class="rounded-lg bg-card/60 border border-border px-3 py-2 outline-none focus:ring-2 focus:ring-primary"></textarea></label>
+      <button type="submit" class="h-11 rounded-xl bg-gradient-brand font-medium shadow-glow-primary">Request my free audit</button>
+      <p class="text-xs text-foreground/60">{{ brand.promise }}</p>
+    </form>
+  </div>
+</section>
+{% endblock %}

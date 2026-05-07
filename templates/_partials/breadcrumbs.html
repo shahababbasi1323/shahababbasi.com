@@ -1,0 +1,15 @@
+{# Breadcrumbs partial. Variables: breadcrumbs = [{label, href}, ...] #}
+{% if breadcrumbs %}
+<nav aria-label="Breadcrumb" class="border-b border-border/40 bg-background/40">
+  <ol class="container-tight py-3 flex flex-wrap items-center gap-2 text-xs text-foreground/70">
+    {% for crumb in breadcrumbs %}
+      {% if not loop.last %}
+        <li><a class="hover:text-accent" href="{{ crumb.href }}">{{ crumb.label }}</a></li>
+        <li aria-hidden="true" class="opacity-50">/</li>
+      {% else %}
+        <li aria-current="page" class="text-foreground">{{ crumb.label }}</li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+</nav>
+{% endif %}

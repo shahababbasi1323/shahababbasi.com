@@ -1,0 +1,28 @@
+{% extends "_base.html" %}
+{% block breadcrumbs %}{% include "_partials/breadcrumbs.html" %}{% endblock %}
+{% block content %}
+<section class="section-padding">
+  <div class="container-tight">
+    <div class="max-w-2xl">
+      <p class="text-xs uppercase tracking-widest text-accent">Testimonials</p>
+      <h1 class="mt-2 font-display text-4xl md:text-5xl font-bold tracking-tight">Founders, marketers, and operators on what changed.</h1>
+      <p class="mt-4 text-foreground/80">A sampling of recent client reviews. We can connect you with any of them on request.</p>
+    </div>
+    <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+      {% for t in testimonials %}
+      <figure class="glass p-6">
+        <blockquote class="text-foreground/85 text-sm leading-relaxed">"{{ t.quote }}"</blockquote>
+        <figcaption class="mt-5 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-gradient-brand flex items-center justify-center font-display font-bold">{{ t.author[:1] }}</div>
+          <div>
+            <p class="font-display font-semibold text-sm">{{ t.author }}</p>
+            <p class="text-xs text-foreground/60">{{ t.role }}, {{ t.company }}</p>
+          </div>
+        </figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% include "_partials/cta_block.html" %}
+{% endblock %}

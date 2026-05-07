@@ -1,0 +1,27 @@
+{% extends "_base.html" %}
+{% block breadcrumbs %}{% include "_partials/breadcrumbs.html" %}{% endblock %}
+{% block content %}
+<section class="section-padding">
+  <div class="container-tight">
+    <div class="max-w-3xl">
+      <p class="text-xs uppercase tracking-widest text-accent">SEO Services</p>
+      <h1 class="mt-2 font-display text-4xl md:text-6xl font-bold tracking-tight">{{ services|length }} SEO services. One growth engine.</h1>
+      <p class="mt-4 text-foreground/80">From technical foundations and content strategy to AI search visibility and link acquisition - explore the full set of SEO services we run for clients across {{ countries|length }}+ countries.</p>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      {% for s in services %}
+      <a href="{{ url('/services/' ~ s.slug ~ '.html') }}" class="glass p-6 group hover:border-accent/40 transition" data-animate>
+        <h2 class="font-display text-lg font-semibold">{{ s.name }}</h2>
+        <p class="mt-2 text-sm text-foreground/70">{{ s.shortDescription }}</p>
+        <div class="mt-4 flex flex-wrap gap-1.5">
+          {% for kw in s.lsiKeywords[:3] %}<span class="text-[10px] uppercase tracking-widest text-foreground/60 px-2 py-0.5 rounded-full border border-border/60">{{ kw }}</span>{% endfor %}
+        </div>
+        <span class="mt-5 inline-flex items-center gap-1 text-sm text-accent group-hover:gap-2 transition-all">Learn more →</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% include "_partials/faq_block.html" %}
+{% include "_partials/cta_block.html" %}
+{% endblock %}

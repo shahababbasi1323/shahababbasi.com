@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="{{ page.lang|default('en') }}" dir="{{ page.dir|default('ltr') }}">
+<head>
+{% include "_partials/head.html" %}
+</head>
+<body class="bg-background text-foreground min-h-screen flex flex-col antialiased">
+{% include "_partials/header.html" %}
+<main id="main" class="flex-1">
+{% block breadcrumbs %}{% endblock %}
+{% block content %}{% endblock %}
+</main>
+{% include "_partials/footer.html" %}
+</body>
+</html>

@@ -1,0 +1,17 @@
+<section class="section-padding">
+  <div class="container-tight">
+    <div class="glass-strong rounded-3xl p-10 md:p-14 text-center relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-radial opacity-60 pointer-events-none"></div>
+      <div class="relative">
+        <p class="text-xs uppercase tracking-widest text-accent mb-3">{{ cta.eyebrow|default('Next step') }}</p>
+        <h2 class="font-display text-3xl md:text-5xl font-bold tracking-tight">{{ cta.headline|default('Outrank your competitors. Permanently.') }}</h2>
+        <p class="mt-4 text-foreground/75 max-w-2xl mx-auto">{{ cta.body|default('Book a 30-minute strategy call. We will share a full audit, traffic forecast, and a 90-day plan tailored to your business. No pitch, just a plan.') }}</p>
+        <div class="mt-7 flex flex-wrap items-center justify-center gap-3">
+          <a href="{{ url('/free-seo-audit.html') }}" class="inline-flex items-center gap-2 rounded-xl bg-gradient-brand px-6 py-3 font-medium shadow-glow-primary hover:scale-[1.02] transition">{{ cta.primary|default('Claim Your Free Growth Audit') }}</a>
+          <a href="{{ url('/contact.html') }}" class="inline-flex items-center gap-2 rounded-xl border border-border/60 px-6 py-3 font-medium hover:bg-white/5">{{ cta.secondary|default('Book a Strategy Call') }}</a>
+        </div>
+        <p class="mt-4 text-xs text-foreground/60">{{ brand.promise }}</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,57 @@
+{% extends "_base.html" %}
+{% block breadcrumbs %}{% include "_partials/breadcrumbs.html" %}{% endblock %}
+{% block content %}
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-20 pointer-events-none"></div>
+  <div class="absolute inset-0 bg-gradient-radial pointer-events-none"></div>
+  <div class="container-tight relative pt-12 pb-10 md:pt-20 md:pb-14">
+    <p class="text-xs uppercase tracking-widest text-accent">{{ item.parentCategory|replace('-', ' ')|title }}</p>
+    <h1 class="mt-2 font-display text-4xl md:text-5xl font-bold tracking-tight max-w-4xl">{{ item.name }}</h1>
+    <p class="mt-4 max-w-2xl text-foreground/85">{{ item.shortDescription }}</p>
+  </div>
+</section>
+
+<section class="container-tight pb-10">
+  {{ tool_widget|safe }}
+</section>
+
+<section class="container-tight pb-10">
+  <h2 class="font-display text-2xl font-bold">How this tool works</h2>
+  <ol class="mt-4 grid md:grid-cols-3 gap-3 text-sm">
+    <li class="glass p-4"><span class="inline-flex w-7 h-7 rounded-lg bg-gradient-brand items-center justify-center font-display font-bold">1</span><p class="mt-2 font-display font-semibold">Paste your input</p><p class="mt-1 text-foreground/70">Drop your URL, text, or keyword into the field above.</p></li>
+    <li class="glass p-4"><span class="inline-flex w-7 h-7 rounded-lg bg-gradient-brand items-center justify-center font-display font-bold">2</span><p class="mt-2 font-display font-semibold">Run the analyzer</p><p class="mt-1 text-foreground/70">All processing happens locally in your browser. No data leaves your machine.</p></li>
+    <li class="glass p-4"><span class="inline-flex w-7 h-7 rounded-lg bg-gradient-brand items-center justify-center font-display font-bold">3</span><p class="mt-2 font-display font-semibold">Apply the output</p><p class="mt-1 text-foreground/70">Copy the result into your CMS, schema block, or report.</p></li>
+  </ol>
+</section>
+
+<section class="container-tight pb-10">
+  <h2 class="font-display text-2xl font-bold">Common use cases</h2>
+  <ul class="mt-4 grid md:grid-cols-2 gap-2 text-sm text-foreground/85">
+    <li>- {{ item.lsiKeywords[0]|capitalize }}</li>
+    <li>- {{ item.lsiKeywords[1]|capitalize }}</li>
+    <li>- {{ item.lsiKeywords[2]|capitalize }}</li>
+    <li>- {{ item.lsiKeywords[3]|capitalize }}</li>
+  </ul>
+</section>
+
+<section class="container-tight pb-12">
+  <h2 class="font-display text-2xl font-bold">Related tools</h2>
+  <div class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+    {% for tl in related_tools %}
+    <a href="{{ url('/tools/' ~ tl.slug ~ '.html') }}" class="glass p-4 hover:border-accent/40 transition"><p class="font-display font-semibold text-sm">{{ tl.name }}</p></a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="container-tight pb-12">
+  <h2 class="font-display text-2xl font-bold">Related services</h2>
+  <div class="mt-5 grid sm:grid-cols-2 gap-3">
+    {% for s in related_services %}
+    <a href="{{ url('/services/' ~ s.slug ~ '.html') }}" class="glass p-4 hover:border-accent/40 transition"><p class="font-display font-semibold text-sm">{{ s.name }}</p><p class="mt-1 text-xs text-foreground/70">{{ s.shortDescription }}</p></a>
+    {% endfor %}
+  </div>
+</section>
+
+{% include "_partials/faq_block.html" %}
+{% include "_partials/cta_block.html" %}
+{% endblock %}

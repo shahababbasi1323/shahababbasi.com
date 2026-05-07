@@ -1,0 +1,161 @@
+{% extends "_base.html" %}
+{% block content %}
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-30 pointer-events-none"></div>
+  <div class="absolute inset-0 bg-gradient-radial pointer-events-none"></div>
+  <div class="container-tight relative pt-12 md:pt-20 pb-20 md:pb-28">
+    <div class="max-w-3xl">
+      <div data-animate class="inline-flex items-center gap-2 rounded-full glass px-3 py-1.5 text-xs">
+        <span class="inline-block w-1.5 h-1.5 rounded-full bg-accent animate-pulse-soft"></span>
+        <span>{{ brand.stats.brandsScaled }} Brands Scaled - Join the Waitlist Before Your Competitor Does</span>
+      </div>
+      <h1 data-animate class="mt-6 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
+        Stop being invisible online. <span class="text-gradient">We put you on Page 1.</span> Guaranteed.
+      </h1>
+      <p data-animate class="mt-6 text-lg text-foreground/80 max-w-2xl">
+        Your competitors are stealing buyers right now. We engineer organic search, AI search visibility (ChatGPT, Perplexity, Google AI Overviews), and high-ROI paid campaigns that convert clicks into customers - measurable in 90 days.
+      </p>
+      <div data-animate class="mt-8 flex flex-wrap items-center gap-3">
+        <a href="{{ url('/free-seo-audit.html') }}" class="inline-flex items-center gap-2 rounded-xl bg-gradient-brand px-6 py-3 font-medium shadow-glow-primary hover:scale-[1.02] transition">Claim Your Free Growth Audit</a>
+        <a href="{{ url('/services.html') }}" class="inline-flex items-center gap-2 rounded-xl border border-border/60 px-6 py-3 font-medium hover:bg-white/5">See What We Do →</a>
+      </div>
+      <ul data-animate class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-foreground/70">
+        {% for tb in brand.trustBadges %}<li class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>{{ tb }}</li>{% endfor %}
+      </ul>
+    </div>
+
+    <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="glass p-5"><p class="font-display text-3xl md:text-4xl font-bold text-gradient">{{ brand.stats.brandsScaled }}</p><p class="mt-1 text-xs text-foreground/70 uppercase tracking-wider">Businesses scaled globally</p></div>
+      <div class="glass p-5"><p class="font-display text-3xl md:text-4xl font-bold text-gradient">{{ brand.stats.countriesServed }}</p><p class="mt-1 text-xs text-foreground/70 uppercase tracking-wider">Countries and markets</p></div>
+      <div class="glass p-5"><p class="font-display text-3xl md:text-4xl font-bold text-gradient">{{ brand.stats.keywordsRanked }}</p><p class="mt-1 text-xs text-foreground/70 uppercase tracking-wider">Keywords ranked on page 1</p></div>
+      <div class="glass p-5"><p class="font-display text-3xl md:text-4xl font-bold text-gradient">{{ brand.stats.avgRevenueGrowth }}</p><p class="mt-1 text-xs text-foreground/70 uppercase tracking-wider">Avg. client revenue growth</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding border-t border-border/40">
+  <div class="container-tight">
+    <div class="max-w-3xl">
+      <p class="text-xs uppercase tracking-widest text-accent">SEO Services</p>
+      <h2 class="mt-2 font-display text-3xl md:text-5xl font-bold">The growth engine behind 6 and 7-figure brands</h2>
+      <p class="mt-4 text-foreground/75">From technical audits to AI-powered search visibility - every lever you need to outrank, outperform, and outlast competitors. We pick the right combination for your stage and stack.</p>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      {% for s in services[:6] %}
+      <a href="{{ url('/services/' ~ s.slug ~ '.html') }}" class="glass p-6 group hover:border-accent/40 transition" data-animate>
+        <div class="flex items-center justify-between">
+          <div class="w-11 h-11 rounded-xl bg-gradient-brand flex items-center justify-center shadow-glow-primary">
+            <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l3-3 3 3 6-6 6 6"/></svg>
+          </div>
+          <span class="text-xs uppercase tracking-widest text-foreground/50">{{ s.parentCategory }}</span>
+        </div>
+        <h3 class="mt-5 font-display text-lg font-semibold">{{ s.name }}</h3>
+        <p class="mt-2 text-sm text-foreground/70 leading-relaxed">{{ s.shortDescription }}</p>
+        <span class="mt-4 inline-flex items-center gap-1 text-sm text-accent group-hover:gap-2 transition-all">Learn more <span aria-hidden="true">→</span></span>
+      </a>
+      {% endfor %}
+    </div>
+    <div class="mt-10 text-center"><a href="{{ url('/services.html') }}" class="inline-flex items-center gap-2 rounded-xl border border-border/60 px-6 py-3 font-medium hover:bg-white/5">View all {{ services|length }} SEO services →</a></div>
+  </div>
+</section>
+
+<section class="section-padding bg-card/40">
+  <div class="container-tight">
+    <div class="max-w-3xl">
+      <p class="text-xs uppercase tracking-widest text-accent">Paid media</p>
+      <h2 class="mt-2 font-display text-3xl md:text-5xl font-bold">Instant leads. Instant sales. PPC that pays for itself.</h2>
+      <p class="mt-4 text-foreground/75">Can't wait for SEO to compound? Our paid teams launch laser-targeted campaigns across Google, Meta, LinkedIn, and Microsoft Ads that ship paying customers from day one.</p>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      {% for p in ppcServices[:3] %}
+      <a href="{{ url('/ppc/' ~ p.slug ~ '.html') }}" class="glass p-6 hover:border-accent/40 transition group" data-animate>
+        <h3 class="font-display text-lg font-semibold">{{ p.name }}</h3>
+        <p class="mt-2 text-sm text-foreground/70">{{ p.shortDescription }}</p>
+        <span class="mt-4 inline-flex items-center gap-1 text-sm text-accent group-hover:gap-2 transition-all">Learn more →</span>
+      </a>
+      {% endfor %}
+    </div>
+    <div class="mt-10 text-center"><a href="{{ url('/ppc.html') }}" class="inline-flex items-center gap-2 rounded-xl border border-border/60 px-6 py-3 font-medium hover:bg-white/5">View all PPC services →</a></div>
+  </div>
+</section>
+
+<section class="section-padding">
+  <div class="container-tight">
+    <div class="max-w-3xl">
+      <p class="text-xs uppercase tracking-widest text-accent">How we work</p>
+      <h2 class="mt-2 font-display text-3xl md:text-5xl font-bold">From zero visibility to market leader. Here is how.</h2>
+      <p class="mt-4 text-foreground/75">A battle-tested 4-step framework. No vanity metrics, no smoke. Just disciplined execution and transparent reporting tied to revenue.</p>
+    </div>
+    <ol class="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <li class="glass p-6"><span class="inline-flex w-8 h-8 rounded-lg bg-gradient-brand items-center justify-center font-display font-bold">1</span><h3 class="mt-4 font-display font-semibold">Free website audit</h3><p class="mt-2 text-sm text-foreground/70">We benchmark rankings, technical health, backlink profile, and competitor share of voice. No strings attached.</p></li>
+      <li class="glass p-6"><span class="inline-flex w-8 h-8 rounded-lg bg-gradient-brand items-center justify-center font-display font-bold">2</span><h3 class="mt-4 font-display font-semibold">Custom growth strategy</h3><p class="mt-2 text-sm text-foreground/70">A data-driven roadmap with prioritized fixes, target keywords, channel mix, and projected ROI - tailored to your industry and market.</p></li>
+      <li class="glass p-6"><span class="inline-flex w-8 h-8 rounded-lg bg-gradient-brand items-center justify-center font-display font-bold">3</span><h3 class="mt-4 font-display font-semibold">Expert implementation</h3><p class="mt-2 text-sm text-foreground/70">We execute on-page, content, links, technical fixes, and paid campaigns - so your team ships with focus.</p></li>
+      <li class="glass p-6"><span class="inline-flex w-8 h-8 rounded-lg bg-gradient-brand items-center justify-center font-display font-bold">4</span><h3 class="mt-4 font-display font-semibold">Transparent reporting</h3><p class="mt-2 text-sm text-foreground/70">Monthly reports on rankings, organic traffic, lead attribution, and pipeline impact. Real numbers, no theatre.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section-padding bg-card/40">
+  <div class="container-tight">
+    <div class="max-w-3xl">
+      <p class="text-xs uppercase tracking-widest text-accent">Free tools</p>
+      <h2 class="mt-2 font-display text-3xl md:text-5xl font-bold">{{ tools|length }}+ free tools your competitors do not want you to find</h2>
+      <p class="mt-4 text-foreground/75">Audit your SEO, spy on competitors, generate perfect meta tags, calculate ad ROI - all in one place, all free, no signup required.</p>
+    </div>
+    <div class="mt-10 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+      {% for t in tools[:8] %}
+      <a class="glass p-4 hover:border-accent/40 transition" href="{{ url('/tools/' ~ t.slug ~ '.html') }}">
+        <p class="font-display font-semibold text-sm">{{ t.name }}</p>
+        <p class="mt-1 text-xs text-foreground/60">{{ t.parentCategory|replace('-', ' ')|title }}</p>
+      </a>
+      {% endfor %}
+    </div>
+    <div class="mt-8"><a href="{{ url('/tools.html') }}" class="inline-flex items-center gap-2 rounded-xl border border-border/60 px-6 py-3 font-medium hover:bg-white/5">Explore all free tools →</a></div>
+  </div>
+</section>
+
+<section class="section-padding">
+  <div class="container-tight">
+    <div class="max-w-3xl">
+      <p class="text-xs uppercase tracking-widest text-accent">Case studies</p>
+      <h2 class="mt-2 font-display text-3xl md:text-5xl font-bold">Real brands. Real revenue.</h2>
+      <p class="mt-4 text-foreground/75">A few snapshots from recent engagements - more in the testimonials and case studies sections.</p>
+    </div>
+    <div class="mt-10 grid lg:grid-cols-3 gap-5">
+      <article class="glass p-6">
+        <p class="text-xs text-accent uppercase tracking-widest">E-commerce</p>
+        <h3 class="font-display text-xl mt-2">400% revenue growth in 6 months</h3>
+        <p class="mt-2 text-sm text-foreground/70">Ranked on page 1 for 50+ buyer-intent keywords through a full-funnel SEO and content strategy.</p>
+        <div class="grid grid-cols-3 gap-3 mt-5">
+          <div class="text-center"><p class="text-gradient font-display text-2xl">+400%</p><p class="text-xs text-foreground/60">traffic</p></div>
+          <div class="text-center"><p class="text-gradient font-display text-2xl">50+</p><p class="text-xs text-foreground/60">keywords</p></div>
+          <div class="text-center"><p class="text-gradient font-display text-2xl">+280%</p><p class="text-xs text-foreground/60">revenue</p></div>
+        </div>
+      </article>
+      <article class="glass p-6">
+        <p class="text-xs text-accent uppercase tracking-widest">Legal</p>
+        <h3 class="font-display text-xl mt-2">Law firm: 300% more qualified leads</h3>
+        <p class="mt-2 text-sm text-foreground/70">Dominated local search and the Map Pack with GBP optimization, citations, and conversion-led landing pages.</p>
+        <div class="grid grid-cols-3 gap-3 mt-5">
+          <div class="text-center"><p class="text-gradient font-display text-2xl">+250%</p><p class="text-xs text-foreground/60">traffic</p></div>
+          <div class="text-center"><p class="text-gradient font-display text-2xl">30+</p><p class="text-xs text-foreground/60">keywords</p></div>
+          <div class="text-center"><p class="text-gradient font-display text-2xl">+300%</p><p class="text-xs text-foreground/60">leads</p></div>
+        </div>
+      </article>
+      <article class="glass p-6">
+        <p class="text-xs text-accent uppercase tracking-widest">SaaS</p>
+        <h3 class="font-display text-xl mt-2">SaaS: page 1 in a competitive niche</h3>
+        <p class="mt-2 text-sm text-foreground/70">Built topic clusters, programmatic landing pages, and an editorial cadence that drove 25 page-1 rankings in 7 months.</p>
+        <div class="grid grid-cols-3 gap-3 mt-5">
+          <div class="text-center"><p class="text-gradient font-display text-2xl">+220%</p><p class="text-xs text-foreground/60">organic</p></div>
+          <div class="text-center"><p class="text-gradient font-display text-2xl">25</p><p class="text-xs text-foreground/60">page-1 KWs</p></div>
+          <div class="text-center"><p class="text-gradient font-display text-2xl">+95%</p><p class="text-xs text-foreground/60">trial signups</p></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+{% include "_partials/faq_block.html" %}
+{% include "_partials/cta_block.html" %}
+{% endblock %}

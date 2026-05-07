@@ -1,0 +1,24 @@
+{% extends "_base.html" %}
+{% block breadcrumbs %}{% include "_partials/breadcrumbs.html" %}{% endblock %}
+{% block content %}
+<section class="section-padding">
+  <div class="container-tight">
+    <div class="max-w-3xl">
+      <p class="text-xs uppercase tracking-widest text-accent">PPC Services</p>
+      <h1 class="mt-2 font-display text-4xl md:text-6xl font-bold tracking-tight">PPC that ships paying customers from day one.</h1>
+      <p class="mt-4 text-foreground/80">Senior media buyers, full-funnel creative testing, and KPI-tied retainers across Google Ads, Meta, LinkedIn, Microsoft, and Shopping.</p>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      {% for s in ppcServices %}
+      <a href="{{ url('/ppc/' ~ s.slug ~ '.html') }}" class="glass p-6 group hover:border-accent/40 transition">
+        <h2 class="font-display text-lg font-semibold">{{ s.name }}</h2>
+        <p class="mt-2 text-sm text-foreground/70">{{ s.shortDescription }}</p>
+        <span class="mt-5 inline-flex items-center gap-1 text-sm text-accent group-hover:gap-2 transition-all">Learn more →</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% include "_partials/faq_block.html" %}
+{% include "_partials/cta_block.html" %}
+{% endblock %}

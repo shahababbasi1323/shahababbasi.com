@@ -1,0 +1,67 @@
+{% extends "_base.html" %}
+{% block breadcrumbs %}{% include "_partials/breadcrumbs.html" %}{% endblock %}
+{% block content %}
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-20 pointer-events-none"></div>
+  <div class="absolute inset-0 bg-gradient-radial pointer-events-none"></div>
+  <div class="container-tight relative pt-12 pb-16 md:pt-20 md:pb-24">
+    <p class="text-xs uppercase tracking-widest text-accent">{{ country.name }} - {{ item.name }}</p>
+    <h1 class="mt-2 font-display text-4xl md:text-6xl font-bold tracking-tight max-w-4xl">SEO services in {{ item.name }}.</h1>
+    <p class="mt-5 max-w-2xl text-lg text-foreground/85">{{ item.shortDescription }}</p>
+    <div class="mt-5 glass-strong rounded-xl p-4 max-w-2xl">
+      <p class="text-sm"><strong class="text-accent">Quick answer:</strong> SEO services in {{ item.name }} from {{ country.currency }} 1,750/mo, with average ranking lift of 60-90% in 90 days for engaged clients. We work across local Map Pack, organic, and AI search.</p>
+    </div>
+    <div class="mt-7 flex flex-wrap items-center gap-3">
+      <a href="{{ url('/free-seo-audit.html') }}" class="rounded-xl bg-gradient-brand px-5 py-3 font-medium shadow-glow-primary">Free Audit in {{ item.name }}</a>
+      <a href="{{ url('/contact.html') }}" class="rounded-xl border border-border/60 px-5 py-3 font-medium hover:bg-white/5">Talk to a strategist</a>
+    </div>
+  </div>
+</section>
+
+<section class="container-tight pb-12">
+  <h2 class="font-display text-2xl font-bold">Why brands in {{ item.name }} choose us</h2>
+  <ul class="mt-4 grid md:grid-cols-2 gap-3 text-sm text-foreground/85">
+    <li class="glass p-4">- Local SEO and Map Pack-first execution for {{ item.name }} ZIP codes and neighborhoods.</li>
+    <li class="glass p-4">- Bilingual content where the {{ country.name }} market speaks more than one language.</li>
+    <li class="glass p-4">- Citations on directories that actually matter in {{ country.name }}.</li>
+    <li class="glass p-4">- Reporting in {{ country.currency }} with pipeline attribution your CFO will trust.</li>
+  </ul>
+</section>
+
+<section class="container-tight pb-12">
+  <h2 class="font-display text-2xl font-bold">Services available in {{ item.name }}</h2>
+  <div class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+    {% for s in services %}
+    <a href="{{ url('/services/' ~ s.slug ~ '.html') }}" class="glass p-4 hover:border-accent/40 transition"><p class="font-display font-semibold text-sm">{{ s.name }} in {{ item.name }}</p><p class="mt-1 text-xs text-foreground/70">{{ s.shortDescription }}</p></a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="container-tight pb-12">
+  <h2 class="font-display text-2xl font-bold">{{ item.name }} neighborhoods and landmarks we serve</h2>
+  <p class="mt-2 text-foreground/80 text-sm leading-relaxed">{{ item.name }} is one of the most competitive markets in {{ country.name }}, with thousands of local businesses fighting for attention. Whether your office is in the central business district, the financial district, or a residential neighborhood, our local SEO playbook is tuned to your service areas. We optimize Google Business Profile listings, citations, on-page content, and reviews across {{ item.name }} so that buyers searching for your services find you first - on Google Maps, in the local pack, and in AI-powered answer engines like ChatGPT, Perplexity, and Google AI Overviews. We have engineered local visibility for retail, professional services, healthcare, hospitality, and home services across {{ item.name }} and the broader {{ country.name }} market.</p>
+</section>
+
+<section class="container-tight pb-12">
+  <h2 class="font-display text-2xl font-bold">Industries we serve in {{ item.name }}</h2>
+  <div class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+    {% for ind in industries[:8] %}
+    <a href="{{ url('/industries/' ~ ind.slug ~ '.html') }}" class="glass p-4 hover:border-accent/40 transition"><p class="font-display font-semibold text-sm">{{ ind.name }} in {{ item.name }}</p></a>
+    {% endfor %}
+  </div>
+</section>
+
+{% if nearby_cities %}
+<section class="container-tight pb-12">
+  <h2 class="font-display text-2xl font-bold">Nearby cities</h2>
+  <div class="mt-5 grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+    {% for nc in nearby_cities %}
+    <a href="{{ url('/' ~ nc.slug ~ '.html') }}" class="glass p-4 hover:border-accent/40 transition"><p class="font-display font-semibold text-sm">{{ nc.name }}</p></a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% include "_partials/faq_block.html" %}
+{% include "_partials/cta_block.html" %}
+{% endblock %}

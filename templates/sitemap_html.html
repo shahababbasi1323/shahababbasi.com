@@ -1,0 +1,19 @@
+{% extends "_base.html" %}
+{% block breadcrumbs %}{% include "_partials/breadcrumbs.html" %}{% endblock %}
+{% block content %}
+<section class="container-tight py-16">
+  <p class="text-xs uppercase tracking-widest text-accent">HTML Sitemap</p>
+  <h1 class="mt-2 font-display text-4xl md:text-5xl font-bold tracking-tight">Every page on this site.</h1>
+  <p class="mt-4 text-foreground/75">Total URLs: {{ all_pages|length }}.</p>
+  <div class="mt-12 grid lg:grid-cols-2 gap-10">
+    {% for group in sitemap_groups %}
+    <div>
+      <h2 class="font-display text-xl font-bold">{{ group.name }} ({{ group.links|length }})</h2>
+      <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-1 text-sm">
+        {% for it in group.links %}<li><a class="text-foreground/80 hover:text-accent" href="{{ it.href }}">{{ it.label }}</a></li>{% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "_base.html" %}
+{% block breadcrumbs %}{% include "_partials/breadcrumbs.html" %}{% endblock %}
+{% block content %}
+<section class="section-padding">
+  <div class="container-tight">
+    <div class="max-w-3xl">
+      <p class="text-xs uppercase tracking-widest text-accent">Free Resources</p>
+      <h1 class="mt-2 font-display text-4xl md:text-6xl font-bold tracking-tight">Free SEO templates, checklists, and playbooks.</h1>
+      <p class="mt-4 text-foreground/80">Battle-tested resources we use on real engagements. Download, use, ship.</p>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      {% for r in resources %}
+      <a href="{{ url('/free-seo-resources/' ~ r.slug ~ '.html') }}" class="glass p-6 hover:border-accent/40 transition">
+        <h2 class="font-display text-lg font-semibold">{{ r.name }}</h2>
+        <p class="mt-2 text-sm text-foreground/70">{{ r.shortDescription }}</p>
+        <span class="mt-4 inline-flex items-center gap-1 text-sm text-accent">Download →</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% include "_partials/cta_block.html" %}
+{% endblock %}
