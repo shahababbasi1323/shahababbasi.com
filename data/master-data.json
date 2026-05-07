@@ -194,7 +194,7 @@
       "heroTitle": "Technical SEO Services",
       "heroDescription": "Build an airtight technical foundation so search engines can discover, crawl, and rank every page on your site without friction.",
       "whatIsTitle": "What Is Technical SEO?",
-      "whatIsDesc": "Technical SEO addresses the infrastructure layer of your website—everything from how Googlebot crawls your pages to how quickly they load on a mobile device. Without a solid technical base, even the best content will struggle to surface in search results.",
+      "whatIsDesc": "Technical SEO addresses the infrastructure layer of your website - everything from how Googlebot crawls your pages to how quickly they load on a mobile device. Without a solid technical base, even the best content will struggle to surface in search results.",
       "benefits": [
         "Ensures all important pages are discoverable and indexable",
         "Accelerates page load times and improves Core Web Vitals scores",
@@ -214,7 +214,7 @@
         },
         {
           "title": "Implementation & QA",
-          "desc": "Our engineers resolve critical issues—site speed, indexation, structured data, and Core Web Vitals—with careful staging and rollback plans."
+          "desc": "Our engineers resolve critical issues - site speed, indexation, structured data, and Core Web Vitals - with careful staging and rollback plans."
         },
         {
           "title": "Continuous Monitoring",
@@ -248,7 +248,7 @@
         },
         {
           "q": "Will technical changes break my live site?",
-          "a": "We follow strict change-management protocols—staging environments, documented rollback plans, and incremental deployments—so your live site stays stable throughout."
+          "a": "We follow strict change-management protocols - staging environments, documented rollback plans, and incremental deployments - so your live site stays stable throughout."
         },
         {
           "q": "How often should I repeat a technical audit?",
@@ -284,10 +284,10 @@
       "heroTitle": "On-Page SEO Optimization",
       "heroDescription": "Transform each page into a search-engine magnet with precision keyword placement, compelling meta data, and a content structure designed for both users and algorithms.",
       "whatIsTitle": "What Is On-Page SEO?",
-      "whatIsDesc": "On-page SEO is the practice of optimizing individual web pages so they rank higher and earn more relevant traffic. It covers everything a user or crawler can see on the page—title tags, headings, body copy, images, and internal links.",
+      "whatIsDesc": "On-page SEO is the practice of optimizing individual web pages so they rank higher and earn more relevant traffic. It covers everything a user or crawler can see on the page - title tags, headings, body copy, images, and internal links.",
       "benefits": [
         "Keyword-mapped title tags and meta descriptions that improve CTR",
-        "Logical header hierarchy (H1–H6) for semantic clarity",
+        "Logical header hierarchy (H1-H6) for semantic clarity",
         "Strategic internal linking that distributes authority",
         "Image optimization with descriptive alt text and modern formats",
         "Content depth calibrated to match search intent",
@@ -362,9 +362,9 @@
       "metaTitle": "Off-Page SEO & Link Building Services | White-Hat Authority Building",
       "metaDescription": "Ethical off-page SEO and link building: earn high-authority backlinks through outreach, guest posting, digital PR, and strategic content partnerships.",
       "heroTitle": "Off-Page SEO & Link Building",
-      "heroDescription": "Earn trust signals that Google cannot ignore—high-authority backlinks, brand mentions, and digital PR placements that compound your domain authority over time.",
+      "heroDescription": "Earn trust signals that Google cannot ignore - high-authority backlinks, brand mentions, and digital PR placements that compound your domain authority over time.",
       "whatIsTitle": "What Is Off-Page SEO?",
-      "whatIsDesc": "Off-page SEO encompasses every action taken outside your own website to improve its search rankings. The most influential factor is backlinks—links from other sites that signal trust and relevance to search engines.",
+      "whatIsDesc": "Off-page SEO encompasses every action taken outside your own website to improve its search rankings. The most influential factor is backlinks - links from other sites that signal trust and relevance to search engines.",
       "benefits": [
         "Increases Domain Authority and referral traffic",
         "Earns editorially placed links from niche-relevant sites",
@@ -384,7 +384,7 @@
         },
         {
           "title": "Content-Led Acquisition",
-          "desc": "We create linkable assets—data studies, infographics, expert roundups—that naturally attract editorial links."
+          "desc": "We create linkable assets - data studies, infographics, expert roundups - that naturally attract editorial links."
         },
         {
           "title": "Monitoring & Disavow",
@@ -442,7 +442,7 @@
       "metaTitle": "Local SEO Services | Google Maps, GBP Optimization & Local Rankings",
       "metaDescription": "Dominate local search with expert Local SEO: Google Business Profile optimization, local citations, review management, and geo-targeted keyword strategies.",
       "heroTitle": "Local SEO Services",
-      "heroDescription": "Put your business on the map—literally. We optimize your local presence so customers in your area find you first on Google Maps and local search results.",
+      "heroDescription": "Put your business on the map - literally. We optimize your local presence so customers in your area find you first on Google Maps and local search results.",
       "whatIsTitle": "What Is Local SEO?",
       "whatIsDesc": "Local SEO focuses on optimizing your online presence to attract business from relevant local searches. This includes Google Business Profile management, local citation building, review acquisition, and geo-targeted content.",
       "benefits": [
@@ -460,7 +460,7 @@
         },
         {
           "title": "GBP Optimization",
-          "desc": "Full optimization of your Google Business Profile—categories, attributes, photos, posts, Q&A, and service areas."
+          "desc": "Full optimization of your Google Business Profile - categories, attributes, photos, posts, Q&A, and service areas."
         },
         {
           "title": "Citation Building",
@@ -633,7 +633,7 @@
         },
         {
           "title": "Technical Architecture",
-          "desc": "We recommend and implement the optimal URL structure—ccTLDs, subdomains, or subdirectories—with proper hreflang configuration."
+          "desc": "We recommend and implement the optimal URL structure - ccTLDs, subdomains, or subdirectories - with proper hreflang configuration."
         },
         {
           "title": "Content Localization",
@@ -705,7 +705,7 @@
       "metaTitle": "Link Building Services | Earn High-Authority Backlinks",
       "metaDescription": "Professional link building services: editorial outreach, guest posting, digital PR, HARO, and content-driven link acquisition from relevant, authoritative websites.",
       "heroTitle": "Link Building Services",
-      "heroDescription": "Earn the backlinks that move the needle. Our white-hat link building focuses on relevance, authority, and sustainability—no shortcuts, no risks.",
+      "heroDescription": "Earn the backlinks that move the needle. Our white-hat link building focuses on relevance, authority, and sustainability - no shortcuts, no risks.",
       "whatIsTitle": "Why Link Building Still Matters",
       "whatIsDesc": "Backlinks remain one of Google's top three ranking factors. Quality links from authoritative, relevant websites signal trust and authority that directly translate into higher rankings and more organic traffic.",
       "benefits": [
@@ -892,7 +892,7 @@
       "heroTitle": "GEO Optimization",
       "heroDescription": "The next frontier of search visibility is here. We optimize your content to be cited, referenced, and recommended by AI-powered search engines and answer platforms.",
       "whatIsTitle": "What Is GEO (Generative Engine Optimization)?",
-      "whatIsDesc": "GEO is the practice of optimizing your digital presence so that AI-powered search engines—ChatGPT, Perplexity, Google AI Overviews, Claude—cite and recommend your brand when users ask relevant questions.",
+      "whatIsDesc": "GEO is the practice of optimizing your digital presence so that AI-powered search engines - ChatGPT, Perplexity, Google AI Overviews, Claude - cite and recommend your brand when users ask relevant questions.",
       "benefits": [
         "Appear in AI-generated answers and citations",
         "Structure content for large language model comprehension",
@@ -1080,7 +1080,7 @@
       "metaTitle": "Professional Keyword Research Service | Find High-Value Keywords",
       "metaDescription": "Data-driven keyword research service: discover high-intent, low-competition keywords that drive qualified traffic and conversions for your business.",
       "heroTitle": "Keyword Research Service",
-      "heroDescription": "Discover the exact search terms your ideal customers use—then build a strategy to own them. Our keyword research goes beyond volume to uncover intent, opportunity, and revenue potential.",
+      "heroDescription": "Discover the exact search terms your ideal customers use - then build a strategy to own them. Our keyword research goes beyond volume to uncover intent, opportunity, and revenue potential.",
       "whatIsTitle": "Why Professional Keyword Research Matters",
       "whatIsDesc": "Keyword research is the foundation of every successful SEO campaign. It determines which pages you build, what content you create, and how you structure your site. Getting it wrong means months of wasted effort targeting the wrong terms.",
       "benefits": [
@@ -1386,7 +1386,7 @@
       "heroTitle": "Shopify SEO Services",
       "heroDescription": "Unlock your Shopify store's organic potential. We address platform-specific limitations and optimize every product page for maximum search visibility and conversions.",
       "whatIsTitle": "Why Shopify Needs Specialized SEO",
-      "whatIsDesc": "Shopify has unique technical challenges—rigid URL structures, auto-generated duplicate content from collections, limited robots.txt control, and theme-dependent speed issues. Generic SEO approaches miss these platform-specific problems.",
+      "whatIsDesc": "Shopify has unique technical challenges - rigid URL structures, auto-generated duplicate content from collections, limited robots.txt control, and theme-dependent speed issues. Generic SEO approaches miss these platform-specific problems.",
       "benefits": [
         "Fix Shopify-specific duplicate content issues",
         "Optimize collection and product page URLs",
@@ -1410,7 +1410,7 @@
         },
         {
           "title": "App & Integration Audit",
-          "desc": "We review installed Shopify apps for SEO impact—removing speed-killing scripts and recommending SEO-friendly alternatives."
+          "desc": "We review installed Shopify apps for SEO impact - removing speed-killing scripts and recommending SEO-friendly alternatives."
         }
       ],
       "toolsUsed": [
@@ -1506,7 +1506,7 @@
       "faqs": [
         {
           "q": "Which WordPress SEO plugin do you recommend?",
-          "a": "Both Yoast SEO and RankMath are excellent. We recommend based on your specific needs—Yoast for simplicity, RankMath for advanced features. What matters most is proper configuration."
+          "a": "Both Yoast SEO and RankMath are excellent. We recommend based on your specific needs - Yoast for simplicity, RankMath for advanced features. What matters most is proper configuration."
         }
       ],
       "relatedServices": [
@@ -1527,7 +1527,7 @@
       "heroTitle": "Google Business Profile Optimization",
       "heroDescription": "Turn your Google Business Profile into a lead-generating machine. We optimize every element to boost your visibility in Maps, Local Pack, and local search results.",
       "whatIsTitle": "Why GBP Optimization Is Critical",
-      "whatIsDesc": "Your Google Business Profile is often the first thing potential customers see. A fully optimized GBP can drive phone calls, direction requests, and website visits—often before users even reach your website.",
+      "whatIsDesc": "Your Google Business Profile is often the first thing potential customers see. A fully optimized GBP can drive phone calls, direction requests, and website visits - often before users even reach your website.",
       "benefits": [
         "Complete GBP profile optimization",
         "Weekly Google Posts for engagement",
@@ -2051,7 +2051,7 @@
       "processSteps": [
         {
           "title": "Audience Segmentation",
-          "desc": "We segment your website visitors by behavior—pages visited, time on site, cart abandonment, and engagement level."
+          "desc": "We segment your website visitors by behavior - pages visited, time on site, cart abandonment, and engagement level."
         },
         {
           "title": "Creative Strategy",
@@ -15577,7 +15577,7 @@
       "heroDescription": "As Pakistan's leading SEO agency, we help businesses across 8 major cities achieve higher rankings, more traffic, and measurable growth.",
       "whyContent": [
         "Pakistan's digital market is growing rapidly, with millions of businesses moving online. Ranking in competitive Pakistani cities requires local expertise combined with global SEO standards.",
-        "Based in Islamabad, we understand the Pakistani market intimately—from Lahore's manufacturing sector to Karachi's financial services industry.",
+        "Based in Islamabad, we understand the Pakistani market intimately - from Lahore's manufacturing sector to Karachi's financial services industry.",
         "Our Pakistani clients benefit from competitive pricing, local market knowledge, and strategies proven effective across international markets."
       ],
       "countryCode": "PK"
@@ -15879,7 +15879,7 @@
       "heroDescription": "Grow your New Zealand business with expert SEO, PPC, and content strategies tailored for the competitive Kiwi market.",
       "whyContent": [
         "New Zealand's small but competitive market means every ranking position matters. Our strategies help Kiwi businesses punch above their weight in search results.",
-        "We understand the NZ market's unique characteristics—from the concentrated Auckland market to Wellington's government sector and Christchurch's rebuilding economy.",
+        "We understand the NZ market's unique characteristics - from the concentrated Auckland market to Wellington's government sector and Christchurch's rebuilding economy.",
         "Our NZ-focused digital marketing combines local market insights with proven international SEO methodologies."
       ],
       "countryCode": "NZ"
@@ -16105,7 +16105,7 @@
       "heroDescription": "From New York to Los Angeles, we help American businesses dominate search engines with data-driven SEO, PPC, and content strategies.",
       "whyContent": [
         "The US digital market is the most competitive globally. Ranking on Google in American cities requires sophisticated multi-channel approaches combining technical SEO, high-authority link building, and conversion-focused content.",
-        "We understand local search nuances across the US—from hyper-competitive NYC to emerging tech hubs like Austin and Denver. Our strategies account for regional search behavior and city-level competition.",
+        "We understand local search nuances across the US - from hyper-competitive NYC to emerging tech hubs like Austin and Denver. Our strategies account for regional search behavior and city-level competition.",
         "Whether you are a startup in San Francisco or a service provider in Chicago, our digital marketing services deliver measurable ROI in the American market."
       ]
     },
@@ -16123,7 +16123,7 @@
       "heroDescription": "We serve businesses in 12 major UK cities with expert SEO, Google Ads, web design, and content strategy tailored for British markets.",
       "whyContent": [
         "The UK is Europe's most mature digital advertising market. Standing out requires precise keyword targeting, authoritative backlink profiles, and content that resonates with British consumers.",
-        "Each UK city demands bespoke strategies built on local market intelligence—from London's ultra-competitive financial sector to Manchester's thriving tech scene.",
+        "Each UK city demands bespoke strategies built on local market intelligence - from London's ultra-competitive financial sector to Manchester's thriving tech scene.",
         "Our UK-focused services span technical SEO audits, Google Ads campaigns, and social media growth across all major British cities."
       ]
     },
@@ -16159,7 +16159,7 @@
       "heroDescription": "Achieve search dominance in Singapore's hyper-competitive market with expert SEO, PPC, and content strategies.",
       "whyContent": [
         "Singapore is Southeast Asia's most competitive digital market, with the highest internet penetration and digital ad spend per capita in the region.",
-        "The Singaporean market demands precision SEO with multilingual considerations—English, Chinese, Malay, and Tamil search behaviors all play a role.",
+        "The Singaporean market demands precision SEO with multilingual considerations - English, Chinese, Malay, and Tamil search behaviors all play a role.",
         "Our Singapore clients benefit from strategies designed for a small but highly competitive market where every ranking position directly impacts revenue."
       ]
     }
@@ -27905,7 +27905,7 @@
         {
           "id": "keyword-research",
           "title": "Keyword Research: The Foundation of Every Campaign",
-          "content": "Start with seed keywords—broad terms related to your industry. Expand using tools like Ahrefs and SEMrush to discover long-tail variations with lower competition and higher conversion intent. Map keywords to specific pages based on search intent: informational, navigational, commercial, and transactional."
+          "content": "Start with seed keywords - broad terms related to your industry. Expand using tools like Ahrefs and SEMrush to discover long-tail variations with lower competition and higher conversion intent. Map keywords to specific pages based on search intent: informational, navigational, commercial, and transactional."
         },
         {
           "id": "on-page-optimization",
@@ -27975,7 +27975,7 @@
       "faqs": [
         {
           "q": "How many keywords should I target per page?",
-          "a": "Focus on one primary keyword and 3-5 secondary/related keywords per page. Avoid keyword stuffing—write naturally while covering the topic comprehensively."
+          "a": "Focus on one primary keyword and 3-5 secondary/related keywords per page. Avoid keyword stuffing - write naturally while covering the topic comprehensively."
         },
         {
           "q": "What is a good keyword difficulty score?",
@@ -28150,7 +28150,7 @@
         {
           "id": "what-is-geo",
           "title": "What Is Generative Engine Optimization?",
-          "content": "GEO is the practice of optimizing your digital presence so AI-powered search engines—ChatGPT, Perplexity, Google AI Overviews—cite and recommend your brand. As AI search grows, traditional SEO alone is no longer sufficient."
+          "content": "GEO is the practice of optimizing your digital presence so AI-powered search engines - ChatGPT, Perplexity, Google AI Overviews - cite and recommend your brand. As AI search grows, traditional SEO alone is no longer sufficient."
         },
         {
           "id": "how-llms-work",
@@ -28258,7 +28258,7 @@
         },
         {
           "q": "How important are product reviews for e-commerce SEO?",
-          "a": "Very important. Reviews provide unique, fresh content and enable Review schema for star ratings in search results—both significantly impact CTR and rankings."
+          "a": "Very important. Reviews provide unique, fresh content and enable Review schema for star ratings in search results - both significantly impact CTR and rankings."
         }
       ],
       "relatedSlugs": [
@@ -28331,7 +28331,7 @@
         {
           "id": "what-are-cwv",
           "title": "What Are Core Web Vitals?",
-          "content": "Core Web Vitals are Google's metrics for user experience. LCP (Largest Contentful Paint) measures loading—aim for under 2.5s. INP (Interaction to Next Paint) measures responsiveness—aim for under 200ms. CLS (Cumulative Layout Shift) measures visual stability—aim for under 0.1."
+          "content": "Core Web Vitals are Google's metrics for user experience. LCP (Largest Contentful Paint) measures loading - aim for under 2.5s. INP (Interaction to Next Paint) measures responsiveness - aim for under 200ms. CLS (Cumulative Layout Shift) measures visual stability - aim for under 0.1."
         },
         {
           "id": "how-to-fix",
@@ -28390,7 +28390,7 @@
         },
         {
           "q": "Which schema format should I use?",
-          "a": "Use JSON-LD. Google explicitly recommends it, and it's the easiest to implement and maintain—just add a script tag in your page's head."
+          "a": "Use JSON-LD. Google explicitly recommends it, and it's the easiest to implement and maintain - just add a script tag in your page's head."
         }
       ],
       "relatedSlugs": [
@@ -28419,7 +28419,7 @@
         {
           "id": "why-seo-for-startups",
           "title": "Why Startups Need SEO from Day One",
-          "content": "SEO compounds over time—the earlier you start, the more valuable it becomes. Unlike paid ads, organic traffic doesn't stop when you pause spending. For cash-conscious startups, SEO delivers the highest long-term ROI of any marketing channel."
+          "content": "SEO compounds over time - the earlier you start, the more valuable it becomes. Unlike paid ads, organic traffic doesn't stop when you pause spending. For cash-conscious startups, SEO delivers the highest long-term ROI of any marketing channel."
         },
         {
           "id": "quick-wins",

@@ -23,7 +23,7 @@
       {
         "id": "keyword-research",
         "title": "Keyword Research: The Foundation of Every Campaign",
-        "content": "Start with seed keywords\u2014broad terms related to your industry. Expand using tools like Ahrefs and SEMrush to discover long-tail variations with lower competition and higher conversion intent. Map keywords to specific pages based on search intent: informational, navigational, commercial, and transactional."
+        "content": "Start with seed keywords - broad terms related to your industry. Expand using tools like Ahrefs and SEMrush to discover long-tail variations with lower competition and higher conversion intent. Map keywords to specific pages based on search intent: informational, navigational, commercial, and transactional."
       },
       {
         "id": "on-page-optimization",
@@ -91,7 +91,7 @@
     "faqs": [
       {
         "q": "How many keywords should I target per page?",
-        "a": "Focus on one primary keyword and 3-5 secondary/related keywords per page. Avoid keyword stuffing\u2014write naturally while covering the topic comprehensively."
+        "a": "Focus on one primary keyword and 3-5 secondary/related keywords per page. Avoid keyword stuffing - write naturally while covering the topic comprehensively."
       },
       {
         "q": "What is a good keyword difficulty score?",
@@ -258,7 +258,7 @@
       {
         "id": "what-is-geo",
         "title": "What Is Generative Engine Optimization?",
-        "content": "GEO is the practice of optimizing your digital presence so AI-powered search engines\u2014ChatGPT, Perplexity, Google AI Overviews\u2014cite and recommend your brand. As AI search grows, traditional SEO alone is no longer sufficient."
+        "content": "GEO is the practice of optimizing your digital presence so AI-powered search engines - ChatGPT, Perplexity, Google AI Overviews - cite and recommend your brand. As AI search grows, traditional SEO alone is no longer sufficient."
       },
       {
         "id": "how-llms-work",
@@ -362,7 +362,7 @@
       },
       {
         "q": "How important are product reviews for e-commerce SEO?",
-        "a": "Very important. Reviews provide unique, fresh content and enable Review schema for star ratings in search results\u2014both significantly impact CTR and rankings."
+        "a": "Very important. Reviews provide unique, fresh content and enable Review schema for star ratings in search results - both significantly impact CTR and rankings."
       }
     ],
     "relatedSlugs": [
@@ -431,7 +431,7 @@
       {
         "id": "what-are-cwv",
         "title": "What Are Core Web Vitals?",
-        "content": "Core Web Vitals are Google's metrics for user experience. LCP (Largest Contentful Paint) measures loading\u2014aim for under 2.5s. INP (Interaction to Next Paint) measures responsiveness\u2014aim for under 200ms. CLS (Cumulative Layout Shift) measures visual stability\u2014aim for under 0.1."
+        "content": "Core Web Vitals are Google's metrics for user experience. LCP (Largest Contentful Paint) measures loading - aim for under 2.5s. INP (Interaction to Next Paint) measures responsiveness - aim for under 200ms. CLS (Cumulative Layout Shift) measures visual stability - aim for under 0.1."
       },
       {
         "id": "how-to-fix",
@@ -488,7 +488,7 @@
       },
       {
         "q": "Which schema format should I use?",
-        "a": "Use JSON-LD. Google explicitly recommends it, and it's the easiest to implement and maintain\u2014just add a script tag in your page's head."
+        "a": "Use JSON-LD. Google explicitly recommends it, and it's the easiest to implement and maintain - just add a script tag in your page's head."
       }
     ],
     "relatedSlugs": [
@@ -515,7 +515,7 @@
       {
         "id": "why-seo-for-startups",
         "title": "Why Startups Need SEO from Day One",
-        "content": "SEO compounds over time\u2014the earlier you start, the more valuable it becomes. Unlike paid ads, organic traffic doesn't stop when you pause spending. For cash-conscious startups, SEO delivers the highest long-term ROI of any marketing channel."
+        "content": "SEO compounds over time - the earlier you start, the more valuable it becomes. Unlike paid ads, organic traffic doesn't stop when you pause spending. For cash-conscious startups, SEO delivers the highest long-term ROI of any marketing channel."
       },
       {
         "id": "quick-wins",
