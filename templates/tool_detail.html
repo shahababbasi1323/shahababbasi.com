@@ -15,6 +15,23 @@
   {{ tool_widget|safe }}
 </section>
 
+{% if unique and unique.intro_html %}
+<section class="container-tight pb-6">
+  <p class="max-w-3xl text-foreground/85 leading-relaxed speakable" data-speakable>{{ unique.intro_html }}</p>
+</section>
+{% endif %}
+
+{% if unique and unique.sections %}
+<section class="container-tight pb-10">
+  {% for s in unique.sections %}
+  <div class="mb-8 max-w-3xl">
+    <h2 class="font-display text-xl md:text-2xl font-bold">{{ s.h2 }}</h2>
+    <p class="mt-2 text-foreground/85 speakable" data-speakable>{{ s.body }}</p>
+  </div>
+  {% endfor %}
+</section>
+{% endif %}
+
 <section class="container-tight pb-10">
   <h2 class="font-display text-2xl font-bold">How this tool works</h2>
   <ol class="mt-4 grid md:grid-cols-3 gap-3 text-sm">

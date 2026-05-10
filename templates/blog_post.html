@@ -2,9 +2,17 @@
 {% block breadcrumbs %}{% include "_partials/breadcrumbs.html" %}{% endblock %}
 {% block content %}
 <article class="container-tight max-w-3xl py-12 md:py-16">
-  <p class="text-xs uppercase tracking-widest text-accent">{{ item.category }} - {{ item.datePublished }}</p>
+  <p class="text-xs uppercase tracking-widest text-accent">{{ item.category }} - {{ item.datePublished }}{% if unique and unique.reading_time_minutes %} - {{ unique.reading_time_minutes }} min read{% endif %}</p>
   <h1 class="mt-2 font-display text-3xl md:text-5xl font-bold tracking-tight leading-tight">{{ item.title }}</h1>
   <p class="mt-4 text-foreground/80">{{ item.shortDescription }}</p>
+  <div class="mt-3 flex items-center gap-3 text-sm text-foreground/70">
+    <span>By <a href="{{ url('/about.html') }}" class="text-accent">{{ brand.founderName }}</a></span>
+    {% if unique and unique.lastmod %}<span>- Updated {{ unique.lastmod }}</span>{% endif %}
+  </div>
+
+  {% if unique and unique.intro_html %}
+  <p class="mt-8 text-foreground/85 text-lg leading-relaxed speakable" data-speakable>{{ unique.intro_html }}</p>
+  {% endif %}
 
   <div class="mt-8 glass-strong p-5 rounded-2xl">
     <p class="text-xs uppercase tracking-widest text-accent">Key takeaways</p>
@@ -16,6 +24,13 @@
       <li>- An FAQ block tuned for Google AI Overviews and Perplexity.</li>
     </ul>
   </div>
+
+  {% if unique and unique.sections %}
+  {% for s in unique.sections %}
+  <h2 class="font-display text-2xl font-bold mt-12">{{ s.h2 }}</h2>
+  <p class="mt-3 text-foreground/85 leading-relaxed speakable" data-speakable>{{ s.body }}</p>
+  {% endfor %}
+  {% endif %}
 
   <h2 class="font-display text-2xl font-bold mt-12">Why this matters now</h2>
   <p class="mt-3 text-foreground/85">{{ item.title }} is no longer a niche topic. With Google AI Overviews appearing on most commercial queries and ChatGPT search citing brand domains directly, search visibility now requires a hybrid approach: classic SEO, GEO (generative engine optimization), and AEO (answer engine optimization). This article walks through the highest-leverage tactics for 2026 with examples from real client engagements.</p>
