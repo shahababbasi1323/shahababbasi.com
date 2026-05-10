@@ -668,6 +668,171 @@ def tool_widget(slug: str, name: str) -> str:
   })();
 </script>
 """
+    if slug == "bulk-index-checker":
+        return """
+<div class="glass p-6">
+  <label class="text-sm font-display font-semibold">URLs to Check (one per line)</label>
+  <textarea id="bic-urls" rows="8" class="mt-2 w-full rounded-lg bg-card/60 border border-border px-3 py-2 outline-none focus:ring-2 focus:ring-primary text-sm" placeholder="https://example.com/page-1
+https://example.com/page-2
+example.com/blog/post-title
+..."></textarea>
+  <p id="bic-count" class="mt-1 text-xs text-foreground/60">0 URLs entered</p>
+  <div class="mt-4 flex flex-wrap items-end gap-4">
+    <label class="text-sm">
+      <span class="block font-display font-semibold">Delay Between Tabs</span>
+      <select id="bic-delay" class="mt-1 h-11 rounded-lg bg-card/60 border border-border px-3">
+        <option value="1">1 second</option>
+        <option value="2" selected>2 seconds</option>
+        <option value="3">3 seconds</option>
+        <option value="5">5 seconds</option>
+        <option value="10">10 seconds</option>
+      </select>
+    </label>
+    <button id="bic-go" class="rounded-xl bg-gradient-brand px-5 py-3 text-sm font-medium shadow-glow-primary">Check 0 URLs</button>
+    <button id="bic-stop" class="rounded-xl border border-border/60 px-4 py-3 text-sm hidden">Stop</button>
+  </div>
+  <pre id="bic-log" class="mt-5 text-xs whitespace-pre-wrap glass-strong p-4 rounded-lg max-h-56 overflow-auto hidden"></pre>
+  <p class="mt-3 text-xs text-foreground/60">Tip: your browser may block popups. Allow popups for this page so each tab can open.</p>
+</div>
+<script>
+  (function(){
+    var ta = document.getElementById('bic-urls');
+    var count = document.getElementById('bic-count');
+    var btn = document.getElementById('bic-go');
+    var stop = document.getElementById('bic-stop');
+    var log = document.getElementById('bic-log');
+    var delay = document.getElementById('bic-delay');
+    var running = false;
+    function urls(){ return (ta.value || '').split(/\\r?\\n/).map(function(s){ return s.trim(); }).filter(Boolean); }
+    function update(){
+      var n = urls().length;
+      count.textContent = n + ' URLs entered';
+      btn.textContent = 'Check ' + n + ' URLs';
+      btn.disabled = n === 0 || running;
+    }
+    ta.addEventListener('input', update); update();
+    btn.addEventListener('click', function(){
+      var list = urls(); if (!list.length || running) return;
+      running = true; btn.disabled = true; stop.classList.remove('hidden'); log.classList.remove('hidden'); log.textContent = '';
+      var ms = (parseInt(delay.value, 10) || 2) * 1000;
+      var i = 0;
+      function next(){
+        if (!running || i >= list.length){ running = false; btn.disabled = false; stop.classList.add('hidden'); return; }
+        var u = list[i].replace(/^https?:\\/\\//, '');
+        var q = 'https://www.google.com/search?q=site%3A' + encodeURIComponent(u);
+        log.textContent += '[' + (i+1) + '/' + list.length + '] Opening site:' + u + '\\n';
+        log.scrollTop = log.scrollHeight;
+        var w = window.open(q, '_blank', 'noopener');
+        if (!w) { log.textContent += '  Popup blocked - please allow popups and retry.\\n'; running = false; btn.disabled = false; stop.classList.add('hidden'); return; }
+        i++;
+        setTimeout(next, ms);
+      }
+      next();
+    });
+    stop.addEventListener('click', function(){ running = false; btn.disabled = false; stop.classList.add('hidden'); log.textContent += 'Stopped.\\n'; });
+  })();
+</script>
+"""
+    if slug == "bulk-keyword-checker":
+        return """
+<div class="glass p-6 grid lg:grid-cols-2 gap-6">
+  <div>
+    <p class="text-sm font-display font-semibold mb-2">Enter Keywords</p>
+    <div class="grid sm:grid-cols-2 gap-3 text-sm">
+      <label>
+        <span class="block font-display font-semibold">Business Name</span>
+        <input id="bkc-brand" placeholder="Your Brand Name" class="mt-1 w-full h-11 rounded-lg bg-card/60 border border-border px-3">
+        <span class="block mt-1 text-xs text-foreground/60">Auto-highlight in search results</span>
+      </label>
+      <label>
+        <span class="block font-display font-semibold">Website URL</span>
+        <input id="bkc-site" placeholder="yourbrand.com" class="mt-1 w-full h-11 rounded-lg bg-card/60 border border-border px-3">
+        <span class="block mt-1 text-xs text-foreground/60">For tracking reference</span>
+      </label>
+    </div>
+    <label class="block mt-3 text-sm">
+      <span class="block font-display font-semibold">Domain to Check (optional)</span>
+      <input id="bkc-domain" placeholder="example.com" class="mt-1 w-full h-11 rounded-lg bg-card/60 border border-border px-3">
+      <span class="block mt-1 text-xs text-foreground/60">Add site: filter to search</span>
+    </label>
+    <label class="block mt-3 text-sm">
+      <span class="block font-display font-semibold">Keywords (one per line)</span>
+      <textarea id="bkc-kws" rows="6" placeholder="keyword 1
+keyword 2
+keyword 3
+..." class="mt-1 w-full rounded-lg bg-card/60 border border-border px-3 py-2"></textarea>
+      <span id="bkc-count" class="block mt-1 text-xs text-foreground/60">0 keywords entered</span>
+    </label>
+    <div class="grid sm:grid-cols-2 gap-3 text-sm mt-3">
+      <label>
+        <span class="block font-display font-semibold">Location / City (optional)</span>
+        <input id="bkc-loc" placeholder="e.g. dallas, london" class="mt-1 w-full h-11 rounded-lg bg-card/60 border border-border px-3">
+      </label>
+      <label>
+        <span class="block font-display font-semibold">Language Code (optional)</span>
+        <input id="bkc-lang" placeholder="e.g. en, es, de" class="mt-1 w-full h-11 rounded-lg bg-card/60 border border-border px-3">
+      </label>
+    </div>
+    <div class="mt-4 flex flex-wrap gap-3">
+      <button id="bkc-gen" class="rounded-xl bg-gradient-brand px-5 py-3 text-sm font-medium shadow-glow-primary">Generate Links</button>
+      <button id="bkc-open" class="rounded-xl border border-border/60 px-4 py-3 text-sm hidden">Open all in tabs</button>
+      <button id="bkc-copy" class="rounded-xl border border-border/60 px-4 py-3 text-sm hidden">Copy all</button>
+    </div>
+  </div>
+  <div>
+    <p class="text-sm font-display font-semibold mb-2">Search Links</p>
+    <div id="bkc-out" class="glass-strong rounded-lg p-4 min-h-[12rem] text-sm">
+      <p class="text-foreground/60 text-center mt-12">Enter keywords and click "Generate Links" to start</p>
+    </div>
+  </div>
+</div>
+<script>
+  (function(){
+    var brand = document.getElementById('bkc-brand');
+    var site  = document.getElementById('bkc-site');
+    var dom   = document.getElementById('bkc-domain');
+    var kws   = document.getElementById('bkc-kws');
+    var loc   = document.getElementById('bkc-loc');
+    var lang  = document.getElementById('bkc-lang');
+    var gen   = document.getElementById('bkc-gen');
+    var openAll = document.getElementById('bkc-open');
+    var copyAll = document.getElementById('bkc-copy');
+    var out   = document.getElementById('bkc-out');
+    var count = document.getElementById('bkc-count');
+    function list(){ return (kws.value || '').split(/\\r?\\n/).map(function(s){ return s.trim(); }).filter(Boolean); }
+    function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+    function update(){ count.textContent = list().length + ' keywords entered'; }
+    kws.addEventListener('input', update); update();
+    function buildQuery(kw){
+      var parts = [kw];
+      if (dom.value) parts.push('site:' + dom.value.replace(/^https?:\\/\\//, ''));
+      if (loc.value) parts.push('"' + loc.value + '"');
+      var q = parts.join(' ');
+      var u = 'https://www.google.com/search?q=' + encodeURIComponent(q);
+      if (lang.value) u += '&hl=' + encodeURIComponent(lang.value);
+      if (loc.value) u += '&gl=' + encodeURIComponent(loc.value);
+      return u;
+    }
+    gen.addEventListener('click', function(){
+      var arr = list(); if (!arr.length){ return; }
+      var html = '<ul class="space-y-2">';
+      var urls = [];
+      arr.forEach(function(kw){
+        var u = buildQuery(kw);
+        urls.push(u);
+        var label = brand.value ? esc(kw) + ' <span class="text-foreground/50">(brand: ' + esc(brand.value) + ')</span>' : esc(kw);
+        html += '<li class="glass p-3 flex items-center justify-between gap-3"><span>' + label + '</span><a target="_blank" rel="noopener" class="text-accent text-xs underline" href="' + u + '">Open</a></li>';
+      });
+      html += '</ul>';
+      if (site.value){ html += '<p class="mt-3 text-xs text-foreground/60">Reference: ' + esc(site.value) + '</p>'; }
+      out.innerHTML = html;
+      openAll.classList.remove('hidden'); copyAll.classList.remove('hidden');
+      openAll.onclick = function(){ urls.forEach(function(u, i){ setTimeout(function(){ window.open(u, '_blank', 'noopener'); }, i * 1500); }); };
+      copyAll.onclick = function(){ navigator.clipboard.writeText(urls.join('\\n')); copyAll.textContent = 'Copied'; setTimeout(function(){ copyAll.textContent = 'Copy all'; }, 1500); };
+    });
+  })();
+</script>
+"""
     # Generic fallback widget
     return f"""
 <div class="glass p-6">

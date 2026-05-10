@@ -5059,6 +5059,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://shahababbasi.com/tools/bulk-index-checker.html</loc>
+    <lastmod>2026-02-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://shahababbasi.com/tools/bulk-keyword-checker.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://shahababbasi.com/tools/character-counter.html</loc>
     <lastmod>2026-04-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -5161,12 +5173,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://shahababbasi.com/tools/bulk-index-checker.html</loc>
-    <lastmod>2026-02-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://shahababbasi.com/tools/serp-checker.html</loc>
     <lastmod>2026-02-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -5259,12 +5265,6 @@
   <url>
     <loc>https://shahababbasi.com/tools/keyword-grouper.html</loc>
     <lastmod>2026-04-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://shahababbasi.com/tools/bulk-keyword-checker.html</loc>
-    <lastmod>2026-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>

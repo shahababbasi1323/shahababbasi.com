@@ -15329,6 +15329,46 @@
       "parentCategory": "technical-seo-tools"
     },
     {
+      "slug": "bulk-index-checker",
+      "name": "Bulk Index Checker",
+      "primaryKeyword": "bulk index checker",
+      "lsiKeywords": [
+        "bulk indexation checker",
+        "check if multiple URLs are indexed",
+        "site: operator bulk checker",
+        "Google index checker bulk",
+        "bulk URL indexed status"
+      ],
+      "shortDescription": "Check if multiple URLs are indexed by Google in bulk using the site: operator with staggered tab opening.",
+      "heroImagePrompt": "product UI mock of a bulk index checker on dark navy background with electric blue accents",
+      "parentCategory": "meta-tools",
+      "category": "Meta & On-Page SEO",
+      "description": "Check multiple URLs at once for Google indexing status.",
+      "metaDescription": "Check multiple URLs at once for Google indexing status.",
+      "hasJs": true,
+      "toolType": "textarea"
+    },
+    {
+      "slug": "bulk-keyword-checker",
+      "name": "Bulk Keyword Checker",
+      "primaryKeyword": "bulk keyword checker",
+      "lsiKeywords": [
+        "bulk keyword rank checker",
+        "Google search bulk keywords",
+        "branded SERP checker",
+        "keyword rank tracker free",
+        "bulk SERP checker"
+      ],
+      "shortDescription": "Check rankings for multiple keywords across Google Search at once.",
+      "heroImagePrompt": "product UI mock of a bulk keyword rank checker on dark navy background with electric blue accents",
+      "parentCategory": "keyword-tools",
+      "category": "Keyword & Research",
+      "description": "Check search volume and competition metrics for multiple keywords at once.",
+      "metaDescription": "Check search volume and competition metrics for multiple keywords at once.",
+      "hasJs": true,
+      "toolType": "textarea"
+    },
+    {
       "slug": "character-counter",
       "name": "Character Counter",
       "category": "Content & Writing",
@@ -15516,17 +15556,6 @@
       "toolType": "textarea"
     },
     {
-      "slug": "bulk-index-checker",
-      "name": "Bulk Index Checker",
-      "category": "Meta & On-Page SEO",
-      "primaryKeyword": "Bulk Index Checker",
-      "lsiKeywords": [],
-      "description": "Check multiple URLs at once for Google indexing status.",
-      "metaDescription": "Check multiple URLs at once for Google indexing status.",
-      "hasJs": true,
-      "toolType": "textarea"
-    },
-    {
       "slug": "serp-checker",
       "name": "Serp Checker",
       "category": "Meta & On-Page SEO",
@@ -15699,17 +15728,6 @@
       "lsiKeywords": [],
       "description": "Group keywords into clusters based on semantic similarity and search intent.",
       "metaDescription": "Group keywords into clusters based on semantic similarity and search intent.",
-      "hasJs": true,
-      "toolType": "textarea"
-    },
-    {
-      "slug": "bulk-keyword-checker",
-      "name": "Bulk Keyword Checker",
-      "category": "Keyword & Research",
-      "primaryKeyword": "Bulk Keyword Checker",
-      "lsiKeywords": [],
-      "description": "Check search volume and competition metrics for multiple keywords at once.",
-      "metaDescription": "Check search volume and competition metrics for multiple keywords at once.",
       "hasJs": true,
       "toolType": "textarea"
     },
