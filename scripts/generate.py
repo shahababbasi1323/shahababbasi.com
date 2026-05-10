@@ -677,59 +677,76 @@ https://example.com/page-2
 example.com/blog/post-title
 ..."></textarea>
   <p id="bic-count" class="mt-1 text-xs text-foreground/60">0 URLs entered</p>
-  <div class="mt-4 flex flex-wrap items-end gap-4">
-    <label class="text-sm">
-      <span class="block font-display font-semibold">Delay Between Tabs</span>
-      <select id="bic-delay" class="mt-1 h-11 rounded-lg bg-card/60 border border-border px-3">
-        <option value="1">1 second</option>
-        <option value="2" selected>2 seconds</option>
-        <option value="3">3 seconds</option>
-        <option value="5">5 seconds</option>
-        <option value="10">10 seconds</option>
-      </select>
-    </label>
+  <div class="mt-4 flex flex-wrap items-center gap-3">
     <button id="bic-go" class="rounded-xl bg-gradient-brand px-5 py-3 text-sm font-medium shadow-glow-primary">Check 0 URLs</button>
-    <button id="bic-stop" class="rounded-xl border border-border/60 px-4 py-3 text-sm hidden">Stop</button>
+    <button id="bic-openall" class="rounded-xl border border-border/60 px-4 py-3 text-sm hidden">Open all in tabs</button>
+    <button id="bic-copy" class="rounded-xl border border-border/60 px-4 py-3 text-sm hidden">Copy queries</button>
+    <button id="bic-clear" class="rounded-xl border border-border/60 px-4 py-3 text-sm hidden">Clear</button>
   </div>
-  <pre id="bic-log" class="mt-5 text-xs whitespace-pre-wrap glass-strong p-4 rounded-lg max-h-56 overflow-auto hidden"></pre>
-  <p class="mt-3 text-xs text-foreground/60">Tip: your browser may block popups. Allow popups for this page so each tab can open.</p>
+  <div id="bic-out" class="mt-5 hidden">
+    <p class="text-sm font-display font-semibold mb-2">site: search links</p>
+    <ul id="bic-list" class="glass-strong rounded-lg p-3 max-h-80 overflow-auto space-y-2 text-sm"></ul>
+    <p class="mt-3 text-xs text-foreground/60">Click any link to open that site: search in a new tab. Use "Open all in tabs" to open every link at once (allow popups for this page on first run).</p>
+  </div>
 </div>
 <script>
   (function(){
     var ta = document.getElementById('bic-urls');
     var count = document.getElementById('bic-count');
     var btn = document.getElementById('bic-go');
-    var stop = document.getElementById('bic-stop');
-    var log = document.getElementById('bic-log');
-    var delay = document.getElementById('bic-delay');
-    var running = false;
+    var openAll = document.getElementById('bic-openall');
+    var copyBtn = document.getElementById('bic-copy');
+    var clearBtn = document.getElementById('bic-clear');
+    var outBox = document.getElementById('bic-out');
+    var listEl = document.getElementById('bic-list');
     function urls(){ return (ta.value || '').split(/\\r?\\n/).map(function(s){ return s.trim(); }).filter(Boolean); }
+    function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
     function update(){
       var n = urls().length;
       count.textContent = n + ' URLs entered';
       btn.textContent = 'Check ' + n + ' URLs';
-      btn.disabled = n === 0 || running;
+      btn.disabled = n === 0;
     }
     ta.addEventListener('input', update); update();
+    function buildSearch(raw){
+      var u = raw.replace(/^https?:\\/\\//, '').replace(/\\/$/, '');
+      return { domain: u, search: 'https://www.google.com/search?q=site%3A' + encodeURIComponent(u) };
+    }
+    function render(items){
+      listEl.innerHTML = '';
+      items.forEach(function(it, i){
+        var li = document.createElement('li');
+        li.className = 'flex items-center justify-between gap-3 glass p-2 rounded-md';
+        li.innerHTML =
+          '<span class="text-foreground/70 text-xs shrink-0">' + (i + 1) + '.</span>' +
+          '<span class="flex-1 truncate font-mono text-xs">site:' + esc(it.domain) + '</span>' +
+          '<a href="' + it.search + '" target="_blank" rel="noopener" class="text-accent text-xs underline shrink-0">Open</a>';
+        listEl.appendChild(li);
+      });
+      outBox.classList.remove('hidden');
+      openAll.classList.remove('hidden');
+      copyBtn.classList.remove('hidden');
+      clearBtn.classList.remove('hidden');
+    }
     btn.addEventListener('click', function(){
-      var list = urls(); if (!list.length || running) return;
-      running = true; btn.disabled = true; stop.classList.remove('hidden'); log.classList.remove('hidden'); log.textContent = '';
-      var ms = (parseInt(delay.value, 10) || 2) * 1000;
-      var i = 0;
-      function next(){
-        if (!running || i >= list.length){ running = false; btn.disabled = false; stop.classList.add('hidden'); return; }
-        var u = list[i].replace(/^https?:\\/\\//, '');
-        var q = 'https://www.google.com/search?q=site%3A' + encodeURIComponent(u);
-        log.textContent += '[' + (i+1) + '/' + list.length + '] Opening site:' + u + '\\n';
-        log.scrollTop = log.scrollHeight;
-        var w = window.open(q, '_blank', 'noopener');
-        if (!w) { log.textContent += '  Popup blocked - please allow popups and retry.\\n'; running = false; btn.disabled = false; stop.classList.add('hidden'); return; }
-        i++;
-        setTimeout(next, ms);
-      }
-      next();
+      var list = urls(); if (!list.length) return;
+      var items = list.map(buildSearch);
+      render(items);
+      items.forEach(function(it){ window.open(it.search, '_blank', 'noopener'); });
     });
-    stop.addEventListener('click', function(){ running = false; btn.disabled = false; stop.classList.add('hidden'); log.textContent += 'Stopped.\\n'; });
+    openAll.addEventListener('click', function(){
+      var list = urls(); if (!list.length) return;
+      list.map(buildSearch).forEach(function(it){ window.open(it.search, '_blank', 'noopener'); });
+    });
+    copyBtn.addEventListener('click', function(){
+      var list = urls().map(buildSearch).map(function(it){ return it.search; }).join('\\n');
+      navigator.clipboard.writeText(list);
+      copyBtn.textContent = 'Copied'; setTimeout(function(){ copyBtn.textContent = 'Copy queries'; }, 1500);
+    });
+    clearBtn.addEventListener('click', function(){
+      ta.value = ''; update(); listEl.innerHTML = ''; outBox.classList.add('hidden');
+      openAll.classList.add('hidden'); copyBtn.classList.add('hidden'); clearBtn.classList.add('hidden');
+    });
   })();
 </script>
 """
@@ -806,11 +823,11 @@ keyword 3
     function buildQuery(kw){
       var parts = [kw];
       if (dom.value) parts.push('site:' + dom.value.replace(/^https?:\\/\\//, ''));
-      if (loc.value) parts.push('"' + loc.value + '"');
+      if (loc.value) parts.push(loc.value);
       var q = parts.join(' ');
       var u = 'https://www.google.com/search?q=' + encodeURIComponent(q);
       if (lang.value) u += '&hl=' + encodeURIComponent(lang.value);
-      if (loc.value) u += '&gl=' + encodeURIComponent(loc.value);
+      if (loc.value && /^[a-z]{2}$/i.test(loc.value.trim())) u += '&gl=' + encodeURIComponent(loc.value.trim().toLowerCase());
       return u;
     }
     gen.addEventListener('click', function(){
@@ -827,7 +844,7 @@ keyword 3
       if (site.value){ html += '<p class="mt-3 text-xs text-foreground/60">Reference: ' + esc(site.value) + '</p>'; }
       out.innerHTML = html;
       openAll.classList.remove('hidden'); copyAll.classList.remove('hidden');
-      openAll.onclick = function(){ urls.forEach(function(u, i){ setTimeout(function(){ window.open(u, '_blank', 'noopener'); }, i * 1500); }); };
+      openAll.onclick = function(){ urls.forEach(function(u){ window.open(u, '_blank', 'noopener'); }); };
       copyAll.onclick = function(){ navigator.clipboard.writeText(urls.join('\\n')); copyAll.textContent = 'Copied'; setTimeout(function(){ copyAll.textContent = 'Copy all'; }, 1500); };
     });
   })();

@@ -1853,11 +1853,11 @@ keyword 3
     function buildQuery(kw){
       var parts = [kw];
       if (dom.value) parts.push('site:' + dom.value.replace(/^https?:\/\//, ''));
-      if (loc.value) parts.push('"' + loc.value + '"');
+      if (loc.value) parts.push(loc.value);
       var q = parts.join(' ');
       var u = 'https://www.google.com/search?q=' + encodeURIComponent(q);
       if (lang.value) u += '&hl=' + encodeURIComponent(lang.value);
-      if (loc.value) u += '&gl=' + encodeURIComponent(loc.value);
+      if (loc.value && /^[a-z]{2}$/i.test(loc.value.trim())) u += '&gl=' + encodeURIComponent(loc.value.trim().toLowerCase());
       return u;
     }
     gen.addEventListener('click', function(){
@@ -1874,7 +1874,7 @@ keyword 3
       if (site.value){ html += '<p class="mt-3 text-xs text-foreground/60">Reference: ' + esc(site.value) + '</p>'; }
       out.innerHTML = html;
       openAll.classList.remove('hidden'); copyAll.classList.remove('hidden');
-      openAll.onclick = function(){ urls.forEach(function(u, i){ setTimeout(function(){ window.open(u, '_blank', 'noopener'); }, i * 1500); }); };
+      openAll.onclick = function(){ urls.forEach(function(u){ window.open(u, '_blank', 'noopener'); }); };
       copyAll.onclick = function(){ navigator.clipboard.writeText(urls.join('\n')); copyAll.textContent = 'Copied'; setTimeout(function(){ copyAll.textContent = 'Copy all'; }, 1500); };
     });
   })();
