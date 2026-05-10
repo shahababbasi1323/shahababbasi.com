@@ -1214,6 +1214,104 @@ FULL_DEPTH_LANGS = {"en"}
 # Languages that get a stub: home + about + contact + services hub + pricing + 6 services + 6 cities + 6 industries + 6 tools + 5 blog + audit
 STUB_LANGS = {"ar", "fr", "de", "es", "nl", "it", "pt", "da", "sv", "no", "fi", "pl", "cs", "hu", "ro", "el", "tr", "ja", "ko", "he", "zh"}
 
+# Country code -> set of languages we render city pages in for cities in that country.
+# Used by the per-language stub loop to render localized city pages
+# (e.g. /de/seo-services-berlin, /ar/seo-services-cairo, /fr/seo-services-montreal).
+COUNTRY_LANGS: dict[str, frozenset[str]] = {
+    # Arabic-speaking
+    "AE": frozenset({"ar"}),
+    "SA": frozenset({"ar"}),
+    "KW": frozenset({"ar"}),
+    "QA": frozenset({"ar"}),
+    "OM": frozenset({"ar"}),
+    "BH": frozenset({"ar"}),
+    "EG": frozenset({"ar"}),
+    "JO": frozenset({"ar"}),
+    "LB": frozenset({"ar", "fr"}),
+    "MA": frozenset({"ar", "fr"}),
+    "DZ": frozenset({"ar", "fr"}),
+    "TN": frozenset({"ar", "fr"}),
+    "SY": frozenset({"ar"}),
+    "IQ": frozenset({"ar"}),
+    "YE": frozenset({"ar"}),
+    "LY": frozenset({"ar"}),
+    "SD": frozenset({"ar"}),
+    "PS": frozenset({"ar"}),
+    # German-speaking
+    "DE": frozenset({"de"}),
+    "AT": frozenset({"de"}),
+    "CH": frozenset({"de", "fr", "it"}),
+    "LI": frozenset({"de"}),
+    "LU": frozenset({"de", "fr"}),
+    # French-speaking
+    "FR": frozenset({"fr"}),
+    "BE": frozenset({"fr", "nl"}),
+    "MC": frozenset({"fr"}),
+    "SN": frozenset({"fr"}),
+    "CI": frozenset({"fr"}),
+    "CM": frozenset({"fr"}),
+    "CA": frozenset({"fr"}),  # Quebec; default English for the rest
+    # Spanish-speaking
+    "ES": frozenset({"es"}),
+    "MX": frozenset({"es"}),
+    "AR": frozenset({"es"}),
+    "CO": frozenset({"es"}),
+    "CL": frozenset({"es"}),
+    "PE": frozenset({"es"}),
+    "VE": frozenset({"es"}),
+    "EC": frozenset({"es"}),
+    "GT": frozenset({"es"}),
+    "CU": frozenset({"es"}),
+    "BO": frozenset({"es"}),
+    "DO": frozenset({"es"}),
+    "HN": frozenset({"es"}),
+    "PY": frozenset({"es"}),
+    "SV": frozenset({"es"}),
+    "NI": frozenset({"es"}),
+    "CR": frozenset({"es"}),
+    "PA": frozenset({"es"}),
+    "UY": frozenset({"es"}),
+    # Italian-speaking
+    "IT": frozenset({"it"}),
+    "SM": frozenset({"it"}),
+    "VA": frozenset({"it"}),
+    # Dutch-speaking
+    "NL": frozenset({"nl"}),
+    # Portuguese-speaking
+    "PT": frozenset({"pt"}),
+    "BR": frozenset({"pt"}),
+    "AO": frozenset({"pt"}),
+    "MZ": frozenset({"pt"}),
+    "CV": frozenset({"pt"}),
+    # Nordic
+    "DK": frozenset({"da"}),
+    "SE": frozenset({"sv"}),
+    "NO": frozenset({"no"}),
+    "FI": frozenset({"fi", "sv"}),
+    "IS": frozenset({"da"}),  # Icelandic not supported, fall back to Danish
+    # Slavic / Central Europe
+    "PL": frozenset({"pl"}),
+    "CZ": frozenset({"cs"}),
+    "SK": frozenset({"cs"}),
+    "HU": frozenset({"hu"}),
+    "RO": frozenset({"ro"}),
+    "MD": frozenset({"ro"}),
+    # Greek
+    "GR": frozenset({"el"}),
+    "CY": frozenset({"el", "tr"}),
+    # Turkish
+    "TR": frozenset({"tr"}),
+    # East Asian
+    "JP": frozenset({"ja"}),
+    "KR": frozenset({"ko"}),
+    "CN": frozenset({"zh"}),
+    "TW": frozenset({"zh"}),
+    "HK": frozenset({"zh"}),
+    "SG": frozenset({"zh"}),
+    # Hebrew
+    "IL": frozenset({"he"}),
+}
+
 
 def main() -> None:
     reset_output()
@@ -1351,6 +1449,21 @@ def main() -> None:
             for post in data["blogTopics"][:5]:
                 render_blog_post(e, data, lang, default_lang, brand_url, post)
                 reg(brand_url + f"/{lang}/blog/{post['slug']}.html", post["title"])
+
+            # Render city pages in their primary local language(s).
+            # E.g. /de/seo-services-berlin, /fr/seo-services-paris, /ar/seo-services-cairo.
+            country_by_code = {(c.get("code") or c.get("countryCode")): c for c in data["countries"] if (c.get("code") or c.get("countryCode"))}
+            for city in data["cities"]:
+                country_code = city.get("countryCode")
+                if not country_code:
+                    continue
+                if lang not in COUNTRY_LANGS.get(country_code, ()):
+                    continue
+                country = country_by_code.get(country_code)
+                if not country:
+                    continue
+                render_city(e, data, lang, default_lang, brand_url, city, country)
+                reg(brand_url + f"/{lang}/{city['slug']}.html", city["name"], (city.get("shortDescription") or city.get("metaDescription") or city.get("description") or ""), priority="0.6")
 
         render_sitemap_html(e, data, lang, default_lang, brand_url, all_pages)
 

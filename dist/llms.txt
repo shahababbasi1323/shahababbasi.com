@@ -38,6 +38,8 @@
 - [Keyword Research](https://shahababbasi.com/services/keyword-research.html) - Map every commercial, informational, and transactional keyword your buyers use across the funnel.
 - [Competitor Analysis](https://shahababbasi.com/services/competitor-analysis.html) - Reverse-engineer the strategies, keywords, and backlinks that make your competitors rank, then beat them.
 - [SEO Consulting](https://shahababbasi.com/services/seo-consulting.html) - Senior strategist on tap to guide your in-house team, validate roadmaps, and unblock growth.
+- [Content Strategy](https://shahababbasi.com/services/content-strategy.html) - Editorial systems and topic clusters that build authority, capture demand, and earn citations from AI search engines.
+- [Website Speed Optimization](https://shahababbasi.com/services/website-speed-optimization.html) - Engineering Core Web Vitals, INP, LCP, and CLS to convert better and rank better. Fast sites compound.
 - [AEO - Answer Engine Optimization](https://shahababbasi.com/services/aeo.html) - Position your content as THE answer. AEO focuses on winning featured snippets, People Also Ask boxes, voice search resul
 - [SEO Content Strategy](https://shahababbasi.com/services/seo-content-strategy.html) - Build topical authority that compounds month over month. Our content strategies turn your website into a comprehensive r
 - [Shopify SEO](https://shahababbasi.com/services/shopify-seo.html) - Unlock your Shopify store's organic potential. We address platform-specific limitations and optimize every product page 
@@ -200,8 +202,6 @@
 - [Sleep Coaches](https://shahababbasi.com/industries/sleep-coaches.html) - Industry-specific SEO and growth marketing built for sleep coaches, with playbooks, schema, and conversion tactics that 
 - [Nutritionists](https://shahababbasi.com/industries/nutritionists.html) - Industry-specific SEO and growth marketing built for nutritionists, with playbooks, schema, and conversion tactics that 
 - [Personal Trainers](https://shahababbasi.com/industries/personal-trainers.html) - Industry-specific SEO and growth marketing built for personal trainers, with playbooks, schema, and conversion tactics t
-- [Doulas and Midwives](https://shahababbasi.com/industries/doulas-and-midwives.html) - Industry-specific SEO and growth marketing built for doulas and midwives, with playbooks, schema, and conversion tactics
-- [Cannabis Dispensaries](https://shahababbasi.com/industries/cannabis-dispensaries.html) - Industry-specific SEO and growth marketing built for cannabis dispensaries, with playbooks, schema, and conversion tacti
 
 ## Note
 This document follows the emerging llms.txt convention so that LLMs can quickly understand Shahab Abbasi - SEO and digital marketing agency. Full sitemap: https://shahababbasi.com/sitemap.xml
