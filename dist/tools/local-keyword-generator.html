@@ -10,15 +10,17 @@
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 <meta name="format-detection" content="telephone=no">
 <meta name="generator" content="Shahab Abbasi static site - 2026">
-<title>Local Keyword Generator - Free Tool by Shahab Abbasi</title>
-<meta name="description" content="Engineered Local Keyword Generator programs that combine technical SEO, content velocity, and conversion-led design.">
+<title>Free Local Keyword Generator - Shahab Abbasi</title>
+<meta name="description" content="Online Local Keyword Generator - free forever. Generate location-specific keywords for local SEO targeting. Works on desktop and mobile.">
+<meta name="keywords" content="Local Keyword Generator, browser-based local keyword generator, ai-powered local keyword generator, bulk local keyword generator, local keyword generator analyzer, local keyword generator online, local keyword generator free, how to use loc">
+<meta name="author" content="Shahab Abbasi">
 <link rel="canonical" href="https://shahababbasi.com/tools/local-keyword-generator.html">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Shahab Abbasi">
-<meta property="og:title" content="Local Keyword Generator - Free Tool by Shahab Abbasi">
-<meta property="og:description" content="Engineered Local Keyword Generator programs that combine technical SEO, content velocity, and conversion-led design.">
+<meta property="og:title" content="Free Local Keyword Generator - Shahab Abbasi">
+<meta property="og:description" content="Online Local Keyword Generator - free forever. Generate location-specific keywords for local SEO targeting. Works on desktop and mobile.">
 <meta property="og:url" content="https://shahababbasi.com/tools/local-keyword-generator.html">
 <meta property="og:image" content="https://shahababbasi.com/assets/img/og-default.svg">
 <meta property="og:image:width" content="1200">
@@ -27,8 +29,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@shahababbasi">
 <meta name="twitter:creator" content="@shahababbasi">
-<meta name="twitter:title" content="Local Keyword Generator - Free Tool by Shahab Abbasi">
-<meta name="twitter:description" content="Engineered Local Keyword Generator programs that combine technical SEO, content velocity, and conversion-led design.">
+<meta name="twitter:title" content="Free Local Keyword Generator - Shahab Abbasi">
+<meta name="twitter:description" content="Online Local Keyword Generator - free forever. Generate location-specific keywords for local SEO targeting. Works on desktop and mobile.">
 <meta name="twitter:image" content="https://shahababbasi.com/assets/img/og-default.svg">
 
 
@@ -201,7 +203,7 @@ tailwind.config = {
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "item": "https://shahababbasi.com/", "name": "Home", "position": 1}, {"@type": "ListItem", "item": "https://shahababbasi.com/tools.html", "name": "Free Tools", "position": 2}, {"@type": "ListItem", "item": "https://shahababbasi.com/tools/local-keyword-generator.html", "name": "Local Keyword Generator", "position": 3}]}</script>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "applicationCategory": "BusinessApplication", "description": "Generate location-specific keywords for local SEO targeting.", "name": "Local Keyword Generator", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "operatingSystem": "Web", "publisher": {"@type": "Organization", "name": "Shahab Abbasi - Digital Marketing Agency", "url": "https://shahababbasi.com"}, "url": "https://shahababbasi.com/tools/local-keyword-generator.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "applicationCategory": "BusinessApplication", "browserRequirements": "Requires JavaScript. Modern browser (Chrome, Firefox, Safari, Edge).", "description": "Generate location-specific keywords for local SEO targeting.", "featureList": [], "isAccessibleForFree": true, "keywords": "Local Keyword Generator, browser-based local keyword generator, ai-powered local keyword generator, bulk local keyword generator, local keyword generator analyzer, local keyword generator online, local keyword generator free, how to use loc", "name": "Local Keyword Generator", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "operatingSystem": "Web", "publisher": {"@type": "Organization", "name": "Shahab Abbasi - Digital Marketing Agency", "url": "https://shahababbasi.com"}, "url": "https://shahababbasi.com/tools/local-keyword-generator.html"}</script>
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Runs entirely in your browser. We do not log inputs and we do not call an external server. The tool exists because we use it ourselves and figured others would benefit."}, "name": "Is Local Keyword Generator actually free, with no signup?"}, {"@type": "Question", "acceptedAnswer": {"@type": "Answer", "text": "Tools differ in tokenizer, parser, or rounding logic. We document our calculation methodology at the bottom of the tool. Cross-check against a second tool when the stakes are high."}, "name": "Why does Local Keyword Generator sometimes give a different answer from another online tool?"}, {"@type": "Question", "acceptedAnswer": {"@type": "Answer", "text": "Not currently. If you want a white-label version for your team or clients, contact us and we can scope it."}, "name": "Can I embed Local Keyword Generator on my own site?"}]}</script>
 
@@ -1782,17 +1784,37 @@ tailwind.config = {
 
 <section class="container-tight pb-10">
   
-<div class="glass p-6">
-  <p class="text-sm">Paste your input and click Run.</p>
-  <textarea id="gen-input" rows="6" class="mt-3 w-full rounded-lg bg-card/60 border border-border px-3 py-2"></textarea>
-  <button id="gen-run" class="mt-3 inline-flex rounded-xl bg-gradient-brand px-4 py-2 text-sm shadow-glow-primary">Run Local Keyword Generator</button>
-  <pre id="gen-out" class="mt-4 text-xs whitespace-pre-wrap glass-strong p-4 rounded-lg">Results appear here...</pre>
+<div class="glass p-6 grid md:grid-cols-2 gap-6">
+  <form class="grid gap-3 text-sm">
+    <label>Service / niche <input id="lk-svc" placeholder="dentist" class="h-11 rounded-lg bg-card/60 border border-border px-3"></label>
+    <label>Cities (one per line) <textarea id="lk-cities" rows="6" placeholder="dallas&#10;plano&#10;frisco&#10;mckinney" class="rounded-lg bg-card/60 border border-border px-3 py-2"></textarea></label>
+    <label>Variants
+      <select id="lk-var" class="h-11 rounded-lg bg-card/60 border border-border px-3">
+        <option value="all">All patterns</option>
+        <option value="near">"near me" + "in city"</option>
+        <option value="best">"best", "top", "affordable"</option>
+        <option value="hours">"open now", "24 hour", "weekend"</option>
+      </select>
+    </label>
+    <button id="lk-go" type="button" class="rounded-xl bg-gradient-brand px-4 py-2 text-sm shadow-glow-primary">Generate</button>
+  </form>
+  <div>
+    <p class="text-sm font-display font-semibold">Local variants</p>
+    <ul id="lk-out" class="glass-strong rounded-lg p-3 max-h-96 overflow-auto space-y-1 text-sm"></ul>
+  </div>
 </div>
 <script>
   (function(){
-    document.getElementById('gen-run').addEventListener('click', function(){
-      var v = document.getElementById('gen-input').value || '';
-      document.getElementById('gen-out').textContent = 'Analyzed ' + v.length + ' characters of input. Tool prototype - replace with full implementation.';
+    function gen(svc,cities,m){var arr=new Set(); cities.forEach(function(c){c=c.trim(); if(!c) return;
+      if(m==='all'||m==='near'){arr.add(svc+' near me'); arr.add(svc+' in '+c); arr.add(svc+' near '+c);}
+      if(m==='all'||m==='best'){['best','top','affordable','cheap','professional'].forEach(function(p){arr.add(p+' '+svc+' in '+c);});}
+      if(m==='all'||m==='hours'){['open now','24 hour','weekend','same day'].forEach(function(p){arr.add(p+' '+svc+' '+c);});}
+      arr.add(c+' '+svc); arr.add(svc+' '+c+' reviews'); arr.add(svc+' '+c+' prices');
+    }); return Array.from(arr);}
+    document.getElementById('lk-go').addEventListener('click',function(){
+      var svc=document.getElementById('lk-svc').value.trim(),cities=document.getElementById('lk-cities').value.split(/\n/),m=document.getElementById('lk-var').value;
+      if(!svc) return; var arr=gen(svc,cities,m);
+      document.getElementById('lk-out').innerHTML=arr.map(function(k){return '<li class="flex items-center justify-between gap-2 glass p-2 rounded"><span>'+k+'</span><a target="_blank" rel="noopener" href="https://www.google.com/search?q='+encodeURIComponent(k)+'" class="text-accent text-xs underline">Search</a></li>';}).join('');
     });
   })();
 </script>

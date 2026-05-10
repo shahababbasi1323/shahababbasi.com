@@ -10,15 +10,17 @@
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 <meta name="format-detection" content="telephone=no">
 <meta name="generator" content="Shahab Abbasi static site - 2026">
-<title>Twitter Thread Formatter - Free Tool by Shahab Abbasi</title>
-<meta name="description" content="Founder-led Twitter Thread Formatter for ambitious operators, with senior strategists on every account.">
+<title>Free Twitter Thread Formatter - Shahab Abbasi</title>
+<meta name="description" content="Online Twitter Thread Formatter - free forever. Format your content into engaging Twitter/X thread format. Works on desktop and mobile.">
+<meta name="keywords" content="Twitter Thread Formatter, fastest twitter thread formatter, professional twitter thread formatter, no signup twitter thread formatter, twitter thread formatter step by step, twitter thread formatter tool, twitter thread formatter checker, h">
+<meta name="author" content="Shahab Abbasi">
 <link rel="canonical" href="https://shahababbasi.com/tools/twitter-thread-formatter.html">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Shahab Abbasi">
-<meta property="og:title" content="Twitter Thread Formatter - Free Tool by Shahab Abbasi">
-<meta property="og:description" content="Founder-led Twitter Thread Formatter for ambitious operators, with senior strategists on every account.">
+<meta property="og:title" content="Free Twitter Thread Formatter - Shahab Abbasi">
+<meta property="og:description" content="Online Twitter Thread Formatter - free forever. Format your content into engaging Twitter/X thread format. Works on desktop and mobile.">
 <meta property="og:url" content="https://shahababbasi.com/tools/twitter-thread-formatter.html">
 <meta property="og:image" content="https://shahababbasi.com/assets/img/og-default.svg">
 <meta property="og:image:width" content="1200">
@@ -27,8 +29,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@shahababbasi">
 <meta name="twitter:creator" content="@shahababbasi">
-<meta name="twitter:title" content="Twitter Thread Formatter - Free Tool by Shahab Abbasi">
-<meta name="twitter:description" content="Founder-led Twitter Thread Formatter for ambitious operators, with senior strategists on every account.">
+<meta name="twitter:title" content="Free Twitter Thread Formatter - Shahab Abbasi">
+<meta name="twitter:description" content="Online Twitter Thread Formatter - free forever. Format your content into engaging Twitter/X thread format. Works on desktop and mobile.">
 <meta name="twitter:image" content="https://shahababbasi.com/assets/img/og-default.svg">
 
 
@@ -201,7 +203,7 @@ tailwind.config = {
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "item": "https://shahababbasi.com/", "name": "Home", "position": 1}, {"@type": "ListItem", "item": "https://shahababbasi.com/tools.html", "name": "Free Tools", "position": 2}, {"@type": "ListItem", "item": "https://shahababbasi.com/tools/twitter-thread-formatter.html", "name": "Twitter Thread Formatter", "position": 3}]}</script>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "applicationCategory": "BusinessApplication", "description": "Format your content into engaging Twitter/X thread format.", "name": "Twitter Thread Formatter", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "operatingSystem": "Web", "publisher": {"@type": "Organization", "name": "Shahab Abbasi - Digital Marketing Agency", "url": "https://shahababbasi.com"}, "url": "https://shahababbasi.com/tools/twitter-thread-formatter.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "applicationCategory": "BusinessApplication", "browserRequirements": "Requires JavaScript. Modern browser (Chrome, Firefox, Safari, Edge).", "description": "Format your content into engaging Twitter/X thread format.", "featureList": [], "isAccessibleForFree": true, "keywords": "Twitter Thread Formatter, fastest twitter thread formatter, professional twitter thread formatter, no signup twitter thread formatter, twitter thread formatter step by step, twitter thread formatter tool, twitter thread formatter checker, h", "name": "Twitter Thread Formatter", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "operatingSystem": "Web", "publisher": {"@type": "Organization", "name": "Shahab Abbasi - Digital Marketing Agency", "url": "https://shahababbasi.com"}, "url": "https://shahababbasi.com/tools/twitter-thread-formatter.html"}</script>
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Runs entirely in your browser. We do not log inputs and we do not call an external server. The tool exists because we use it ourselves and figured others would benefit."}, "name": "Is Twitter Thread Formatter actually free, with no signup?"}, {"@type": "Question", "acceptedAnswer": {"@type": "Answer", "text": "Not currently. If you want a white-label version for your team or clients, contact us and we can scope it."}, "name": "Can I embed Twitter Thread Formatter on my own site?"}, {"@type": "Question", "acceptedAnswer": {"@type": "Answer", "text": "Tools differ in tokenizer, parser, or rounding logic. We document our calculation methodology at the bottom of the tool. Cross-check against a second tool when the stakes are high."}, "name": "Why does Twitter Thread Formatter sometimes give a different answer from another online tool?"}]}</script>
 
@@ -1783,16 +1785,19 @@ tailwind.config = {
 <section class="container-tight pb-10">
   
 <div class="glass p-6">
-  <p class="text-sm">Paste your input and click Run.</p>
-  <textarea id="gen-input" rows="6" class="mt-3 w-full rounded-lg bg-card/60 border border-border px-3 py-2"></textarea>
-  <button id="gen-run" class="mt-3 inline-flex rounded-xl bg-gradient-brand px-4 py-2 text-sm shadow-glow-primary">Run Twitter Thread Formatter</button>
-  <pre id="gen-out" class="mt-4 text-xs whitespace-pre-wrap glass-strong p-4 rounded-lg">Results appear here...</pre>
+  <label class="text-sm font-display font-semibold">Long-form text to thread</label>
+  <textarea id="tw-input" rows="10" class="mt-2 w-full rounded-lg bg-card/60 border border-border px-3 py-2"></textarea>
+  <button id="tw-go" class="mt-3 rounded-xl bg-gradient-brand px-4 py-2 text-sm shadow-glow-primary">Format thread</button>
+  <ul id="tw-out" class="mt-4 space-y-2 text-sm"></ul>
 </div>
 <script>
   (function(){
-    document.getElementById('gen-run').addEventListener('click', function(){
-      var v = document.getElementById('gen-input').value || '';
-      document.getElementById('gen-out').textContent = 'Analyzed ' + v.length + ' characters of input. Tool prototype - replace with full implementation.';
+    document.getElementById('tw-go').addEventListener('click',function(){
+      var t=document.getElementById('tw-input').value||''; var max=275;
+      var sentences=t.split(/(?<=[.!?])\s+/); var tweets=[]; var cur='';
+      sentences.forEach(function(s){if((cur+' '+s).trim().length<=max){cur=(cur+' '+s).trim();} else { if(cur) tweets.push(cur); cur=s.length>max?s.slice(0,max-3)+'...':s;}}); if(cur) tweets.push(cur);
+      var n=tweets.length;
+      document.getElementById('tw-out').innerHTML=tweets.map(function(tw,i){var prefix=(i+1)+'/'+n+' '; var body=prefix+tw; if(body.length>280) body=body.slice(0,277)+'...'; return '<li class="glass p-3"><p class="text-sm">'+body+'</p><p class="text-xs text-foreground/60 mt-1">'+body.length+'/280</p></li>';}).join('');
     });
   })();
 </script>

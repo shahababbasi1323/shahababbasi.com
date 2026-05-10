@@ -10,15 +10,17 @@
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 <meta name="format-detection" content="telephone=no">
 <meta name="generator" content="Shahab Abbasi static site - 2026">
-<title>Sitemap Generator - Free Tool by Shahab Abbasi</title>
-<meta name="description" content="Sitemap Generator backed by 50+ brand engagements, named tools, and pipeline-tied KPIs your CFO will trust.">
+<title>Free Sitemap Generator - Shahab Abbasi</title>
+<meta name="description" content="Sitemap Generator - free online tool. Create an XML sitemap for your website to improve search engine crawling. Privacy-first: nothing leaves your machine.">
+<meta name="keywords" content="Sitemap Generator, browser-based sitemap generator, ai-powered sitemap generator, bulk sitemap generator, sitemap generator for agencies, sitemap generator no signup, sitemap generator for beginners, how to use sitemap generator, sitemap ge">
+<meta name="author" content="Shahab Abbasi">
 <link rel="canonical" href="https://shahababbasi.com/tools/sitemap-generator.html">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Shahab Abbasi">
-<meta property="og:title" content="Sitemap Generator - Free Tool by Shahab Abbasi">
-<meta property="og:description" content="Sitemap Generator backed by 50+ brand engagements, named tools, and pipeline-tied KPIs your CFO will trust.">
+<meta property="og:title" content="Free Sitemap Generator - Shahab Abbasi">
+<meta property="og:description" content="Sitemap Generator - free online tool. Create an XML sitemap for your website to improve search engine crawling. Privacy-first: nothing leaves your machine.">
 <meta property="og:url" content="https://shahababbasi.com/tools/sitemap-generator.html">
 <meta property="og:image" content="https://shahababbasi.com/assets/img/og-default.svg">
 <meta property="og:image:width" content="1200">
@@ -27,8 +29,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@shahababbasi">
 <meta name="twitter:creator" content="@shahababbasi">
-<meta name="twitter:title" content="Sitemap Generator - Free Tool by Shahab Abbasi">
-<meta name="twitter:description" content="Sitemap Generator backed by 50+ brand engagements, named tools, and pipeline-tied KPIs your CFO will trust.">
+<meta name="twitter:title" content="Free Sitemap Generator - Shahab Abbasi">
+<meta name="twitter:description" content="Sitemap Generator - free online tool. Create an XML sitemap for your website to improve search engine crawling. Privacy-first: nothing leaves your machine.">
 <meta name="twitter:image" content="https://shahababbasi.com/assets/img/og-default.svg">
 
 
@@ -201,7 +203,7 @@ tailwind.config = {
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "item": "https://shahababbasi.com/", "name": "Home", "position": 1}, {"@type": "ListItem", "item": "https://shahababbasi.com/tools.html", "name": "Free Tools", "position": 2}, {"@type": "ListItem", "item": "https://shahababbasi.com/tools/sitemap-generator.html", "name": "Sitemap Generator", "position": 3}]}</script>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "applicationCategory": "BusinessApplication", "description": "Create an XML sitemap for your website to improve search engine crawling.", "name": "Sitemap Generator", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "operatingSystem": "Web", "publisher": {"@type": "Organization", "name": "Shahab Abbasi - Digital Marketing Agency", "url": "https://shahababbasi.com"}, "url": "https://shahababbasi.com/tools/sitemap-generator.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "applicationCategory": "BusinessApplication", "browserRequirements": "Requires JavaScript. Modern browser (Chrome, Firefox, Safari, Edge).", "description": "Create an XML sitemap for your website to improve search engine crawling.", "featureList": [], "isAccessibleForFree": true, "keywords": "Sitemap Generator, browser-based sitemap generator, ai-powered sitemap generator, bulk sitemap generator, sitemap generator for agencies, sitemap generator no signup, sitemap generator for beginners, how to use sitemap generator, sitemap ge", "name": "Sitemap Generator", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "operatingSystem": "Web", "publisher": {"@type": "Organization", "name": "Shahab Abbasi - Digital Marketing Agency", "url": "https://shahababbasi.com"}, "url": "https://shahababbasi.com/tools/sitemap-generator.html"}</script>
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Runs entirely in your browser. We do not log inputs and we do not call an external server. The tool exists because we use it ourselves and figured others would benefit."}, "name": "Is Sitemap Generator actually free, with no signup?"}, {"@type": "Question", "acceptedAnswer": {"@type": "Answer", "text": "Tools differ in tokenizer, parser, or rounding logic. We document our calculation methodology at the bottom of the tool. Cross-check against a second tool when the stakes are high."}, "name": "Why does Sitemap Generator sometimes give a different answer from another online tool?"}, {"@type": "Question", "acceptedAnswer": {"@type": "Answer", "text": "Not currently. If you want a white-label version for your team or clients, contact us and we can scope it."}, "name": "Can I embed Sitemap Generator on my own site?"}]}</script>
 
@@ -1782,18 +1784,48 @@ tailwind.config = {
 
 <section class="container-tight pb-10">
   
-<div class="glass p-6">
-  <p class="text-sm">Paste your input and click Run.</p>
-  <textarea id="gen-input" rows="6" class="mt-3 w-full rounded-lg bg-card/60 border border-border px-3 py-2"></textarea>
-  <button id="gen-run" class="mt-3 inline-flex rounded-xl bg-gradient-brand px-4 py-2 text-sm shadow-glow-primary">Run Sitemap Generator</button>
-  <pre id="gen-out" class="mt-4 text-xs whitespace-pre-wrap glass-strong p-4 rounded-lg">Results appear here...</pre>
+<div class="glass p-6 grid md:grid-cols-2 gap-6">
+  <div>
+    <label class="text-sm font-display font-semibold">URLs (one per line)</label>
+    <textarea id="sm-input" rows="10" placeholder="https://example.com/&#10;https://example.com/about&#10;https://example.com/services" class="mt-2 w-full rounded-lg bg-card/60 border border-border px-3 py-2 text-sm font-mono"></textarea>
+    <label class="text-sm font-display font-semibold mt-3 block">Default change-frequency
+      <select id="sm-cf" class="mt-1 h-11 w-full rounded-lg bg-card/60 border border-border px-3">
+        <option value="always">always</option>
+        <option value="hourly">hourly</option>
+        <option value="daily">daily</option>
+        <option value="weekly" selected>weekly</option>
+        <option value="monthly">monthly</option>
+        <option value="yearly">yearly</option>
+      </select>
+    </label>
+    <label class="text-sm font-display font-semibold mt-3 block">Default priority
+      <select id="sm-pr" class="mt-1 h-11 w-full rounded-lg bg-card/60 border border-border px-3">
+        <option>1.0</option><option selected>0.8</option><option>0.6</option><option>0.5</option><option>0.3</option>
+      </select>
+    </label>
+    <button id="sm-go" class="mt-3 rounded-xl bg-gradient-brand px-4 py-2 text-sm shadow-glow-primary">Generate sitemap.xml</button>
+  </div>
+  <div>
+    <p class="text-sm font-display font-semibold">Output</p>
+    <pre id="sm-out" class="text-xs whitespace-pre-wrap glass-strong p-4 rounded-lg max-h-96 overflow-auto"></pre>
+    <button id="sm-copy" class="mt-3 rounded-xl border border-border/60 px-4 py-2 text-sm">Copy</button>
+    <button id="sm-dl" class="mt-3 ml-2 rounded-xl border border-border/60 px-4 py-2 text-sm">Download</button>
+  </div>
 </div>
 <script>
   (function(){
-    document.getElementById('gen-run').addEventListener('click', function(){
-      var v = document.getElementById('gen-input').value || '';
-      document.getElementById('gen-out').textContent = 'Analyzed ' + v.length + ' characters of input. Tool prototype - replace with full implementation.';
-    });
+    function r(){
+      var lines=(document.getElementById('sm-input').value||'').split(/\n/).map(function(s){return s.trim();}).filter(Boolean);
+      var cf=document.getElementById('sm-cf').value, pr=document.getElementById('sm-pr').value;
+      var today=new Date().toISOString().slice(0,10);
+      var s='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+      lines.forEach(function(u){s+='  <url>\n    <loc>'+u+'</loc>\n    <lastmod>'+today+'</lastmod>\n    <changefreq>'+cf+'</changefreq>\n    <priority>'+pr+'</priority>\n  </url>\n';});
+      s+='</urlset>';
+      document.getElementById('sm-out').textContent=s;
+    }
+    document.getElementById('sm-go').addEventListener('click',r);
+    document.getElementById('sm-copy').addEventListener('click',function(){navigator.clipboard.writeText(document.getElementById('sm-out').textContent); this.textContent='Copied'; var b=this; setTimeout(function(){b.textContent='Copy';},1500);});
+    document.getElementById('sm-dl').addEventListener('click',function(){var b=new Blob([document.getElementById('sm-out').textContent],{type:'application/xml'}); var a=document.createElement('a'); a.href=URL.createObjectURL(b); a.download='sitemap.xml'; a.click();});
   })();
 </script>
 

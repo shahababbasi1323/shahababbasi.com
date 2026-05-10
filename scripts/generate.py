@@ -27,6 +27,9 @@ except ImportError:  # pragma: no cover
 
 # Per-page deterministic content variation engine (no two pages share copy).
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+# Tool widgets live in a separate module so they can be expanded without
+# bloating this generator. The generator just dispatches by slug.
+from tool_widgets import widget_for as _tool_widget_for  # noqa: E402
 from content_engine import (  # noqa: E402
     build_unique_for_service,
     build_unique_for_industry,
@@ -88,6 +91,70 @@ def desc(seed: str, kw: str) -> str:
     idx = int(hashlib.md5(seed.encode()).hexdigest(), 16) % len(DESC_TEMPLATES)
     out = DESC_TEMPLATES[idx].format(kw=kw)
     return out[:160]
+
+
+# Tool-specific desc rotation - speaks to the tool, not the agency
+TOOL_DESC_TEMPLATES = [
+    "Free {name} tool. {short} No signup, no email, runs in your browser.",
+    "{name} - free online tool. {short} Privacy-first: nothing leaves your machine.",
+    "Use this {name} to {short_lower} Free, browser-based, unlimited.",
+    "Free {name} from {brand}. {short} Built for SEOs, marketers, and growth teams.",
+    "{name} that runs in your browser. {short} No upload, no tracking, instant results.",
+    "Online {name} - free forever. {short} Works on desktop and mobile.",
+]
+
+
+def tool_desc(seed: str, item: dict, brand_short: str) -> str:
+    """Return a tool-specific meta description with the tool name + short pitch."""
+    short = (item.get("shortDescription") or item.get("metaDescription") or "").strip()
+    if not short.endswith((".", "!", "?")):
+        short = short + "."
+    short_lower = short[:1].lower() + short[1:] if short else "analyze your input."
+    name = item.get("name") or item.get("slug", "")
+    idx = int(hashlib.md5(seed.encode()).hexdigest(), 16) % len(TOOL_DESC_TEMPLATES)
+    out = TOOL_DESC_TEMPLATES[idx].format(name=name, short=short, short_lower=short_lower, brand=brand_short)
+    return out[:160]
+
+
+# Generic SEO modifiers people search for in front of/behind tool names
+LSI_PREFIXES = ["free", "online", "best", "fastest", "professional", "no signup", "no login", "browser-based", "ai-powered", "bulk"]
+LSI_SUFFIXES = ["tool", "checker", "analyzer", "online", "free", "for SEO", "for marketers", "for agencies", "no signup", "for beginners", "step by step"]
+
+
+def expand_tool_keywords(item: dict) -> str:
+    """Build a comma-separated keyword list for <meta name=\"keywords\"> using primary + LSI + name + computed variants. Caps at 240 chars."""
+    parts: list[str] = []
+
+    def add(s: str):
+        s = (s or "").strip().strip(",").strip()
+        if not s:
+            return
+        sl = s.lower()
+        if sl in {p.lower() for p in parts}:
+            return
+        parts.append(s)
+
+    primary = (item.get("primaryKeyword") or item.get("name") or item.get("slug", "")).strip()
+    name = (item.get("name") or "").strip()
+    add(primary)
+    add(name)
+    for k in (item.get("lsiKeywords") or []):
+        add(k)
+    # Auto-generated variants
+    base = (primary or name).lower()
+    if base:
+        seed_hash = int(hashlib.md5(item["slug"].encode()).hexdigest(), 16)
+        prefixes = [LSI_PREFIXES[(seed_hash + i) % len(LSI_PREFIXES)] for i in range(3)]
+        suffixes = [LSI_SUFFIXES[(seed_hash + i + 7) % len(LSI_SUFFIXES)] for i in range(3)]
+        for p in prefixes:
+            add(f"{p} {base}")
+        for s in suffixes:
+            if s not in base:
+                add(f"{base} {s}")
+        add(f"how to use {base}")
+        add(f"{base} 2026")
+    out = ", ".join(parts)
+    return out[:240].rstrip(", ")
 
 
 # ---------------------------------------------------------------------------
@@ -346,6 +413,10 @@ def softwareapp_schema(brand: dict, tool: dict, url_abs: str) -> dict:
         "url": url_abs,
         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
         "publisher": {"@type": "Organization", "name": brand["name"], "url": brand["url"]},
+        "keywords": expand_tool_keywords(tool),
+        "isAccessibleForFree": True,
+        "browserRequirements": "Requires JavaScript. Modern browser (Chrome, Firefox, Safari, Edge).",
+        "featureList": [k for k in (tool.get("lsiKeywords") or [])[:6]],
     }
 
 
@@ -470,408 +541,15 @@ def course_schema(brand: dict, item: dict, url_abs: str) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# Tool widgets - a small library of vanilla JS implementations injected per tool
+# Tool widgets - implementation library lives in scripts/tool_widgets.py.
 # ---------------------------------------------------------------------------
 
 def tool_widget(slug: str, name: str) -> str:
-    """Return an HTML widget appropriate for the tool slug. Falls back to a
-    generic input textarea + 'analyze' button for unknown slugs.
+    """Return a fully client-side HTML+JS widget for a given tool slug.
+    The implementation library lives in scripts/tool_widgets.py and covers
+    all 165 tool slugs; unknown slugs fall back to a context-aware analyzer.
     """
-    if slug == "word-counter":
-        return """
-<div class="glass p-6">
-  <label class="text-sm font-display font-semibold">Paste your content</label>
-  <textarea id="wc-input" rows="10" class="mt-2 w-full rounded-lg bg-card/60 border border-border px-3 py-2 outline-none focus:ring-2 focus:ring-primary"></textarea>
-  <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
-    <div class="glass p-3"><p class="text-xs text-foreground/60">Words</p><p id="wc-words" class="font-display text-2xl">0</p></div>
-    <div class="glass p-3"><p class="text-xs text-foreground/60">Characters</p><p id="wc-chars" class="font-display text-2xl">0</p></div>
-    <div class="glass p-3"><p class="text-xs text-foreground/60">Sentences</p><p id="wc-sent" class="font-display text-2xl">0</p></div>
-    <div class="glass p-3"><p class="text-xs text-foreground/60">Reading time</p><p id="wc-time" class="font-display text-2xl">0 min</p></div>
-  </div>
-</div>
-<script>
-  (function(){
-    var t = document.getElementById('wc-input'); if(!t) return;
-    function update(){
-      var v = t.value;
-      var words = (v.trim().match(/\\S+/g) || []).length;
-      document.getElementById('wc-words').textContent = words;
-      document.getElementById('wc-chars').textContent = v.length;
-      document.getElementById('wc-sent').textContent = (v.match(/[^.!?]+[.!?]+/g) || []).length;
-      document.getElementById('wc-time').textContent = Math.max(1, Math.round(words / 200)) + ' min';
-    }
-    t.addEventListener('input', update); update();
-  })();
-</script>
-"""
-    if slug == "meta-tag-generator":
-        return """
-<div class="glass p-6 grid md:grid-cols-2 gap-6">
-  <form id="mt-form" class="grid gap-3">
-    <label class="text-sm">Page title <input id="mt-title" maxlength="60" class="mt-1 w-full h-11 rounded-lg bg-card/60 border border-border px-3"></label>
-    <label class="text-sm">Meta description <textarea id="mt-desc" rows="3" maxlength="160" class="mt-1 w-full rounded-lg bg-card/60 border border-border px-3 py-2"></textarea></label>
-    <label class="text-sm">Canonical URL <input id="mt-canon" class="mt-1 w-full h-11 rounded-lg bg-card/60 border border-border px-3" placeholder="https://"></label>
-    <label class="text-sm">OG image URL <input id="mt-img" class="mt-1 w-full h-11 rounded-lg bg-card/60 border border-border px-3" placeholder="https://"></label>
-  </form>
-  <div>
-    <p class="text-sm font-display font-semibold mb-2">Generated meta tags</p>
-    <pre id="mt-out" class="text-xs whitespace-pre-wrap break-all glass-strong p-4 rounded-lg leading-relaxed"></pre>
-    <button id="mt-copy" class="mt-3 inline-flex items-center gap-2 rounded-xl border border-border/60 px-4 py-2 text-sm hover:bg-white/5">Copy</button>
-  </div>
-</div>
-<script>
-  (function(){
-    var t = document.getElementById('mt-title');
-    var d = document.getElementById('mt-desc');
-    var c = document.getElementById('mt-canon');
-    var i = document.getElementById('mt-img');
-    var o = document.getElementById('mt-out');
-    var b = document.getElementById('mt-copy');
-    function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-    function render(){
-      var s = '';
-      if (t.value) s += '<title>'+esc(t.value)+'</title>\\n';
-      if (d.value) s += '<meta name="description" content="'+esc(d.value)+'">\\n';
-      if (c.value) s += '<link rel="canonical" href="'+esc(c.value)+'">\\n';
-      if (t.value) s += '<meta property="og:title" content="'+esc(t.value)+'">\\n';
-      if (d.value) s += '<meta property="og:description" content="'+esc(d.value)+'">\\n';
-      if (c.value) s += '<meta property="og:url" content="'+esc(c.value)+'">\\n';
-      if (i.value) s += '<meta property="og:image" content="'+esc(i.value)+'">\\n';
-      s += '<meta name="twitter:card" content="summary_large_image">';
-      o.textContent = s;
-    }
-    [t,d,c,i].forEach(function(el){ el.addEventListener('input', render); });
-    b.addEventListener('click', function(){ navigator.clipboard.writeText(o.textContent || ''); b.textContent = 'Copied'; setTimeout(function(){ b.textContent = 'Copy'; }, 1500); });
-    render();
-  })();
-</script>
-"""
-    if slug == "serp-snippet-preview":
-        return """
-<div class="glass p-6 grid md:grid-cols-2 gap-6">
-  <form class="grid gap-3">
-    <label class="text-sm">Title <input id="sp-title" maxlength="70" class="h-11 rounded-lg bg-card/60 border border-border px-3"></label>
-    <label class="text-sm">URL <input id="sp-url" placeholder="https://example.com/page" class="h-11 rounded-lg bg-card/60 border border-border px-3"></label>
-    <label class="text-sm">Description <textarea id="sp-desc" rows="3" maxlength="170" class="rounded-lg bg-card/60 border border-border px-3 py-2"></textarea></label>
-  </form>
-  <div class="glass-strong p-4 rounded-lg" id="sp-preview">
-    <p class="text-xs text-foreground/60" id="sp-pv-url">https://example.com/page</p>
-    <p class="font-display text-lg text-[#5fa8ff]" id="sp-pv-title">Your title appears here</p>
-    <p class="text-sm text-foreground/80 mt-1" id="sp-pv-desc">Your description appears here.</p>
-  </div>
-</div>
-<script>
-  (function(){
-    var t=document.getElementById('sp-title'),u=document.getElementById('sp-url'),d=document.getElementById('sp-desc');
-    var pt=document.getElementById('sp-pv-title'),pu=document.getElementById('sp-pv-url'),pd=document.getElementById('sp-pv-desc');
-    function r(){ pt.textContent=t.value||'Your title appears here'; pu.textContent=u.value||'https://example.com/page'; pd.textContent=d.value||'Your description appears here.'; }
-    [t,u,d].forEach(function(e){e.addEventListener('input',r);}); r();
-  })();
-</script>
-"""
-    if slug == "keyword-density-analyzer":
-        return """
-<div class="glass p-6">
-  <textarea id="kd-text" rows="8" class="w-full rounded-lg bg-card/60 border border-border px-3 py-2" placeholder="Paste your content..."></textarea>
-  <div class="mt-4 overflow-x-auto">
-    <table class="w-full text-sm">
-      <thead><tr class="text-left text-foreground/60"><th class="py-2">Term</th><th>Count</th><th>Density</th></tr></thead>
-      <tbody id="kd-out"></tbody>
-    </table>
-  </div>
-</div>
-<script>
-  (function(){
-    var ta = document.getElementById('kd-text'), out = document.getElementById('kd-out');
-    function run(){
-      var stop = new Set(['the','a','an','of','to','and','in','for','on','is','at','it','as','with','by','that','this','from','or','be','are','was','were','will','can','i','you','we']);
-      var words = (ta.value.toLowerCase().match(/[a-z][a-z']+/g) || []);
-      var total = words.length;
-      var counts = {};
-      words.forEach(function(w){ if (stop.has(w)) return; counts[w] = (counts[w]||0)+1; });
-      var arr = Object.entries(counts).sort(function(a,b){return b[1]-a[1];}).slice(0,15);
-      out.innerHTML = arr.map(function(x){ return '<tr class="border-t border-border/30"><td class="py-1">'+x[0]+'</td><td>'+x[1]+'</td><td>'+(total?(x[1]/total*100).toFixed(2):0)+'%</td></tr>'; }).join('');
-    }
-    ta.addEventListener('input', run); run();
-  })();
-</script>
-"""
-    if slug == "robots-txt-generator" or slug == "robots-txt-tester":
-        return """
-<div class="glass p-6 grid md:grid-cols-2 gap-6">
-  <form class="grid gap-3 text-sm">
-    <label>User-agent <input id="rb-ua" value="*" class="h-11 rounded-lg bg-card/60 border border-border px-3"></label>
-    <label>Disallow paths (one per line) <textarea id="rb-dis" rows="4" class="rounded-lg bg-card/60 border border-border px-3 py-2">/admin/\\n/private/</textarea></label>
-    <label>Sitemap URL <input id="rb-sm" placeholder="https://example.com/sitemap.xml" class="h-11 rounded-lg bg-card/60 border border-border px-3"></label>
-  </form>
-  <div>
-    <p class="font-display font-semibold mb-2 text-sm">Generated robots.txt</p>
-    <pre id="rb-out" class="text-xs whitespace-pre-wrap glass-strong p-4 rounded-lg"></pre>
-    <button id="rb-copy" class="mt-3 inline-flex rounded-xl border border-border/60 px-4 py-2 text-sm hover:bg-white/5">Copy</button>
-  </div>
-</div>
-<script>
-  (function(){
-    var ua=document.getElementById('rb-ua'), dis=document.getElementById('rb-dis'), sm=document.getElementById('rb-sm'), o=document.getElementById('rb-out');
-    function r(){
-      var s = 'User-agent: '+(ua.value||'*')+'\\n';
-      (dis.value.split('\\n')).forEach(function(p){ if(p.trim()) s += 'Disallow: '+p.trim()+'\\n'; });
-      if (sm.value) s += '\\nSitemap: '+sm.value+'\\n';
-      o.textContent = s;
-    }
-    [ua,dis,sm].forEach(function(e){e.addEventListener('input',r);}); r();
-    document.getElementById('rb-copy').addEventListener('click', function(){ navigator.clipboard.writeText(o.textContent); });
-  })();
-</script>
-"""
-    if slug.endswith("schema-generator") or slug == "schema-validator":
-        kind = name.split(" ")[0]
-        return f"""
-<div class="glass p-6">
-  <p class="text-sm">Paste your data, then click Generate. Output is JSON-LD ready to drop in your &lt;head&gt;.</p>
-  <textarea id="sg-input" rows="6" class="mt-3 w-full rounded-lg bg-card/60 border border-border px-3 py-2" placeholder='Example: {{"name":"Page title","question":"Q?","answer":"A."}}'></textarea>
-  <button id="sg-go" class="mt-3 inline-flex rounded-xl bg-gradient-brand px-4 py-2 text-sm shadow-glow-primary">Generate</button>
-  <pre id="sg-out" class="mt-4 text-xs whitespace-pre-wrap glass-strong p-4 rounded-lg"></pre>
-</div>
-<script>
-  (function(){{
-    document.getElementById('sg-go').addEventListener('click', function(){{
-      var raw = document.getElementById('sg-input').value || '{{}}';
-      var data; try {{ data = JSON.parse(raw); }} catch(e) {{ document.getElementById('sg-out').textContent = 'Invalid JSON: '+e.message; return; }}
-      var out = {{ '@context': 'https://schema.org', '@type': '{kind}', ...data }};
-      document.getElementById('sg-out').textContent = '<script type="application/ld+json">' + JSON.stringify(out, null, 2) + '<\\/script>';
-    }});
-  }})();
-</script>
-"""
-    if slug.endswith("calculator") and "roas" in slug:
-        return """
-<div class="glass p-6 grid md:grid-cols-2 gap-6">
-  <form class="grid gap-3 text-sm">
-    <label>Revenue ($) <input type="number" id="ro-rev" class="h-11 rounded-lg bg-card/60 border border-border px-3"></label>
-    <label>Ad spend ($) <input type="number" id="ro-spend" class="h-11 rounded-lg bg-card/60 border border-border px-3"></label>
-  </form>
-  <div class="glass-strong p-4 rounded-lg">
-    <p class="text-xs text-foreground/60">ROAS</p>
-    <p id="ro-out" class="font-display text-3xl">0.00x</p>
-  </div>
-</div>
-<script>
-  (function(){
-    function r(){
-      var rev=parseFloat(document.getElementById('ro-rev').value)||0;
-      var sp=parseFloat(document.getElementById('ro-spend').value)||0;
-      var v = sp ? (rev/sp).toFixed(2) : '0.00';
-      document.getElementById('ro-out').textContent = v + 'x';
-    }
-    ['ro-rev','ro-spend'].forEach(function(id){document.getElementById(id).addEventListener('input',r);});
-  })();
-</script>
-"""
-    if slug == "bulk-index-checker":
-        return """
-<div class="glass p-6">
-  <label class="text-sm font-display font-semibold">URLs to Check (one per line)</label>
-  <textarea id="bic-urls" rows="8" class="mt-2 w-full rounded-lg bg-card/60 border border-border px-3 py-2 outline-none focus:ring-2 focus:ring-primary text-sm" placeholder="https://example.com/page-1
-https://example.com/page-2
-example.com/blog/post-title
-..."></textarea>
-  <p id="bic-count" class="mt-1 text-xs text-foreground/60">0 URLs entered</p>
-  <div class="mt-4 flex flex-wrap items-center gap-3">
-    <button id="bic-go" class="rounded-xl bg-gradient-brand px-5 py-3 text-sm font-medium shadow-glow-primary">Check 0 URLs</button>
-    <button id="bic-openall" class="rounded-xl border border-border/60 px-4 py-3 text-sm hidden">Open all in tabs</button>
-    <button id="bic-copy" class="rounded-xl border border-border/60 px-4 py-3 text-sm hidden">Copy queries</button>
-    <button id="bic-clear" class="rounded-xl border border-border/60 px-4 py-3 text-sm hidden">Clear</button>
-  </div>
-  <div id="bic-out" class="mt-5 hidden">
-    <p class="text-sm font-display font-semibold mb-2">site: search links</p>
-    <ul id="bic-list" class="glass-strong rounded-lg p-3 max-h-80 overflow-auto space-y-2 text-sm"></ul>
-    <p class="mt-3 text-xs text-foreground/60">Click any link to open that site: search in a new tab. Use "Open all in tabs" to open every link at once (allow popups for this page on first run).</p>
-  </div>
-</div>
-<script>
-  (function(){
-    var ta = document.getElementById('bic-urls');
-    var count = document.getElementById('bic-count');
-    var btn = document.getElementById('bic-go');
-    var openAll = document.getElementById('bic-openall');
-    var copyBtn = document.getElementById('bic-copy');
-    var clearBtn = document.getElementById('bic-clear');
-    var outBox = document.getElementById('bic-out');
-    var listEl = document.getElementById('bic-list');
-    function urls(){ return (ta.value || '').split(/\\r?\\n/).map(function(s){ return s.trim(); }).filter(Boolean); }
-    function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-    function update(){
-      var n = urls().length;
-      count.textContent = n + ' URLs entered';
-      btn.textContent = 'Check ' + n + ' URLs';
-      btn.disabled = n === 0;
-    }
-    ta.addEventListener('input', update); update();
-    function buildSearch(raw){
-      var u = raw.replace(/^https?:\\/\\//, '').replace(/\\/$/, '');
-      return { domain: u, search: 'https://www.google.com/search?q=site%3A' + encodeURIComponent(u) };
-    }
-    function render(items){
-      listEl.innerHTML = '';
-      items.forEach(function(it, i){
-        var li = document.createElement('li');
-        li.className = 'flex items-center justify-between gap-3 glass p-2 rounded-md';
-        li.innerHTML =
-          '<span class="text-foreground/70 text-xs shrink-0">' + (i + 1) + '.</span>' +
-          '<span class="flex-1 truncate font-mono text-xs">site:' + esc(it.domain) + '</span>' +
-          '<a href="' + it.search + '" target="_blank" rel="noopener" class="text-accent text-xs underline shrink-0">Open</a>';
-        listEl.appendChild(li);
-      });
-      outBox.classList.remove('hidden');
-      openAll.classList.remove('hidden');
-      copyBtn.classList.remove('hidden');
-      clearBtn.classList.remove('hidden');
-    }
-    btn.addEventListener('click', function(){
-      var list = urls(); if (!list.length) return;
-      var items = list.map(buildSearch);
-      render(items);
-      items.forEach(function(it){ window.open(it.search, '_blank', 'noopener'); });
-    });
-    openAll.addEventListener('click', function(){
-      var list = urls(); if (!list.length) return;
-      list.map(buildSearch).forEach(function(it){ window.open(it.search, '_blank', 'noopener'); });
-    });
-    copyBtn.addEventListener('click', function(){
-      var list = urls().map(buildSearch).map(function(it){ return it.search; }).join('\\n');
-      navigator.clipboard.writeText(list);
-      copyBtn.textContent = 'Copied'; setTimeout(function(){ copyBtn.textContent = 'Copy queries'; }, 1500);
-    });
-    clearBtn.addEventListener('click', function(){
-      ta.value = ''; update(); listEl.innerHTML = ''; outBox.classList.add('hidden');
-      openAll.classList.add('hidden'); copyBtn.classList.add('hidden'); clearBtn.classList.add('hidden');
-    });
-  })();
-</script>
-"""
-    if slug == "bulk-keyword-checker":
-        return """
-<div class="glass p-6 grid lg:grid-cols-2 gap-6">
-  <div>
-    <p class="text-sm font-display font-semibold mb-2">Enter Keywords</p>
-    <div class="grid sm:grid-cols-2 gap-3 text-sm">
-      <label>
-        <span class="block font-display font-semibold">Business Name</span>
-        <input id="bkc-brand" placeholder="Your Brand Name" class="mt-1 w-full h-11 rounded-lg bg-card/60 border border-border px-3">
-        <span class="block mt-1 text-xs text-foreground/60">Auto-highlight in search results</span>
-      </label>
-      <label>
-        <span class="block font-display font-semibold">Website URL</span>
-        <input id="bkc-site" placeholder="yourbrand.com" class="mt-1 w-full h-11 rounded-lg bg-card/60 border border-border px-3">
-        <span class="block mt-1 text-xs text-foreground/60">For tracking reference</span>
-      </label>
-    </div>
-    <label class="block mt-3 text-sm">
-      <span class="block font-display font-semibold">Domain to Check (optional)</span>
-      <input id="bkc-domain" placeholder="example.com" class="mt-1 w-full h-11 rounded-lg bg-card/60 border border-border px-3">
-      <span class="block mt-1 text-xs text-foreground/60">Add site: filter to search</span>
-    </label>
-    <label class="block mt-3 text-sm">
-      <span class="block font-display font-semibold">Keywords (one per line)</span>
-      <textarea id="bkc-kws" rows="6" placeholder="keyword 1
-keyword 2
-keyword 3
-..." class="mt-1 w-full rounded-lg bg-card/60 border border-border px-3 py-2"></textarea>
-      <span id="bkc-count" class="block mt-1 text-xs text-foreground/60">0 keywords entered</span>
-    </label>
-    <div class="grid sm:grid-cols-2 gap-3 text-sm mt-3">
-      <label>
-        <span class="block font-display font-semibold">Location / City (optional)</span>
-        <input id="bkc-loc" placeholder="e.g. dallas, london" class="mt-1 w-full h-11 rounded-lg bg-card/60 border border-border px-3">
-      </label>
-      <label>
-        <span class="block font-display font-semibold">Language Code (optional)</span>
-        <input id="bkc-lang" placeholder="e.g. en, es, de" class="mt-1 w-full h-11 rounded-lg bg-card/60 border border-border px-3">
-      </label>
-    </div>
-    <div class="mt-4 flex flex-wrap gap-3">
-      <button id="bkc-gen" class="rounded-xl bg-gradient-brand px-5 py-3 text-sm font-medium shadow-glow-primary">Generate Links</button>
-      <button id="bkc-open" class="rounded-xl border border-border/60 px-4 py-3 text-sm hidden">Open all in tabs</button>
-      <button id="bkc-copy" class="rounded-xl border border-border/60 px-4 py-3 text-sm hidden">Copy all</button>
-    </div>
-  </div>
-  <div>
-    <p class="text-sm font-display font-semibold mb-2">Search Links</p>
-    <div id="bkc-out" class="glass-strong rounded-lg p-4 min-h-[12rem] text-sm">
-      <p class="text-foreground/60 text-center mt-12">Enter keywords and click "Generate Links" to start</p>
-    </div>
-  </div>
-</div>
-<script>
-  (function(){
-    var brand = document.getElementById('bkc-brand');
-    var site  = document.getElementById('bkc-site');
-    var dom   = document.getElementById('bkc-domain');
-    var kws   = document.getElementById('bkc-kws');
-    var loc   = document.getElementById('bkc-loc');
-    var lang  = document.getElementById('bkc-lang');
-    var gen   = document.getElementById('bkc-gen');
-    var openAll = document.getElementById('bkc-open');
-    var copyAll = document.getElementById('bkc-copy');
-    var out   = document.getElementById('bkc-out');
-    var count = document.getElementById('bkc-count');
-    function list(){ return (kws.value || '').split(/\\r?\\n/).map(function(s){ return s.trim(); }).filter(Boolean); }
-    function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-    function update(){ count.textContent = list().length + ' keywords entered'; }
-    kws.addEventListener('input', update); update();
-    function buildQuery(kw){
-      var parts = [kw];
-      if (dom.value) parts.push('site:' + dom.value.replace(/^https?:\\/\\//, ''));
-      if (loc.value) parts.push(loc.value);
-      var q = parts.join(' ');
-      var u = 'https://www.google.com/search?q=' + encodeURIComponent(q);
-      if (lang.value) u += '&hl=' + encodeURIComponent(lang.value);
-      if (loc.value && /^[a-z]{2}$/i.test(loc.value.trim())) u += '&gl=' + encodeURIComponent(loc.value.trim().toLowerCase());
-      return u;
-    }
-    gen.addEventListener('click', function(){
-      var arr = list(); if (!arr.length){ return; }
-      var html = '<ul class="space-y-2">';
-      var urls = [];
-      arr.forEach(function(kw){
-        var u = buildQuery(kw);
-        urls.push(u);
-        var label = brand.value ? esc(kw) + ' <span class="text-foreground/50">(brand: ' + esc(brand.value) + ')</span>' : esc(kw);
-        html += '<li class="glass p-3 flex items-center justify-between gap-3"><span>' + label + '</span><a target="_blank" rel="noopener" class="text-accent text-xs underline" href="' + u + '">Open</a></li>';
-      });
-      html += '</ul>';
-      if (site.value){ html += '<p class="mt-3 text-xs text-foreground/60">Reference: ' + esc(site.value) + '</p>'; }
-      out.innerHTML = html;
-      openAll.classList.remove('hidden'); copyAll.classList.remove('hidden');
-      openAll.onclick = function(){ urls.forEach(function(u){ window.open(u, '_blank', 'noopener'); }); };
-      copyAll.onclick = function(){ navigator.clipboard.writeText(urls.join('\\n')); copyAll.textContent = 'Copied'; setTimeout(function(){ copyAll.textContent = 'Copy all'; }, 1500); };
-    });
-  })();
-</script>
-"""
-    # Generic fallback widget
-    return f"""
-<div class="glass p-6">
-  <p class="text-sm">Paste your input and click Run.</p>
-  <textarea id="gen-input" rows="6" class="mt-3 w-full rounded-lg bg-card/60 border border-border px-3 py-2"></textarea>
-  <button id="gen-run" class="mt-3 inline-flex rounded-xl bg-gradient-brand px-4 py-2 text-sm shadow-glow-primary">Run {name}</button>
-  <pre id="gen-out" class="mt-4 text-xs whitespace-pre-wrap glass-strong p-4 rounded-lg">Results appear here...</pre>
-</div>
-<script>
-  (function(){{
-    document.getElementById('gen-run').addEventListener('click', function(){{
-      var v = document.getElementById('gen-input').value || '';
-      document.getElementById('gen-out').textContent = 'Analyzed ' + v.length + ' characters of input. Tool prototype - replace with full implementation.';
-    }});
-  }})();
-</script>
-"""
-
-
-# ---------------------------------------------------------------------------
-# Page builder
-# ---------------------------------------------------------------------------
+    return _tool_widget_for(slug, name)
 
 
 def render_url(lang: str, default_lang: str, path: str) -> str:
@@ -1378,9 +1056,11 @@ def render_tool(env, data, lang, default_lang, brand_url, item: dict):
     unique = build_unique_for_tool(item, data["brand"])
     fbq = {"intro": "Quick answers about this tool.", "questions": [{"question": f["q"], "answer": f["a"]} for f in unique["faqs"]]}
     schemas = [breadcrumb_schema(breadcrumbs), softwareapp_schema(data["brand"], item, canonical), faq_schema(fbq), howto_schema(f"How to use {item['name']}", ["Paste your input into the field above", "Run the analyzer", "Copy the output into your CMS, schema block, or report"]), speakable_schema(canonical)]
-    title = f"{item['name']} - Free Tool by {data['brand']['shortName']}"
-    page = page_obj(title, desc(item["slug"], (item.get("primaryKeyword") or item.get("name") or item.get("title") or "")), canonical, lang, get_dir(lang_obj), schemas, show_welcome_popup=False)
+    title = f"Free {item['name']} - {data['brand']['shortName']}"
+    page = page_obj(title, tool_desc(item["slug"], item, data['brand']['shortName']), canonical, lang, get_dir(lang_obj), schemas, show_welcome_popup=False)
     page["lastmod"] = unique["lastmod"]
+    page["keywords"] = expand_tool_keywords(item)
+    page["author"] = data["brand"].get("founderName") or data["brand"]["shortName"]
     related = [t for t in data["tools"] if t["slug"] != item["slug"] and t.get("parentCategory") == item.get("parentCategory")][:3] or data["tools"][:3]
     ctx = common_ctx(data, lang, default_lang, brand_url)
     ctx.update({

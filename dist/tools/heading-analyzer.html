@@ -10,15 +10,17 @@
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 <meta name="format-detection" content="telephone=no">
 <meta name="generator" content="Shahab Abbasi static site - 2026">
-<title>Heading Analyzer - Free Tool by Shahab Abbasi</title>
-<meta name="description" content="Founder-led Heading Analyzer for ambitious operators, with senior strategists on every account.">
+<title>Free Heading Analyzer - Shahab Abbasi</title>
+<meta name="description" content="Online Heading Analyzer - free forever. Analyze your page heading structure (H1-H6) for SEO best practices. Works on desktop and mobile.">
+<meta name="keywords" content="Heading Analyzer, fastest heading analyzer, professional heading analyzer, no signup heading analyzer, heading analyzer no signup, heading analyzer for beginners, heading analyzer step by step, how to use heading analyzer, heading analyzer">
+<meta name="author" content="Shahab Abbasi">
 <link rel="canonical" href="https://shahababbasi.com/tools/heading-analyzer.html">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Shahab Abbasi">
-<meta property="og:title" content="Heading Analyzer - Free Tool by Shahab Abbasi">
-<meta property="og:description" content="Founder-led Heading Analyzer for ambitious operators, with senior strategists on every account.">
+<meta property="og:title" content="Free Heading Analyzer - Shahab Abbasi">
+<meta property="og:description" content="Online Heading Analyzer - free forever. Analyze your page heading structure (H1-H6) for SEO best practices. Works on desktop and mobile.">
 <meta property="og:url" content="https://shahababbasi.com/tools/heading-analyzer.html">
 <meta property="og:image" content="https://shahababbasi.com/assets/img/og-default.svg">
 <meta property="og:image:width" content="1200">
@@ -27,8 +29,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@shahababbasi">
 <meta name="twitter:creator" content="@shahababbasi">
-<meta name="twitter:title" content="Heading Analyzer - Free Tool by Shahab Abbasi">
-<meta name="twitter:description" content="Founder-led Heading Analyzer for ambitious operators, with senior strategists on every account.">
+<meta name="twitter:title" content="Free Heading Analyzer - Shahab Abbasi">
+<meta name="twitter:description" content="Online Heading Analyzer - free forever. Analyze your page heading structure (H1-H6) for SEO best practices. Works on desktop and mobile.">
 <meta name="twitter:image" content="https://shahababbasi.com/assets/img/og-default.svg">
 
 
@@ -201,7 +203,7 @@ tailwind.config = {
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "item": "https://shahababbasi.com/", "name": "Home", "position": 1}, {"@type": "ListItem", "item": "https://shahababbasi.com/tools.html", "name": "Free Tools", "position": 2}, {"@type": "ListItem", "item": "https://shahababbasi.com/tools/heading-analyzer.html", "name": "Heading Analyzer", "position": 3}]}</script>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "applicationCategory": "BusinessApplication", "description": "Analyze your page heading structure (H1-H6) for SEO best practices.", "name": "Heading Analyzer", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "operatingSystem": "Web", "publisher": {"@type": "Organization", "name": "Shahab Abbasi - Digital Marketing Agency", "url": "https://shahababbasi.com"}, "url": "https://shahababbasi.com/tools/heading-analyzer.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "applicationCategory": "BusinessApplication", "browserRequirements": "Requires JavaScript. Modern browser (Chrome, Firefox, Safari, Edge).", "description": "Analyze your page heading structure (H1-H6) for SEO best practices.", "featureList": [], "isAccessibleForFree": true, "keywords": "Heading Analyzer, fastest heading analyzer, professional heading analyzer, no signup heading analyzer, heading analyzer no signup, heading analyzer for beginners, heading analyzer step by step, how to use heading analyzer, heading analyzer", "name": "Heading Analyzer", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "operatingSystem": "Web", "publisher": {"@type": "Organization", "name": "Shahab Abbasi - Digital Marketing Agency", "url": "https://shahababbasi.com"}, "url": "https://shahababbasi.com/tools/heading-analyzer.html"}</script>
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "acceptedAnswer": {"@type": "Answer", "text": "Not currently. If you want a white-label version for your team or clients, contact us and we can scope it."}, "name": "Can I embed Heading Analyzer on my own site?"}, {"@type": "Question", "acceptedAnswer": {"@type": "Answer", "text": "Tools differ in tokenizer, parser, or rounding logic. We document our calculation methodology at the bottom of the tool. Cross-check against a second tool when the stakes are high."}, "name": "Why does Heading Analyzer sometimes give a different answer from another online tool?"}, {"@type": "Question", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Runs entirely in your browser. We do not log inputs and we do not call an external server. The tool exists because we use it ourselves and figured others would benefit."}, "name": "Is Heading Analyzer actually free, with no signup?"}]}</script>
 
@@ -1783,17 +1785,39 @@ tailwind.config = {
 <section class="container-tight pb-10">
   
 <div class="glass p-6">
-  <p class="text-sm">Paste your input and click Run.</p>
-  <textarea id="gen-input" rows="6" class="mt-3 w-full rounded-lg bg-card/60 border border-border px-3 py-2"></textarea>
-  <button id="gen-run" class="mt-3 inline-flex rounded-xl bg-gradient-brand px-4 py-2 text-sm shadow-glow-primary">Run Heading Analyzer</button>
-  <pre id="gen-out" class="mt-4 text-xs whitespace-pre-wrap glass-strong p-4 rounded-lg">Results appear here...</pre>
+  <label class="text-sm font-display font-semibold">Paste page HTML or markdown</label>
+  <textarea id="ha-input" rows="10" class="mt-2 w-full rounded-lg bg-card/60 border border-border px-3 py-2 text-sm font-mono" placeholder="<h1>Page title</h1>&#10;<h2>Section</h2>&#10;or # Page title&#10;## Section"></textarea>
+  <button id="ha-go" class="mt-3 rounded-xl bg-gradient-brand px-4 py-2 text-sm shadow-glow-primary">Analyze</button>
+  <div id="ha-out" class="mt-4"></div>
 </div>
 <script>
   (function(){
-    document.getElementById('gen-run').addEventListener('click', function(){
-      var v = document.getElementById('gen-input').value || '';
-      document.getElementById('gen-out').textContent = 'Analyzed ' + v.length + ' characters of input. Tool prototype - replace with full implementation.';
-    });
+    var inp=document.getElementById('ha-input'),out=document.getElementById('ha-out');
+    function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+    function run(){
+      var t=inp.value||''; var hs=[];
+      var re=/<h([1-6])[^>]*>(.*?)<\/h\1>/gi; var m;
+      while((m=re.exec(t))!==null) hs.push({lvl:+m[1], txt:m[2].replace(/<[^>]+>/g,'').trim()});
+      if(hs.length===0){
+        t.split(/\n/).forEach(function(line){
+          var mm=/^(#{1,6})\s+(.+)$/.exec(line);
+          if(mm) hs.push({lvl:mm[1].length, txt:mm[2].trim()});
+        });
+      }
+      var counts={1:0,2:0,3:0,4:0,5:0,6:0}; hs.forEach(function(h){counts[h.lvl]++;});
+      var alerts=[];
+      if(counts[1]===0) alerts.push('No H1 found - every page should have exactly one H1.');
+      if(counts[1]>1) alerts.push('Multiple H1s detected ('+counts[1]+'). Consolidate to a single H1.');
+      var prev=0; hs.forEach(function(h){if(prev && h.lvl-prev>1) alerts.push('Skipped heading level near "'+h.txt.slice(0,40)+'..." (jumped from H'+prev+' to H'+h.lvl+').'); prev=h.lvl;});
+      var html='<div class="grid md:grid-cols-3 gap-2 text-xs mb-3">';
+      [1,2,3,4,5,6].forEach(function(l){html+='<div class="glass p-2"><span class="text-foreground/60">H'+l+'</span> <span class="font-display text-base ml-2">'+counts[l]+'</span></div>';});
+      html+='</div>';
+      if(alerts.length) html+='<ul class="text-sm text-amber-300 mb-3">'+alerts.map(function(a){return '<li>- '+esc(a)+'</li>';}).join('')+'</ul>';
+      else html+='<p class="text-sm text-emerald-400 mb-3">No structural alerts.</p>';
+      html+='<ul class="space-y-1 text-sm">'+hs.map(function(h){return '<li class="font-mono text-xs"><span class="text-accent">H'+h.lvl+'</span> '+'  '.repeat(h.lvl-1)+esc(h.txt)+'</li>';}).join('')+'</ul>';
+      out.innerHTML=html;
+    }
+    document.getElementById('ha-go').addEventListener('click',run);
   })();
 </script>
 
