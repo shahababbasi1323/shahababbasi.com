@@ -7,7 +7,7 @@
   <div class="container-tight relative pt-12 pb-16 md:pt-20 md:pb-24">
     <p class="text-xs uppercase tracking-widest text-accent">{{ item.parentCategory|replace('-', ' ')|title }}</p>
     <h1 class="mt-2 font-display text-4xl md:text-6xl font-bold tracking-tight max-w-4xl">SEO and digital marketing for {{ item.name|lower }}.</h1>
-    <p class="mt-5 max-w-2xl text-lg text-foreground/85">{{ item.shortDescription }}</p>
+    <p class="mt-5 max-w-2xl text-lg text-foreground/85">{{ page.description }}</p>
     <div class="mt-7 flex flex-wrap items-center gap-3">
       <a href="{{ url('/free-seo-audit.html') }}" class="rounded-xl bg-gradient-brand px-5 py-3 font-medium shadow-glow-primary">Free Audit for {{ item.name }}</a>
       <a href="{{ url('/contact.html') }}" class="rounded-xl border border-border/60 px-5 py-3 font-medium hover:bg-white/5">Talk to a strategist</a>

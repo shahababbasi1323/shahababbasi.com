@@ -13909,7 +13909,7 @@
         "keyword density analyzer for SEO",
         "keyword density analyzer 2026"
       ],
-      "shortDescription": "Free keyword density analyzer - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Count keyword frequency and density percentages across any text or URL.",
       "heroImagePrompt": "product UI mock of keyword density analyzer on dark navy background with electric blue accents",
       "parentCategory": "keyword-tools"
     },
@@ -13924,7 +13924,7 @@
         "keyword difficulty estimator for SEO",
         "keyword difficulty estimator 2026"
       ],
-      "shortDescription": "Free keyword difficulty estimator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Estimate ranking difficulty for any keyword using domain authority signals.",
       "heroImagePrompt": "product UI mock of keyword difficulty estimator on dark navy background with electric blue accents",
       "parentCategory": "keyword-tools"
     },
@@ -13939,7 +13939,7 @@
         "long-tail keyword generator for SEO",
         "long-tail keyword generator 2026"
       ],
-      "shortDescription": "Free long-tail keyword generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate long-tail keyword variations from a seed term using question and modifier patterns.",
       "heroImagePrompt": "product UI mock of long-tail keyword generator on dark navy background with electric blue accents",
       "parentCategory": "keyword-tools"
     },
@@ -13954,7 +13954,7 @@
         "search intent classifier for SEO",
         "search intent classifier 2026"
       ],
-      "shortDescription": "Free search intent classifier - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Classify any keyword as informational, navigational, commercial, or transactional.",
       "heroImagePrompt": "product UI mock of search intent classifier on dark navy background with electric blue accents",
       "parentCategory": "keyword-tools",
       "category": "Keyword & Research",
@@ -13974,7 +13974,7 @@
         "lsi keyword generator for SEO",
         "lsi keyword generator 2026"
       ],
-      "shortDescription": "Free lsi keyword generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate latent-semantic and related-term keyword suggestions for any topic.",
       "heroImagePrompt": "product UI mock of lsi keyword generator on dark navy background with electric blue accents",
       "parentCategory": "keyword-tools",
       "category": "Keyword & Research",
@@ -13994,7 +13994,7 @@
         "paa question extractor for SEO",
         "paa question extractor 2026"
       ],
-      "shortDescription": "Free paa question extractor - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Extract People Also Ask questions and structure them for FAQ schema.",
       "heroImagePrompt": "product UI mock of paa question extractor on dark navy background with electric blue accents",
       "parentCategory": "keyword-tools"
     },
@@ -14009,7 +14009,7 @@
         "keyword cluster builder for SEO",
         "keyword cluster builder 2026"
       ],
-      "shortDescription": "Free keyword cluster builder - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Group keywords into topical clusters that map to URL targets and content briefs.",
       "heroImagePrompt": "product UI mock of keyword cluster builder on dark navy background with electric blue accents",
       "parentCategory": "keyword-tools"
     },
@@ -14024,7 +14024,7 @@
         "robots.txt tester for SEO",
         "robots.txt tester 2026"
       ],
-      "shortDescription": "Free robots.txt tester - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Test whether a robots.txt rule allows or blocks any URL for any user-agent.",
       "heroImagePrompt": "product UI mock of robots.txt tester on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools"
     },
@@ -14039,7 +14039,7 @@
         "xml sitemap generator for SEO",
         "xml sitemap generator 2026"
       ],
-      "shortDescription": "Free xml sitemap generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate an XML sitemap from a URL list with lastmod and priority controls.",
       "heroImagePrompt": "product UI mock of xml sitemap generator on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools"
     },
@@ -14054,7 +14054,7 @@
         "hreflang tag generator for SEO",
         "hreflang tag generator 2026"
       ],
-      "shortDescription": "Free hreflang tag generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate hreflang tags for multilingual sites with x-default and region fallbacks.",
       "heroImagePrompt": "product UI mock of hreflang tag generator on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools",
       "category": "Technical SEO",
@@ -14074,7 +14074,7 @@
         "canonical tag checker for SEO",
         "canonical tag checker 2026"
       ],
-      "shortDescription": "Free canonical tag checker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Audit a page's canonical tag and flag conflicts with redirects or alternates.",
       "heroImagePrompt": "product UI mock of canonical tag checker on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools"
     },
@@ -14089,7 +14089,7 @@
         "http header inspector for SEO",
         "http header inspector 2026"
       ],
-      "shortDescription": "Free http header inspector - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Inspect HTTP response headers, status codes, and security headers for any URL.",
       "heroImagePrompt": "product UI mock of http header inspector on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools"
     },
@@ -14104,7 +14104,7 @@
         "redirect chain checker for SEO",
         "redirect chain checker 2026"
       ],
-      "shortDescription": "Free redirect chain checker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Trace redirect chains, count hops, and flag loops or excessive 301 stacks.",
       "heroImagePrompt": "product UI mock of redirect chain checker on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools",
       "category": "Domain & URL Tools",
@@ -14124,7 +14124,7 @@
         "mobile-friendly tester for SEO",
         "mobile-friendly tester 2026"
       ],
-      "shortDescription": "Free mobile-friendly tester - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Test mobile friendliness with viewport, tap-target, and font-size checks.",
       "heroImagePrompt": "product UI mock of mobile-friendly tester on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools"
     },
@@ -14139,7 +14139,7 @@
         "core web vitals checker for SEO",
         "core web vitals checker 2026"
       ],
-      "shortDescription": "Free core web vitals checker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Check LCP, INP, and CLS against the Core Web Vitals pass thresholds.",
       "heroImagePrompt": "product UI mock of core web vitals checker on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools"
     },
@@ -14154,7 +14154,7 @@
         "crawl budget estimator for SEO",
         "crawl budget estimator 2026"
       ],
-      "shortDescription": "Free crawl budget estimator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Estimate crawl budget consumption based on URL count, depth, and parameter sprawl.",
       "heroImagePrompt": "product UI mock of crawl budget estimator on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools"
     },
@@ -14169,7 +14169,7 @@
         "word counter for SEO",
         "word counter 2026"
       ],
-      "shortDescription": "Free word counter - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Count words, characters, sentences, and reading time in any block of text.",
       "heroImagePrompt": "product UI mock of word counter on dark navy background with electric blue accents",
       "parentCategory": "content-tools",
       "category": "Content & Writing",
@@ -14189,7 +14189,7 @@
         "readability score calculator for SEO",
         "readability score calculator 2026"
       ],
-      "shortDescription": "Free readability score calculator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Calculate Flesch, Flesch-Kincaid, Gunning Fog, and SMOG readability scores.",
       "heroImagePrompt": "product UI mock of readability score calculator on dark navy background with electric blue accents",
       "parentCategory": "content-tools"
     },
@@ -14204,7 +14204,7 @@
         "content gap analyzer for SEO",
         "content gap analyzer 2026"
       ],
-      "shortDescription": "Free content gap analyzer - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Compare two URL sets and surface topic and keyword gaps between them.",
       "heroImagePrompt": "product UI mock of content gap analyzer on dark navy background with electric blue accents",
       "parentCategory": "content-tools"
     },
@@ -14219,7 +14219,7 @@
         "meta tag generator for SEO",
         "meta tag generator 2026"
       ],
-      "shortDescription": "Free meta tag generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Compose title, description, robots, and canonical tags from a single form.",
       "heroImagePrompt": "product UI mock of meta tag generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools",
       "category": "Meta & On-Page SEO",
@@ -14239,7 +14239,7 @@
         "title tag optimizer for SEO",
         "title tag optimizer 2026"
       ],
-      "shortDescription": "Free title tag optimizer - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Score a title tag for length, keyword position, and SERP truncation.",
       "heroImagePrompt": "product UI mock of title tag optimizer on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -14254,7 +14254,7 @@
         "meta description generator for SEO",
         "meta description generator 2026"
       ],
-      "shortDescription": "Free meta description generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Compose a meta description with character budget, CTA, and keyword targeting.",
       "heroImagePrompt": "product UI mock of meta description generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -14269,7 +14269,7 @@
         "opengraph tag generator for SEO",
         "opengraph tag generator 2026"
       ],
-      "shortDescription": "Free opengraph tag generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate Open Graph tags for shareable cards on Facebook, LinkedIn, and Slack.",
       "heroImagePrompt": "product UI mock of opengraph tag generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -14284,7 +14284,7 @@
         "twitter card generator for SEO",
         "twitter card generator 2026"
       ],
-      "shortDescription": "Free twitter card generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate Twitter Card tags for summary, summary_large_image, and player cards.",
       "heroImagePrompt": "product UI mock of twitter card generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -14299,7 +14299,7 @@
         "serp snippet preview for SEO",
         "serp snippet preview 2026"
       ],
-      "shortDescription": "Free serp snippet preview - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Preview how a title and description will render in Google's search snippet.",
       "heroImagePrompt": "product UI mock of serp snippet preview on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -14314,7 +14314,7 @@
         "slug generator for SEO",
         "slug generator 2026"
       ],
-      "shortDescription": "Free slug generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Convert any title into a clean, lowercase, hyphenated URL slug.",
       "heroImagePrompt": "product UI mock of slug generator on dark navy background with electric blue accents",
       "parentCategory": "content-tools",
       "category": "Technical SEO",
@@ -14334,7 +14334,7 @@
         "title case converter for SEO",
         "title case converter 2026"
       ],
-      "shortDescription": "Free title case converter - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Convert text to AP, APA, Chicago, MLA, or sentence-case title formatting.",
       "heroImagePrompt": "product UI mock of title case converter on dark navy background with electric blue accents",
       "parentCategory": "content-tools"
     },
@@ -14349,7 +14349,7 @@
         "plagiarism checker for SEO",
         "plagiarism checker 2026"
       ],
-      "shortDescription": "Free plagiarism checker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Highlight potential duplicate phrases between two blocks of text.",
       "heroImagePrompt": "product UI mock of plagiarism checker on dark navy background with electric blue accents",
       "parentCategory": "content-tools"
     },
@@ -14364,7 +14364,7 @@
         "backlink quality checker for SEO",
         "backlink quality checker 2026"
       ],
-      "shortDescription": "Free backlink quality checker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Score a backlink against authority, relevance, anchor, and toxicity signals.",
       "heroImagePrompt": "product UI mock of backlink quality checker on dark navy background with electric blue accents",
       "parentCategory": "backlink-tools"
     },
@@ -14379,7 +14379,7 @@
         "domain authority estimator for SEO",
         "domain authority estimator 2026"
       ],
-      "shortDescription": "Free domain authority estimator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Estimate domain authority from referring-domain count and link velocity inputs.",
       "heroImagePrompt": "product UI mock of domain authority estimator on dark navy background with electric blue accents",
       "parentCategory": "backlink-tools"
     },
@@ -14394,7 +14394,7 @@
         "anchor text distribution for SEO",
         "anchor text distribution 2026"
       ],
-      "shortDescription": "Free anchor text distribution - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Analyze the distribution of branded, exact, partial, and generic anchors in a profile.",
       "heroImagePrompt": "product UI mock of anchor text distribution on dark navy background with electric blue accents",
       "parentCategory": "backlink-tools"
     },
@@ -14409,7 +14409,7 @@
         "broken link finder for SEO",
         "broken link finder 2026"
       ],
-      "shortDescription": "Free broken link finder - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Crawl a page and flag broken internal and outbound links with status codes.",
       "heroImagePrompt": "product UI mock of broken link finder on dark navy background with electric blue accents",
       "parentCategory": "backlink-tools"
     },
@@ -14424,7 +14424,7 @@
         "linkable asset idea generator for SEO",
         "linkable asset idea generator 2026"
       ],
-      "shortDescription": "Free linkable asset idea generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate linkable-asset ideas for any niche using proven format patterns.",
       "heroImagePrompt": "product UI mock of linkable asset idea generator on dark navy background with electric blue accents",
       "parentCategory": "backlink-tools"
     },
@@ -14439,7 +14439,7 @@
         "nap consistency checker for SEO",
         "nap consistency checker 2026"
       ],
-      "shortDescription": "Free nap consistency checker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Compare Name, Address, and Phone across citations and flag inconsistencies.",
       "heroImagePrompt": "product UI mock of nap consistency checker on dark navy background with electric blue accents",
       "parentCategory": "local-seo-tools",
       "category": "Local SEO",
@@ -14459,7 +14459,7 @@
         "citation audit tool for SEO",
         "citation audit tool 2026"
       ],
-      "shortDescription": "Free citation audit tool - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Audit local citations for completeness, accuracy, and high-authority directory coverage.",
       "heroImagePrompt": "product UI mock of citation audit tool on dark navy background with electric blue accents",
       "parentCategory": "local-seo-tools"
     },
@@ -14474,7 +14474,7 @@
         "google business profile audit for SEO",
         "google business profile audit 2026"
       ],
-      "shortDescription": "Free google business profile audit - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Audit a Google Business Profile for completeness, categories, and review signals.",
       "heroImagePrompt": "product UI mock of google business profile audit on dark navy background with electric blue accents",
       "parentCategory": "local-seo-tools",
       "category": "Local SEO",
@@ -14494,7 +14494,7 @@
         "local schema generator for SEO",
         "local schema generator 2026"
       ],
-      "shortDescription": "Free local schema generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate LocalBusiness schema with address, hours, geo, and review data.",
       "heroImagePrompt": "product UI mock of local schema generator on dark navy background with electric blue accents",
       "parentCategory": "local-seo-tools"
     },
@@ -14509,7 +14509,7 @@
         "map pack position tracker for SEO",
         "map pack position tracker 2026"
       ],
-      "shortDescription": "Free map pack position tracker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Track map-pack ranking position for a business across multiple geo-targeted queries.",
       "heroImagePrompt": "product UI mock of map pack position tracker on dark navy background with electric blue accents",
       "parentCategory": "local-seo-tools"
     },
@@ -14524,7 +14524,7 @@
         "geo modifier generator for SEO",
         "geo modifier generator 2026"
       ],
-      "shortDescription": "Free geo modifier generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate city, neighborhood, and metro geo modifiers for local keyword variations.",
       "heroImagePrompt": "product UI mock of geo modifier generator on dark navy background with electric blue accents",
       "parentCategory": "local-seo-tools"
     },
@@ -14539,7 +14539,7 @@
         "ai overview visibility checker for SEO",
         "ai overview visibility checker 2026"
       ],
-      "shortDescription": "Free ai overview visibility checker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Check whether a URL is cited inside Google AI Overviews for a target query.",
       "heroImagePrompt": "product UI mock of ai overview visibility checker on dark navy background with electric blue accents",
       "parentCategory": "ai-seo-tools"
     },
@@ -14554,7 +14554,7 @@
         "chatgpt citation tracker for SEO",
         "chatgpt citation tracker 2026"
       ],
-      "shortDescription": "Free chatgpt citation tracker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Track when a URL or brand is cited by ChatGPT for tracked prompt sets.",
       "heroImagePrompt": "product UI mock of chatgpt citation tracker on dark navy background with electric blue accents",
       "parentCategory": "ai-seo-tools"
     },
@@ -14569,7 +14569,7 @@
         "perplexity citation tracker for SEO",
         "perplexity citation tracker 2026"
       ],
-      "shortDescription": "Free perplexity citation tracker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Track Perplexity citations for a domain across tracked prompts and answer panels.",
       "heroImagePrompt": "product UI mock of perplexity citation tracker on dark navy background with electric blue accents",
       "parentCategory": "ai-seo-tools"
     },
@@ -14584,7 +14584,7 @@
         "ai content detector for SEO",
         "ai content detector 2026"
       ],
-      "shortDescription": "Free ai content detector - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Detect AI-generated patterns in text using perplexity and burstiness signals.",
       "heroImagePrompt": "product UI mock of ai content detector on dark navy background with electric blue accents",
       "parentCategory": "ai-seo-tools"
     },
@@ -14599,7 +14599,7 @@
         "ai title generator for SEO",
         "ai title generator 2026"
       ],
-      "shortDescription": "Free ai title generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate title tag candidates from a topic using SERP-aware patterns.",
       "heroImagePrompt": "product UI mock of ai title generator on dark navy background with electric blue accents",
       "parentCategory": "ai-seo-tools"
     },
@@ -14614,7 +14614,7 @@
         "ai faq generator for SEO",
         "ai faq generator 2026"
       ],
-      "shortDescription": "Free ai faq generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate FAQ questions and answers from a topic, primed for FAQ schema.",
       "heroImagePrompt": "product UI mock of ai faq generator on dark navy background with electric blue accents",
       "parentCategory": "ai-seo-tools"
     },
@@ -14629,7 +14629,7 @@
         "ai meta description generator for SEO",
         "ai meta description generator 2026"
       ],
-      "shortDescription": "Free ai meta description generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate meta description variants within a character budget for any topic.",
       "heroImagePrompt": "product UI mock of ai meta description generator on dark navy background with electric blue accents",
       "parentCategory": "ai-seo-tools"
     },
@@ -14644,7 +14644,7 @@
         "ai schema generator for SEO",
         "ai schema generator 2026"
       ],
-      "shortDescription": "Free ai schema generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate JSON-LD schema for any page type using your inputs and best-practice fields.",
       "heroImagePrompt": "product UI mock of ai schema generator on dark navy background with electric blue accents",
       "parentCategory": "ai-seo-tools"
     },
@@ -14659,7 +14659,7 @@
         "faq schema generator for SEO",
         "faq schema generator 2026"
       ],
-      "shortDescription": "Free faq schema generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate FAQ schema JSON-LD from question and answer pairs.",
       "heroImagePrompt": "product UI mock of faq schema generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -14674,7 +14674,7 @@
         "howto schema generator for SEO",
         "howto schema generator 2026"
       ],
-      "shortDescription": "Free howto schema generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate HowTo schema with step images, total time, and supply inputs.",
       "heroImagePrompt": "product UI mock of howto schema generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -14689,7 +14689,7 @@
         "article schema generator for SEO",
         "article schema generator 2026"
       ],
-      "shortDescription": "Free article schema generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate Article schema with headline, author, datePublished, and image fields.",
       "heroImagePrompt": "product UI mock of article schema generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -14704,7 +14704,7 @@
         "product schema generator for SEO",
         "product schema generator 2026"
       ],
-      "shortDescription": "Free product schema generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate Product schema with offers, aggregateRating, and review nodes.",
       "heroImagePrompt": "product UI mock of product schema generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -14719,7 +14719,7 @@
         "localbusiness schema generator for SEO",
         "localbusiness schema generator 2026"
       ],
-      "shortDescription": "Free localbusiness schema generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate LocalBusiness schema with hours, geo, and review snippet.",
       "heroImagePrompt": "product UI mock of localbusiness schema generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -14734,7 +14734,7 @@
         "breadcrumb schema generator for SEO",
         "breadcrumb schema generator 2026"
       ],
-      "shortDescription": "Free breadcrumb schema generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate BreadcrumbList schema from a URL path with itemListElement nodes.",
       "heroImagePrompt": "product UI mock of breadcrumb schema generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -14749,7 +14749,7 @@
         "videoobject schema generator for SEO",
         "videoobject schema generator 2026"
       ],
-      "shortDescription": "Free videoobject schema generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate VideoObject schema with thumbnailUrl, duration, and uploadDate fields.",
       "heroImagePrompt": "product UI mock of videoobject schema generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -14764,7 +14764,7 @@
         "review schema generator for SEO",
         "review schema generator 2026"
       ],
-      "shortDescription": "Free review schema generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate Review and AggregateRating schema for testimonial and rating widgets.",
       "heroImagePrompt": "product UI mock of review schema generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -14779,7 +14779,7 @@
         "event schema generator for SEO",
         "event schema generator 2026"
       ],
-      "shortDescription": "Free event schema generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate Event schema with location, startDate, and offers blocks for rich snippets.",
       "heroImagePrompt": "product UI mock of event schema generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -14794,7 +14794,7 @@
         "cpc calculator for SEO",
         "cpc calculator 2026"
       ],
-      "shortDescription": "Free cpc calculator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Calculate cost-per-click from spend and clicks, with currency and date-range inputs.",
       "heroImagePrompt": "product UI mock of cpc calculator on dark navy background with electric blue accents",
       "parentCategory": "ppc-tools"
     },
@@ -14809,7 +14809,7 @@
         "roas calculator for SEO",
         "roas calculator 2026"
       ],
-      "shortDescription": "Free roas calculator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Calculate return on ad spend from revenue and ad spend with break-even analysis.",
       "heroImagePrompt": "product UI mock of roas calculator on dark navy background with electric blue accents",
       "parentCategory": "ppc-tools",
       "category": "PPC & Paid Ads",
@@ -14829,7 +14829,7 @@
         "ctr calculator for SEO",
         "ctr calculator 2026"
       ],
-      "shortDescription": "Free ctr calculator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Calculate click-through rate from impressions and clicks across campaigns.",
       "heroImagePrompt": "product UI mock of ctr calculator on dark navy background with electric blue accents",
       "parentCategory": "ppc-tools"
     },
@@ -14844,7 +14844,7 @@
         "quality score estimator for SEO",
         "quality score estimator 2026"
       ],
-      "shortDescription": "Free quality score estimator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Estimate Google Ads Quality Score from expected CTR, ad relevance, and landing-page signals.",
       "heroImagePrompt": "product UI mock of quality score estimator on dark navy background with electric blue accents",
       "parentCategory": "ppc-tools",
       "category": "PPC & Paid Ads",
@@ -14864,7 +14864,7 @@
         "ad copy generator for SEO",
         "ad copy generator 2026"
       ],
-      "shortDescription": "Free ad copy generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate Google Ads, Meta Ads, and LinkedIn Ads copy variants from a single brief.",
       "heroImagePrompt": "product UI mock of ad copy generator on dark navy background with electric blue accents",
       "parentCategory": "ppc-tools",
       "category": "PPC & Paid Ads",
@@ -14884,7 +14884,7 @@
         "utm builder for SEO",
         "utm builder 2026"
       ],
-      "shortDescription": "Free utm builder - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Build UTM-tagged campaign URLs with source, medium, campaign, term, and content parameters.",
       "heroImagePrompt": "product UI mock of utm builder on dark navy background with electric blue accents",
       "parentCategory": "ppc-tools"
     },
@@ -14899,7 +14899,7 @@
         "negative keyword generator for SEO",
         "negative keyword generator 2026"
       ],
-      "shortDescription": "Free negative keyword generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate negative keyword lists from a seed term using common irrelevant modifiers.",
       "heroImagePrompt": "product UI mock of negative keyword generator on dark navy background with electric blue accents",
       "parentCategory": "ppc-tools"
     },
@@ -14914,7 +14914,7 @@
         "index coverage checker for SEO",
         "index coverage checker 2026"
       ],
-      "shortDescription": "Free index coverage checker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Check whether a URL is indexed in Google using site: operator probes.",
       "heroImagePrompt": "product UI mock of index coverage checker on dark navy background with electric blue accents",
       "parentCategory": "indexing-tools"
     },
@@ -14929,7 +14929,7 @@
         "bulk indexing checker for SEO",
         "bulk indexing checker 2026"
       ],
-      "shortDescription": "Free bulk indexing checker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Check indexed status for many URLs at once using site: operator probes per URL.",
       "heroImagePrompt": "product UI mock of bulk indexing checker on dark navy background with electric blue accents",
       "parentCategory": "indexing-tools"
     },
@@ -14944,7 +14944,7 @@
         "crawl stats estimator for SEO",
         "crawl stats estimator 2026"
       ],
-      "shortDescription": "Free crawl stats estimator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Estimate crawl request volume, response size, and average response time per URL.",
       "heroImagePrompt": "product UI mock of crawl stats estimator on dark navy background with electric blue accents",
       "parentCategory": "indexing-tools"
     },
@@ -14959,7 +14959,7 @@
         "url inspector for SEO",
         "url inspector 2026"
       ],
-      "shortDescription": "Free url inspector - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Run URL Inspection style checks on a single URL: canonical, robots, indexability, schema.",
       "heroImagePrompt": "product UI mock of url inspector on dark navy background with electric blue accents",
       "parentCategory": "indexing-tools"
     },
@@ -14974,7 +14974,7 @@
         "cro heuristic checklist for SEO",
         "cro heuristic checklist 2026"
       ],
-      "shortDescription": "Free cro heuristic checklist - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Score a landing page against 30 CRO heuristics across copy, layout, proof, and CTA.",
       "heroImagePrompt": "product UI mock of cro heuristic checklist on dark navy background with electric blue accents",
       "parentCategory": "conversion-tools"
     },
@@ -14989,7 +14989,7 @@
         "above-the-fold tester for SEO",
         "above-the-fold tester 2026"
       ],
-      "shortDescription": "Free above-the-fold tester - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Test what renders above the fold at desktop, tablet, and mobile breakpoints.",
       "heroImagePrompt": "product UI mock of above-the-fold tester on dark navy background with electric blue accents",
       "parentCategory": "conversion-tools"
     },
@@ -15004,7 +15004,7 @@
         "cta strength analyzer for SEO",
         "cta strength analyzer 2026"
       ],
-      "shortDescription": "Free cta strength analyzer - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Score a CTA against 8 conversion criteria: clarity, urgency, proof, friction, value.",
       "heroImagePrompt": "product UI mock of cta strength analyzer on dark navy background with electric blue accents",
       "parentCategory": "conversion-tools"
     },
@@ -15019,7 +15019,7 @@
         "form field counter for SEO",
         "form field counter 2026"
       ],
-      "shortDescription": "Free form field counter - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Count form fields, required fields, and field types and benchmark against conversion data.",
       "heroImagePrompt": "product UI mock of form field counter on dark navy background with electric blue accents",
       "parentCategory": "conversion-tools"
     },
@@ -15034,7 +15034,7 @@
         "page speed to conversion estimator for SEO",
         "page speed to conversion estimator 2026"
       ],
-      "shortDescription": "Free page speed to conversion estimator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Estimate revenue impact from LCP and INP improvements on conversion rate.",
       "heroImagePrompt": "product UI mock of page speed to conversion estimator on dark navy background with electric blue accents",
       "parentCategory": "conversion-tools"
     },
@@ -15049,7 +15049,7 @@
         "monthly seo report generator for SEO",
         "monthly seo report generator 2026"
       ],
-      "shortDescription": "Free monthly seo report generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate a monthly SEO report from GA4 and Search Console exports with executive summary.",
       "heroImagePrompt": "product UI mock of monthly seo report generator on dark navy background with electric blue accents",
       "parentCategory": "reporting-tools"
     },
@@ -15064,7 +15064,7 @@
         "kpi tracker for SEO",
         "kpi tracker 2026"
       ],
-      "shortDescription": "Free kpi tracker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Track SEO and PPC KPIs across weeks with target lines and variance flags.",
       "heroImagePrompt": "product UI mock of kpi tracker on dark navy background with electric blue accents",
       "parentCategory": "reporting-tools"
     },
@@ -15079,7 +15079,7 @@
         "rank tracking snapshot for SEO",
         "rank tracking snapshot 2026"
       ],
-      "shortDescription": "Free rank tracking snapshot - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Capture a one-time rank snapshot for a keyword list across desktop and mobile.",
       "heroImagePrompt": "product UI mock of rank tracking snapshot on dark navy background with electric blue accents",
       "parentCategory": "reporting-tools"
     },
@@ -15094,7 +15094,7 @@
         "traffic forecaster for SEO",
         "traffic forecaster 2026"
       ],
-      "shortDescription": "Free traffic forecaster - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Forecast organic traffic from keyword volume, CTR curve, and ranking probability inputs.",
       "heroImagePrompt": "product UI mock of traffic forecaster on dark navy background with electric blue accents",
       "parentCategory": "reporting-tools"
     },
@@ -15109,7 +15109,7 @@
         "pipeline attribution calculator for SEO",
         "pipeline attribution calculator 2026"
       ],
-      "shortDescription": "Free pipeline attribution calculator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Calculate pipeline attribution across SEO, paid, and direct touchpoints.",
       "heroImagePrompt": "product UI mock of pipeline attribution calculator on dark navy background with electric blue accents",
       "parentCategory": "reporting-tools"
     },
@@ -15124,7 +15124,7 @@
         "hashtag generator for SEO",
         "hashtag generator 2026"
       ],
-      "shortDescription": "Free hashtag generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate hashtag sets for Instagram, TikTok, LinkedIn, and Twitter from a topic.",
       "heroImagePrompt": "product UI mock of hashtag generator on dark navy background with electric blue accents",
       "parentCategory": "social-tools",
       "category": "Social Media & LinkedIn",
@@ -15144,7 +15144,7 @@
         "linkedin post optimizer for SEO",
         "linkedin post optimizer 2026"
       ],
-      "shortDescription": "Free linkedin post optimizer - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Score a LinkedIn post for hook, length, line breaks, and engagement triggers.",
       "heroImagePrompt": "product UI mock of linkedin post optimizer on dark navy background with electric blue accents",
       "parentCategory": "social-tools"
     },
@@ -15159,7 +15159,7 @@
         "twitter bio optimizer for SEO",
         "twitter bio optimizer 2026"
       ],
-      "shortDescription": "Free twitter bio optimizer - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Score a Twitter bio against character budget, keyword presence, and CTA strength.",
       "heroImagePrompt": "product UI mock of twitter bio optimizer on dark navy background with electric blue accents",
       "parentCategory": "social-tools"
     },
@@ -15174,7 +15174,7 @@
         "instagram caption generator for SEO",
         "instagram caption generator 2026"
       ],
-      "shortDescription": "Free instagram caption generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate Instagram caption variants with hook, value, and CTA in one tap.",
       "heroImagePrompt": "product UI mock of instagram caption generator on dark navy background with electric blue accents",
       "parentCategory": "social-tools"
     },
@@ -15189,7 +15189,7 @@
         "youtube title optimizer for SEO",
         "youtube title optimizer 2026"
       ],
-      "shortDescription": "Free youtube title optimizer - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Score a YouTube title for CTR signals: numbers, brackets, emotion, and keyword position.",
       "heroImagePrompt": "product UI mock of youtube title optimizer on dark navy background with electric blue accents",
       "parentCategory": "social-tools"
     },
@@ -15204,7 +15204,7 @@
         "youtube tag generator for SEO",
         "youtube tag generator 2026"
       ],
-      "shortDescription": "Free youtube tag generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate YouTube tag sets from a video topic using broad and long-tail patterns.",
       "heroImagePrompt": "product UI mock of youtube tag generator on dark navy background with electric blue accents",
       "parentCategory": "social-tools"
     },
@@ -15219,7 +15219,7 @@
         "pinterest pin title generator for SEO",
         "pinterest pin title generator 2026"
       ],
-      "shortDescription": "Free pinterest pin title generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate Pinterest pin title variants for vertical pins and idea pins.",
       "heroImagePrompt": "product UI mock of pinterest pin title generator on dark navy background with electric blue accents",
       "parentCategory": "social-tools"
     },
@@ -15234,7 +15234,7 @@
         "tiktok hook generator for SEO",
         "tiktok hook generator 2026"
       ],
-      "shortDescription": "Free tiktok hook generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate TikTok hook lines for the first three seconds across proven hook patterns.",
       "heroImagePrompt": "product UI mock of tiktok hook generator on dark navy background with electric blue accents",
       "parentCategory": "social-tools"
     },
@@ -15249,7 +15249,7 @@
         "social share image sizer for SEO",
         "social share image sizer 2026"
       ],
-      "shortDescription": "Free social share image sizer - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Resize and crop a single image into all required social share aspect ratios.",
       "heroImagePrompt": "product UI mock of social share image sizer on dark navy background with electric blue accents",
       "parentCategory": "social-tools"
     },
@@ -15264,7 +15264,7 @@
         "url shortener for SEO",
         "url shortener 2026"
       ],
-      "shortDescription": "Free url shortener - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Shorten a long URL into a clean, trackable redirect with optional UTM preservation.",
       "heroImagePrompt": "product UI mock of url shortener on dark navy background with electric blue accents",
       "parentCategory": "content-tools"
     },
@@ -15279,7 +15279,7 @@
         "html encoder decoder for SEO",
         "html encoder decoder 2026"
       ],
-      "shortDescription": "Free html encoder decoder - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Encode and decode HTML entities, URL components, and Base64 strings in one place.",
       "heroImagePrompt": "product UI mock of html encoder decoder on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools"
     },
@@ -15294,7 +15294,7 @@
         "htaccess generator for SEO",
         "htaccess generator 2026"
       ],
-      "shortDescription": "Free htaccess generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate .htaccess rules for redirects, force-https, gzip, and cache headers.",
       "heroImagePrompt": "product UI mock of htaccess generator on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools"
     },
@@ -15309,7 +15309,7 @@
         "schema validator for SEO",
         "schema validator 2026"
       ],
-      "shortDescription": "Free schema validator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Validate JSON-LD schema against Google's structured-data requirements per type.",
       "heroImagePrompt": "product UI mock of schema validator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -15324,7 +15324,7 @@
         "robots.txt generator for SEO",
         "robots.txt generator 2026"
       ],
-      "shortDescription": "Free robots.txt generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate a robots.txt file with allow, disallow, sitemap, and host directives.",
       "heroImagePrompt": "product UI mock of robots.txt generator on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools"
     },
@@ -15339,7 +15339,7 @@
         "Google index checker bulk",
         "bulk URL indexed status"
       ],
-      "shortDescription": "Check if multiple URLs are indexed by Google in bulk using the site: operator with staggered tab opening.",
+      "shortDescription": "Open Google site: queries for many URLs in batched tabs to check indexed status.",
       "heroImagePrompt": "product UI mock of a bulk index checker on dark navy background with electric blue accents",
       "parentCategory": "meta-tools",
       "category": "Meta & On-Page SEO",
@@ -15359,7 +15359,7 @@
         "keyword rank tracker free",
         "bulk SERP checker"
       ],
-      "shortDescription": "Check rankings for multiple keywords across Google Search at once.",
+      "shortDescription": "Open Google branded SERP queries for many keywords at once with location targeting.",
       "heroImagePrompt": "product UI mock of a bulk keyword rank checker on dark navy background with electric blue accents",
       "parentCategory": "keyword-tools",
       "category": "Keyword & Research",
@@ -15377,7 +15377,8 @@
       "description": "Count characters with and without spaces. Perfect for social media character limits.",
       "metaDescription": "Count characters with and without spaces. Perfect for social media character limits.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Count characters, words, lines, and reading time across any block of text."
     },
     {
       "slug": "keyword-density-checker",
@@ -15388,7 +15389,8 @@
       "description": "Analyze keyword frequency, density percentage, and top keywords in your content.",
       "metaDescription": "Analyze keyword frequency, density percentage, and top keywords in your content.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Check keyword frequency and density across a page or pasted text."
     },
     {
       "slug": "readability-checker",
@@ -15399,7 +15401,8 @@
       "description": "Check your content's readability score using Flesch-Kincaid and other formulas.",
       "metaDescription": "Check your content's readability score using Flesch-Kincaid and other formulas.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Score text on Flesch, Flesch-Kincaid, Gunning Fog, and grade-level readability."
     },
     {
       "slug": "plagiarism-sentence-checker",
@@ -15410,7 +15413,8 @@
       "description": "Check individual sentences for potential plagiarism and duplicate content issues.",
       "metaDescription": "Check individual sentences for potential plagiarism and duplicate content issues.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Highlight near-duplicate sentences between two blocks of pasted text."
     },
     {
       "slug": "lorem-ipsum-generator",
@@ -15421,7 +15425,8 @@
       "description": "Generate placeholder text in various lengths for design mockups and layouts.",
       "metaDescription": "Generate placeholder text in various lengths for design mockups and layouts.",
       "hasJs": true,
-      "toolType": "form"
+      "toolType": "form",
+      "shortDescription": "Generate Lorem Ipsum filler text in paragraphs, sentences, or words for layout mock-ups."
     },
     {
       "slug": "text-case-converter",
@@ -15432,7 +15437,8 @@
       "description": "Convert text between uppercase, lowercase, title case, sentence case, and more.",
       "metaDescription": "Convert text between uppercase, lowercase, title case, sentence case, and more.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Convert text between upper, lower, sentence, title, and camel case in one click."
     },
     {
       "slug": "article-rewriter-helper",
@@ -15443,7 +15449,8 @@
       "description": "Get suggestions to rephrase and improve your article content for uniqueness.",
       "metaDescription": "Get suggestions to rephrase and improve your article content for uniqueness.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Rewrite a paragraph at the click of a button, with synonym and tone suggestions."
     },
     {
       "slug": "headline-analyzer",
@@ -15454,7 +15461,8 @@
       "description": "Analyze your headline for emotional impact, word balance, and click potential.",
       "metaDescription": "Analyze your headline for emotional impact, word balance, and click potential.",
       "hasJs": true,
-      "toolType": "input"
+      "toolType": "input",
+      "shortDescription": "Score headline strength on emotion, power words, length, and CTR signals."
     },
     {
       "slug": "grammar-checker",
@@ -15465,7 +15473,8 @@
       "description": "Check your text for grammar, spelling, and punctuation errors.",
       "metaDescription": "Check your text for grammar, spelling, and punctuation errors.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Highlight common grammar, punctuation, and spelling slips across pasted text."
     },
     {
       "slug": "google-serp-preview",
@@ -15476,7 +15485,8 @@
       "description": "Preview how your page will appear in Google search results before publishing.",
       "metaDescription": "Preview how your page will appear in Google search results before publishing.",
       "hasJs": true,
-      "toolType": "form"
+      "toolType": "form",
+      "shortDescription": "Preview a page's title and description as they render in Google search results."
     },
     {
       "slug": "bulk-title-checker",
@@ -15487,7 +15497,8 @@
       "description": "Check multiple page titles for length, keywords, and optimization best practices.",
       "metaDescription": "Check multiple page titles for length, keywords, and optimization best practices.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Audit title tags for length, keyword position, and SERP truncation across many URLs."
     },
     {
       "slug": "meta-description-checker",
@@ -15498,7 +15509,8 @@
       "description": "Analyze your meta descriptions for length, keyword usage, and call-to-action presence.",
       "metaDescription": "Analyze your meta descriptions for length, keyword usage, and call-to-action presence.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Audit meta descriptions for length, keyword presence, and CTA strength across pages."
     },
     {
       "slug": "heading-analyzer",
@@ -15509,7 +15521,8 @@
       "description": "Analyze your page heading structure (H1-H6) for SEO best practices.",
       "metaDescription": "Analyze your page heading structure (H1-H6) for SEO best practices.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Audit H1-H6 structure on a page for hierarchy, length, and keyword coverage."
     },
     {
       "slug": "image-alt-text-generator",
@@ -15520,7 +15533,8 @@
       "description": "Generate descriptive, SEO-friendly alt text for your images.",
       "metaDescription": "Generate descriptive, SEO-friendly alt text for your images.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate alt text candidates for an image based on its filename and context."
     },
     {
       "slug": "canonical-tag-generator",
@@ -15531,7 +15545,8 @@
       "description": "Generate proper canonical tags to prevent duplicate content issues.",
       "metaDescription": "Generate proper canonical tags to prevent duplicate content issues.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate canonical link tags with self-canonical and cross-domain variants."
     },
     {
       "slug": "open-graph-preview",
@@ -15542,7 +15557,8 @@
       "description": "Preview how your content will appear when shared on social media platforms.",
       "metaDescription": "Preview how your content will appear when shared on social media platforms.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Preview how a URL renders as an Open Graph card on Facebook, LinkedIn, and Slack."
     },
     {
       "slug": "google-index-checker",
@@ -15553,7 +15569,8 @@
       "description": "Check if a specific URL is indexed by Google.",
       "metaDescription": "Check if a specific URL is indexed by Google.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Open a Google site: query for a URL to confirm whether the page is indexed."
     },
     {
       "slug": "serp-checker",
@@ -15564,7 +15581,8 @@
       "description": "Check your current search engine ranking position for specific keywords.",
       "metaDescription": "Check your current search engine ranking position for specific keywords.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Open a Google search for any keyword with location and device parameters."
     },
     {
       "slug": "robots-txt-generator",
@@ -15575,7 +15593,8 @@
       "description": "Generate a properly formatted robots.txt file for your website.",
       "metaDescription": "Generate a properly formatted robots.txt file for your website.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate a robots.txt file with allow, disallow, sitemap, and crawl-delay directives."
     },
     {
       "slug": "sitemap-generator",
@@ -15586,7 +15605,8 @@
       "description": "Create an XML sitemap for your website to improve search engine crawling.",
       "metaDescription": "Create an XML sitemap for your website to improve search engine crawling.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate an XML sitemap from a list of URLs with lastmod and priority hints."
     },
     {
       "slug": "htaccess-redirect-generator",
@@ -15597,7 +15617,8 @@
       "description": "Generate .htaccess redirect rules for URL migrations and restructuring.",
       "metaDescription": "Generate .htaccess redirect rules for URL migrations and restructuring.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate .htaccess 301 redirect rules from old-URL to new-URL pairs."
     },
     {
       "slug": "schema-generator",
@@ -15608,7 +15629,8 @@
       "description": "Generate JSON-LD structured data markup for rich search results.",
       "metaDescription": "Generate JSON-LD structured data markup for rich search results.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate JSON-LD schema for the page type you select using the inputs you provide."
     },
     {
       "slug": "json-ld-validator",
@@ -15619,7 +15641,8 @@
       "description": "Validate your JSON-LD structured data for syntax and schema.org compliance.",
       "metaDescription": "Validate your JSON-LD structured data for syntax and schema.org compliance.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Validate JSON-LD schema against Google's structured-data requirements."
     },
     {
       "slug": "url-encoder-decoder",
@@ -15630,7 +15653,8 @@
       "description": "Encode or decode URLs for safe web transmission.",
       "metaDescription": "Encode or decode URLs for safe web transmission.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Encode and decode URL components, query strings, and special characters."
     },
     {
       "slug": "http-status-checker",
@@ -15641,7 +15665,8 @@
       "description": "Check the HTTP status code of any URL for errors or redirects.",
       "metaDescription": "Check the HTTP status code of any URL for errors or redirects.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Check HTTP status codes, redirects, and response headers for any URL."
     },
     {
       "slug": "page-size-checker",
@@ -15652,7 +15677,8 @@
       "description": "Analyze total page size including HTML, CSS, JS, and images.",
       "metaDescription": "Analyze total page size including HTML, CSS, JS, and images.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Estimate total page size, request count, and largest resource for any URL."
     },
     {
       "slug": "core-web-vitals-guide",
@@ -15663,7 +15689,8 @@
       "description": "Interactive guide to understanding and improving Core Web Vitals metrics.",
       "metaDescription": "Interactive guide to understanding and improving Core Web Vitals metrics.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Reference guide to LCP, INP, and CLS thresholds, root causes, and proven fixes."
     },
     {
       "slug": "page-speed-analyzer",
@@ -15674,7 +15701,8 @@
       "description": "Analyze page speed metrics and get optimization recommendations.",
       "metaDescription": "Analyze page speed metrics and get optimization recommendations.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Run a quick PageSpeed analysis for a URL and surface the top wins."
     },
     {
       "slug": "xml-to-url-converter",
@@ -15685,7 +15713,8 @@
       "description": "Extract all URLs from an XML sitemap file for analysis.",
       "metaDescription": "Extract all URLs from an XML sitemap file for analysis.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Extract every URL from an XML sitemap into a clean copy-paste list."
     },
     {
       "slug": "keyword-suggestion-tool",
@@ -15696,7 +15725,8 @@
       "description": "Get keyword ideas and suggestions based on your seed keywords.",
       "metaDescription": "Get keyword ideas and suggestions based on your seed keywords.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate seed and long-tail keyword suggestions for any topic."
     },
     {
       "slug": "question-generator",
@@ -15707,7 +15737,8 @@
       "description": "Generate question-based keywords from any topic for FAQ and content ideas.",
       "metaDescription": "Generate question-based keywords from any topic for FAQ and content ideas.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate question-format keyword variants from a seed topic for FAQ targeting."
     },
     {
       "slug": "competitor-keyword-gap-planner",
@@ -15718,7 +15749,8 @@
       "description": "Identify keyword opportunities your competitors rank for but you don't.",
       "metaDescription": "Identify keyword opportunities your competitors rank for but you don't.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Plan keyword gap targets between you and a competitor URL list."
     },
     {
       "slug": "keyword-grouper",
@@ -15729,7 +15761,8 @@
       "description": "Group keywords into clusters based on semantic similarity and search intent.",
       "metaDescription": "Group keywords into clusters based on semantic similarity and search intent.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Group a keyword list into topical clusters that map to URL targets."
     },
     {
       "slug": "linkedin-post-formatter",
@@ -15740,7 +15773,8 @@
       "description": "Format and optimize your LinkedIn posts for maximum engagement and reach.",
       "metaDescription": "Format and optimize your LinkedIn posts for maximum engagement and reach.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Format a LinkedIn post with line breaks, emoji caps, and hook-line spacing."
     },
     {
       "slug": "linkedin-headline-generator",
@@ -15751,7 +15785,8 @@
       "description": "Generate compelling LinkedIn headlines that attract profile views.",
       "metaDescription": "Generate compelling LinkedIn headlines that attract profile views.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate LinkedIn headline variants from a role, value-prop, and target audience."
     },
     {
       "slug": "linkedin-summary-generator",
@@ -15762,7 +15797,8 @@
       "description": "Create a professional LinkedIn summary that showcases your expertise.",
       "metaDescription": "Create a professional LinkedIn summary that showcases your expertise.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate LinkedIn About section copy from a role, wins, and current focus."
     },
     {
       "slug": "twitter-thread-formatter",
@@ -15773,7 +15809,8 @@
       "description": "Format your content into engaging Twitter/X thread format.",
       "metaDescription": "Format your content into engaging Twitter/X thread format.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Format a long block of text into a numbered Twitter thread within character limits."
     },
     {
       "slug": "social-media-image-size-guide",
@@ -15784,7 +15821,8 @@
       "description": "Reference guide for optimal image sizes across all social media platforms.",
       "metaDescription": "Reference guide for optimal image sizes across all social media platforms.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Reference guide to image dimensions and aspect ratios across every social platform."
     },
     {
       "slug": "instagram-bio-generator",
@@ -15795,7 +15833,8 @@
       "description": "Create an engaging Instagram bio that attracts followers.",
       "metaDescription": "Create an engaging Instagram bio that attracts followers.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate Instagram bio variants from a niche, value-prop, and CTA."
     },
     {
       "slug": "social-post-scheduler-planner",
@@ -15806,7 +15845,8 @@
       "description": "Plan and schedule your social media content calendar.",
       "metaDescription": "Plan and schedule your social media content calendar.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Plan a weekly social post cadence across channels with topic and CTA prompts."
     },
     {
       "slug": "local-citation-finder",
@@ -15817,7 +15857,8 @@
       "description": "Find local citation opportunities and directory listings for your business.",
       "metaDescription": "Find local citation opportunities and directory listings for your business.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Find local citation opportunities for a business by category and city."
     },
     {
       "slug": "review-response-generator",
@@ -15828,7 +15869,8 @@
       "description": "Generate professional responses to customer reviews.",
       "metaDescription": "Generate professional responses to customer reviews.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate professional review responses for positive, neutral, and negative reviews."
     },
     {
       "slug": "local-keyword-generator",
@@ -15839,7 +15881,8 @@
       "description": "Generate location-specific keywords for local SEO targeting.",
       "metaDescription": "Generate location-specific keywords for local SEO targeting.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate local keyword variations from a seed term and city, neighborhood, or ZIP."
     },
     {
       "slug": "gbp-keyword-checker",
@@ -15850,7 +15893,8 @@
       "description": "Check how your Google Business Profile ranks for local keywords.",
       "metaDescription": "Check how your Google Business Profile ranks for local keywords.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Check whether a Google Business Profile is matching for target local keywords."
     },
     {
       "slug": "ai-search-prompt-tester",
@@ -15861,7 +15905,8 @@
       "description": "Test how AI search engines respond to prompts about your brand.",
       "metaDescription": "Test how AI search engines respond to prompts about your brand.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Test ChatGPT, Perplexity, and Gemini prompts for citation visibility on a topic."
     },
     {
       "slug": "ai-content-optimizer",
@@ -15872,7 +15917,8 @@
       "description": "Optimize your content structure for AI search engine comprehension.",
       "metaDescription": "Optimize your content structure for AI search engine comprehension.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Score a draft against AI Overview citation signals: entities, citations, structure."
     },
     {
       "slug": "brand-mention-tracker-guide",
@@ -15883,7 +15929,8 @@
       "description": "Guide to tracking your brand mentions across AI and traditional search.",
       "metaDescription": "Guide to tracking your brand mentions across AI and traditional search.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Reference guide for tracking brand mentions across web, social, and AI engines."
     },
     {
       "slug": "anchor-text-analyzer",
@@ -15894,7 +15941,8 @@
       "description": "Analyze your backlink anchor text distribution for optimization.",
       "metaDescription": "Analyze your backlink anchor text distribution for optimization.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Analyze the anchor text distribution of links pointing at a URL or domain."
     },
     {
       "slug": "guest-post-pitch-generator",
@@ -15905,7 +15953,8 @@
       "description": "Generate personalized guest post pitch emails for outreach.",
       "metaDescription": "Generate personalized guest post pitch emails for outreach.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate guest-post pitch email variants from your topic and target publication."
     },
     {
       "slug": "broken-link-outreach-template",
@@ -15916,7 +15965,8 @@
       "description": "Create outreach templates for broken link building campaigns.",
       "metaDescription": "Create outreach templates for broken link building campaigns.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Outreach email templates for broken-link building with proven response rates."
     },
     {
       "slug": "backlink-quality-checklist",
@@ -15927,7 +15977,8 @@
       "description": "Evaluate backlink quality with our comprehensive quality checklist.",
       "metaDescription": "Evaluate backlink quality with our comprehensive quality checklist.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Score a candidate backlink against authority, relevance, anchor, and toxicity criteria."
     },
     {
       "slug": "disavow-file-generator",
@@ -15938,7 +15989,8 @@
       "description": "Generate a Google disavow file to remove toxic backlink signals.",
       "metaDescription": "Generate a Google disavow file to remove toxic backlink signals.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate a Google Search Console disavow file from a toxic-link URL list."
     },
     {
       "slug": "product-description-optimizer",
@@ -15949,7 +16001,8 @@
       "description": "Optimize product descriptions for SEO and conversion.",
       "metaDescription": "Optimize product descriptions for SEO and conversion.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Optimize a product description for organic search, schema, and conversion signals."
     },
     {
       "slug": "ecommerce-schema-generator",
@@ -15960,7 +16013,8 @@
       "description": "Generate Product schema markup for e-commerce rich snippets.",
       "metaDescription": "Generate Product schema markup for e-commerce rich snippets.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate Product, Offer, and AggregateRating schema for an ecommerce page."
     },
     {
       "slug": "category-page-optimizer",
@@ -15971,7 +16025,8 @@
       "description": "Optimize e-commerce category pages for better organic rankings.",
       "metaDescription": "Optimize e-commerce category pages for better organic rankings.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Audit and optimize an ecommerce category page for ranking and faceted-nav signals."
     },
     {
       "slug": "seo-roi-calculator",
@@ -15982,7 +16037,8 @@
       "description": "Calculate the return on investment of your SEO campaigns.",
       "metaDescription": "Calculate the return on investment of your SEO campaigns.",
       "hasJs": true,
-      "toolType": "form"
+      "toolType": "form",
+      "shortDescription": "Calculate SEO ROI from traffic, conversion rate, AOV, and retainer cost inputs."
     },
     {
       "slug": "cpc-savings-calculator",
@@ -15993,7 +16049,8 @@
       "description": "Calculate how much you save on PPC by ranking organically.",
       "metaDescription": "Calculate how much you save on PPC by ranking organically.",
       "hasJs": true,
-      "toolType": "form"
+      "toolType": "form",
+      "shortDescription": "Estimate CPC savings from shifting paid traffic to organic ranked URLs."
     },
     {
       "slug": "domain-age-checker",
@@ -16004,7 +16061,8 @@
       "description": "Check the registration age and history of any domain name.",
       "metaDescription": "Check the registration age and history of any domain name.",
       "hasJs": true,
-      "toolType": "input"
+      "toolType": "input",
+      "shortDescription": "Check the WHOIS registration age of any domain and its renewal date."
     },
     {
       "slug": "website-cost-estimator",
@@ -16015,7 +16073,8 @@
       "description": "Estimate the cost of building or redesigning a website.",
       "metaDescription": "Estimate the cost of building or redesigning a website.",
       "hasJs": true,
-      "toolType": "form"
+      "toolType": "form",
+      "shortDescription": "Estimate website build cost from pages, complexity, and integration count."
     },
     {
       "slug": "cta-generator",
@@ -16026,7 +16085,8 @@
       "description": "Generate compelling calls-to-action for your website and landing pages.",
       "metaDescription": "Generate compelling calls-to-action for your website and landing pages.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate CTA copy variants from a value-prop, audience, and conversion goal."
     },
     {
       "slug": "ab-test-duration-calculator",
@@ -16037,7 +16097,8 @@
       "description": "Calculate how long to run your A/B test for statistical significance.",
       "metaDescription": "Calculate how long to run your A/B test for statistical significance.",
       "hasJs": true,
-      "toolType": "form"
+      "toolType": "form",
+      "shortDescription": "Calculate A/B test duration from traffic, conversion rate, and minimum detectable effect."
     },
     {
       "slug": "color-contrast-checker",
@@ -16048,7 +16109,8 @@
       "description": "Check text and background color contrast for WCAG accessibility compliance.",
       "metaDescription": "Check text and background color contrast for WCAG accessibility compliance.",
       "hasJs": true,
-      "toolType": "form"
+      "toolType": "form",
+      "shortDescription": "Check WCAG color contrast ratios for foreground and background pairs."
     },
     {
       "slug": "page-speed-checklist",
@@ -16059,7 +16121,8 @@
       "description": "Comprehensive checklist for optimizing page load performance.",
       "metaDescription": "Comprehensive checklist for optimizing page load performance.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Reference checklist of page speed wins across CSS, JS, images, and fonts."
     },
     {
       "slug": "email-subject-line-tester",
@@ -16070,7 +16133,8 @@
       "description": "Test and score your email subject lines for open rate potential.",
       "metaDescription": "Test and score your email subject lines for open rate potential.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Score email subject lines for length, power words, and spam triggers."
     },
     {
       "slug": "cold-email-generator",
@@ -16081,7 +16145,8 @@
       "description": "Generate personalized cold outreach emails for link building and business development.",
       "metaDescription": "Generate personalized cold outreach emails for link building and business development.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate cold-email variants from a prospect role, value-prop, and CTA."
     },
     {
       "slug": "google-ads-budget-calculator",
@@ -16092,7 +16157,8 @@
       "description": "Calculate your ideal Google Ads budget based on your goals and industry.",
       "metaDescription": "Calculate your ideal Google Ads budget based on your goals and industry.",
       "hasJs": true,
-      "toolType": "form"
+      "toolType": "form",
+      "shortDescription": "Calculate a Google Ads daily budget from monthly cap, CPC, and target click volume."
     },
     {
       "slug": "ppc-campaign-audit-checklist",
@@ -16103,7 +16169,8 @@
       "description": "Comprehensive checklist for auditing your PPC campaigns.",
       "metaDescription": "Comprehensive checklist for auditing your PPC campaigns.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Audit a Google Ads or Meta Ads campaign against 40 best-practice criteria."
     },
     {
       "slug": "bulk-expired-domain-checker",
@@ -16114,7 +16181,8 @@
       "description": "Check multiple domains for expiration status and availability.",
       "metaDescription": "Check multiple domains for expiration status and availability.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Check expired-domain availability and basic SEO metrics in batched queries."
     },
     {
       "slug": "domain-authority-checker",
@@ -16125,7 +16193,8 @@
       "description": "Check the domain authority score of any website.",
       "metaDescription": "Check the domain authority score of any website.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Estimate domain authority from referring-domain count and quality inputs."
     },
     {
       "slug": "broken-link-checker",
@@ -16136,7 +16205,8 @@
       "description": "Find broken links on any web page that need fixing.",
       "metaDescription": "Find broken links on any web page that need fixing.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Crawl a page and surface broken internal and outbound links with status codes."
     },
     {
       "slug": "bulk-url-issue-checker",
@@ -16147,7 +16217,8 @@
       "description": "Check multiple URLs for common technical issues.",
       "metaDescription": "Check multiple URLs for common technical issues.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Scan many URLs at once for common issues: redirects, status, canonical, meta gaps."
     },
     {
       "slug": "force-google-indexing",
@@ -16158,7 +16229,8 @@
       "description": "Guide and tools to request Google to index or re-index your pages.",
       "metaDescription": "Guide and tools to request Google to index or re-index your pages.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Step-by-step guide to nudging Google's indexer when a URL stays out of the index."
     }
   ],
   "toolCategories": [

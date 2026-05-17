@@ -316,6 +316,64 @@ def main():
         merged_resources.append(merge_resource(base, r))
     seed["resources"] = merged_resources
 
+    # ------------------------------------------------------------------
+    # Boilerplate scrub on the master data file BEFORE persisting.
+    # The seed file shipped tool entries whose ``shortDescription`` was
+    # uniformly "Free <name> tool - run unlimited checks in your browser,
+    # no signup required." That string then leaked into every place that
+    # rendered ``s.shortDescription`` - the tool body intro, related-tools
+    # cards on service detail pages, the JSON-LD SoftwareApplication
+    # description, even other languages because the same data is used.
+    #
+    # Rewrite each tool's shortDescription to a unique action sentence
+    # taken from ``description_engine.TOOL_ACTIONS`` (or derived from the
+    # slug when no override exists). The fallback derivation matches the
+    # composer in ``description_engine.for_tool`` so the data and the
+    # composed meta description stay in sync.
+    # ------------------------------------------------------------------
+    try:
+        import description_engine as _de  # noqa: E402 - local module
+    except ImportError:
+        # description_engine lives alongside this script - add scripts/ to
+        # sys.path so it can be imported when running via the build shim.
+        import sys
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        import description_engine as _de  # noqa: E402
+
+    for t in seed["tools"]:
+        slug = t.get("slug", "")
+        action = _de.TOOL_ACTIONS.get(slug)
+        if action:
+            short = action
+        else:
+            # Fallback: derive a verb-led sentence from the slug suffix.
+            name = (t.get("name") or _de._slug_to_friendly_tool_name(slug))
+            lower = name.lower()
+            if slug.endswith("-generator"):
+                short = f"Generate {lower.replace(' generator','')} output from your inputs"
+            elif slug.endswith(("-checker", "-tester", "-validator", "-inspector")):
+                short = f"Check {lower.rsplit(' ', 1)[0]} against best-practice rules"
+            elif slug.endswith("-calculator"):
+                short = f"Calculate {lower.replace(' calculator','')} from your inputs"
+            elif slug.endswith("-analyzer"):
+                short = f"Analyze {lower.replace(' analyzer','')} across your inputs"
+            elif slug.endswith("-optimizer"):
+                short = f"Optimize {lower.replace(' optimizer','')} against documented best practice"
+            elif slug.endswith("-tracker"):
+                short = f"Track {lower.replace(' tracker','')} across runs and report deltas"
+            elif slug.endswith("-finder"):
+                short = f"Find {lower.replace(' finder','')} across the inputs you provide"
+            elif slug.endswith("-builder"):
+                short = f"Build {lower.replace(' builder','')} from inputs you control"
+            elif slug.endswith("-counter"):
+                short = f"Count {lower.replace(' counter','')} across any block of text"
+            else:
+                short = f"Free in-browser {lower} for SEOs, marketers, and growth teams"
+        # Trailing period for grammar in card layouts.
+        if not short.endswith((".", "!", "?")):
+            short = short + "."
+        t["shortDescription"] = short
+
     # Persist
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(seed, ensure_ascii=False, indent=2), encoding="utf-8")

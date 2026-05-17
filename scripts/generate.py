@@ -39,6 +39,7 @@ from content_engine import (  # noqa: E402
     build_unique_for_resource,
     build_unique_for_tool,
 )
+import description_engine as _desc_engine  # noqa: E402  # per-page unique meta descriptions
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_PATH = ROOT / "data" / "master-data.json"
@@ -74,46 +75,38 @@ I18N: dict[str, dict[str, str]] = {
     "zh": {"nav_services": "服务", "nav_industries": "行业", "nav_locations": "地区", "nav_tools": "免费工具", "nav_blog": "博客", "nav_pricing": "价格", "nav_about": "关于", "nav_contact": "联系", "cta_audit": "免费审计", "all_industries": "全部行业", "all_locations": "全部地区", "all_tools": "全部工具", "see_all": "全部服务", "col_seo": "SEO服务", "col_ppc": "PPC和付费"},
 }
 
-# Description rotation templates for uniqueness across slugs / langs
-DESC_TEMPLATES = [
-    "Drive measurable {kw} growth with audited strategies, schema, and AI-search visibility tactics tuned for 2026.",
-    "Engineered {kw} programs that combine technical SEO, content velocity, and conversion-led design.",
-    "Senior-led {kw} delivery with 90-day pipeline targets and zero lock-in contracts.",
-    "Win {kw} pipeline using GEO, AEO, and AIO tactics that get cited inside ChatGPT and Google AI Overviews.",
-    "Compounding {kw} traffic and revenue, backed by transparent reporting and ROI guarantees.",
-    "{kw} backed by 50+ brand engagements, named tools, and pipeline-tied KPIs your CFO will trust.",
-    "From audit to scale: {kw} that ranks, converts, and survives every algorithm shift.",
-    "Founder-led {kw} for ambitious operators, with senior strategists on every account.",
-]
+# NOTE: The original `desc()` and `tool_desc()` template rotations were
+# replaced by ``description_engine`` (imported above). Both produced shared
+# tails ("Win {kw} pipeline using GEO, AEO, and AIO tactics ...",
+# "Use this {name} to ... run unlimited checks in your browser, no signup
+# required") which read as AI-template padding across hundreds of pages.
+#
+# These thin wrappers preserve the original call signature so the rest of
+# the generator does not have to change shape. They look up the item from
+# the data file and dispatch to the right composer.
+
+_DATA_CACHE: dict[str, dict] = {}
 
 
-def desc(seed: str, kw: str) -> str:
-    idx = int(hashlib.md5(seed.encode()).hexdigest(), 16) % len(DESC_TEMPLATES)
-    out = DESC_TEMPLATES[idx].format(kw=kw)
-    return out[:160]
+def _ensure_data_cache(data: dict | None = None) -> dict:
+    if not _DATA_CACHE and data is not None:
+        for k in ("tools", "services", "ppcServices", "industries", "cities", "countries", "blogTopics", "resources"):
+            for it in data.get(k) or []:
+                if it.get("slug"):
+                    _DATA_CACHE[f"{k}:{it['slug']}"] = it
+    return _DATA_CACHE
 
 
-# Tool-specific desc rotation - speaks to the tool, not the agency
-TOOL_DESC_TEMPLATES = [
-    "Free {name} tool. {short} No signup, no email, runs in your browser.",
-    "{name} - free online tool. {short} Privacy-first: nothing leaves your machine.",
-    "Use this {name} to {short_lower} Free, browser-based, unlimited.",
-    "Free {name} from {brand}. {short} Built for SEOs, marketers, and growth teams.",
-    "{name} that runs in your browser. {short} No upload, no tracking, instant results.",
-    "Online {name} - free forever. {short} Works on desktop and mobile.",
-]
+def desc(seed: str, kw: str) -> str:  # pragma: no cover - retained for compat
+    """Compat shim: previously rotated templates. Now returns a sensible
+    fallback when no item context is available. Real per-page descriptions
+    are produced via :mod:`description_engine` in the page renderers."""
+    base = (kw or "").strip() or "SEO, paid search, and AI search visibility"
+    return base[:160]
 
 
-def tool_desc(seed: str, item: dict, brand_short: str) -> str:
-    """Return a tool-specific meta description with the tool name + short pitch."""
-    short = (item.get("shortDescription") or item.get("metaDescription") or "").strip()
-    if not short.endswith((".", "!", "?")):
-        short = short + "."
-    short_lower = short[:1].lower() + short[1:] if short else "analyze your input."
-    name = item.get("name") or item.get("slug", "")
-    idx = int(hashlib.md5(seed.encode()).hexdigest(), 16) % len(TOOL_DESC_TEMPLATES)
-    out = TOOL_DESC_TEMPLATES[idx].format(name=name, short=short, short_lower=short_lower, brand=brand_short)
-    return out[:160]
+def tool_desc(seed: str, item: dict, brand_short: str) -> str:  # pragma: no cover
+    return _desc_engine.for_tool(item, brand_short)
 
 
 # Generic SEO modifiers people search for in front of/behind tool names
@@ -403,13 +396,16 @@ def localbusiness_schema(brand: dict, city: dict, country: dict) -> dict:
 
 
 def softwareapp_schema(brand: dict, tool: dict, url_abs: str) -> dict:
+    # Use the description engine so the JSON-LD `description` names what the
+    # tool does instead of repeating the templated "Free X - run unlimited
+    # checks ..." tail from the source data file.
     return {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
         "name": tool["name"],
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web",
-        "description": (tool.get("shortDescription") or tool.get("metaDescription") or tool.get("description") or ""),
+        "description": _desc_engine.for_tool(tool, brand.get("shortName", "")),
         "url": url_abs,
         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
         "publisher": {"@type": "Organization", "name": brand["name"], "url": brand["url"]},
@@ -425,7 +421,7 @@ def blogposting_schema(brand: dict, post: dict, url_abs: str, unique: dict | Non
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": post["title"],
-        "description": (post.get("shortDescription") or post.get("metaDescription") or post.get("description") or ""),
+        "description": _desc_engine.for_blog(post, brand.get("shortName", "")),
         "datePublished": post.get("datePublished") or post.get("date") or "2026-01-01",
         "dateModified": (unique or {}).get("lastmod") or post.get("dateModified") or "2026-02-01",
         "url": url_abs,
@@ -677,9 +673,19 @@ def render_home(env: Environment, data: dict, lang: str, default_lang: str, bran
     lang_obj = lang_obj_for(data, lang)
     canonical = brand_url if lang == default_lang else f"{brand_url}/{lang}/"
     schemas = [breadcrumb_schema([{"label": "Home", "href": canonical}])]
+    # Home-page description is hand-written so it does NOT pass through the
+    # description_engine composer. The composer is designed for hundreds of
+    # similar pages where slug-rotated openers and closers add variety; for
+    # a single home page that variety is irrelevant and a custom hook reads
+    # better than a composed one. The hook also names what we do without
+    # the formulaic tail the user flagged.
+    home_desc = (
+        f"{data['brand']['founderName']} is the SEO consultant brands hire when they want pipeline, not a deck. "
+        f"Organic, paid, and AI search. {data['brand']['promise']}."
+    )
     page = page_obj(
-        f"{data['brand']['shortName']} - SEO and Digital Marketing Agency",
-        f"{data['brand']['shortName']} engineers SEO, AI search visibility, and high-ROI paid campaigns. {data['brand']['promise']}.",
+        f"{data['brand']['shortName']} - SEO Consultant for Brands That Want Pipeline",
+        home_desc,
         canonical,
         lang,
         get_dir(lang_obj),
@@ -977,7 +983,11 @@ def render_service(env, data, lang, default_lang, brand_url, item: dict, kind: s
         speakable_schema(canonical),
     ]
     title = f"{(item.get("primaryKeyword") or item.get("name") or item.get("title") or "")} - {data['brand']['shortName']}"
-    page = page_obj(title, desc(item["slug"], (item.get("primaryKeyword") or item.get("name") or item.get("title") or "")), canonical, lang, get_dir(lang_obj), schemas)
+    if kind == "services":
+        meta_description = _desc_engine.for_service(item, data['brand']['shortName'])
+    else:
+        meta_description = _desc_engine.for_ppc(item, data['brand']['shortName'])
+    page = page_obj(title, meta_description, canonical, lang, get_dir(lang_obj), schemas)
     page["lastmod"] = unique["lastmod"]
     ctx = common_ctx(data, lang, default_lang, brand_url)
     related_industries = data["industries"][:5]
@@ -1003,7 +1013,7 @@ def render_industry(env, data, lang, default_lang, brand_url, item: dict):
         faq_schema(fbq),
         speakable_schema(canonical),
     ]
-    page = page_obj(title, desc(item["slug"], (item.get("primaryKeyword") or item.get("name") or item.get("title") or "")), canonical, lang, get_dir(lang_obj), schemas)
+    page = page_obj(title, _desc_engine.for_industry(item, data['brand']['shortName']), canonical, lang, get_dir(lang_obj), schemas)
     page["lastmod"] = unique["lastmod"]
     ctx = common_ctx(data, lang, default_lang, brand_url)
     ctx.update({
@@ -1023,7 +1033,7 @@ def render_country(env, data, lang, default_lang, brand_url, item: dict):
     fbq = {"intro": "Quick answers from the questions buyers in this country ask most.", "questions": [{"question": f["q"], "answer": f["a"]} for f in unique["faqs"]]}
     title = f"SEO services in {item['name']} - {data['brand']['shortName']}"
     schemas = [breadcrumb_schema(breadcrumbs), faq_schema(fbq), speakable_schema(canonical)]
-    page = page_obj(title, desc(item["slug"], (item.get("primaryKeyword") or item.get("name") or item.get("title") or "")), canonical, lang, get_dir(lang_obj), schemas)
+    page = page_obj(title, _desc_engine.for_country(item, data['brand']['shortName']), canonical, lang, get_dir(lang_obj), schemas)
     page["lastmod"] = unique["lastmod"]
     ctx = common_ctx(data, lang, default_lang, brand_url)
     country_cities = [c for c in data["cities"] if c.get("countryCode") == item.get("code") or c.get("countryCode") == item.get("countryCode")]
@@ -1040,7 +1050,7 @@ def render_city(env, data, lang, default_lang, brand_url, item: dict, country: d
     fbq = {"intro": "Quick answers from the questions buyers in this city ask most.", "questions": [{"question": f["q"], "answer": f["a"]} for f in unique["faqs"]]}
     schemas = [breadcrumb_schema(breadcrumbs), localbusiness_schema(data["brand"], item, country), faq_schema(fbq), speakable_schema(canonical)]
     title = f"{(item.get("primaryKeyword") or item.get("name") or item.get("title") or "")} - {data['brand']['shortName']}"
-    page = page_obj(title, desc(item["slug"], (item.get("primaryKeyword") or item.get("name") or item.get("title") or "")), canonical, lang, get_dir(lang_obj), schemas)
+    page = page_obj(title, _desc_engine.for_city(item, country.get('name'), data['brand']['shortName']), canonical, lang, get_dir(lang_obj), schemas)
     page["lastmod"] = unique["lastmod"]
     ctx = common_ctx(data, lang, default_lang, brand_url)
     nearby = [c for c in data["cities"] if c.get("countryCode") == country.get("code") and c["slug"] != item["slug"]][:5]
@@ -1057,7 +1067,7 @@ def render_tool(env, data, lang, default_lang, brand_url, item: dict):
     fbq = {"intro": "Quick answers about this tool.", "questions": [{"question": f["q"], "answer": f["a"]} for f in unique["faqs"]]}
     schemas = [breadcrumb_schema(breadcrumbs), softwareapp_schema(data["brand"], item, canonical), faq_schema(fbq), howto_schema(f"How to use {item['name']}", ["Paste your input into the field above", "Run the analyzer", "Copy the output into your CMS, schema block, or report"]), speakable_schema(canonical)]
     title = f"Free {item['name']} - {data['brand']['shortName']}"
-    page = page_obj(title, tool_desc(item["slug"], item, data['brand']['shortName']), canonical, lang, get_dir(lang_obj), schemas, show_welcome_popup=False)
+    page = page_obj(title, _desc_engine.for_tool(item, data['brand']['shortName']), canonical, lang, get_dir(lang_obj), schemas, show_welcome_popup=False)
     page["lastmod"] = unique["lastmod"]
     page["keywords"] = expand_tool_keywords(item)
     page["author"] = data["brand"].get("founderName") or data["brand"]["shortName"]
@@ -1081,7 +1091,7 @@ def render_blog_post(env, data, lang, default_lang, brand_url, item: dict):
     fbq = {"intro": "Reader questions answered.", "questions": [{"question": f["q"], "answer": f["a"]} for f in unique["faqs"]]}
     schemas = [breadcrumb_schema(breadcrumbs), blogposting_schema(data["brand"], item, canonical, unique), article_schema(data["brand"], item, canonical, unique), faq_schema(fbq), speakable_schema(canonical)]
     title = trunc(item["title"] + f" - {data['brand']['shortName']}", 60)
-    page = page_obj(title, desc(item["slug"], item.get("primaryKeyword", item["title"])), canonical, lang, get_dir(lang_obj), schemas, og_type="article")
+    page = page_obj(title, _desc_engine.for_blog(item, data['brand']['shortName']), canonical, lang, get_dir(lang_obj), schemas, og_type="article")
     page["lastmod"] = unique["lastmod"]
     related_tools = data["tools"][:4]
     related_services = data["services"][:4]
@@ -1099,7 +1109,7 @@ def render_resource(env, data, lang, default_lang, brand_url, item: dict):
     unique = build_unique_for_resource(item, data["brand"])
     fbq = {"intro": "Reader questions answered.", "questions": [{"question": f["q"], "answer": f["a"]} for f in unique["faqs"]]}
     schemas = [breadcrumb_schema(breadcrumbs), course_schema(data["brand"], item, canonical), faq_schema(fbq), speakable_schema(canonical)]
-    page = page_obj(f"{rname} - Free Download by {data['brand']['shortName']}", desc(item["slug"], (item.get("primaryKeyword") or item.get("name") or item.get("title") or "")), canonical, lang, get_dir(lang_obj), schemas)
+    page = page_obj(f"{rname} - Free Download by {data['brand']['shortName']}", _desc_engine.for_resource(item, data['brand']['shortName']), canonical, lang, get_dir(lang_obj), schemas)
     page["lastmod"] = unique["lastmod"]
     ctx = common_ctx(data, lang, default_lang, brand_url)
     ctx.update({"page": page, "breadcrumbs": breadcrumbs, "item": item, "unique": unique, "faq": fbq, "alternates": build_alternates(brand_url, data["languages"], f"/free-seo-resources/{item['slug']}.html"), "cta": {}})

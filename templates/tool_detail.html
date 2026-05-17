@@ -7,7 +7,12 @@
   <div class="container-tight relative pt-12 pb-10 md:pt-20 md:pb-14">
     <p class="text-xs uppercase tracking-widest text-accent">{{ item.parentCategory|replace('-', ' ')|title }}</p>
     <h1 class="mt-2 font-display text-4xl md:text-5xl font-bold tracking-tight max-w-4xl">{{ item.name }}</h1>
-    <p class="mt-4 max-w-2xl text-foreground/85">{{ item.shortDescription }}</p>
+    {# Show the unique meta description (composed by description_engine.for_tool)
+       under the H1 so the visible intro names what the tool actually does
+       instead of the templated "Free X - run unlimited checks ..." source
+       string. Keeps body copy aligned with what crawlers and AI engines see
+       in the meta tag and JSON-LD. #}
+    <p class="mt-4 max-w-2xl text-foreground/85">{{ page.description }}</p>
   </div>
 </section>
 
