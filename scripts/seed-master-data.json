@@ -50,13 +50,13 @@
     {
       "code": "ar",
       "name": "Arabic",
-      "nativeName": "العربية",
+      "nativeName": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
       "rtl": true
     },
     {
       "code": "fr",
       "name": "French",
-      "nativeName": "Français",
+      "nativeName": "Fran\u00e7ais",
       "rtl": false
     },
     {
@@ -68,7 +68,7 @@
     {
       "code": "es",
       "name": "Spanish",
-      "nativeName": "Español",
+      "nativeName": "Espa\u00f1ol",
       "rtl": false
     },
     {
@@ -86,7 +86,7 @@
     {
       "code": "pt",
       "name": "Portuguese",
-      "nativeName": "Português",
+      "nativeName": "Portugu\u00eas",
       "rtl": false
     },
     {
@@ -122,7 +122,7 @@
     {
       "code": "cs",
       "name": "Czech",
-      "nativeName": "Čeština",
+      "nativeName": "\u010ce\u0161tina",
       "rtl": false
     },
     {
@@ -134,43 +134,43 @@
     {
       "code": "ro",
       "name": "Romanian",
-      "nativeName": "Română",
+      "nativeName": "Rom\u00e2n\u0103",
       "rtl": false
     },
     {
       "code": "el",
       "name": "Greek",
-      "nativeName": "Ελληνικά",
+      "nativeName": "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac",
       "rtl": false
     },
     {
       "code": "tr",
       "name": "Turkish",
-      "nativeName": "Türkçe",
+      "nativeName": "T\u00fcrk\u00e7e",
       "rtl": false
     },
     {
       "code": "ja",
       "name": "Japanese",
-      "nativeName": "日本語",
+      "nativeName": "\u65e5\u672c\u8a9e",
       "rtl": false
     },
     {
       "code": "ko",
       "name": "Korean",
-      "nativeName": "한국어",
+      "nativeName": "\ud55c\uad6d\uc5b4",
       "rtl": false
     },
     {
       "code": "he",
       "name": "Hebrew",
-      "nativeName": "עברית",
+      "nativeName": "\u05e2\u05d1\u05e8\u05d9\u05ea",
       "rtl": true
     },
     {
       "code": "zh",
       "name": "Chinese",
-      "nativeName": "中文",
+      "nativeName": "\u4e2d\u6587",
       "rtl": false
     }
   ],
@@ -458,6 +458,36 @@
       ],
       "shortDescription": "Senior strategist on tap to guide your in-house team, validate roadmaps, and unblock growth.",
       "heroImagePrompt": "executive whiteboard with SEO roadmap and KPI flowchart",
+      "parentCategory": "SEO"
+    },
+    {
+      "slug": "content-strategy",
+      "name": "Content Strategy",
+      "primaryKeyword": "content strategy services",
+      "lsiKeywords": [
+        "content strategy services",
+        "content strategy agency",
+        "content strategy expert",
+        "content strategy consultant",
+        "content strategy strategy"
+      ],
+      "shortDescription": "Editorial systems and topic clusters that build authority, capture demand, and earn citations from AI search engines.",
+      "heroImagePrompt": "abstract editorial graphic on dark navy with electric blue and neon green accents",
+      "parentCategory": "SEO"
+    },
+    {
+      "slug": "website-speed-optimization",
+      "name": "Website Speed Optimization",
+      "primaryKeyword": "website speed optimization services",
+      "lsiKeywords": [
+        "website speed optimization services",
+        "website speed optimization agency",
+        "website speed optimization expert",
+        "website speed optimization consultant",
+        "website speed optimization strategy"
+      ],
+      "shortDescription": "Engineering Core Web Vitals, INP, LCP, and CLS to convert better and rank better. Fast sites compound.",
+      "heroImagePrompt": "abstract editorial graphic on dark navy with electric blue and neon green accents",
       "parentCategory": "SEO"
     }
   ],
@@ -3048,6 +3078,1551 @@
       "shortDescription": "Industry-specific SEO and growth marketing built for 3pl providers, with playbooks, schema, and conversion tactics that move the needle.",
       "heroImagePrompt": "professional 3pl providers office or workspace, modern, dark navy and electric blue accents",
       "parentCategory": "manufacturing"
+    },
+    {
+      "slug": "advertising-seo",
+      "name": "Advertising",
+      "primaryKeyword": "SEO for advertising",
+      "lsiKeywords": [
+        "advertising marketing",
+        "advertising digital marketing",
+        "advertising lead generation",
+        "advertising PPC",
+        "advertising local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for advertising, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional advertising workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "agribusiness-seo",
+      "name": "Agribusiness",
+      "primaryKeyword": "SEO for agribusiness",
+      "lsiKeywords": [
+        "agribusiness marketing",
+        "agribusiness digital marketing",
+        "agribusiness lead generation",
+        "agribusiness PPC",
+        "agribusiness local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for agribusiness, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional agribusiness workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "ai-company-seo",
+      "name": "AI Company",
+      "primaryKeyword": "SEO for ai company",
+      "lsiKeywords": [
+        "ai company marketing",
+        "ai company digital marketing",
+        "ai company lead generation",
+        "ai company PPC",
+        "ai company local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for ai company, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional ai company workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "amazon-seo",
+      "name": "Amazon",
+      "primaryKeyword": "SEO for amazon",
+      "lsiKeywords": [
+        "amazon marketing",
+        "amazon digital marketing",
+        "amazon lead generation",
+        "amazon PPC",
+        "amazon local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for amazon, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional amazon workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "ecommerce"
+    },
+    {
+      "slug": "app-seo",
+      "name": "App",
+      "primaryKeyword": "SEO for app",
+      "lsiKeywords": [
+        "app marketing",
+        "app digital marketing",
+        "app lead generation",
+        "app PPC",
+        "app local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for app, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional app workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "ecommerce"
+    },
+    {
+      "slug": "architecture-seo",
+      "name": "Architecture",
+      "primaryKeyword": "SEO for architecture",
+      "lsiKeywords": [
+        "architecture marketing",
+        "architecture digital marketing",
+        "architecture lead generation",
+        "architecture PPC",
+        "architecture local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for architecture, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional architecture workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "real-estate"
+    },
+    {
+      "slug": "bakery-seo",
+      "name": "Bakery",
+      "primaryKeyword": "SEO for bakery",
+      "lsiKeywords": [
+        "bakery marketing",
+        "bakery digital marketing",
+        "bakery lead generation",
+        "bakery PPC",
+        "bakery local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for bakery, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional bakery workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "bank-seo",
+      "name": "Bank",
+      "primaryKeyword": "SEO for bank",
+      "lsiKeywords": [
+        "bank marketing",
+        "bank digital marketing",
+        "bank lead generation",
+        "bank PPC",
+        "bank local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for bank, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional bank workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "finance"
+    },
+    {
+      "slug": "bar-nightclub-seo",
+      "name": "Bar Nightclub",
+      "primaryKeyword": "SEO for bar nightclub",
+      "lsiKeywords": [
+        "bar nightclub marketing",
+        "bar nightclub digital marketing",
+        "bar nightclub lead generation",
+        "bar nightclub PPC",
+        "bar nightclub local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for bar nightclub, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional bar nightclub workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "hospitality-food-service"
+    },
+    {
+      "slug": "barbershop-seo",
+      "name": "Barbershop",
+      "primaryKeyword": "SEO for barbershop",
+      "lsiKeywords": [
+        "barbershop marketing",
+        "barbershop digital marketing",
+        "barbershop lead generation",
+        "barbershop PPC",
+        "barbershop local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for barbershop, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional barbershop workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "hospitality-food-service"
+    },
+    {
+      "slug": "beauty-salon-seo",
+      "name": "Beauty Salon",
+      "primaryKeyword": "SEO for beauty salon",
+      "lsiKeywords": [
+        "beauty salon marketing",
+        "beauty salon digital marketing",
+        "beauty salon lead generation",
+        "beauty salon PPC",
+        "beauty salon local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for beauty salon, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional beauty salon workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "hospitality-food-service"
+    },
+    {
+      "slug": "blockchain-seo",
+      "name": "Blockchain",
+      "primaryKeyword": "SEO for blockchain",
+      "lsiKeywords": [
+        "blockchain marketing",
+        "blockchain digital marketing",
+        "blockchain lead generation",
+        "blockchain PPC",
+        "blockchain local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for blockchain, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional blockchain workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "boat-seo",
+      "name": "Boat",
+      "primaryKeyword": "SEO for boat",
+      "lsiKeywords": [
+        "boat marketing",
+        "boat digital marketing",
+        "boat lead generation",
+        "boat PPC",
+        "boat local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for boat, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional boat workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "transportation-logistics"
+    },
+    {
+      "slug": "cannabis-seo",
+      "name": "Cannabis",
+      "primaryKeyword": "SEO for cannabis",
+      "lsiKeywords": [
+        "cannabis marketing",
+        "cannabis digital marketing",
+        "cannabis lead generation",
+        "cannabis PPC",
+        "cannabis local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for cannabis, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional cannabis workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "catering-seo",
+      "name": "Catering",
+      "primaryKeyword": "SEO for catering",
+      "lsiKeywords": [
+        "catering marketing",
+        "catering digital marketing",
+        "catering lead generation",
+        "catering PPC",
+        "catering local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for catering, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional catering workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "hospitality-food-service"
+    },
+    {
+      "slug": "church-seo",
+      "name": "Church",
+      "primaryKeyword": "SEO for church",
+      "lsiKeywords": [
+        "church marketing",
+        "church digital marketing",
+        "church lead generation",
+        "church PPC",
+        "church local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for church, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional church workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "nonprofit"
+    },
+    {
+      "slug": "cleaning-franchise-seo",
+      "name": "Cleaning Franchise",
+      "primaryKeyword": "SEO for cleaning franchise",
+      "lsiKeywords": [
+        "cleaning franchise marketing",
+        "cleaning franchise digital marketing",
+        "cleaning franchise lead generation",
+        "cleaning franchise PPC",
+        "cleaning franchise local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for cleaning franchise, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional cleaning franchise workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "coffee-shop-seo",
+      "name": "Coffee Shop",
+      "primaryKeyword": "SEO for coffee shop",
+      "lsiKeywords": [
+        "coffee shop marketing",
+        "coffee shop digital marketing",
+        "coffee shop lead generation",
+        "coffee shop PPC",
+        "coffee shop local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for coffee shop, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional coffee shop workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "hospitality-food-service"
+    },
+    {
+      "slug": "concrete-seo",
+      "name": "Concrete",
+      "primaryKeyword": "SEO for concrete",
+      "lsiKeywords": [
+        "concrete marketing",
+        "concrete digital marketing",
+        "concrete lead generation",
+        "concrete PPC",
+        "concrete local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for concrete, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional concrete workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "home-services"
+    },
+    {
+      "slug": "construction-seo",
+      "name": "Construction",
+      "primaryKeyword": "SEO for construction",
+      "lsiKeywords": [
+        "construction marketing",
+        "construction digital marketing",
+        "construction lead generation",
+        "construction PPC",
+        "construction local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for construction, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional construction workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "home-services"
+    },
+    {
+      "slug": "courier-seo",
+      "name": "Courier",
+      "primaryKeyword": "SEO for courier",
+      "lsiKeywords": [
+        "courier marketing",
+        "courier digital marketing",
+        "courier lead generation",
+        "courier PPC",
+        "courier local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for courier, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional courier workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "transportation-logistics"
+    },
+    {
+      "slug": "crypto-seo",
+      "name": "Crypto",
+      "primaryKeyword": "SEO for crypto",
+      "lsiKeywords": [
+        "crypto marketing",
+        "crypto digital marketing",
+        "crypto lead generation",
+        "crypto PPC",
+        "crypto local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for crypto, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional crypto workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "cybersecurity-seo",
+      "name": "Cybersecurity",
+      "primaryKeyword": "SEO for cybersecurity",
+      "lsiKeywords": [
+        "cybersecurity marketing",
+        "cybersecurity digital marketing",
+        "cybersecurity lead generation",
+        "cybersecurity PPC",
+        "cybersecurity local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for cybersecurity, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional cybersecurity workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "data-analytics-seo",
+      "name": "Data Analytics",
+      "primaryKeyword": "SEO for data analytics",
+      "lsiKeywords": [
+        "data analytics marketing",
+        "data analytics digital marketing",
+        "data analytics lead generation",
+        "data analytics PPC",
+        "data analytics local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for data analytics, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional data analytics workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "digital-agency-seo",
+      "name": "Digital Agency",
+      "primaryKeyword": "SEO for digital agency",
+      "lsiKeywords": [
+        "digital agency marketing",
+        "digital agency digital marketing",
+        "digital agency lead generation",
+        "digital agency PPC",
+        "digital agency local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for digital agency, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional digital agency workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "ecommerce-seo",
+      "name": "Ecommerce",
+      "primaryKeyword": "SEO for ecommerce",
+      "lsiKeywords": [
+        "ecommerce marketing",
+        "ecommerce digital marketing",
+        "ecommerce lead generation",
+        "ecommerce PPC",
+        "ecommerce local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for ecommerce, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional ecommerce workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "ecommerce"
+    },
+    {
+      "slug": "education-seo",
+      "name": "Education",
+      "primaryKeyword": "SEO for education",
+      "lsiKeywords": [
+        "education marketing",
+        "education digital marketing",
+        "education lead generation",
+        "education PPC",
+        "education local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for education, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional education workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "education"
+    },
+    {
+      "slug": "energy-efficiency-seo",
+      "name": "Energy Efficiency",
+      "primaryKeyword": "SEO for energy efficiency",
+      "lsiKeywords": [
+        "energy efficiency marketing",
+        "energy efficiency digital marketing",
+        "energy efficiency lead generation",
+        "energy efficiency PPC",
+        "energy efficiency local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for energy efficiency, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional energy efficiency workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "entertainment-seo",
+      "name": "Entertainment",
+      "primaryKeyword": "SEO for entertainment",
+      "lsiKeywords": [
+        "entertainment marketing",
+        "entertainment digital marketing",
+        "entertainment lead generation",
+        "entertainment PPC",
+        "entertainment local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for entertainment, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional entertainment workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "event-planning-seo",
+      "name": "Event Planning",
+      "primaryKeyword": "SEO for event planning",
+      "lsiKeywords": [
+        "event planning marketing",
+        "event planning digital marketing",
+        "event planning lead generation",
+        "event planning PPC",
+        "event planning local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for event planning, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional event planning workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "farm-seo",
+      "name": "Farm",
+      "primaryKeyword": "SEO for farm",
+      "lsiKeywords": [
+        "farm marketing",
+        "farm digital marketing",
+        "farm lead generation",
+        "farm PPC",
+        "farm local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for farm, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional farm workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "fashion-seo",
+      "name": "Fashion",
+      "primaryKeyword": "SEO for fashion",
+      "lsiKeywords": [
+        "fashion marketing",
+        "fashion digital marketing",
+        "fashion lead generation",
+        "fashion PPC",
+        "fashion local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for fashion, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional fashion workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "retail"
+    },
+    {
+      "slug": "fencing-seo",
+      "name": "Fencing",
+      "primaryKeyword": "SEO for fencing",
+      "lsiKeywords": [
+        "fencing marketing",
+        "fencing digital marketing",
+        "fencing lead generation",
+        "fencing PPC",
+        "fencing local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for fencing, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional fencing workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "home-services"
+    },
+    {
+      "slug": "fitness-seo",
+      "name": "Fitness",
+      "primaryKeyword": "SEO for fitness",
+      "lsiKeywords": [
+        "fitness marketing",
+        "fitness digital marketing",
+        "fitness lead generation",
+        "fitness PPC",
+        "fitness local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for fitness, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional fitness workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "home-services"
+    },
+    {
+      "slug": "florist-seo",
+      "name": "Florist",
+      "primaryKeyword": "SEO for florist",
+      "lsiKeywords": [
+        "florist marketing",
+        "florist digital marketing",
+        "florist lead generation",
+        "florist PPC",
+        "florist local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for florist, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional florist workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "food-delivery-seo",
+      "name": "Food Delivery",
+      "primaryKeyword": "SEO for food delivery",
+      "lsiKeywords": [
+        "food delivery marketing",
+        "food delivery digital marketing",
+        "food delivery lead generation",
+        "food delivery PPC",
+        "food delivery local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for food delivery, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional food delivery workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "hospitality-food-service"
+    },
+    {
+      "slug": "food-truck-seo",
+      "name": "Food Truck",
+      "primaryKeyword": "SEO for food truck",
+      "lsiKeywords": [
+        "food truck marketing",
+        "food truck digital marketing",
+        "food truck lead generation",
+        "food truck PPC",
+        "food truck local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for food truck, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional food truck workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "hospitality-food-service"
+    },
+    {
+      "slug": "foundation-repair-seo",
+      "name": "Foundation Repair",
+      "primaryKeyword": "SEO for foundation repair",
+      "lsiKeywords": [
+        "foundation repair marketing",
+        "foundation repair digital marketing",
+        "foundation repair lead generation",
+        "foundation repair PPC",
+        "foundation repair local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for foundation repair, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional foundation repair workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "home-services"
+    },
+    {
+      "slug": "freight-seo",
+      "name": "Freight",
+      "primaryKeyword": "SEO for freight",
+      "lsiKeywords": [
+        "freight marketing",
+        "freight digital marketing",
+        "freight lead generation",
+        "freight PPC",
+        "freight local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for freight, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional freight workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "transportation-logistics"
+    },
+    {
+      "slug": "funeral-seo",
+      "name": "Funeral",
+      "primaryKeyword": "SEO for funeral",
+      "lsiKeywords": [
+        "funeral marketing",
+        "funeral digital marketing",
+        "funeral lead generation",
+        "funeral PPC",
+        "funeral local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for funeral, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional funeral workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "hospitality-food-service"
+    },
+    {
+      "slug": "furniture-seo",
+      "name": "Furniture",
+      "primaryKeyword": "SEO for furniture",
+      "lsiKeywords": [
+        "furniture marketing",
+        "furniture digital marketing",
+        "furniture lead generation",
+        "furniture PPC",
+        "furniture local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for furniture, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional furniture workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "retail"
+    },
+    {
+      "slug": "gaming-seo",
+      "name": "Gaming",
+      "primaryKeyword": "SEO for gaming",
+      "lsiKeywords": [
+        "gaming marketing",
+        "gaming digital marketing",
+        "gaming lead generation",
+        "gaming PPC",
+        "gaming local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for gaming, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional gaming workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "government-seo",
+      "name": "Government",
+      "primaryKeyword": "SEO for government",
+      "lsiKeywords": [
+        "government marketing",
+        "government digital marketing",
+        "government lead generation",
+        "government PPC",
+        "government local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for government, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional government workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "nonprofit"
+    },
+    {
+      "slug": "grocery-seo",
+      "name": "Grocery",
+      "primaryKeyword": "SEO for grocery",
+      "lsiKeywords": [
+        "grocery marketing",
+        "grocery digital marketing",
+        "grocery lead generation",
+        "grocery PPC",
+        "grocery local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for grocery, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional grocery workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "hospitality-food-service"
+    },
+    {
+      "slug": "gym-equipment-seo",
+      "name": "Gym Equipment",
+      "primaryKeyword": "SEO for gym equipment",
+      "lsiKeywords": [
+        "gym equipment marketing",
+        "gym equipment digital marketing",
+        "gym equipment lead generation",
+        "gym equipment PPC",
+        "gym equipment local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for gym equipment, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional gym equipment workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "home-services"
+    },
+    {
+      "slug": "gym-seo",
+      "name": "Gym",
+      "primaryKeyword": "SEO for gym",
+      "lsiKeywords": [
+        "gym marketing",
+        "gym digital marketing",
+        "gym lead generation",
+        "gym PPC",
+        "gym local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for gym, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional gym workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "home-services"
+    },
+    {
+      "slug": "home-staging-seo",
+      "name": "Home Staging",
+      "primaryKeyword": "SEO for home staging",
+      "lsiKeywords": [
+        "home staging marketing",
+        "home staging digital marketing",
+        "home staging lead generation",
+        "home staging PPC",
+        "home staging local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for home staging, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional home staging workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "real-estate"
+    },
+    {
+      "slug": "hotel-seo",
+      "name": "Hotel",
+      "primaryKeyword": "SEO for hotel",
+      "lsiKeywords": [
+        "hotel marketing",
+        "hotel digital marketing",
+        "hotel lead generation",
+        "hotel PPC",
+        "hotel local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for hotel, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional hotel workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "hospitality-food-service"
+    },
+    {
+      "slug": "influencer-seo",
+      "name": "Influencer",
+      "primaryKeyword": "SEO for influencer",
+      "lsiKeywords": [
+        "influencer marketing",
+        "influencer digital marketing",
+        "influencer lead generation",
+        "influencer PPC",
+        "influencer local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for influencer, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional influencer workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "interior-design-seo",
+      "name": "Interior Design",
+      "primaryKeyword": "SEO for interior design",
+      "lsiKeywords": [
+        "interior design marketing",
+        "interior design digital marketing",
+        "interior design lead generation",
+        "interior design PPC",
+        "interior design local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for interior design, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional interior design workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "real-estate"
+    },
+    {
+      "slug": "isp-seo",
+      "name": "ISP",
+      "primaryKeyword": "SEO for isp",
+      "lsiKeywords": [
+        "isp marketing",
+        "isp digital marketing",
+        "isp lead generation",
+        "isp PPC",
+        "isp local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for isp, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional isp workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "it-services-seo",
+      "name": "IT Services",
+      "primaryKeyword": "SEO for it services",
+      "lsiKeywords": [
+        "it services marketing",
+        "it services digital marketing",
+        "it services lead generation",
+        "it services PPC",
+        "it services local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for it services, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional it services workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "jewelry-seo",
+      "name": "Jewelry",
+      "primaryKeyword": "SEO for jewelry",
+      "lsiKeywords": [
+        "jewelry marketing",
+        "jewelry digital marketing",
+        "jewelry lead generation",
+        "jewelry PPC",
+        "jewelry local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for jewelry, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional jewelry workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "retail"
+    },
+    {
+      "slug": "language-school-seo",
+      "name": "Language School",
+      "primaryKeyword": "SEO for language school",
+      "lsiKeywords": [
+        "language school marketing",
+        "language school digital marketing",
+        "language school lead generation",
+        "language school PPC",
+        "language school local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for language school, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional language school workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "education"
+    },
+    {
+      "slug": "laundry-seo",
+      "name": "Laundry",
+      "primaryKeyword": "SEO for laundry",
+      "lsiKeywords": [
+        "laundry marketing",
+        "laundry digital marketing",
+        "laundry lead generation",
+        "laundry PPC",
+        "laundry local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for laundry, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional laundry workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "logistics-seo",
+      "name": "Logistics",
+      "primaryKeyword": "SEO for logistics",
+      "lsiKeywords": [
+        "logistics marketing",
+        "logistics digital marketing",
+        "logistics lead generation",
+        "logistics PPC",
+        "logistics local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for logistics, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional logistics workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "transportation-logistics"
+    },
+    {
+      "slug": "manufacturing-seo",
+      "name": "Manufacturing",
+      "primaryKeyword": "SEO for manufacturing",
+      "lsiKeywords": [
+        "manufacturing marketing",
+        "manufacturing digital marketing",
+        "manufacturing lead generation",
+        "manufacturing PPC",
+        "manufacturing local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for manufacturing, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional manufacturing workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "music-seo",
+      "name": "Music",
+      "primaryKeyword": "SEO for music",
+      "lsiKeywords": [
+        "music marketing",
+        "music digital marketing",
+        "music lead generation",
+        "music PPC",
+        "music local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for music, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional music workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "news-media-seo",
+      "name": "News Media",
+      "primaryKeyword": "SEO for news media",
+      "lsiKeywords": [
+        "news media marketing",
+        "news media digital marketing",
+        "news media lead generation",
+        "news media PPC",
+        "news media local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for news media, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional news media workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "ngo-seo",
+      "name": "NGO",
+      "primaryKeyword": "SEO for ngo",
+      "lsiKeywords": [
+        "ngo marketing",
+        "ngo digital marketing",
+        "ngo lead generation",
+        "ngo PPC",
+        "ngo local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for ngo, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional ngo workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "nonprofit"
+    },
+    {
+      "slug": "nonprofit-seo",
+      "name": "Nonprofit",
+      "primaryKeyword": "SEO for nonprofit",
+      "lsiKeywords": [
+        "nonprofit marketing",
+        "nonprofit digital marketing",
+        "nonprofit lead generation",
+        "nonprofit PPC",
+        "nonprofit local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for nonprofit, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional nonprofit workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "nonprofit"
+    },
+    {
+      "slug": "pawn-shop-seo",
+      "name": "Pawn Shop",
+      "primaryKeyword": "SEO for pawn shop",
+      "lsiKeywords": [
+        "pawn shop marketing",
+        "pawn shop digital marketing",
+        "pawn shop lead generation",
+        "pawn shop PPC",
+        "pawn shop local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for pawn shop, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional pawn shop workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "retail"
+    },
+    {
+      "slug": "personal-trainer-seo",
+      "name": "Personal Trainer",
+      "primaryKeyword": "SEO for personal trainer",
+      "lsiKeywords": [
+        "personal trainer marketing",
+        "personal trainer digital marketing",
+        "personal trainer lead generation",
+        "personal trainer PPC",
+        "personal trainer local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for personal trainer, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional personal trainer workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "pet-services-seo",
+      "name": "Pet Services",
+      "primaryKeyword": "SEO for pet services",
+      "lsiKeywords": [
+        "pet services marketing",
+        "pet services digital marketing",
+        "pet services lead generation",
+        "pet services PPC",
+        "pet services local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for pet services, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional pet services workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "pharmacy-online-seo",
+      "name": "Pharmacy Online",
+      "primaryKeyword": "SEO for pharmacy online",
+      "lsiKeywords": [
+        "pharmacy online marketing",
+        "pharmacy online digital marketing",
+        "pharmacy online lead generation",
+        "pharmacy online PPC",
+        "pharmacy online local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for pharmacy online, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional pharmacy online workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "healthcare-medical"
+    },
+    {
+      "slug": "photography-seo",
+      "name": "Photography",
+      "primaryKeyword": "SEO for photography",
+      "lsiKeywords": [
+        "photography marketing",
+        "photography digital marketing",
+        "photography lead generation",
+        "photography PPC",
+        "photography local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for photography, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional photography workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "podcast-seo",
+      "name": "Podcast",
+      "primaryKeyword": "SEO for podcast",
+      "lsiKeywords": [
+        "podcast marketing",
+        "podcast digital marketing",
+        "podcast lead generation",
+        "podcast PPC",
+        "podcast local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for podcast, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional podcast workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "pool-service-seo",
+      "name": "Pool Service",
+      "primaryKeyword": "SEO for pool service",
+      "lsiKeywords": [
+        "pool service marketing",
+        "pool service digital marketing",
+        "pool service lead generation",
+        "pool service PPC",
+        "pool service local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for pool service, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional pool service workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "home-services"
+    },
+    {
+      "slug": "pr-seo",
+      "name": "PR",
+      "primaryKeyword": "SEO for pr",
+      "lsiKeywords": [
+        "pr marketing",
+        "pr digital marketing",
+        "pr lead generation",
+        "pr PPC",
+        "pr local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for pr, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional pr workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "printing-seo",
+      "name": "Printing",
+      "primaryKeyword": "SEO for printing",
+      "lsiKeywords": [
+        "printing marketing",
+        "printing digital marketing",
+        "printing lead generation",
+        "printing PPC",
+        "printing local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for printing, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional printing workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "property-management-seo",
+      "name": "Property Management",
+      "primaryKeyword": "SEO for property management",
+      "lsiKeywords": [
+        "property management marketing",
+        "property management digital marketing",
+        "property management lead generation",
+        "property management PPC",
+        "property management local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for property management, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional property management workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "real-estate"
+    },
+    {
+      "slug": "public-health-seo",
+      "name": "Public Health",
+      "primaryKeyword": "SEO for public health",
+      "lsiKeywords": [
+        "public health marketing",
+        "public health digital marketing",
+        "public health lead generation",
+        "public health PPC",
+        "public health local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for public health, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional public health workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "healthcare-medical"
+    },
+    {
+      "slug": "real-estate-seo",
+      "name": "Real Estate",
+      "primaryKeyword": "SEO for real estate",
+      "lsiKeywords": [
+        "real estate marketing",
+        "real estate digital marketing",
+        "real estate lead generation",
+        "real estate PPC",
+        "real estate local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for real estate, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional real estate workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "real-estate"
+    },
+    {
+      "slug": "recruitment-seo",
+      "name": "Recruitment",
+      "primaryKeyword": "SEO for recruitment",
+      "lsiKeywords": [
+        "recruitment marketing",
+        "recruitment digital marketing",
+        "recruitment lead generation",
+        "recruitment PPC",
+        "recruitment local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for recruitment, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional recruitment workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "renewable-energy-seo",
+      "name": "Renewable Energy",
+      "primaryKeyword": "SEO for renewable energy",
+      "lsiKeywords": [
+        "renewable energy marketing",
+        "renewable energy digital marketing",
+        "renewable energy lead generation",
+        "renewable energy PPC",
+        "renewable energy local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for renewable energy, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional renewable energy workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "restaurant-seo",
+      "name": "Restaurant",
+      "primaryKeyword": "SEO for restaurant",
+      "lsiKeywords": [
+        "restaurant marketing",
+        "restaurant digital marketing",
+        "restaurant lead generation",
+        "restaurant PPC",
+        "restaurant local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for restaurant, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional restaurant workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "rv-seo",
+      "name": "Rv",
+      "primaryKeyword": "SEO for rv",
+      "lsiKeywords": [
+        "rv marketing",
+        "rv digital marketing",
+        "rv lead generation",
+        "rv PPC",
+        "rv local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for rv, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional rv workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "saas-seo",
+      "name": "SaaS",
+      "primaryKeyword": "SEO for saas",
+      "lsiKeywords": [
+        "saas marketing",
+        "saas digital marketing",
+        "saas lead generation",
+        "saas PPC",
+        "saas local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for saas, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional saas workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "shipping-seo",
+      "name": "Shipping",
+      "primaryKeyword": "SEO for shipping",
+      "lsiKeywords": [
+        "shipping marketing",
+        "shipping digital marketing",
+        "shipping lead generation",
+        "shipping PPC",
+        "shipping local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for shipping, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional shipping workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "shopify-store-seo",
+      "name": "Shopify Store",
+      "primaryKeyword": "SEO for shopify store",
+      "lsiKeywords": [
+        "shopify store marketing",
+        "shopify store digital marketing",
+        "shopify store lead generation",
+        "shopify store PPC",
+        "shopify store local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for shopify store, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional shopify store workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "skincare-seo",
+      "name": "Skincare",
+      "primaryKeyword": "SEO for skincare",
+      "lsiKeywords": [
+        "skincare marketing",
+        "skincare digital marketing",
+        "skincare lead generation",
+        "skincare PPC",
+        "skincare local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for skincare, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional skincare workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "transportation-logistics"
+    },
+    {
+      "slug": "solar-seo",
+      "name": "Solar",
+      "primaryKeyword": "SEO for solar",
+      "lsiKeywords": [
+        "solar marketing",
+        "solar digital marketing",
+        "solar lead generation",
+        "solar PPC",
+        "solar local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for solar, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional solar workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "spa-seo",
+      "name": "Spa",
+      "primaryKeyword": "SEO for spa",
+      "lsiKeywords": [
+        "spa marketing",
+        "spa digital marketing",
+        "spa lead generation",
+        "spa PPC",
+        "spa local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for spa, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional spa workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "sports-club-seo",
+      "name": "Sports Club",
+      "primaryKeyword": "SEO for sports club",
+      "lsiKeywords": [
+        "sports club marketing",
+        "sports club digital marketing",
+        "sports club lead generation",
+        "sports club PPC",
+        "sports club local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for sports club, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional sports club workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "sports-equipment-seo",
+      "name": "Sports Equipment",
+      "primaryKeyword": "SEO for sports equipment",
+      "lsiKeywords": [
+        "sports equipment marketing",
+        "sports equipment digital marketing",
+        "sports equipment lead generation",
+        "sports equipment PPC",
+        "sports equipment local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for sports equipment, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional sports equipment workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "storage-seo",
+      "name": "Storage",
+      "primaryKeyword": "SEO for storage",
+      "lsiKeywords": [
+        "storage marketing",
+        "storage digital marketing",
+        "storage lead generation",
+        "storage PPC",
+        "storage local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for storage, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional storage workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "streaming-seo",
+      "name": "Streaming",
+      "primaryKeyword": "SEO for streaming",
+      "lsiKeywords": [
+        "streaming marketing",
+        "streaming digital marketing",
+        "streaming lead generation",
+        "streaming PPC",
+        "streaming local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for streaming, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional streaming workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "subscription-box-seo",
+      "name": "Subscription Box",
+      "primaryKeyword": "SEO for subscription box",
+      "lsiKeywords": [
+        "subscription box marketing",
+        "subscription box digital marketing",
+        "subscription box lead generation",
+        "subscription box PPC",
+        "subscription box local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for subscription box, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional subscription box workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "surveyor-seo",
+      "name": "Surveyor",
+      "primaryKeyword": "SEO for surveyor",
+      "lsiKeywords": [
+        "surveyor marketing",
+        "surveyor digital marketing",
+        "surveyor lead generation",
+        "surveyor PPC",
+        "surveyor local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for surveyor, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional surveyor workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "tattoo-seo",
+      "name": "Tattoo",
+      "primaryKeyword": "SEO for tattoo",
+      "lsiKeywords": [
+        "tattoo marketing",
+        "tattoo digital marketing",
+        "tattoo lead generation",
+        "tattoo PPC",
+        "tattoo local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for tattoo, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional tattoo workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "tech-startup-seo",
+      "name": "Tech Startup",
+      "primaryKeyword": "SEO for tech startup",
+      "lsiKeywords": [
+        "tech startup marketing",
+        "tech startup digital marketing",
+        "tech startup lead generation",
+        "tech startup PPC",
+        "tech startup local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for tech startup, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional tech startup workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "telecom-company-seo",
+      "name": "Telecom Company",
+      "primaryKeyword": "SEO for telecom company",
+      "lsiKeywords": [
+        "telecom company marketing",
+        "telecom company digital marketing",
+        "telecom company lead generation",
+        "telecom company PPC",
+        "telecom company local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for telecom company, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional telecom company workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "title-company-seo",
+      "name": "Title Company",
+      "primaryKeyword": "SEO for title company",
+      "lsiKeywords": [
+        "title company marketing",
+        "title company digital marketing",
+        "title company lead generation",
+        "title company PPC",
+        "title company local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for title company, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional title company workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "legal-services"
+    },
+    {
+      "slug": "travel-seo",
+      "name": "Travel",
+      "primaryKeyword": "SEO for travel",
+      "lsiKeywords": [
+        "travel marketing",
+        "travel digital marketing",
+        "travel lead generation",
+        "travel PPC",
+        "travel local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for travel, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional travel workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "utility-seo",
+      "name": "Utility",
+      "primaryKeyword": "SEO for utility",
+      "lsiKeywords": [
+        "utility marketing",
+        "utility digital marketing",
+        "utility lead generation",
+        "utility PPC",
+        "utility local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for utility, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional utility workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "videography-seo",
+      "name": "Videography",
+      "primaryKeyword": "SEO for videography",
+      "lsiKeywords": [
+        "videography marketing",
+        "videography digital marketing",
+        "videography lead generation",
+        "videography PPC",
+        "videography local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for videography, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional videography workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "warehouse-seo",
+      "name": "Warehouse",
+      "primaryKeyword": "SEO for warehouse",
+      "lsiKeywords": [
+        "warehouse marketing",
+        "warehouse digital marketing",
+        "warehouse lead generation",
+        "warehouse PPC",
+        "warehouse local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for warehouse, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional warehouse workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "transportation-logistics"
+    },
+    {
+      "slug": "web-hosting-seo",
+      "name": "Web Hosting",
+      "primaryKeyword": "SEO for web hosting",
+      "lsiKeywords": [
+        "web hosting marketing",
+        "web hosting digital marketing",
+        "web hosting lead generation",
+        "web hosting PPC",
+        "web hosting local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for web hosting, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional web hosting workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "wedding-seo",
+      "name": "Wedding",
+      "primaryKeyword": "SEO for wedding",
+      "lsiKeywords": [
+        "wedding marketing",
+        "wedding digital marketing",
+        "wedding lead generation",
+        "wedding PPC",
+        "wedding local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for wedding, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional wedding workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "hospitality-food-service"
+    },
+    {
+      "slug": "wellness-center-seo",
+      "name": "Wellness Center",
+      "primaryKeyword": "SEO for wellness center",
+      "lsiKeywords": [
+        "wellness center marketing",
+        "wellness center digital marketing",
+        "wellness center lead generation",
+        "wellness center PPC",
+        "wellness center local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for wellness center, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional wellness center workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "healthcare-medical"
+    },
+    {
+      "slug": "window-door-seo",
+      "name": "Window Door",
+      "primaryKeyword": "SEO for window door",
+      "lsiKeywords": [
+        "window door marketing",
+        "window door digital marketing",
+        "window door lead generation",
+        "window door PPC",
+        "window door local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for window door, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional window door workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "home-services"
+    },
+    {
+      "slug": "winery-seo",
+      "name": "Winery",
+      "primaryKeyword": "SEO for winery",
+      "lsiKeywords": [
+        "winery marketing",
+        "winery digital marketing",
+        "winery lead generation",
+        "winery PPC",
+        "winery local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for winery, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional winery workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "yoga-seo",
+      "name": "Yoga",
+      "primaryKeyword": "SEO for yoga",
+      "lsiKeywords": [
+        "yoga marketing",
+        "yoga digital marketing",
+        "yoga lead generation",
+        "yoga PPC",
+        "yoga local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for yoga, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional yoga workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
     }
   ],
   "tools": [
@@ -4415,6 +5990,36 @@
       "shortDescription": "Free robots.txt generator - run unlimited checks in your browser, no signup required.",
       "heroImagePrompt": "product UI mock of robots.txt generator on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools"
+    },
+    {
+      "slug": "bulk-index-checker",
+      "name": "Bulk Index Checker",
+      "primaryKeyword": "bulk index checker",
+      "lsiKeywords": [
+        "bulk indexation checker",
+        "check if multiple URLs are indexed",
+        "site: operator bulk checker",
+        "Google index checker bulk",
+        "bulk URL indexed status"
+      ],
+      "shortDescription": "Check if multiple URLs are indexed by Google in bulk using the site: operator with staggered tab opening.",
+      "heroImagePrompt": "product UI mock of a bulk index checker on dark navy background with electric blue accents",
+      "parentCategory": "meta-tools"
+    },
+    {
+      "slug": "bulk-keyword-checker",
+      "name": "Bulk Keyword Checker",
+      "primaryKeyword": "bulk keyword checker",
+      "lsiKeywords": [
+        "bulk keyword rank checker",
+        "Google search bulk keywords",
+        "branded SERP checker",
+        "keyword rank tracker free",
+        "bulk SERP checker"
+      ],
+      "shortDescription": "Check rankings for multiple keywords across Google Search at once.",
+      "heroImagePrompt": "product UI mock of a bulk keyword rank checker on dark navy background with electric blue accents",
+      "parentCategory": "keyword-tools"
     }
   ],
   "toolCategories": [
@@ -5849,6 +7454,23 @@
       ],
       "shortDescription": "SEO and digital marketing tailored for businesses in Ghana, with bilingual content and locally optimized link building, citations, and ad campaigns.",
       "heroImagePrompt": "skyline of major city in Ghana with subtle dark navy and electric blue overlay"
+    },
+    {
+      "code": "LB",
+      "slug": "lebanon",
+      "name": "Lebanon",
+      "region": "middle-east",
+      "currency": "LBP",
+      "primaryKeyword": "SEO services in Lebanon",
+      "lsiKeywords": [
+        "digital marketing Lebanon",
+        "PPC management Lebanon",
+        "local SEO Lebanon",
+        "SEO agency Lebanon",
+        "SEO expert Lebanon"
+      ],
+      "shortDescription": "SEO and digital marketing tailored for businesses in Lebanon, with bilingual content and locally optimized link building, citations, and ad campaigns.",
+      "heroImagePrompt": "skyline of major city in Lebanon with subtle dark navy and electric blue overlay"
     }
   ],
   "cities": [
@@ -6633,19 +8255,19 @@
       "heroImagePrompt": "skyline of Stuttgart at dusk, dark navy filter with electric blue accents"
     },
     {
-      "slug": "seo-services-düsseldorf",
-      "name": "Düsseldorf",
+      "slug": "seo-services-d\u00fcsseldorf",
+      "name": "D\u00fcsseldorf",
       "countryCode": "DE",
-      "primaryKeyword": "SEO services in Düsseldorf",
+      "primaryKeyword": "SEO services in D\u00fcsseldorf",
       "lsiKeywords": [
-        "Düsseldorf SEO agency",
-        "local SEO Düsseldorf",
-        "digital marketing Düsseldorf",
-        "PPC management Düsseldorf",
-        "Düsseldorf SEO expert"
+        "D\u00fcsseldorf SEO agency",
+        "local SEO D\u00fcsseldorf",
+        "digital marketing D\u00fcsseldorf",
+        "PPC management D\u00fcsseldorf",
+        "D\u00fcsseldorf SEO expert"
       ],
-      "shortDescription": "Local SEO, PPC, and content marketing for Düsseldorf businesses that want to dominate Google Maps, the local pack, and generative search results.",
-      "heroImagePrompt": "skyline of Düsseldorf at dusk, dark navy filter with electric blue accents"
+      "shortDescription": "Local SEO, PPC, and content marketing for D\u00fcsseldorf businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of D\u00fcsseldorf at dusk, dark navy filter with electric blue accents"
     },
     {
       "slug": "seo-services-amsterdam",
@@ -7128,19 +8750,19 @@
       "heroImagePrompt": "skyline of Gothenburg at dusk, dark navy filter with electric blue accents"
     },
     {
-      "slug": "seo-services-malmö",
-      "name": "Malmö",
+      "slug": "seo-services-malm\u00f6",
+      "name": "Malm\u00f6",
       "countryCode": "SE",
-      "primaryKeyword": "SEO services in Malmö",
+      "primaryKeyword": "SEO services in Malm\u00f6",
       "lsiKeywords": [
-        "Malmö SEO agency",
-        "local SEO Malmö",
-        "digital marketing Malmö",
-        "PPC management Malmö",
-        "Malmö SEO expert"
+        "Malm\u00f6 SEO agency",
+        "local SEO Malm\u00f6",
+        "digital marketing Malm\u00f6",
+        "PPC management Malm\u00f6",
+        "Malm\u00f6 SEO expert"
       ],
-      "shortDescription": "Local SEO, PPC, and content marketing for Malmö businesses that want to dominate Google Maps, the local pack, and generative search results.",
-      "heroImagePrompt": "skyline of Malmö at dusk, dark navy filter with electric blue accents"
+      "shortDescription": "Local SEO, PPC, and content marketing for Malm\u00f6 businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Malm\u00f6 at dusk, dark navy filter with electric blue accents"
     },
     {
       "slug": "seo-services-oslo",
@@ -9331,6 +10953,561 @@
       ],
       "shortDescription": "Local SEO, PPC, and content marketing for Accra businesses that want to dominate Google Maps, the local pack, and generative search results.",
       "heroImagePrompt": "skyline of Accra at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-abha",
+      "name": "Abha",
+      "countryCode": "SA",
+      "primaryKeyword": "SEO services in Abha",
+      "lsiKeywords": [
+        "Abha SEO agency",
+        "local SEO Abha",
+        "digital marketing Abha",
+        "PPC management Abha",
+        "Abha SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Abha businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Abha at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-khobar",
+      "name": "Al Khobar",
+      "countryCode": "SA",
+      "primaryKeyword": "SEO services in Al Khobar",
+      "lsiKeywords": [
+        "Al Khobar SEO agency",
+        "local SEO Al Khobar",
+        "digital marketing Al Khobar",
+        "PPC management Al Khobar",
+        "Al Khobar SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Al Khobar businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Al Khobar at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-madinah",
+      "name": "Madinah",
+      "countryCode": "SA",
+      "primaryKeyword": "SEO services in Madinah",
+      "lsiKeywords": [
+        "Madinah SEO agency",
+        "local SEO Madinah",
+        "digital marketing Madinah",
+        "PPC management Madinah",
+        "Madinah SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Madinah businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Madinah at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-makkah",
+      "name": "Makkah",
+      "countryCode": "SA",
+      "primaryKeyword": "SEO services in Makkah",
+      "lsiKeywords": [
+        "Makkah SEO agency",
+        "local SEO Makkah",
+        "digital marketing Makkah",
+        "PPC management Makkah",
+        "Makkah SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Makkah businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Makkah at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-tabuk",
+      "name": "Tabuk",
+      "countryCode": "SA",
+      "primaryKeyword": "SEO services in Tabuk",
+      "lsiKeywords": [
+        "Tabuk SEO agency",
+        "local SEO Tabuk",
+        "digital marketing Tabuk",
+        "PPC management Tabuk",
+        "Tabuk SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Tabuk businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Tabuk at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-beirut",
+      "name": "Beirut",
+      "countryCode": "LB",
+      "primaryKeyword": "SEO services in Beirut",
+      "lsiKeywords": [
+        "Beirut SEO agency",
+        "local SEO Beirut",
+        "digital marketing Beirut",
+        "PPC management Beirut",
+        "Beirut SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Beirut businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Beirut at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-lusail",
+      "name": "Lusail",
+      "countryCode": "QA",
+      "primaryKeyword": "SEO services in Lusail",
+      "lsiKeywords": [
+        "Lusail SEO agency",
+        "local SEO Lusail",
+        "digital marketing Lusail",
+        "PPC management Lusail",
+        "Lusail SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Lusail businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Lusail at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-aalborg",
+      "name": "Aalborg",
+      "countryCode": "DK",
+      "primaryKeyword": "SEO services in Aalborg",
+      "lsiKeywords": [
+        "Aalborg SEO agency",
+        "local SEO Aalborg",
+        "digital marketing Aalborg",
+        "PPC management Aalborg",
+        "Aalborg SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Aalborg businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Aalborg at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-odense",
+      "name": "Odense",
+      "countryCode": "DK",
+      "primaryKeyword": "SEO services in Odense",
+      "lsiKeywords": [
+        "Odense SEO agency",
+        "local SEO Odense",
+        "digital marketing Odense",
+        "PPC management Odense",
+        "Odense SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Odense businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Odense at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-dortmund",
+      "name": "Dortmund",
+      "countryCode": "DE",
+      "primaryKeyword": "SEO services in Dortmund",
+      "lsiKeywords": [
+        "Dortmund SEO agency",
+        "local SEO Dortmund",
+        "digital marketing Dortmund",
+        "PPC management Dortmund",
+        "Dortmund SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Dortmund businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Dortmund at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-dusseldorf",
+      "name": "Dusseldorf",
+      "countryCode": "DE",
+      "primaryKeyword": "SEO services in Dusseldorf",
+      "lsiKeywords": [
+        "Dusseldorf SEO agency",
+        "local SEO Dusseldorf",
+        "digital marketing Dusseldorf",
+        "PPC management Dusseldorf",
+        "Dusseldorf SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Dusseldorf businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Dusseldorf at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-hanover",
+      "name": "Hanover",
+      "countryCode": "DE",
+      "primaryKeyword": "SEO services in Hanover",
+      "lsiKeywords": [
+        "Hanover SEO agency",
+        "local SEO Hanover",
+        "digital marketing Hanover",
+        "PPC management Hanover",
+        "Hanover SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Hanover businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Hanover at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-leipzig",
+      "name": "Leipzig",
+      "countryCode": "DE",
+      "primaryKeyword": "SEO services in Leipzig",
+      "lsiKeywords": [
+        "Leipzig SEO agency",
+        "local SEO Leipzig",
+        "digital marketing Leipzig",
+        "PPC management Leipzig",
+        "Leipzig SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Leipzig businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Leipzig at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-graz",
+      "name": "Graz",
+      "countryCode": "AT",
+      "primaryKeyword": "SEO services in Graz",
+      "lsiKeywords": [
+        "Graz SEO agency",
+        "local SEO Graz",
+        "digital marketing Graz",
+        "PPC management Graz",
+        "Graz SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Graz businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Graz at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-alicante",
+      "name": "Alicante",
+      "countryCode": "ES",
+      "primaryKeyword": "SEO services in Alicante",
+      "lsiKeywords": [
+        "Alicante SEO agency",
+        "local SEO Alicante",
+        "digital marketing Alicante",
+        "PPC management Alicante",
+        "Alicante SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Alicante businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Alicante at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-zaragoza",
+      "name": "Zaragoza",
+      "countryCode": "ES",
+      "primaryKeyword": "SEO services in Zaragoza",
+      "lsiKeywords": [
+        "Zaragoza SEO agency",
+        "local SEO Zaragoza",
+        "digital marketing Zaragoza",
+        "PPC management Zaragoza",
+        "Zaragoza SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Zaragoza businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Zaragoza at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-cordoba-argentina",
+      "name": "Cordoba",
+      "countryCode": "AR",
+      "primaryKeyword": "SEO services in Cordoba",
+      "lsiKeywords": [
+        "Cordoba SEO agency",
+        "local SEO Cordoba",
+        "digital marketing Cordoba",
+        "PPC management Cordoba",
+        "Cordoba SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Cordoba businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Cordoba at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-turku",
+      "name": "Turku",
+      "countryCode": "FI",
+      "primaryKeyword": "SEO services in Turku",
+      "lsiKeywords": [
+        "Turku SEO agency",
+        "local SEO Turku",
+        "digital marketing Turku",
+        "PPC management Turku",
+        "Turku SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Turku businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Turku at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-lille",
+      "name": "Lille",
+      "countryCode": "FR",
+      "primaryKeyword": "SEO services in Lille",
+      "lsiKeywords": [
+        "Lille SEO agency",
+        "local SEO Lille",
+        "digital marketing Lille",
+        "PPC management Lille",
+        "Lille SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Lille businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Lille at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-montpellier",
+      "name": "Montpellier",
+      "countryCode": "FR",
+      "primaryKeyword": "SEO services in Montpellier",
+      "lsiKeywords": [
+        "Montpellier SEO agency",
+        "local SEO Montpellier",
+        "digital marketing Montpellier",
+        "PPC management Montpellier",
+        "Montpellier SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Montpellier businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Montpellier at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-nantes",
+      "name": "Nantes",
+      "countryCode": "FR",
+      "primaryKeyword": "SEO services in Nantes",
+      "lsiKeywords": [
+        "Nantes SEO agency",
+        "local SEO Nantes",
+        "digital marketing Nantes",
+        "PPC management Nantes",
+        "Nantes SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Nantes businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Nantes at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-strasbourg",
+      "name": "Strasbourg",
+      "countryCode": "FR",
+      "primaryKeyword": "SEO services in Strasbourg",
+      "lsiKeywords": [
+        "Strasbourg SEO agency",
+        "local SEO Strasbourg",
+        "digital marketing Strasbourg",
+        "PPC management Strasbourg",
+        "Strasbourg SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Strasbourg businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Strasbourg at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-lausanne",
+      "name": "Lausanne",
+      "countryCode": "CH",
+      "primaryKeyword": "SEO services in Lausanne",
+      "lsiKeywords": [
+        "Lausanne SEO agency",
+        "local SEO Lausanne",
+        "digital marketing Lausanne",
+        "PPC management Lausanne",
+        "Lausanne SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Lausanne businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Lausanne at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-quebec-city",
+      "name": "Quebec City",
+      "countryCode": "CA",
+      "primaryKeyword": "SEO services in Quebec City",
+      "lsiKeywords": [
+        "Quebec City SEO agency",
+        "local SEO Quebec City",
+        "digital marketing Quebec City",
+        "PPC management Quebec City",
+        "Quebec City SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Quebec City businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Quebec City at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-debrecen",
+      "name": "Debrecen",
+      "countryCode": "HU",
+      "primaryKeyword": "SEO services in Debrecen",
+      "lsiKeywords": [
+        "Debrecen SEO agency",
+        "local SEO Debrecen",
+        "digital marketing Debrecen",
+        "PPC management Debrecen",
+        "Debrecen SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Debrecen businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Debrecen at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-genoa",
+      "name": "Genoa",
+      "countryCode": "IT",
+      "primaryKeyword": "SEO services in Genoa",
+      "lsiKeywords": [
+        "Genoa SEO agency",
+        "local SEO Genoa",
+        "digital marketing Genoa",
+        "PPC management Genoa",
+        "Genoa SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Genoa businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Genoa at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-palermo",
+      "name": "Palermo",
+      "countryCode": "IT",
+      "primaryKeyword": "SEO services in Palermo",
+      "lsiKeywords": [
+        "Palermo SEO agency",
+        "local SEO Palermo",
+        "digital marketing Palermo",
+        "PPC management Palermo",
+        "Palermo SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Palermo businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Palermo at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-groningen",
+      "name": "Groningen",
+      "countryCode": "NL",
+      "primaryKeyword": "SEO services in Groningen",
+      "lsiKeywords": [
+        "Groningen SEO agency",
+        "local SEO Groningen",
+        "digital marketing Groningen",
+        "PPC management Groningen",
+        "Groningen SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Groningen businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Groningen at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-poznan",
+      "name": "Poznan",
+      "countryCode": "PL",
+      "primaryKeyword": "SEO services in Poznan",
+      "lsiKeywords": [
+        "Poznan SEO agency",
+        "local SEO Poznan",
+        "digital marketing Poznan",
+        "PPC management Poznan",
+        "Poznan SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Poznan businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Poznan at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-braga",
+      "name": "Braga",
+      "countryCode": "PT",
+      "primaryKeyword": "SEO services in Braga",
+      "lsiKeywords": [
+        "Braga SEO agency",
+        "local SEO Braga",
+        "digital marketing Braga",
+        "PPC management Braga",
+        "Braga SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Braga businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Braga at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-curitiba",
+      "name": "Curitiba",
+      "countryCode": "BR",
+      "primaryKeyword": "SEO services in Curitiba",
+      "lsiKeywords": [
+        "Curitiba SEO agency",
+        "local SEO Curitiba",
+        "digital marketing Curitiba",
+        "PPC management Curitiba",
+        "Curitiba SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Curitiba businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Curitiba at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-fortaleza",
+      "name": "Fortaleza",
+      "countryCode": "BR",
+      "primaryKeyword": "SEO services in Fortaleza",
+      "lsiKeywords": [
+        "Fortaleza SEO agency",
+        "local SEO Fortaleza",
+        "digital marketing Fortaleza",
+        "PPC management Fortaleza",
+        "Fortaleza SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Fortaleza businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Fortaleza at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-cluj",
+      "name": "Cluj-Napoca",
+      "countryCode": "RO",
+      "primaryKeyword": "SEO services in Cluj-Napoca",
+      "lsiKeywords": [
+        "Cluj-Napoca SEO agency",
+        "local SEO Cluj-Napoca",
+        "digital marketing Cluj-Napoca",
+        "PPC management Cluj-Napoca",
+        "Cluj-Napoca SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Cluj-Napoca businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Cluj-Napoca at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-malmo",
+      "name": "Malmo",
+      "countryCode": "SE",
+      "primaryKeyword": "SEO services in Malmo",
+      "lsiKeywords": [
+        "Malmo SEO agency",
+        "local SEO Malmo",
+        "digital marketing Malmo",
+        "PPC management Malmo",
+        "Malmo SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Malmo businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Malmo at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-uppsala",
+      "name": "Uppsala",
+      "countryCode": "SE",
+      "primaryKeyword": "SEO services in Uppsala",
+      "lsiKeywords": [
+        "Uppsala SEO agency",
+        "local SEO Uppsala",
+        "digital marketing Uppsala",
+        "PPC management Uppsala",
+        "Uppsala SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Uppsala businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Uppsala at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-adana",
+      "name": "Adana",
+      "countryCode": "TR",
+      "primaryKeyword": "SEO services in Adana",
+      "lsiKeywords": [
+        "Adana SEO agency",
+        "local SEO Adana",
+        "digital marketing Adana",
+        "PPC management Adana",
+        "Adana SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Adana businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Adana at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-bursa",
+      "name": "Bursa",
+      "countryCode": "TR",
+      "primaryKeyword": "SEO services in Bursa",
+      "lsiKeywords": [
+        "Bursa SEO agency",
+        "local SEO Bursa",
+        "digital marketing Bursa",
+        "PPC management Bursa",
+        "Bursa SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Bursa businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Bursa at dusk, dark navy filter with electric blue accents"
     }
   ],
   "blogTopics": [
@@ -9813,6 +11990,86 @@
       "heroImagePrompt": "abstract editorial graphic on dark navy with electric blue and neon green accents",
       "category": "Insights",
       "datePublished": "2026-01-15"
+    },
+    {
+      "slug": "ai-seo-geo-optimization",
+      "title": "AI SEO and GEO Optimization: A 2026 Operator's Playbook",
+      "primaryKeyword": "ai seo geo optimization",
+      "lsiKeywords": [
+        "ai seo geo optimization 2026",
+        "AI search",
+        "ranking factors",
+        "content strategy",
+        "search visibility"
+      ],
+      "shortDescription": "Practical guide on ai seo geo optimization with frameworks, examples, and templates you can apply this quarter.",
+      "heroImagePrompt": "abstract editorial graphic on dark navy with electric blue and neon green accents",
+      "category": "AI Search",
+      "datePublished": "2026-02-01"
+    },
+    {
+      "slug": "google-algorithm-updates",
+      "title": "Google Algorithm Updates: How to Read Them and What to Do",
+      "primaryKeyword": "google algorithm updates",
+      "lsiKeywords": [
+        "google algorithm updates 2026",
+        "AI search",
+        "ranking factors",
+        "content strategy",
+        "search visibility"
+      ],
+      "shortDescription": "Practical guide on google algorithm updates with frameworks, examples, and templates you can apply this quarter.",
+      "heroImagePrompt": "abstract editorial graphic on dark navy with electric blue and neon green accents",
+      "category": "SEO Strategy",
+      "datePublished": "2026-02-01"
+    },
+    {
+      "slug": "on-page-seo-optimization",
+      "title": "On-Page SEO Optimization: 2026 Checklist",
+      "primaryKeyword": "on-page SEO optimization",
+      "lsiKeywords": [
+        "on-page SEO optimization 2026",
+        "AI search",
+        "ranking factors",
+        "content strategy",
+        "search visibility"
+      ],
+      "shortDescription": "Practical guide on on-page SEO optimization with frameworks, examples, and templates you can apply this quarter.",
+      "heroImagePrompt": "abstract editorial graphic on dark navy with electric blue and neon green accents",
+      "category": "Technical SEO",
+      "datePublished": "2026-02-01"
+    },
+    {
+      "slug": "scandinavian-seo-guide",
+      "title": "Scandinavian SEO Guide: Ranking in Sweden, Norway, Denmark, Finland",
+      "primaryKeyword": "scandinavian SEO",
+      "lsiKeywords": [
+        "scandinavian SEO 2026",
+        "AI search",
+        "ranking factors",
+        "content strategy",
+        "search visibility"
+      ],
+      "shortDescription": "Practical guide on scandinavian SEO with frameworks, examples, and templates you can apply this quarter.",
+      "heroImagePrompt": "abstract editorial graphic on dark navy with electric blue and neon green accents",
+      "category": "International SEO",
+      "datePublished": "2026-02-01"
+    },
+    {
+      "slug": "technical-seo-audit-checklist",
+      "title": "Technical SEO Audit Checklist: 2026 Edition",
+      "primaryKeyword": "technical SEO audit checklist",
+      "lsiKeywords": [
+        "technical SEO audit checklist 2026",
+        "AI search",
+        "ranking factors",
+        "content strategy",
+        "search visibility"
+      ],
+      "shortDescription": "Practical guide on technical SEO audit checklist with frameworks, examples, and templates you can apply this quarter.",
+      "heroImagePrompt": "abstract editorial graphic on dark navy with electric blue and neon green accents",
+      "category": "Technical SEO",
+      "datePublished": "2026-02-01"
     }
   ],
   "resources": [
@@ -10052,6 +12309,216 @@
         "SEO playbook"
       ],
       "shortDescription": "Download Site Migration Pre-Flight Checklist - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "content-writing-prompts",
+      "name": "Content Writing Prompts Pack",
+      "primaryKeyword": "content writing prompts pack",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download Content Writing Prompts Pack - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "free-seo-tools",
+      "name": "Free SEO Tools Bundle",
+      "primaryKeyword": "free seo tools bundle",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download Free SEO Tools Bundle - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "geo-aeo-guide",
+      "name": "GEO and AEO Optimization Guide",
+      "primaryKeyword": "geo and aeo optimization guide",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download GEO and AEO Optimization Guide - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "gmb-audit-checklist",
+      "name": "Google Business Profile Audit Checklist",
+      "primaryKeyword": "google business profile audit checklist",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download Google Business Profile Audit Checklist - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "google-operators",
+      "name": "Google Search Operators Cheatsheet",
+      "primaryKeyword": "google search operators cheatsheet",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download Google Search Operators Cheatsheet - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "internal-linking-guide",
+      "name": "Internal Linking Guide",
+      "primaryKeyword": "internal linking guide",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download Internal Linking Guide - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "keyword-clustering-guide",
+      "name": "Keyword Clustering Guide",
+      "primaryKeyword": "keyword clustering guide",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download Keyword Clustering Guide - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "link-building-toolkit",
+      "name": "Link Building Toolkit",
+      "primaryKeyword": "link building toolkit",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download Link Building Toolkit - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "linkedin-templates",
+      "name": "LinkedIn Content Templates",
+      "primaryKeyword": "linkedin content templates",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download LinkedIn Content Templates - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "monthly-report-template",
+      "name": "Monthly SEO Report Template",
+      "primaryKeyword": "monthly seo report template",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download Monthly SEO Report Template - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "page-speed-checklist",
+      "name": "Page Speed Optimization Checklist",
+      "primaryKeyword": "page speed optimization checklist",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download Page Speed Optimization Checklist - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "seo-career-roadmap",
+      "name": "SEO Career Roadmap",
+      "primaryKeyword": "seo career roadmap",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download SEO Career Roadmap - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "seo-proposal-template",
+      "name": "SEO Proposal Template",
+      "primaryKeyword": "seo proposal template",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download SEO Proposal Template - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "shopify-seo-guide",
+      "name": "Shopify SEO Guide",
+      "primaryKeyword": "shopify seo guide",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download Shopify SEO Guide - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "technical-seo-checklist",
+      "name": "Technical SEO Checklist",
+      "primaryKeyword": "technical seo checklist",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download Technical SEO Checklist - a battle-tested resource we use on real client engagements.",
       "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
     }
   ]

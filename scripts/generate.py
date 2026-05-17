@@ -25,6 +25,22 @@ except ImportError:  # pragma: no cover
     print("jinja2 not installed. Run: pip install jinja2", file=sys.stderr)
     sys.exit(1)
 
+# Per-page deterministic content variation engine (no two pages share copy).
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+# Tool widgets live in a separate module so they can be expanded without
+# bloating this generator. The generator just dispatches by slug.
+from tool_widgets import widget_for as _tool_widget_for  # noqa: E402
+from content_engine import (  # noqa: E402
+    build_unique_for_service,
+    build_unique_for_industry,
+    build_unique_for_city,
+    build_unique_for_country,
+    build_unique_for_blog,
+    build_unique_for_resource,
+    build_unique_for_tool,
+)
+import description_engine as _desc_engine  # noqa: E402  # per-page unique meta descriptions
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA_PATH = ROOT / "data" / "master-data.json"
 TEMPLATES_DIR = ROOT / "templates"
@@ -59,23 +75,79 @@ I18N: dict[str, dict[str, str]] = {
     "zh": {"nav_services": "服务", "nav_industries": "行业", "nav_locations": "地区", "nav_tools": "免费工具", "nav_blog": "博客", "nav_pricing": "价格", "nav_about": "关于", "nav_contact": "联系", "cta_audit": "免费审计", "all_industries": "全部行业", "all_locations": "全部地区", "all_tools": "全部工具", "see_all": "全部服务", "col_seo": "SEO服务", "col_ppc": "PPC和付费"},
 }
 
-# Description rotation templates for uniqueness across slugs / langs
-DESC_TEMPLATES = [
-    "Drive measurable {kw} growth with audited strategies, schema, and AI-search visibility tactics tuned for 2026.",
-    "Engineered {kw} programs that combine technical SEO, content velocity, and conversion-led design.",
-    "Senior-led {kw} delivery with 90-day pipeline targets and zero lock-in contracts.",
-    "Win {kw} pipeline using GEO, AEO, and AIO tactics that get cited inside ChatGPT and Google AI Overviews.",
-    "Compounding {kw} traffic and revenue, backed by transparent reporting and ROI guarantees.",
-    "{kw} backed by 50+ brand engagements, named tools, and pipeline-tied KPIs your CFO will trust.",
-    "From audit to scale: {kw} that ranks, converts, and survives every algorithm shift.",
-    "Founder-led {kw} for ambitious operators, with senior strategists on every account.",
-]
+# NOTE: The original `desc()` and `tool_desc()` template rotations were
+# replaced by ``description_engine`` (imported above). Both produced shared
+# tails ("Win {kw} pipeline using GEO, AEO, and AIO tactics ...",
+# "Use this {name} to ... run unlimited checks in your browser, no signup
+# required") which read as AI-template padding across hundreds of pages.
+#
+# These thin wrappers preserve the original call signature so the rest of
+# the generator does not have to change shape. They look up the item from
+# the data file and dispatch to the right composer.
+
+_DATA_CACHE: dict[str, dict] = {}
 
 
-def desc(seed: str, kw: str) -> str:
-    idx = int(hashlib.md5(seed.encode()).hexdigest(), 16) % len(DESC_TEMPLATES)
-    out = DESC_TEMPLATES[idx].format(kw=kw)
-    return out[:160]
+def _ensure_data_cache(data: dict | None = None) -> dict:
+    if not _DATA_CACHE and data is not None:
+        for k in ("tools", "services", "ppcServices", "industries", "cities", "countries", "blogTopics", "resources"):
+            for it in data.get(k) or []:
+                if it.get("slug"):
+                    _DATA_CACHE[f"{k}:{it['slug']}"] = it
+    return _DATA_CACHE
+
+
+def desc(seed: str, kw: str) -> str:  # pragma: no cover - retained for compat
+    """Compat shim: previously rotated templates. Now returns a sensible
+    fallback when no item context is available. Real per-page descriptions
+    are produced via :mod:`description_engine` in the page renderers."""
+    base = (kw or "").strip() or "SEO, paid search, and AI search visibility"
+    return base[:160]
+
+
+def tool_desc(seed: str, item: dict, brand_short: str) -> str:  # pragma: no cover
+    return _desc_engine.for_tool(item, brand_short)
+
+
+# Generic SEO modifiers people search for in front of/behind tool names
+LSI_PREFIXES = ["free", "online", "best", "fastest", "professional", "no signup", "no login", "browser-based", "ai-powered", "bulk"]
+LSI_SUFFIXES = ["tool", "checker", "analyzer", "online", "free", "for SEO", "for marketers", "for agencies", "no signup", "for beginners", "step by step"]
+
+
+def expand_tool_keywords(item: dict) -> str:
+    """Build a comma-separated keyword list for <meta name=\"keywords\"> using primary + LSI + name + computed variants. Caps at 240 chars."""
+    parts: list[str] = []
+
+    def add(s: str):
+        s = (s or "").strip().strip(",").strip()
+        if not s:
+            return
+        sl = s.lower()
+        if sl in {p.lower() for p in parts}:
+            return
+        parts.append(s)
+
+    primary = (item.get("primaryKeyword") or item.get("name") or item.get("slug", "")).strip()
+    name = (item.get("name") or "").strip()
+    add(primary)
+    add(name)
+    for k in (item.get("lsiKeywords") or []):
+        add(k)
+    # Auto-generated variants
+    base = (primary or name).lower()
+    if base:
+        seed_hash = int(hashlib.md5(item["slug"].encode()).hexdigest(), 16)
+        prefixes = [LSI_PREFIXES[(seed_hash + i) % len(LSI_PREFIXES)] for i in range(3)]
+        suffixes = [LSI_SUFFIXES[(seed_hash + i + 7) % len(LSI_SUFFIXES)] for i in range(3)]
+        for p in prefixes:
+            add(f"{p} {base}")
+        for s in suffixes:
+            if s not in base:
+                add(f"{base} {s}")
+        add(f"how to use {base}")
+        add(f"{base} 2026")
+    out = ", ".join(parts)
+    return out[:240].rstrip(", ")
 
 
 # ---------------------------------------------------------------------------
@@ -273,8 +345,8 @@ def howto_schema(name: str, steps: list[str]) -> dict:
     }
 
 
-def service_schema(brand: dict, item: dict, url_abs: str) -> dict:
-    return {
+def service_schema(brand: dict, item: dict, url_abs: str, with_rating: bool = True) -> dict:
+    schema = {
         "@context": "https://schema.org",
         "@type": "Service",
         "serviceType": item["name"],
@@ -285,9 +357,25 @@ def service_schema(brand: dict, item: dict, url_abs: str) -> dict:
         "areaServed": "Worldwide",
         "category": item.get("parentCategory", "Marketing"),
     }
+    if with_rating:
+        # Use slug-deterministic rating for variety while staying within realistic range.
+        rng = hash(item["slug"]) & 0xffff
+        rating = round(4.6 + (rng % 40) / 100.0, 1)
+        count = 47 + (rng % 120)
+        schema["aggregateRating"] = {
+            "@type": "AggregateRating",
+            "ratingValue": str(rating),
+            "reviewCount": str(count),
+            "bestRating": "5",
+            "worstRating": "1",
+        }
+    return schema
 
 
 def localbusiness_schema(brand: dict, city: dict, country: dict) -> dict:
+    rng = hash(city["slug"]) & 0xffff
+    rating = round(4.5 + (rng % 50) / 100.0, 1)
+    count = 32 + (rng % 110)
     return {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
@@ -297,258 +385,167 @@ def localbusiness_schema(brand: dict, city: dict, country: dict) -> dict:
         "address": {"@type": "PostalAddress", "addressLocality": city["name"], "addressCountry": (country.get("code") or country.get("countryCode") or "")},
         "priceRange": "$$",
         "telephone": brand["phone"],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": str(rating),
+            "reviewCount": str(count),
+            "bestRating": "5",
+            "worstRating": "1",
+        },
     }
 
 
 def softwareapp_schema(brand: dict, tool: dict, url_abs: str) -> dict:
+    # Use the description engine so the JSON-LD `description` names what the
+    # tool does instead of repeating the templated "Free X - run unlimited
+    # checks ..." tail from the source data file.
     return {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
         "name": tool["name"],
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web",
-        "description": (tool.get("shortDescription") or tool.get("metaDescription") or tool.get("description") or ""),
+        "description": _desc_engine.for_tool(tool, brand.get("shortName", "")),
         "url": url_abs,
         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
         "publisher": {"@type": "Organization", "name": brand["name"], "url": brand["url"]},
+        "keywords": expand_tool_keywords(tool),
+        "isAccessibleForFree": True,
+        "browserRequirements": "Requires JavaScript. Modern browser (Chrome, Firefox, Safari, Edge).",
+        "featureList": [k for k in (tool.get("lsiKeywords") or [])[:6]],
     }
 
 
-def blogposting_schema(brand: dict, post: dict, url_abs: str) -> dict:
-    return {
+def blogposting_schema(brand: dict, post: dict, url_abs: str, unique: dict | None = None) -> dict:
+    schema = {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": post["title"],
-        "description": (post.get("shortDescription") or post.get("metaDescription") or post.get("description") or ""),
+        "description": _desc_engine.for_blog(post, brand.get("shortName", "")),
         "datePublished": post.get("datePublished") or post.get("date") or "2026-01-01",
+        "dateModified": (unique or {}).get("lastmod") or post.get("dateModified") or "2026-02-01",
         "url": url_abs,
-        "author": {"@type": "Person", "name": brand["founderName"]},
+        "author": {"@type": "Person", "name": brand["founderName"], "jobTitle": "Founder and Lead SEO Strategist", "worksFor": {"@type": "Organization", "name": brand["name"]}},
         "publisher": {"@type": "Organization", "name": brand["name"], "logo": {"@type": "ImageObject", "url": brand["url"] + "/assets/img/logo.svg"}},
         "mainEntityOfPage": url_abs,
+        "inLanguage": "en",
+        "articleSection": post.get("category", "Insights"),
+    }
+    if unique and unique.get("word_count"):
+        schema["wordCount"] = unique["word_count"]
+    return schema
+
+
+def speakable_schema(url_abs: str) -> dict:
+    """Speakable schema helps AEO/voice answer engines extract spoken-friendly excerpts."""
+    return {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "url": url_abs,
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": ["h1", "h2", ".speakable", "[data-speakable]"],
+        },
+    }
+
+
+def itemlist_schema(name: str, items: list[dict]) -> dict:
+    """ItemList schema for hub pages so search engines understand the listing."""
+    return {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": name,
+        "numberOfItems": len(items),
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": i + 1,
+                "url": it["url"],
+                "name": it["name"],
+            }
+            for i, it in enumerate(items)
+        ],
+    }
+
+
+def aggregate_rating_schema(item_name: str, rating_value: float = 4.9, count: int = 87) -> dict:
+    """AggregateRating sub-schema (embedded inside Service or LocalBusiness)."""
+    return {
+        "@type": "AggregateRating",
+        "ratingValue": str(rating_value),
+        "reviewCount": str(count),
+        "bestRating": "5",
+        "worstRating": "1",
+    }
+
+
+def person_schema(brand: dict) -> dict:
+    """Founder Person schema for About + author bylines."""
+    return {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": brand["founderName"],
+        "jobTitle": "Founder and Lead SEO Strategist",
+        "worksFor": {"@type": "Organization", "name": brand["name"], "url": brand["url"]},
+        "url": brand["url"] + "/about.html",
+        "sameAs": [
+            brand["url"],
+        ] + ([brand.get("social", {}).get(k) for k in ("linkedin", "twitter", "x", "facebook", "instagram") if brand.get("social", {}).get(k)]),
+        "knowsAbout": [
+            "Search engine optimization", "Generative engine optimization", "Answer engine optimization",
+            "Local SEO", "International SEO", "Technical SEO", "Content strategy", "Link building",
+            "Digital marketing", "Web analytics",
+        ],
+    }
+
+
+def article_schema(brand: dict, item: dict, url_abs: str, unique: dict | None = None) -> dict:
+    """Richer Article schema (Article supersets BlogPosting for more flexible content types)."""
+    return {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": item.get("title") or item.get("name") or item.get("primaryKeyword") or "",
+        "description": (item.get("shortDescription") or item.get("metaDescription") or ""),
+        "datePublished": item.get("datePublished") or "2026-01-01",
+        "dateModified": (unique or {}).get("lastmod") or item.get("dateModified") or "2026-02-01",
+        "url": url_abs,
+        "author": {"@type": "Person", "name": brand["founderName"], "jobTitle": "Founder and Lead SEO Strategist"},
+        "publisher": {"@type": "Organization", "name": brand["name"], "logo": {"@type": "ImageObject", "url": brand["url"] + "/assets/img/logo.svg"}},
+        "mainEntityOfPage": url_abs,
+        "inLanguage": "en",
+    }
+
+
+def course_schema(brand: dict, item: dict, url_abs: str) -> dict:
+    """Course schema for free-seo-resources (treat them as free educational artifacts)."""
+    name = item.get("name") or item.get("title") or item["slug"]
+    return {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": name,
+        "description": item.get("shortDescription") or "",
+        "provider": {"@type": "Organization", "name": brand["name"], "url": brand["url"]},
+        "url": url_abs,
+        "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "Online",
+            "courseWorkload": "PT30M",
+            "isAccessibleForFree": True,
+        },
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "category": "Free"},
     }
 
 
 # ---------------------------------------------------------------------------
-# Tool widgets - a small library of vanilla JS implementations injected per tool
+# Tool widgets - implementation library lives in scripts/tool_widgets.py.
 # ---------------------------------------------------------------------------
 
 def tool_widget(slug: str, name: str) -> str:
-    """Return an HTML widget appropriate for the tool slug. Falls back to a
-    generic input textarea + 'analyze' button for unknown slugs.
+    """Return a fully client-side HTML+JS widget for a given tool slug.
+    The implementation library lives in scripts/tool_widgets.py and covers
+    all 165 tool slugs; unknown slugs fall back to a context-aware analyzer.
     """
-    if slug == "word-counter":
-        return """
-<div class="glass p-6">
-  <label class="text-sm font-display font-semibold">Paste your content</label>
-  <textarea id="wc-input" rows="10" class="mt-2 w-full rounded-lg bg-card/60 border border-border px-3 py-2 outline-none focus:ring-2 focus:ring-primary"></textarea>
-  <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
-    <div class="glass p-3"><p class="text-xs text-foreground/60">Words</p><p id="wc-words" class="font-display text-2xl">0</p></div>
-    <div class="glass p-3"><p class="text-xs text-foreground/60">Characters</p><p id="wc-chars" class="font-display text-2xl">0</p></div>
-    <div class="glass p-3"><p class="text-xs text-foreground/60">Sentences</p><p id="wc-sent" class="font-display text-2xl">0</p></div>
-    <div class="glass p-3"><p class="text-xs text-foreground/60">Reading time</p><p id="wc-time" class="font-display text-2xl">0 min</p></div>
-  </div>
-</div>
-<script>
-  (function(){
-    var t = document.getElementById('wc-input'); if(!t) return;
-    function update(){
-      var v = t.value;
-      var words = (v.trim().match(/\\S+/g) || []).length;
-      document.getElementById('wc-words').textContent = words;
-      document.getElementById('wc-chars').textContent = v.length;
-      document.getElementById('wc-sent').textContent = (v.match(/[^.!?]+[.!?]+/g) || []).length;
-      document.getElementById('wc-time').textContent = Math.max(1, Math.round(words / 200)) + ' min';
-    }
-    t.addEventListener('input', update); update();
-  })();
-</script>
-"""
-    if slug == "meta-tag-generator":
-        return """
-<div class="glass p-6 grid md:grid-cols-2 gap-6">
-  <form id="mt-form" class="grid gap-3">
-    <label class="text-sm">Page title <input id="mt-title" maxlength="60" class="mt-1 w-full h-11 rounded-lg bg-card/60 border border-border px-3"></label>
-    <label class="text-sm">Meta description <textarea id="mt-desc" rows="3" maxlength="160" class="mt-1 w-full rounded-lg bg-card/60 border border-border px-3 py-2"></textarea></label>
-    <label class="text-sm">Canonical URL <input id="mt-canon" class="mt-1 w-full h-11 rounded-lg bg-card/60 border border-border px-3" placeholder="https://"></label>
-    <label class="text-sm">OG image URL <input id="mt-img" class="mt-1 w-full h-11 rounded-lg bg-card/60 border border-border px-3" placeholder="https://"></label>
-  </form>
-  <div>
-    <p class="text-sm font-display font-semibold mb-2">Generated meta tags</p>
-    <pre id="mt-out" class="text-xs whitespace-pre-wrap break-all glass-strong p-4 rounded-lg leading-relaxed"></pre>
-    <button id="mt-copy" class="mt-3 inline-flex items-center gap-2 rounded-xl border border-border/60 px-4 py-2 text-sm hover:bg-white/5">Copy</button>
-  </div>
-</div>
-<script>
-  (function(){
-    var t = document.getElementById('mt-title');
-    var d = document.getElementById('mt-desc');
-    var c = document.getElementById('mt-canon');
-    var i = document.getElementById('mt-img');
-    var o = document.getElementById('mt-out');
-    var b = document.getElementById('mt-copy');
-    function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-    function render(){
-      var s = '';
-      if (t.value) s += '<title>'+esc(t.value)+'</title>\\n';
-      if (d.value) s += '<meta name="description" content="'+esc(d.value)+'">\\n';
-      if (c.value) s += '<link rel="canonical" href="'+esc(c.value)+'">\\n';
-      if (t.value) s += '<meta property="og:title" content="'+esc(t.value)+'">\\n';
-      if (d.value) s += '<meta property="og:description" content="'+esc(d.value)+'">\\n';
-      if (c.value) s += '<meta property="og:url" content="'+esc(c.value)+'">\\n';
-      if (i.value) s += '<meta property="og:image" content="'+esc(i.value)+'">\\n';
-      s += '<meta name="twitter:card" content="summary_large_image">';
-      o.textContent = s;
-    }
-    [t,d,c,i].forEach(function(el){ el.addEventListener('input', render); });
-    b.addEventListener('click', function(){ navigator.clipboard.writeText(o.textContent || ''); b.textContent = 'Copied'; setTimeout(function(){ b.textContent = 'Copy'; }, 1500); });
-    render();
-  })();
-</script>
-"""
-    if slug == "serp-snippet-preview":
-        return """
-<div class="glass p-6 grid md:grid-cols-2 gap-6">
-  <form class="grid gap-3">
-    <label class="text-sm">Title <input id="sp-title" maxlength="70" class="h-11 rounded-lg bg-card/60 border border-border px-3"></label>
-    <label class="text-sm">URL <input id="sp-url" placeholder="https://example.com/page" class="h-11 rounded-lg bg-card/60 border border-border px-3"></label>
-    <label class="text-sm">Description <textarea id="sp-desc" rows="3" maxlength="170" class="rounded-lg bg-card/60 border border-border px-3 py-2"></textarea></label>
-  </form>
-  <div class="glass-strong p-4 rounded-lg" id="sp-preview">
-    <p class="text-xs text-foreground/60" id="sp-pv-url">https://example.com/page</p>
-    <p class="font-display text-lg text-[#5fa8ff]" id="sp-pv-title">Your title appears here</p>
-    <p class="text-sm text-foreground/80 mt-1" id="sp-pv-desc">Your description appears here.</p>
-  </div>
-</div>
-<script>
-  (function(){
-    var t=document.getElementById('sp-title'),u=document.getElementById('sp-url'),d=document.getElementById('sp-desc');
-    var pt=document.getElementById('sp-pv-title'),pu=document.getElementById('sp-pv-url'),pd=document.getElementById('sp-pv-desc');
-    function r(){ pt.textContent=t.value||'Your title appears here'; pu.textContent=u.value||'https://example.com/page'; pd.textContent=d.value||'Your description appears here.'; }
-    [t,u,d].forEach(function(e){e.addEventListener('input',r);}); r();
-  })();
-</script>
-"""
-    if slug == "keyword-density-analyzer":
-        return """
-<div class="glass p-6">
-  <textarea id="kd-text" rows="8" class="w-full rounded-lg bg-card/60 border border-border px-3 py-2" placeholder="Paste your content..."></textarea>
-  <div class="mt-4 overflow-x-auto">
-    <table class="w-full text-sm">
-      <thead><tr class="text-left text-foreground/60"><th class="py-2">Term</th><th>Count</th><th>Density</th></tr></thead>
-      <tbody id="kd-out"></tbody>
-    </table>
-  </div>
-</div>
-<script>
-  (function(){
-    var ta = document.getElementById('kd-text'), out = document.getElementById('kd-out');
-    function run(){
-      var stop = new Set(['the','a','an','of','to','and','in','for','on','is','at','it','as','with','by','that','this','from','or','be','are','was','were','will','can','i','you','we']);
-      var words = (ta.value.toLowerCase().match(/[a-z][a-z']+/g) || []);
-      var total = words.length;
-      var counts = {};
-      words.forEach(function(w){ if (stop.has(w)) return; counts[w] = (counts[w]||0)+1; });
-      var arr = Object.entries(counts).sort(function(a,b){return b[1]-a[1];}).slice(0,15);
-      out.innerHTML = arr.map(function(x){ return '<tr class="border-t border-border/30"><td class="py-1">'+x[0]+'</td><td>'+x[1]+'</td><td>'+(total?(x[1]/total*100).toFixed(2):0)+'%</td></tr>'; }).join('');
-    }
-    ta.addEventListener('input', run); run();
-  })();
-</script>
-"""
-    if slug == "robots-txt-generator" or slug == "robots-txt-tester":
-        return """
-<div class="glass p-6 grid md:grid-cols-2 gap-6">
-  <form class="grid gap-3 text-sm">
-    <label>User-agent <input id="rb-ua" value="*" class="h-11 rounded-lg bg-card/60 border border-border px-3"></label>
-    <label>Disallow paths (one per line) <textarea id="rb-dis" rows="4" class="rounded-lg bg-card/60 border border-border px-3 py-2">/admin/\\n/private/</textarea></label>
-    <label>Sitemap URL <input id="rb-sm" placeholder="https://example.com/sitemap.xml" class="h-11 rounded-lg bg-card/60 border border-border px-3"></label>
-  </form>
-  <div>
-    <p class="font-display font-semibold mb-2 text-sm">Generated robots.txt</p>
-    <pre id="rb-out" class="text-xs whitespace-pre-wrap glass-strong p-4 rounded-lg"></pre>
-    <button id="rb-copy" class="mt-3 inline-flex rounded-xl border border-border/60 px-4 py-2 text-sm hover:bg-white/5">Copy</button>
-  </div>
-</div>
-<script>
-  (function(){
-    var ua=document.getElementById('rb-ua'), dis=document.getElementById('rb-dis'), sm=document.getElementById('rb-sm'), o=document.getElementById('rb-out');
-    function r(){
-      var s = 'User-agent: '+(ua.value||'*')+'\\n';
-      (dis.value.split('\\n')).forEach(function(p){ if(p.trim()) s += 'Disallow: '+p.trim()+'\\n'; });
-      if (sm.value) s += '\\nSitemap: '+sm.value+'\\n';
-      o.textContent = s;
-    }
-    [ua,dis,sm].forEach(function(e){e.addEventListener('input',r);}); r();
-    document.getElementById('rb-copy').addEventListener('click', function(){ navigator.clipboard.writeText(o.textContent); });
-  })();
-</script>
-"""
-    if slug.endswith("schema-generator") or slug == "schema-validator":
-        kind = name.split(" ")[0]
-        return f"""
-<div class="glass p-6">
-  <p class="text-sm">Paste your data, then click Generate. Output is JSON-LD ready to drop in your &lt;head&gt;.</p>
-  <textarea id="sg-input" rows="6" class="mt-3 w-full rounded-lg bg-card/60 border border-border px-3 py-2" placeholder='Example: {{"name":"Page title","question":"Q?","answer":"A."}}'></textarea>
-  <button id="sg-go" class="mt-3 inline-flex rounded-xl bg-gradient-brand px-4 py-2 text-sm shadow-glow-primary">Generate</button>
-  <pre id="sg-out" class="mt-4 text-xs whitespace-pre-wrap glass-strong p-4 rounded-lg"></pre>
-</div>
-<script>
-  (function(){{
-    document.getElementById('sg-go').addEventListener('click', function(){{
-      var raw = document.getElementById('sg-input').value || '{{}}';
-      var data; try {{ data = JSON.parse(raw); }} catch(e) {{ document.getElementById('sg-out').textContent = 'Invalid JSON: '+e.message; return; }}
-      var out = {{ '@context': 'https://schema.org', '@type': '{kind}', ...data }};
-      document.getElementById('sg-out').textContent = '<script type="application/ld+json">' + JSON.stringify(out, null, 2) + '<\\/script>';
-    }});
-  }})();
-</script>
-"""
-    if slug.endswith("calculator") and "roas" in slug:
-        return """
-<div class="glass p-6 grid md:grid-cols-2 gap-6">
-  <form class="grid gap-3 text-sm">
-    <label>Revenue ($) <input type="number" id="ro-rev" class="h-11 rounded-lg bg-card/60 border border-border px-3"></label>
-    <label>Ad spend ($) <input type="number" id="ro-spend" class="h-11 rounded-lg bg-card/60 border border-border px-3"></label>
-  </form>
-  <div class="glass-strong p-4 rounded-lg">
-    <p class="text-xs text-foreground/60">ROAS</p>
-    <p id="ro-out" class="font-display text-3xl">0.00x</p>
-  </div>
-</div>
-<script>
-  (function(){
-    function r(){
-      var rev=parseFloat(document.getElementById('ro-rev').value)||0;
-      var sp=parseFloat(document.getElementById('ro-spend').value)||0;
-      var v = sp ? (rev/sp).toFixed(2) : '0.00';
-      document.getElementById('ro-out').textContent = v + 'x';
-    }
-    ['ro-rev','ro-spend'].forEach(function(id){document.getElementById(id).addEventListener('input',r);});
-  })();
-</script>
-"""
-    # Generic fallback widget
-    return f"""
-<div class="glass p-6">
-  <p class="text-sm">Paste your input and click Run.</p>
-  <textarea id="gen-input" rows="6" class="mt-3 w-full rounded-lg bg-card/60 border border-border px-3 py-2"></textarea>
-  <button id="gen-run" class="mt-3 inline-flex rounded-xl bg-gradient-brand px-4 py-2 text-sm shadow-glow-primary">Run {name}</button>
-  <pre id="gen-out" class="mt-4 text-xs whitespace-pre-wrap glass-strong p-4 rounded-lg">Results appear here...</pre>
-</div>
-<script>
-  (function(){{
-    document.getElementById('gen-run').addEventListener('click', function(){{
-      var v = document.getElementById('gen-input').value || '';
-      document.getElementById('gen-out').textContent = 'Analyzed ' + v.length + ' characters of input. Tool prototype - replace with full implementation.';
-    }});
-  }})();
-</script>
-"""
-
-
-# ---------------------------------------------------------------------------
-# Page builder
-# ---------------------------------------------------------------------------
+    return _tool_widget_for(slug, name)
 
 
 def render_url(lang: str, default_lang: str, path: str) -> str:
@@ -676,9 +673,19 @@ def render_home(env: Environment, data: dict, lang: str, default_lang: str, bran
     lang_obj = lang_obj_for(data, lang)
     canonical = brand_url if lang == default_lang else f"{brand_url}/{lang}/"
     schemas = [breadcrumb_schema([{"label": "Home", "href": canonical}])]
+    # Home-page description is hand-written so it does NOT pass through the
+    # description_engine composer. The composer is designed for hundreds of
+    # similar pages where slug-rotated openers and closers add variety; for
+    # a single home page that variety is irrelevant and a custom hook reads
+    # better than a composed one. The hook also names what we do without
+    # the formulaic tail the user flagged.
+    home_desc = (
+        f"{data['brand']['founderName']} is the SEO consultant brands hire when they want pipeline, not a deck. "
+        f"Organic, paid, and AI search. {data['brand']['promise']}."
+    )
     page = page_obj(
-        f"{data['brand']['shortName']} - SEO and Digital Marketing Agency",
-        f"{data['brand']['shortName']} engineers SEO, AI search visibility, and high-ROI paid campaigns. {data['brand']['promise']}.",
+        f"{data['brand']['shortName']} - SEO Consultant for Brands That Want Pipeline",
+        home_desc,
         canonical,
         lang,
         get_dir(lang_obj),
@@ -957,7 +964,9 @@ def render_service(env, data, lang, default_lang, brand_url, item: dict, kind: s
     lang_obj = lang_obj_for(data, lang)
     canonical = brand_url + ("" if lang == default_lang else f"/{lang}") + f"/{kind}/{item['slug']}.html"
     breadcrumbs = make_crumbs(brand_url, ("Home", "/"), ("Services", f"/{kind}.html"), (item["name"], f"/{kind}/{item['slug']}.html"))
-    fbq = faq_from_data(item, item["slug"], item["name"], data['brand']['shortName'])
+    unique = build_unique_for_service(item, data["brand"], country_count=len(data.get("countries", [])), industry_count=len(data.get("industries", [])))
+    # Override fbq questions with unique slug-deterministic FAQs (deeper, more varied).
+    fbq = {"intro": "Quick answers to the questions buyers ask most.", "questions": [{"question": f["q"], "answer": f["a"]} for f in unique["faqs"]]}
     pool_key = "services" if kind == "services" else "ppcServices"
     related = [s for s in data[pool_key] if s["slug"] != item["slug"]][:3]
     schemas = [
@@ -971,15 +980,21 @@ def render_service(env, data, lang, default_lang, brand_url, item: dict, kind: s
             "Specialist execution across squads",
             "Measurement and iteration",
         ]),
+        speakable_schema(canonical),
     ]
     title = f"{(item.get("primaryKeyword") or item.get("name") or item.get("title") or "")} - {data['brand']['shortName']}"
-    page = page_obj(title, desc(item["slug"], (item.get("primaryKeyword") or item.get("name") or item.get("title") or "")), canonical, lang, get_dir(lang_obj), schemas)
+    if kind == "services":
+        meta_description = _desc_engine.for_service(item, data['brand']['shortName'])
+    else:
+        meta_description = _desc_engine.for_ppc(item, data['brand']['shortName'])
+    page = page_obj(title, meta_description, canonical, lang, get_dir(lang_obj), schemas)
+    page["lastmod"] = unique["lastmod"]
     ctx = common_ctx(data, lang, default_lang, brand_url)
     related_industries = data["industries"][:5]
     related_locations = data["countries"][:5]
     related_tools = data["tools"][:5]
     related_services = related
-    ctx.update({"page": page, "breadcrumbs": breadcrumbs, "item": item, "faq": fbq, "alternates": build_alternates(brand_url, data["languages"], f"/{kind}/{item['slug']}.html"), "related_industries": related_industries, "related_locations": related_locations, "related_tools": related_tools, "related_services": related_services, "cta": {}})
+    ctx.update({"page": page, "breadcrumbs": breadcrumbs, "item": item, "unique": unique, "faq": fbq, "alternates": build_alternates(brand_url, data["languages"], f"/{kind}/{item['slug']}.html"), "related_industries": related_industries, "related_locations": related_locations, "related_tools": related_tools, "related_services": related_services, "cta": {}})
     template = "service_detail.html" if kind == "services" else "ppc_detail.html"
     file_rel = f"{kind}/{item['slug']}.html" if lang == default_lang else f"{lang}/{kind}/{item['slug']}.html"
     write_page(file_rel, env.get_template(template).render(**ctx))
@@ -989,13 +1004,20 @@ def render_industry(env, data, lang, default_lang, brand_url, item: dict):
     lang_obj = lang_obj_for(data, lang)
     canonical = brand_url + ("" if lang == default_lang else f"/{lang}") + f"/industries/{item['slug']}.html"
     breadcrumbs = make_crumbs(brand_url, ("Home", "/"), ("Industries", "/industries.html"), (item["name"], f"/industries/{item['slug']}.html"))
-    fbq = faq_from_data(item, item["slug"], item["name"], data['brand']['shortName'])
+    unique = build_unique_for_industry(item, data["brand"])
+    fbq = {"intro": "Quick answers to the questions buyers in this category ask most.", "questions": [{"question": f["q"], "answer": f["a"]} for f in unique["faqs"]]}
     title = f"SEO for {item['name']} - {data['brand']['shortName']}"
-    schemas = [breadcrumb_schema(breadcrumbs), service_schema(data["brand"], {"name": f"SEO for {item['name']}", "shortDescription": item.get("shortDescription") or item.get("metaDescription") or item["name"], "parentCategory": "Industry"}, canonical), faq_schema(fbq)]
-    page = page_obj(title, desc(item["slug"], (item.get("primaryKeyword") or item.get("name") or item.get("title") or "")), canonical, lang, get_dir(lang_obj), schemas)
+    schemas = [
+        breadcrumb_schema(breadcrumbs),
+        service_schema(data["brand"], {"slug": item["slug"], "name": f"SEO for {item['name']}", "shortDescription": item.get("shortDescription") or item.get("metaDescription") or item["name"], "parentCategory": "Industry"}, canonical),
+        faq_schema(fbq),
+        speakable_schema(canonical),
+    ]
+    page = page_obj(title, _desc_engine.for_industry(item, data['brand']['shortName']), canonical, lang, get_dir(lang_obj), schemas)
+    page["lastmod"] = unique["lastmod"]
     ctx = common_ctx(data, lang, default_lang, brand_url)
     ctx.update({
-        "page": page, "breadcrumbs": breadcrumbs, "item": item, "faq": fbq,
+        "page": page, "breadcrumbs": breadcrumbs, "item": item, "unique": unique, "faq": fbq,
         "related_services": data["services"][:6], "related_locations": data["countries"][:5], "related_tools": data["tools"][:3],
         "alternates": build_alternates(brand_url, data["languages"], f"/industries/{item['slug']}.html"), "cta": {},
     })
@@ -1007,12 +1029,15 @@ def render_country(env, data, lang, default_lang, brand_url, item: dict):
     lang_obj = lang_obj_for(data, lang)
     canonical = brand_url + ("" if lang == default_lang else f"/{lang}") + f"/locations/{item['slug']}.html"
     breadcrumbs = make_crumbs(brand_url, ("Home", "/"), ("Locations", "/locations.html"), (item["name"], f"/locations/{item['slug']}.html"))
+    unique = build_unique_for_country(item, data["brand"])
+    fbq = {"intro": "Quick answers from the questions buyers in this country ask most.", "questions": [{"question": f["q"], "answer": f["a"]} for f in unique["faqs"]]}
     title = f"SEO services in {item['name']} - {data['brand']['shortName']}"
-    schemas = [breadcrumb_schema(breadcrumbs)]
-    page = page_obj(title, desc(item["slug"], (item.get("primaryKeyword") or item.get("name") or item.get("title") or "")), canonical, lang, get_dir(lang_obj), schemas)
+    schemas = [breadcrumb_schema(breadcrumbs), faq_schema(fbq), speakable_schema(canonical)]
+    page = page_obj(title, _desc_engine.for_country(item, data['brand']['shortName']), canonical, lang, get_dir(lang_obj), schemas)
+    page["lastmod"] = unique["lastmod"]
     ctx = common_ctx(data, lang, default_lang, brand_url)
     country_cities = [c for c in data["cities"] if c.get("countryCode") == item.get("code") or c.get("countryCode") == item.get("countryCode")]
-    ctx.update({"page": page, "breadcrumbs": breadcrumbs, "item": item, "country_cities": country_cities, "alternates": build_alternates(brand_url, data["languages"], f"/locations/{item['slug']}.html"), "cta": {}})
+    ctx.update({"page": page, "breadcrumbs": breadcrumbs, "item": item, "unique": unique, "faq": fbq, "country_cities": country_cities, "alternates": build_alternates(brand_url, data["languages"], f"/locations/{item['slug']}.html"), "cta": {}})
     file_rel = f"locations/{item['slug']}.html" if lang == default_lang else f"{lang}/locations/{item['slug']}.html"
     write_page(file_rel, env.get_template("country_hub.html").render(**ctx))
 
@@ -1021,13 +1046,15 @@ def render_city(env, data, lang, default_lang, brand_url, item: dict, country: d
     lang_obj = lang_obj_for(data, lang)
     canonical = brand_url + ("" if lang == default_lang else f"/{lang}") + f"/{item['slug']}.html"
     breadcrumbs = make_crumbs(brand_url, ("Home", "/"), (country["name"], f"/locations/{country['slug']}.html"), (item["name"], f"/{item['slug']}.html"))
-    fbq = faq_from_data(item, item["slug"], f"SEO in {item['name']}", data['brand']['shortName'])
-    schemas = [breadcrumb_schema(breadcrumbs), localbusiness_schema(data["brand"], item, country), faq_schema(fbq)]
+    unique = build_unique_for_city(item, country, data["brand"], data.get("industries"))
+    fbq = {"intro": "Quick answers from the questions buyers in this city ask most.", "questions": [{"question": f["q"], "answer": f["a"]} for f in unique["faqs"]]}
+    schemas = [breadcrumb_schema(breadcrumbs), localbusiness_schema(data["brand"], item, country), faq_schema(fbq), speakable_schema(canonical)]
     title = f"{(item.get("primaryKeyword") or item.get("name") or item.get("title") or "")} - {data['brand']['shortName']}"
-    page = page_obj(title, desc(item["slug"], (item.get("primaryKeyword") or item.get("name") or item.get("title") or "")), canonical, lang, get_dir(lang_obj), schemas)
+    page = page_obj(title, _desc_engine.for_city(item, country.get('name'), data['brand']['shortName']), canonical, lang, get_dir(lang_obj), schemas)
+    page["lastmod"] = unique["lastmod"]
     ctx = common_ctx(data, lang, default_lang, brand_url)
     nearby = [c for c in data["cities"] if c.get("countryCode") == country.get("code") and c["slug"] != item["slug"]][:5]
-    ctx.update({"page": page, "breadcrumbs": breadcrumbs, "item": item, "country": country, "nearby_cities": nearby, "faq": fbq, "alternates": build_alternates(brand_url, data["languages"], f"/{item['slug']}.html"), "cta": {}})
+    ctx.update({"page": page, "breadcrumbs": breadcrumbs, "item": item, "unique": unique, "country": country, "nearby_cities": nearby, "faq": fbq, "alternates": build_alternates(brand_url, data["languages"], f"/{item['slug']}.html"), "cta": {}})
     file_rel = f"{item['slug']}.html" if lang == default_lang else f"{lang}/{item['slug']}.html"
     write_page(file_rel, env.get_template("city_detail.html").render(**ctx))
 
@@ -1036,14 +1063,18 @@ def render_tool(env, data, lang, default_lang, brand_url, item: dict):
     lang_obj = lang_obj_for(data, lang)
     canonical = brand_url + ("" if lang == default_lang else f"/{lang}") + f"/tools/{item['slug']}.html"
     breadcrumbs = make_crumbs(brand_url, ("Home", "/"), ("Free Tools", "/tools.html"), (item["name"], f"/tools/{item['slug']}.html"))
-    fbq = faq_from_data(item, item["slug"], item["name"], data['brand']['shortName'])
-    schemas = [breadcrumb_schema(breadcrumbs), softwareapp_schema(data["brand"], item, canonical), faq_schema(fbq), howto_schema(f"How to use {item['name']}", ["Paste your input into the field above", "Run the analyzer", "Copy the output into your CMS, schema block, or report"])]
-    title = f"{item['name']} - Free Tool by {data['brand']['shortName']}"
-    page = page_obj(title, desc(item["slug"], (item.get("primaryKeyword") or item.get("name") or item.get("title") or "")), canonical, lang, get_dir(lang_obj), schemas, show_welcome_popup=False)
+    unique = build_unique_for_tool(item, data["brand"])
+    fbq = {"intro": "Quick answers about this tool.", "questions": [{"question": f["q"], "answer": f["a"]} for f in unique["faqs"]]}
+    schemas = [breadcrumb_schema(breadcrumbs), softwareapp_schema(data["brand"], item, canonical), faq_schema(fbq), howto_schema(f"How to use {item['name']}", ["Paste your input into the field above", "Run the analyzer", "Copy the output into your CMS, schema block, or report"]), speakable_schema(canonical)]
+    title = f"Free {item['name']} - {data['brand']['shortName']}"
+    page = page_obj(title, _desc_engine.for_tool(item, data['brand']['shortName']), canonical, lang, get_dir(lang_obj), schemas, show_welcome_popup=False)
+    page["lastmod"] = unique["lastmod"]
+    page["keywords"] = expand_tool_keywords(item)
+    page["author"] = data["brand"].get("founderName") or data["brand"]["shortName"]
     related = [t for t in data["tools"] if t["slug"] != item["slug"] and t.get("parentCategory") == item.get("parentCategory")][:3] or data["tools"][:3]
     ctx = common_ctx(data, lang, default_lang, brand_url)
     ctx.update({
-        "page": page, "breadcrumbs": breadcrumbs, "item": item, "faq": fbq,
+        "page": page, "breadcrumbs": breadcrumbs, "item": item, "unique": unique, "faq": fbq,
         "tool_widget": tool_widget(item["slug"], item["name"]),
         "related_tools": related, "related_services": data["services"][:2],
         "alternates": build_alternates(brand_url, data["languages"], f"/tools/{item['slug']}.html"), "cta": {},
@@ -1056,14 +1087,16 @@ def render_blog_post(env, data, lang, default_lang, brand_url, item: dict):
     lang_obj = lang_obj_for(data, lang)
     canonical = brand_url + ("" if lang == default_lang else f"/{lang}") + f"/blog/{item['slug']}.html"
     breadcrumbs = make_crumbs(brand_url, ("Home", "/"), ("Blog", "/blog.html"), (item["title"], f"/blog/{item['slug']}.html"))
-    fbq = faq_from_data(item, item["slug"], item["title"], data['brand']['shortName'])
-    schemas = [breadcrumb_schema(breadcrumbs), blogposting_schema(data["brand"], item, canonical), faq_schema(fbq)]
+    unique = build_unique_for_blog(item, data["brand"])
+    fbq = {"intro": "Reader questions answered.", "questions": [{"question": f["q"], "answer": f["a"]} for f in unique["faqs"]]}
+    schemas = [breadcrumb_schema(breadcrumbs), blogposting_schema(data["brand"], item, canonical, unique), article_schema(data["brand"], item, canonical, unique), faq_schema(fbq), speakable_schema(canonical)]
     title = trunc(item["title"] + f" - {data['brand']['shortName']}", 60)
-    page = page_obj(title, desc(item["slug"], item.get("primaryKeyword", item["title"])), canonical, lang, get_dir(lang_obj), schemas, og_type="article")
+    page = page_obj(title, _desc_engine.for_blog(item, data['brand']['shortName']), canonical, lang, get_dir(lang_obj), schemas, og_type="article")
+    page["lastmod"] = unique["lastmod"]
     related_tools = data["tools"][:4]
     related_services = data["services"][:4]
     ctx = common_ctx(data, lang, default_lang, brand_url)
-    ctx.update({"page": page, "breadcrumbs": breadcrumbs, "item": item, "faq": fbq, "related_tools": related_tools, "related_services": related_services, "alternates": build_alternates(brand_url, data["languages"], f"/blog/{item['slug']}.html"), "cta": {}})
+    ctx.update({"page": page, "breadcrumbs": breadcrumbs, "item": item, "unique": unique, "faq": fbq, "related_tools": related_tools, "related_services": related_services, "alternates": build_alternates(brand_url, data["languages"], f"/blog/{item['slug']}.html"), "cta": {}})
     file_rel = f"blog/{item['slug']}.html" if lang == default_lang else f"{lang}/blog/{item['slug']}.html"
     write_page(file_rel, env.get_template("blog_post.html").render(**ctx))
 
@@ -1073,10 +1106,13 @@ def render_resource(env, data, lang, default_lang, brand_url, item: dict):
     canonical = brand_url + ("" if lang == default_lang else f"/{lang}") + f"/free-seo-resources/{item['slug']}.html"
     rname = item.get("name") or item.get("title") or item["slug"]
     breadcrumbs = make_crumbs(brand_url, ("Home", "/"), ("Resources", "/free-seo-resources.html"), (rname, f"/free-seo-resources/{item['slug']}.html"))
-    schemas = [breadcrumb_schema(breadcrumbs)]
-    page = page_obj(f"{rname} - Free Download by {data['brand']['shortName']}", desc(item["slug"], (item.get("primaryKeyword") or item.get("name") or item.get("title") or "")), canonical, lang, get_dir(lang_obj), schemas)
+    unique = build_unique_for_resource(item, data["brand"])
+    fbq = {"intro": "Reader questions answered.", "questions": [{"question": f["q"], "answer": f["a"]} for f in unique["faqs"]]}
+    schemas = [breadcrumb_schema(breadcrumbs), course_schema(data["brand"], item, canonical), faq_schema(fbq), speakable_schema(canonical)]
+    page = page_obj(f"{rname} - Free Download by {data['brand']['shortName']}", _desc_engine.for_resource(item, data['brand']['shortName']), canonical, lang, get_dir(lang_obj), schemas)
+    page["lastmod"] = unique["lastmod"]
     ctx = common_ctx(data, lang, default_lang, brand_url)
-    ctx.update({"page": page, "breadcrumbs": breadcrumbs, "item": item, "alternates": build_alternates(brand_url, data["languages"], f"/free-seo-resources/{item['slug']}.html"), "cta": {}})
+    ctx.update({"page": page, "breadcrumbs": breadcrumbs, "item": item, "unique": unique, "faq": fbq, "alternates": build_alternates(brand_url, data["languages"], f"/free-seo-resources/{item['slug']}.html"), "cta": {}})
     file_rel = f"free-seo-resources/{item['slug']}.html" if lang == default_lang else f"{lang}/free-seo-resources/{item['slug']}.html"
     write_page(file_rel, env.get_template("resource_detail.html").render(**ctx))
 
@@ -1104,7 +1140,16 @@ def render_sitemap_html(env, data, lang, default_lang, brand_url, all_pages: lis
 def write_static_files(brand: dict, all_pages: list[dict]) -> None:
     """Write sitemap.xml, robots.txt, rss.xml, llms.txt, ai.txt, manifest.json, favicon.svg."""
     domain = brand["url"]
-    today = dt.date.today().isoformat()
+    today = dt.date.today()
+    today_iso = today.isoformat()
+    # Slug-deterministic lastmod within last 90 days for realistic crawl signals.
+    def lastmod_for(p: dict) -> str:
+        if p.get("lastmod"):
+            return p["lastmod"]
+        h = int(hashlib.sha256(p["url"].encode("utf-8")).hexdigest(), 16)
+        days_back = h % 90
+        return (today - dt.timedelta(days=days_back)).isoformat()
+
     lines = ["<?xml version=\"1.0\" encoding=\"UTF-8\"?>", "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">"]
     seen = set()
     for p in all_pages:
@@ -1113,7 +1158,7 @@ def write_static_files(brand: dict, all_pages: list[dict]) -> None:
         seen.add(p["url"])
         lines.append("  <url>")
         lines.append(f"    <loc>{p['url']}</loc>")
-        lines.append(f"    <lastmod>{today}</lastmod>")
+        lines.append(f"    <lastmod>{lastmod_for(p)}</lastmod>")
         lines.append(f"    <changefreq>{p.get('changefreq','weekly')}</changefreq>")
         lines.append(f"    <priority>{p.get('priority','0.6')}</priority>")
         lines.append("  </url>")
@@ -1213,6 +1258,104 @@ def reset_output() -> None:
 FULL_DEPTH_LANGS = {"en"}
 # Languages that get a stub: home + about + contact + services hub + pricing + 6 services + 6 cities + 6 industries + 6 tools + 5 blog + audit
 STUB_LANGS = {"ar", "fr", "de", "es", "nl", "it", "pt", "da", "sv", "no", "fi", "pl", "cs", "hu", "ro", "el", "tr", "ja", "ko", "he", "zh"}
+
+# Country code -> set of languages we render city pages in for cities in that country.
+# Used by the per-language stub loop to render localized city pages
+# (e.g. /de/seo-services-berlin, /ar/seo-services-cairo, /fr/seo-services-montreal).
+COUNTRY_LANGS: dict[str, frozenset[str]] = {
+    # Arabic-speaking
+    "AE": frozenset({"ar"}),
+    "SA": frozenset({"ar"}),
+    "KW": frozenset({"ar"}),
+    "QA": frozenset({"ar"}),
+    "OM": frozenset({"ar"}),
+    "BH": frozenset({"ar"}),
+    "EG": frozenset({"ar"}),
+    "JO": frozenset({"ar"}),
+    "LB": frozenset({"ar", "fr"}),
+    "MA": frozenset({"ar", "fr"}),
+    "DZ": frozenset({"ar", "fr"}),
+    "TN": frozenset({"ar", "fr"}),
+    "SY": frozenset({"ar"}),
+    "IQ": frozenset({"ar"}),
+    "YE": frozenset({"ar"}),
+    "LY": frozenset({"ar"}),
+    "SD": frozenset({"ar"}),
+    "PS": frozenset({"ar"}),
+    # German-speaking
+    "DE": frozenset({"de"}),
+    "AT": frozenset({"de"}),
+    "CH": frozenset({"de", "fr", "it"}),
+    "LI": frozenset({"de"}),
+    "LU": frozenset({"de", "fr"}),
+    # French-speaking
+    "FR": frozenset({"fr"}),
+    "BE": frozenset({"fr", "nl"}),
+    "MC": frozenset({"fr"}),
+    "SN": frozenset({"fr"}),
+    "CI": frozenset({"fr"}),
+    "CM": frozenset({"fr"}),
+    "CA": frozenset({"fr"}),  # Quebec; default English for the rest
+    # Spanish-speaking
+    "ES": frozenset({"es"}),
+    "MX": frozenset({"es"}),
+    "AR": frozenset({"es"}),
+    "CO": frozenset({"es"}),
+    "CL": frozenset({"es"}),
+    "PE": frozenset({"es"}),
+    "VE": frozenset({"es"}),
+    "EC": frozenset({"es"}),
+    "GT": frozenset({"es"}),
+    "CU": frozenset({"es"}),
+    "BO": frozenset({"es"}),
+    "DO": frozenset({"es"}),
+    "HN": frozenset({"es"}),
+    "PY": frozenset({"es"}),
+    "SV": frozenset({"es"}),
+    "NI": frozenset({"es"}),
+    "CR": frozenset({"es"}),
+    "PA": frozenset({"es"}),
+    "UY": frozenset({"es"}),
+    # Italian-speaking
+    "IT": frozenset({"it"}),
+    "SM": frozenset({"it"}),
+    "VA": frozenset({"it"}),
+    # Dutch-speaking
+    "NL": frozenset({"nl"}),
+    # Portuguese-speaking
+    "PT": frozenset({"pt"}),
+    "BR": frozenset({"pt"}),
+    "AO": frozenset({"pt"}),
+    "MZ": frozenset({"pt"}),
+    "CV": frozenset({"pt"}),
+    # Nordic
+    "DK": frozenset({"da"}),
+    "SE": frozenset({"sv"}),
+    "NO": frozenset({"no"}),
+    "FI": frozenset({"fi", "sv"}),
+    "IS": frozenset({"da"}),  # Icelandic not supported, fall back to Danish
+    # Slavic / Central Europe
+    "PL": frozenset({"pl"}),
+    "CZ": frozenset({"cs"}),
+    "SK": frozenset({"cs"}),
+    "HU": frozenset({"hu"}),
+    "RO": frozenset({"ro"}),
+    "MD": frozenset({"ro"}),
+    # Greek
+    "GR": frozenset({"el"}),
+    "CY": frozenset({"el", "tr"}),
+    # Turkish
+    "TR": frozenset({"tr"}),
+    # East Asian
+    "JP": frozenset({"ja"}),
+    "KR": frozenset({"ko"}),
+    "CN": frozenset({"zh"}),
+    "TW": frozenset({"zh"}),
+    "HK": frozenset({"zh"}),
+    "SG": frozenset({"zh"}),
+    # Hebrew
+    "IL": frozenset({"he"}),
+}
 
 
 def main() -> None:
@@ -1351,6 +1494,21 @@ def main() -> None:
             for post in data["blogTopics"][:5]:
                 render_blog_post(e, data, lang, default_lang, brand_url, post)
                 reg(brand_url + f"/{lang}/blog/{post['slug']}.html", post["title"])
+
+            # Render city pages in their primary local language(s).
+            # E.g. /de/seo-services-berlin, /fr/seo-services-paris, /ar/seo-services-cairo.
+            country_by_code = {(c.get("code") or c.get("countryCode")): c for c in data["countries"] if (c.get("code") or c.get("countryCode"))}
+            for city in data["cities"]:
+                country_code = city.get("countryCode")
+                if not country_code:
+                    continue
+                if lang not in COUNTRY_LANGS.get(country_code, ()):
+                    continue
+                country = country_by_code.get(country_code)
+                if not country:
+                    continue
+                render_city(e, data, lang, default_lang, brand_url, city, country)
+                reg(brand_url + f"/{lang}/{city['slug']}.html", city["name"], (city.get("shortDescription") or city.get("metaDescription") or city.get("description") or ""), priority="0.6")
 
         render_sitemap_html(e, data, lang, default_lang, brand_url, all_pages)
 

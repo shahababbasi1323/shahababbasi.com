@@ -5,6 +5,21 @@
   <p class="text-xs uppercase tracking-widest text-accent">Free Resource</p>
   <h1 class="mt-2 font-display text-3xl md:text-5xl font-bold tracking-tight">{{ item.name or item.title }}</h1>
   <p class="mt-4 text-foreground/80">{{ item.shortDescription or item.description or '' }}</p>
+
+  {% if unique and unique.intro_html %}
+  <p class="mt-6 text-foreground/85 leading-relaxed speakable" data-speakable>{{ unique.intro_html }}</p>
+  {% endif %}
+
+  {% if unique and unique.sections %}
+  <div class="mt-10">
+    {% for s in unique.sections %}
+    <div class="mb-8">
+      <h2 class="font-display text-xl md:text-2xl font-bold">{{ s.h2 }}</h2>
+      <p class="mt-2 text-foreground/85 speakable" data-speakable>{{ s.body }}</p>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
   <form class="mt-8 glass p-6 grid gap-4" action="https://formsubmit.co/{{ brand.email }}" method="POST">
     <input type="hidden" name="_subject" value="Resource Request - {{ item.name or item.title }}">
     <input type="hidden" name="_template" value="table">

@@ -7,7 +7,7 @@
   <div class="container-tight relative pt-12 pb-16 md:pt-20 md:pb-24">
     <p class="text-xs uppercase tracking-widest text-accent">{{ country.name }} - {{ item.name }}</p>
     <h1 class="mt-2 font-display text-4xl md:text-6xl font-bold tracking-tight max-w-4xl">SEO services in {{ item.name }}.</h1>
-    <p class="mt-5 max-w-2xl text-lg text-foreground/85">{{ item.shortDescription }}</p>
+    <p class="mt-5 max-w-2xl text-lg text-foreground/85">{{ page.description }}</p>
     <div class="mt-5 glass-strong rounded-xl p-4 max-w-2xl">
       <p class="text-sm"><strong class="text-accent">Quick answer:</strong> SEO services in {{ item.name }} from {{ country.currency }} 1,750/mo, with average ranking lift of 60-90% in 90 days for engaged clients. We work across local Map Pack, organic, and AI search.</p>
     </div>
@@ -17,6 +17,23 @@
     </div>
   </div>
 </section>
+
+{% if unique and unique.intro_html %}
+<section class="container-tight pb-10">
+  <p class="text-foreground/85 leading-relaxed text-base md:text-lg speakable" data-speakable>{{ unique.intro_html }}</p>
+</section>
+{% endif %}
+
+{% if unique and unique.sections %}
+<section class="container-tight pb-12">
+  {% for s in unique.sections %}
+  <div class="mb-10">
+    <h2 class="font-display text-2xl md:text-3xl font-bold">{{ s.h2 }}</h2>
+    <p class="mt-3 text-foreground/85 leading-relaxed speakable" data-speakable>{{ s.body }}</p>
+  </div>
+  {% endfor %}
+</section>
+{% endif %}
 
 <section class="container-tight pb-12">
   <h2 class="font-display text-2xl font-bold">Why brands in {{ item.name }} choose us</h2>

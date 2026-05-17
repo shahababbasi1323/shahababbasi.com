@@ -13,6 +13,8 @@
 <meta name="generator" content="Shahab Abbasi static site - 2026">
 <title>{{ page.title }}</title>
 <meta name="description" content="{{ page.description }}">
+{% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+{% if page.author %}<meta name="author" content="{{ page.author }}">{% endif %}
 <link rel="canonical" href="{{ page.canonical }}">
 {# OpenGraph #}
 <meta property="og:type" content="{{ page.ogType|default('website') }}">

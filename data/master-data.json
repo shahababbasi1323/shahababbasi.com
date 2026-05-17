@@ -1230,6 +1230,36 @@
       ]
     },
     {
+      "slug": "content-strategy",
+      "name": "Content Strategy",
+      "primaryKeyword": "content strategy services",
+      "lsiKeywords": [
+        "content strategy services",
+        "content strategy agency",
+        "content strategy expert",
+        "content strategy consultant",
+        "content strategy strategy"
+      ],
+      "shortDescription": "Editorial systems and topic clusters that build authority, capture demand, and earn citations from AI search engines.",
+      "heroImagePrompt": "abstract editorial graphic on dark navy with electric blue and neon green accents",
+      "parentCategory": "SEO"
+    },
+    {
+      "slug": "website-speed-optimization",
+      "name": "Website Speed Optimization",
+      "primaryKeyword": "website speed optimization services",
+      "lsiKeywords": [
+        "website speed optimization services",
+        "website speed optimization agency",
+        "website speed optimization expert",
+        "website speed optimization consultant",
+        "website speed optimization strategy"
+      ],
+      "shortDescription": "Engineering Core Web Vitals, INP, LCP, and CLS to convert better and rank better. Fast sites compound.",
+      "heroImagePrompt": "abstract editorial graphic on dark navy with electric blue and neon green accents",
+      "parentCategory": "SEO"
+    },
+    {
       "slug": "aeo",
       "name": "AEO - Answer Engine Optimization",
       "primaryKeyword": "AEO - Answer Engine Optimization",
@@ -4682,6 +4712,1551 @@
       "shortDescription": "Industry-specific SEO and growth marketing built for 3pl providers, with playbooks, schema, and conversion tactics that move the needle.",
       "heroImagePrompt": "professional 3pl providers office or workspace, modern, dark navy and electric blue accents",
       "parentCategory": "manufacturing"
+    },
+    {
+      "slug": "advertising-seo",
+      "name": "Advertising",
+      "primaryKeyword": "SEO for advertising",
+      "lsiKeywords": [
+        "advertising marketing",
+        "advertising digital marketing",
+        "advertising lead generation",
+        "advertising PPC",
+        "advertising local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for advertising, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional advertising workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "agribusiness-seo",
+      "name": "Agribusiness",
+      "primaryKeyword": "SEO for agribusiness",
+      "lsiKeywords": [
+        "agribusiness marketing",
+        "agribusiness digital marketing",
+        "agribusiness lead generation",
+        "agribusiness PPC",
+        "agribusiness local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for agribusiness, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional agribusiness workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "ai-company-seo",
+      "name": "AI Company",
+      "primaryKeyword": "SEO for ai company",
+      "lsiKeywords": [
+        "ai company marketing",
+        "ai company digital marketing",
+        "ai company lead generation",
+        "ai company PPC",
+        "ai company local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for ai company, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional ai company workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "amazon-seo",
+      "name": "Amazon",
+      "primaryKeyword": "SEO for amazon",
+      "lsiKeywords": [
+        "amazon marketing",
+        "amazon digital marketing",
+        "amazon lead generation",
+        "amazon PPC",
+        "amazon local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for amazon, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional amazon workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "ecommerce"
+    },
+    {
+      "slug": "app-seo",
+      "name": "App",
+      "primaryKeyword": "SEO for app",
+      "lsiKeywords": [
+        "app marketing",
+        "app digital marketing",
+        "app lead generation",
+        "app PPC",
+        "app local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for app, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional app workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "ecommerce"
+    },
+    {
+      "slug": "architecture-seo",
+      "name": "Architecture",
+      "primaryKeyword": "SEO for architecture",
+      "lsiKeywords": [
+        "architecture marketing",
+        "architecture digital marketing",
+        "architecture lead generation",
+        "architecture PPC",
+        "architecture local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for architecture, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional architecture workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "real-estate"
+    },
+    {
+      "slug": "bakery-seo",
+      "name": "Bakery",
+      "primaryKeyword": "SEO for bakery",
+      "lsiKeywords": [
+        "bakery marketing",
+        "bakery digital marketing",
+        "bakery lead generation",
+        "bakery PPC",
+        "bakery local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for bakery, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional bakery workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "bank-seo",
+      "name": "Bank",
+      "primaryKeyword": "SEO for bank",
+      "lsiKeywords": [
+        "bank marketing",
+        "bank digital marketing",
+        "bank lead generation",
+        "bank PPC",
+        "bank local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for bank, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional bank workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "finance"
+    },
+    {
+      "slug": "bar-nightclub-seo",
+      "name": "Bar Nightclub",
+      "primaryKeyword": "SEO for bar nightclub",
+      "lsiKeywords": [
+        "bar nightclub marketing",
+        "bar nightclub digital marketing",
+        "bar nightclub lead generation",
+        "bar nightclub PPC",
+        "bar nightclub local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for bar nightclub, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional bar nightclub workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "hospitality-food-service"
+    },
+    {
+      "slug": "barbershop-seo",
+      "name": "Barbershop",
+      "primaryKeyword": "SEO for barbershop",
+      "lsiKeywords": [
+        "barbershop marketing",
+        "barbershop digital marketing",
+        "barbershop lead generation",
+        "barbershop PPC",
+        "barbershop local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for barbershop, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional barbershop workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "hospitality-food-service"
+    },
+    {
+      "slug": "beauty-salon-seo",
+      "name": "Beauty Salon",
+      "primaryKeyword": "SEO for beauty salon",
+      "lsiKeywords": [
+        "beauty salon marketing",
+        "beauty salon digital marketing",
+        "beauty salon lead generation",
+        "beauty salon PPC",
+        "beauty salon local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for beauty salon, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional beauty salon workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "hospitality-food-service"
+    },
+    {
+      "slug": "blockchain-seo",
+      "name": "Blockchain",
+      "primaryKeyword": "SEO for blockchain",
+      "lsiKeywords": [
+        "blockchain marketing",
+        "blockchain digital marketing",
+        "blockchain lead generation",
+        "blockchain PPC",
+        "blockchain local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for blockchain, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional blockchain workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "boat-seo",
+      "name": "Boat",
+      "primaryKeyword": "SEO for boat",
+      "lsiKeywords": [
+        "boat marketing",
+        "boat digital marketing",
+        "boat lead generation",
+        "boat PPC",
+        "boat local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for boat, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional boat workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "transportation-logistics"
+    },
+    {
+      "slug": "cannabis-seo",
+      "name": "Cannabis",
+      "primaryKeyword": "SEO for cannabis",
+      "lsiKeywords": [
+        "cannabis marketing",
+        "cannabis digital marketing",
+        "cannabis lead generation",
+        "cannabis PPC",
+        "cannabis local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for cannabis, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional cannabis workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "catering-seo",
+      "name": "Catering",
+      "primaryKeyword": "SEO for catering",
+      "lsiKeywords": [
+        "catering marketing",
+        "catering digital marketing",
+        "catering lead generation",
+        "catering PPC",
+        "catering local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for catering, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional catering workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "hospitality-food-service"
+    },
+    {
+      "slug": "church-seo",
+      "name": "Church",
+      "primaryKeyword": "SEO for church",
+      "lsiKeywords": [
+        "church marketing",
+        "church digital marketing",
+        "church lead generation",
+        "church PPC",
+        "church local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for church, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional church workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "nonprofit"
+    },
+    {
+      "slug": "cleaning-franchise-seo",
+      "name": "Cleaning Franchise",
+      "primaryKeyword": "SEO for cleaning franchise",
+      "lsiKeywords": [
+        "cleaning franchise marketing",
+        "cleaning franchise digital marketing",
+        "cleaning franchise lead generation",
+        "cleaning franchise PPC",
+        "cleaning franchise local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for cleaning franchise, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional cleaning franchise workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "coffee-shop-seo",
+      "name": "Coffee Shop",
+      "primaryKeyword": "SEO for coffee shop",
+      "lsiKeywords": [
+        "coffee shop marketing",
+        "coffee shop digital marketing",
+        "coffee shop lead generation",
+        "coffee shop PPC",
+        "coffee shop local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for coffee shop, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional coffee shop workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "hospitality-food-service"
+    },
+    {
+      "slug": "concrete-seo",
+      "name": "Concrete",
+      "primaryKeyword": "SEO for concrete",
+      "lsiKeywords": [
+        "concrete marketing",
+        "concrete digital marketing",
+        "concrete lead generation",
+        "concrete PPC",
+        "concrete local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for concrete, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional concrete workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "home-services"
+    },
+    {
+      "slug": "construction-seo",
+      "name": "Construction",
+      "primaryKeyword": "SEO for construction",
+      "lsiKeywords": [
+        "construction marketing",
+        "construction digital marketing",
+        "construction lead generation",
+        "construction PPC",
+        "construction local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for construction, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional construction workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "home-services"
+    },
+    {
+      "slug": "courier-seo",
+      "name": "Courier",
+      "primaryKeyword": "SEO for courier",
+      "lsiKeywords": [
+        "courier marketing",
+        "courier digital marketing",
+        "courier lead generation",
+        "courier PPC",
+        "courier local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for courier, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional courier workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "transportation-logistics"
+    },
+    {
+      "slug": "crypto-seo",
+      "name": "Crypto",
+      "primaryKeyword": "SEO for crypto",
+      "lsiKeywords": [
+        "crypto marketing",
+        "crypto digital marketing",
+        "crypto lead generation",
+        "crypto PPC",
+        "crypto local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for crypto, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional crypto workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "cybersecurity-seo",
+      "name": "Cybersecurity",
+      "primaryKeyword": "SEO for cybersecurity",
+      "lsiKeywords": [
+        "cybersecurity marketing",
+        "cybersecurity digital marketing",
+        "cybersecurity lead generation",
+        "cybersecurity PPC",
+        "cybersecurity local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for cybersecurity, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional cybersecurity workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "data-analytics-seo",
+      "name": "Data Analytics",
+      "primaryKeyword": "SEO for data analytics",
+      "lsiKeywords": [
+        "data analytics marketing",
+        "data analytics digital marketing",
+        "data analytics lead generation",
+        "data analytics PPC",
+        "data analytics local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for data analytics, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional data analytics workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "digital-agency-seo",
+      "name": "Digital Agency",
+      "primaryKeyword": "SEO for digital agency",
+      "lsiKeywords": [
+        "digital agency marketing",
+        "digital agency digital marketing",
+        "digital agency lead generation",
+        "digital agency PPC",
+        "digital agency local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for digital agency, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional digital agency workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "ecommerce-seo",
+      "name": "Ecommerce",
+      "primaryKeyword": "SEO for ecommerce",
+      "lsiKeywords": [
+        "ecommerce marketing",
+        "ecommerce digital marketing",
+        "ecommerce lead generation",
+        "ecommerce PPC",
+        "ecommerce local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for ecommerce, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional ecommerce workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "ecommerce"
+    },
+    {
+      "slug": "education-seo",
+      "name": "Education",
+      "primaryKeyword": "SEO for education",
+      "lsiKeywords": [
+        "education marketing",
+        "education digital marketing",
+        "education lead generation",
+        "education PPC",
+        "education local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for education, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional education workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "education"
+    },
+    {
+      "slug": "energy-efficiency-seo",
+      "name": "Energy Efficiency",
+      "primaryKeyword": "SEO for energy efficiency",
+      "lsiKeywords": [
+        "energy efficiency marketing",
+        "energy efficiency digital marketing",
+        "energy efficiency lead generation",
+        "energy efficiency PPC",
+        "energy efficiency local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for energy efficiency, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional energy efficiency workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "entertainment-seo",
+      "name": "Entertainment",
+      "primaryKeyword": "SEO for entertainment",
+      "lsiKeywords": [
+        "entertainment marketing",
+        "entertainment digital marketing",
+        "entertainment lead generation",
+        "entertainment PPC",
+        "entertainment local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for entertainment, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional entertainment workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "event-planning-seo",
+      "name": "Event Planning",
+      "primaryKeyword": "SEO for event planning",
+      "lsiKeywords": [
+        "event planning marketing",
+        "event planning digital marketing",
+        "event planning lead generation",
+        "event planning PPC",
+        "event planning local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for event planning, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional event planning workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "farm-seo",
+      "name": "Farm",
+      "primaryKeyword": "SEO for farm",
+      "lsiKeywords": [
+        "farm marketing",
+        "farm digital marketing",
+        "farm lead generation",
+        "farm PPC",
+        "farm local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for farm, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional farm workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "fashion-seo",
+      "name": "Fashion",
+      "primaryKeyword": "SEO for fashion",
+      "lsiKeywords": [
+        "fashion marketing",
+        "fashion digital marketing",
+        "fashion lead generation",
+        "fashion PPC",
+        "fashion local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for fashion, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional fashion workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "retail"
+    },
+    {
+      "slug": "fencing-seo",
+      "name": "Fencing",
+      "primaryKeyword": "SEO for fencing",
+      "lsiKeywords": [
+        "fencing marketing",
+        "fencing digital marketing",
+        "fencing lead generation",
+        "fencing PPC",
+        "fencing local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for fencing, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional fencing workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "home-services"
+    },
+    {
+      "slug": "fitness-seo",
+      "name": "Fitness",
+      "primaryKeyword": "SEO for fitness",
+      "lsiKeywords": [
+        "fitness marketing",
+        "fitness digital marketing",
+        "fitness lead generation",
+        "fitness PPC",
+        "fitness local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for fitness, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional fitness workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "home-services"
+    },
+    {
+      "slug": "florist-seo",
+      "name": "Florist",
+      "primaryKeyword": "SEO for florist",
+      "lsiKeywords": [
+        "florist marketing",
+        "florist digital marketing",
+        "florist lead generation",
+        "florist PPC",
+        "florist local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for florist, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional florist workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "food-delivery-seo",
+      "name": "Food Delivery",
+      "primaryKeyword": "SEO for food delivery",
+      "lsiKeywords": [
+        "food delivery marketing",
+        "food delivery digital marketing",
+        "food delivery lead generation",
+        "food delivery PPC",
+        "food delivery local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for food delivery, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional food delivery workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "hospitality-food-service"
+    },
+    {
+      "slug": "food-truck-seo",
+      "name": "Food Truck",
+      "primaryKeyword": "SEO for food truck",
+      "lsiKeywords": [
+        "food truck marketing",
+        "food truck digital marketing",
+        "food truck lead generation",
+        "food truck PPC",
+        "food truck local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for food truck, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional food truck workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "hospitality-food-service"
+    },
+    {
+      "slug": "foundation-repair-seo",
+      "name": "Foundation Repair",
+      "primaryKeyword": "SEO for foundation repair",
+      "lsiKeywords": [
+        "foundation repair marketing",
+        "foundation repair digital marketing",
+        "foundation repair lead generation",
+        "foundation repair PPC",
+        "foundation repair local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for foundation repair, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional foundation repair workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "home-services"
+    },
+    {
+      "slug": "freight-seo",
+      "name": "Freight",
+      "primaryKeyword": "SEO for freight",
+      "lsiKeywords": [
+        "freight marketing",
+        "freight digital marketing",
+        "freight lead generation",
+        "freight PPC",
+        "freight local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for freight, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional freight workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "transportation-logistics"
+    },
+    {
+      "slug": "funeral-seo",
+      "name": "Funeral",
+      "primaryKeyword": "SEO for funeral",
+      "lsiKeywords": [
+        "funeral marketing",
+        "funeral digital marketing",
+        "funeral lead generation",
+        "funeral PPC",
+        "funeral local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for funeral, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional funeral workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "hospitality-food-service"
+    },
+    {
+      "slug": "furniture-seo",
+      "name": "Furniture",
+      "primaryKeyword": "SEO for furniture",
+      "lsiKeywords": [
+        "furniture marketing",
+        "furniture digital marketing",
+        "furniture lead generation",
+        "furniture PPC",
+        "furniture local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for furniture, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional furniture workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "retail"
+    },
+    {
+      "slug": "gaming-seo",
+      "name": "Gaming",
+      "primaryKeyword": "SEO for gaming",
+      "lsiKeywords": [
+        "gaming marketing",
+        "gaming digital marketing",
+        "gaming lead generation",
+        "gaming PPC",
+        "gaming local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for gaming, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional gaming workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "government-seo",
+      "name": "Government",
+      "primaryKeyword": "SEO for government",
+      "lsiKeywords": [
+        "government marketing",
+        "government digital marketing",
+        "government lead generation",
+        "government PPC",
+        "government local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for government, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional government workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "nonprofit"
+    },
+    {
+      "slug": "grocery-seo",
+      "name": "Grocery",
+      "primaryKeyword": "SEO for grocery",
+      "lsiKeywords": [
+        "grocery marketing",
+        "grocery digital marketing",
+        "grocery lead generation",
+        "grocery PPC",
+        "grocery local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for grocery, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional grocery workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "hospitality-food-service"
+    },
+    {
+      "slug": "gym-equipment-seo",
+      "name": "Gym Equipment",
+      "primaryKeyword": "SEO for gym equipment",
+      "lsiKeywords": [
+        "gym equipment marketing",
+        "gym equipment digital marketing",
+        "gym equipment lead generation",
+        "gym equipment PPC",
+        "gym equipment local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for gym equipment, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional gym equipment workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "home-services"
+    },
+    {
+      "slug": "gym-seo",
+      "name": "Gym",
+      "primaryKeyword": "SEO for gym",
+      "lsiKeywords": [
+        "gym marketing",
+        "gym digital marketing",
+        "gym lead generation",
+        "gym PPC",
+        "gym local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for gym, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional gym workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "home-services"
+    },
+    {
+      "slug": "home-staging-seo",
+      "name": "Home Staging",
+      "primaryKeyword": "SEO for home staging",
+      "lsiKeywords": [
+        "home staging marketing",
+        "home staging digital marketing",
+        "home staging lead generation",
+        "home staging PPC",
+        "home staging local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for home staging, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional home staging workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "real-estate"
+    },
+    {
+      "slug": "hotel-seo",
+      "name": "Hotel",
+      "primaryKeyword": "SEO for hotel",
+      "lsiKeywords": [
+        "hotel marketing",
+        "hotel digital marketing",
+        "hotel lead generation",
+        "hotel PPC",
+        "hotel local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for hotel, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional hotel workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "hospitality-food-service"
+    },
+    {
+      "slug": "influencer-seo",
+      "name": "Influencer",
+      "primaryKeyword": "SEO for influencer",
+      "lsiKeywords": [
+        "influencer marketing",
+        "influencer digital marketing",
+        "influencer lead generation",
+        "influencer PPC",
+        "influencer local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for influencer, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional influencer workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "interior-design-seo",
+      "name": "Interior Design",
+      "primaryKeyword": "SEO for interior design",
+      "lsiKeywords": [
+        "interior design marketing",
+        "interior design digital marketing",
+        "interior design lead generation",
+        "interior design PPC",
+        "interior design local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for interior design, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional interior design workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "real-estate"
+    },
+    {
+      "slug": "isp-seo",
+      "name": "ISP",
+      "primaryKeyword": "SEO for isp",
+      "lsiKeywords": [
+        "isp marketing",
+        "isp digital marketing",
+        "isp lead generation",
+        "isp PPC",
+        "isp local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for isp, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional isp workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "it-services-seo",
+      "name": "IT Services",
+      "primaryKeyword": "SEO for it services",
+      "lsiKeywords": [
+        "it services marketing",
+        "it services digital marketing",
+        "it services lead generation",
+        "it services PPC",
+        "it services local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for it services, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional it services workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "jewelry-seo",
+      "name": "Jewelry",
+      "primaryKeyword": "SEO for jewelry",
+      "lsiKeywords": [
+        "jewelry marketing",
+        "jewelry digital marketing",
+        "jewelry lead generation",
+        "jewelry PPC",
+        "jewelry local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for jewelry, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional jewelry workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "retail"
+    },
+    {
+      "slug": "language-school-seo",
+      "name": "Language School",
+      "primaryKeyword": "SEO for language school",
+      "lsiKeywords": [
+        "language school marketing",
+        "language school digital marketing",
+        "language school lead generation",
+        "language school PPC",
+        "language school local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for language school, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional language school workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "education"
+    },
+    {
+      "slug": "laundry-seo",
+      "name": "Laundry",
+      "primaryKeyword": "SEO for laundry",
+      "lsiKeywords": [
+        "laundry marketing",
+        "laundry digital marketing",
+        "laundry lead generation",
+        "laundry PPC",
+        "laundry local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for laundry, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional laundry workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "logistics-seo",
+      "name": "Logistics",
+      "primaryKeyword": "SEO for logistics",
+      "lsiKeywords": [
+        "logistics marketing",
+        "logistics digital marketing",
+        "logistics lead generation",
+        "logistics PPC",
+        "logistics local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for logistics, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional logistics workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "transportation-logistics"
+    },
+    {
+      "slug": "manufacturing-seo",
+      "name": "Manufacturing",
+      "primaryKeyword": "SEO for manufacturing",
+      "lsiKeywords": [
+        "manufacturing marketing",
+        "manufacturing digital marketing",
+        "manufacturing lead generation",
+        "manufacturing PPC",
+        "manufacturing local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for manufacturing, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional manufacturing workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "music-seo",
+      "name": "Music",
+      "primaryKeyword": "SEO for music",
+      "lsiKeywords": [
+        "music marketing",
+        "music digital marketing",
+        "music lead generation",
+        "music PPC",
+        "music local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for music, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional music workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "news-media-seo",
+      "name": "News Media",
+      "primaryKeyword": "SEO for news media",
+      "lsiKeywords": [
+        "news media marketing",
+        "news media digital marketing",
+        "news media lead generation",
+        "news media PPC",
+        "news media local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for news media, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional news media workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "ngo-seo",
+      "name": "NGO",
+      "primaryKeyword": "SEO for ngo",
+      "lsiKeywords": [
+        "ngo marketing",
+        "ngo digital marketing",
+        "ngo lead generation",
+        "ngo PPC",
+        "ngo local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for ngo, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional ngo workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "nonprofit"
+    },
+    {
+      "slug": "nonprofit-seo",
+      "name": "Nonprofit",
+      "primaryKeyword": "SEO for nonprofit",
+      "lsiKeywords": [
+        "nonprofit marketing",
+        "nonprofit digital marketing",
+        "nonprofit lead generation",
+        "nonprofit PPC",
+        "nonprofit local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for nonprofit, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional nonprofit workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "nonprofit"
+    },
+    {
+      "slug": "pawn-shop-seo",
+      "name": "Pawn Shop",
+      "primaryKeyword": "SEO for pawn shop",
+      "lsiKeywords": [
+        "pawn shop marketing",
+        "pawn shop digital marketing",
+        "pawn shop lead generation",
+        "pawn shop PPC",
+        "pawn shop local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for pawn shop, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional pawn shop workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "retail"
+    },
+    {
+      "slug": "personal-trainer-seo",
+      "name": "Personal Trainer",
+      "primaryKeyword": "SEO for personal trainer",
+      "lsiKeywords": [
+        "personal trainer marketing",
+        "personal trainer digital marketing",
+        "personal trainer lead generation",
+        "personal trainer PPC",
+        "personal trainer local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for personal trainer, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional personal trainer workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "pet-services-seo",
+      "name": "Pet Services",
+      "primaryKeyword": "SEO for pet services",
+      "lsiKeywords": [
+        "pet services marketing",
+        "pet services digital marketing",
+        "pet services lead generation",
+        "pet services PPC",
+        "pet services local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for pet services, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional pet services workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "pharmacy-online-seo",
+      "name": "Pharmacy Online",
+      "primaryKeyword": "SEO for pharmacy online",
+      "lsiKeywords": [
+        "pharmacy online marketing",
+        "pharmacy online digital marketing",
+        "pharmacy online lead generation",
+        "pharmacy online PPC",
+        "pharmacy online local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for pharmacy online, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional pharmacy online workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "healthcare-medical"
+    },
+    {
+      "slug": "photography-seo",
+      "name": "Photography",
+      "primaryKeyword": "SEO for photography",
+      "lsiKeywords": [
+        "photography marketing",
+        "photography digital marketing",
+        "photography lead generation",
+        "photography PPC",
+        "photography local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for photography, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional photography workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "podcast-seo",
+      "name": "Podcast",
+      "primaryKeyword": "SEO for podcast",
+      "lsiKeywords": [
+        "podcast marketing",
+        "podcast digital marketing",
+        "podcast lead generation",
+        "podcast PPC",
+        "podcast local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for podcast, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional podcast workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "pool-service-seo",
+      "name": "Pool Service",
+      "primaryKeyword": "SEO for pool service",
+      "lsiKeywords": [
+        "pool service marketing",
+        "pool service digital marketing",
+        "pool service lead generation",
+        "pool service PPC",
+        "pool service local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for pool service, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional pool service workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "home-services"
+    },
+    {
+      "slug": "pr-seo",
+      "name": "PR",
+      "primaryKeyword": "SEO for pr",
+      "lsiKeywords": [
+        "pr marketing",
+        "pr digital marketing",
+        "pr lead generation",
+        "pr PPC",
+        "pr local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for pr, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional pr workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "printing-seo",
+      "name": "Printing",
+      "primaryKeyword": "SEO for printing",
+      "lsiKeywords": [
+        "printing marketing",
+        "printing digital marketing",
+        "printing lead generation",
+        "printing PPC",
+        "printing local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for printing, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional printing workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "property-management-seo",
+      "name": "Property Management",
+      "primaryKeyword": "SEO for property management",
+      "lsiKeywords": [
+        "property management marketing",
+        "property management digital marketing",
+        "property management lead generation",
+        "property management PPC",
+        "property management local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for property management, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional property management workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "real-estate"
+    },
+    {
+      "slug": "public-health-seo",
+      "name": "Public Health",
+      "primaryKeyword": "SEO for public health",
+      "lsiKeywords": [
+        "public health marketing",
+        "public health digital marketing",
+        "public health lead generation",
+        "public health PPC",
+        "public health local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for public health, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional public health workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "healthcare-medical"
+    },
+    {
+      "slug": "real-estate-seo",
+      "name": "Real Estate",
+      "primaryKeyword": "SEO for real estate",
+      "lsiKeywords": [
+        "real estate marketing",
+        "real estate digital marketing",
+        "real estate lead generation",
+        "real estate PPC",
+        "real estate local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for real estate, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional real estate workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "real-estate"
+    },
+    {
+      "slug": "recruitment-seo",
+      "name": "Recruitment",
+      "primaryKeyword": "SEO for recruitment",
+      "lsiKeywords": [
+        "recruitment marketing",
+        "recruitment digital marketing",
+        "recruitment lead generation",
+        "recruitment PPC",
+        "recruitment local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for recruitment, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional recruitment workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "renewable-energy-seo",
+      "name": "Renewable Energy",
+      "primaryKeyword": "SEO for renewable energy",
+      "lsiKeywords": [
+        "renewable energy marketing",
+        "renewable energy digital marketing",
+        "renewable energy lead generation",
+        "renewable energy PPC",
+        "renewable energy local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for renewable energy, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional renewable energy workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "restaurant-seo",
+      "name": "Restaurant",
+      "primaryKeyword": "SEO for restaurant",
+      "lsiKeywords": [
+        "restaurant marketing",
+        "restaurant digital marketing",
+        "restaurant lead generation",
+        "restaurant PPC",
+        "restaurant local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for restaurant, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional restaurant workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "rv-seo",
+      "name": "Rv",
+      "primaryKeyword": "SEO for rv",
+      "lsiKeywords": [
+        "rv marketing",
+        "rv digital marketing",
+        "rv lead generation",
+        "rv PPC",
+        "rv local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for rv, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional rv workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "saas-seo",
+      "name": "SaaS",
+      "primaryKeyword": "SEO for saas",
+      "lsiKeywords": [
+        "saas marketing",
+        "saas digital marketing",
+        "saas lead generation",
+        "saas PPC",
+        "saas local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for saas, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional saas workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "shipping-seo",
+      "name": "Shipping",
+      "primaryKeyword": "SEO for shipping",
+      "lsiKeywords": [
+        "shipping marketing",
+        "shipping digital marketing",
+        "shipping lead generation",
+        "shipping PPC",
+        "shipping local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for shipping, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional shipping workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "shopify-store-seo",
+      "name": "Shopify Store",
+      "primaryKeyword": "SEO for shopify store",
+      "lsiKeywords": [
+        "shopify store marketing",
+        "shopify store digital marketing",
+        "shopify store lead generation",
+        "shopify store PPC",
+        "shopify store local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for shopify store, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional shopify store workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "skincare-seo",
+      "name": "Skincare",
+      "primaryKeyword": "SEO for skincare",
+      "lsiKeywords": [
+        "skincare marketing",
+        "skincare digital marketing",
+        "skincare lead generation",
+        "skincare PPC",
+        "skincare local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for skincare, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional skincare workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "transportation-logistics"
+    },
+    {
+      "slug": "solar-seo",
+      "name": "Solar",
+      "primaryKeyword": "SEO for solar",
+      "lsiKeywords": [
+        "solar marketing",
+        "solar digital marketing",
+        "solar lead generation",
+        "solar PPC",
+        "solar local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for solar, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional solar workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "spa-seo",
+      "name": "Spa",
+      "primaryKeyword": "SEO for spa",
+      "lsiKeywords": [
+        "spa marketing",
+        "spa digital marketing",
+        "spa lead generation",
+        "spa PPC",
+        "spa local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for spa, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional spa workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "sports-club-seo",
+      "name": "Sports Club",
+      "primaryKeyword": "SEO for sports club",
+      "lsiKeywords": [
+        "sports club marketing",
+        "sports club digital marketing",
+        "sports club lead generation",
+        "sports club PPC",
+        "sports club local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for sports club, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional sports club workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "sports-equipment-seo",
+      "name": "Sports Equipment",
+      "primaryKeyword": "SEO for sports equipment",
+      "lsiKeywords": [
+        "sports equipment marketing",
+        "sports equipment digital marketing",
+        "sports equipment lead generation",
+        "sports equipment PPC",
+        "sports equipment local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for sports equipment, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional sports equipment workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "storage-seo",
+      "name": "Storage",
+      "primaryKeyword": "SEO for storage",
+      "lsiKeywords": [
+        "storage marketing",
+        "storage digital marketing",
+        "storage lead generation",
+        "storage PPC",
+        "storage local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for storage, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional storage workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "streaming-seo",
+      "name": "Streaming",
+      "primaryKeyword": "SEO for streaming",
+      "lsiKeywords": [
+        "streaming marketing",
+        "streaming digital marketing",
+        "streaming lead generation",
+        "streaming PPC",
+        "streaming local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for streaming, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional streaming workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "subscription-box-seo",
+      "name": "Subscription Box",
+      "primaryKeyword": "SEO for subscription box",
+      "lsiKeywords": [
+        "subscription box marketing",
+        "subscription box digital marketing",
+        "subscription box lead generation",
+        "subscription box PPC",
+        "subscription box local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for subscription box, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional subscription box workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "surveyor-seo",
+      "name": "Surveyor",
+      "primaryKeyword": "SEO for surveyor",
+      "lsiKeywords": [
+        "surveyor marketing",
+        "surveyor digital marketing",
+        "surveyor lead generation",
+        "surveyor PPC",
+        "surveyor local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for surveyor, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional surveyor workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "tattoo-seo",
+      "name": "Tattoo",
+      "primaryKeyword": "SEO for tattoo",
+      "lsiKeywords": [
+        "tattoo marketing",
+        "tattoo digital marketing",
+        "tattoo lead generation",
+        "tattoo PPC",
+        "tattoo local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for tattoo, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional tattoo workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "tech-startup-seo",
+      "name": "Tech Startup",
+      "primaryKeyword": "SEO for tech startup",
+      "lsiKeywords": [
+        "tech startup marketing",
+        "tech startup digital marketing",
+        "tech startup lead generation",
+        "tech startup PPC",
+        "tech startup local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for tech startup, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional tech startup workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "telecom-company-seo",
+      "name": "Telecom Company",
+      "primaryKeyword": "SEO for telecom company",
+      "lsiKeywords": [
+        "telecom company marketing",
+        "telecom company digital marketing",
+        "telecom company lead generation",
+        "telecom company PPC",
+        "telecom company local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for telecom company, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional telecom company workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "title-company-seo",
+      "name": "Title Company",
+      "primaryKeyword": "SEO for title company",
+      "lsiKeywords": [
+        "title company marketing",
+        "title company digital marketing",
+        "title company lead generation",
+        "title company PPC",
+        "title company local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for title company, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional title company workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "legal-services"
+    },
+    {
+      "slug": "travel-seo",
+      "name": "Travel",
+      "primaryKeyword": "SEO for travel",
+      "lsiKeywords": [
+        "travel marketing",
+        "travel digital marketing",
+        "travel lead generation",
+        "travel PPC",
+        "travel local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for travel, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional travel workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "utility-seo",
+      "name": "Utility",
+      "primaryKeyword": "SEO for utility",
+      "lsiKeywords": [
+        "utility marketing",
+        "utility digital marketing",
+        "utility lead generation",
+        "utility PPC",
+        "utility local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for utility, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional utility workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "videography-seo",
+      "name": "Videography",
+      "primaryKeyword": "SEO for videography",
+      "lsiKeywords": [
+        "videography marketing",
+        "videography digital marketing",
+        "videography lead generation",
+        "videography PPC",
+        "videography local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for videography, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional videography workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "tech-saas"
+    },
+    {
+      "slug": "warehouse-seo",
+      "name": "Warehouse",
+      "primaryKeyword": "SEO for warehouse",
+      "lsiKeywords": [
+        "warehouse marketing",
+        "warehouse digital marketing",
+        "warehouse lead generation",
+        "warehouse PPC",
+        "warehouse local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for warehouse, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional warehouse workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "transportation-logistics"
+    },
+    {
+      "slug": "web-hosting-seo",
+      "name": "Web Hosting",
+      "primaryKeyword": "SEO for web hosting",
+      "lsiKeywords": [
+        "web hosting marketing",
+        "web hosting digital marketing",
+        "web hosting lead generation",
+        "web hosting PPC",
+        "web hosting local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for web hosting, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional web hosting workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "wedding-seo",
+      "name": "Wedding",
+      "primaryKeyword": "SEO for wedding",
+      "lsiKeywords": [
+        "wedding marketing",
+        "wedding digital marketing",
+        "wedding lead generation",
+        "wedding PPC",
+        "wedding local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for wedding, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional wedding workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "hospitality-food-service"
+    },
+    {
+      "slug": "wellness-center-seo",
+      "name": "Wellness Center",
+      "primaryKeyword": "SEO for wellness center",
+      "lsiKeywords": [
+        "wellness center marketing",
+        "wellness center digital marketing",
+        "wellness center lead generation",
+        "wellness center PPC",
+        "wellness center local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for wellness center, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional wellness center workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "healthcare-medical"
+    },
+    {
+      "slug": "window-door-seo",
+      "name": "Window Door",
+      "primaryKeyword": "SEO for window door",
+      "lsiKeywords": [
+        "window door marketing",
+        "window door digital marketing",
+        "window door lead generation",
+        "window door PPC",
+        "window door local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for window door, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional window door workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "home-services"
+    },
+    {
+      "slug": "winery-seo",
+      "name": "Winery",
+      "primaryKeyword": "SEO for winery",
+      "lsiKeywords": [
+        "winery marketing",
+        "winery digital marketing",
+        "winery lead generation",
+        "winery PPC",
+        "winery local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for winery, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional winery workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
+    },
+    {
+      "slug": "yoga-seo",
+      "name": "Yoga",
+      "primaryKeyword": "SEO for yoga",
+      "lsiKeywords": [
+        "yoga marketing",
+        "yoga digital marketing",
+        "yoga lead generation",
+        "yoga PPC",
+        "yoga local SEO"
+      ],
+      "shortDescription": "Industry-specific SEO and growth marketing built for yoga, with playbooks, schema, and conversion tactics that move the needle.",
+      "heroImagePrompt": "professional yoga workspace, modern, dark navy and electric blue accents",
+      "parentCategory": "professional-services"
     },
     {
       "slug": "healthcare-seo",
@@ -12334,7 +13909,7 @@
         "keyword density analyzer for SEO",
         "keyword density analyzer 2026"
       ],
-      "shortDescription": "Free keyword density analyzer - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Count keyword frequency and density percentages across any text or URL.",
       "heroImagePrompt": "product UI mock of keyword density analyzer on dark navy background with electric blue accents",
       "parentCategory": "keyword-tools"
     },
@@ -12349,7 +13924,7 @@
         "keyword difficulty estimator for SEO",
         "keyword difficulty estimator 2026"
       ],
-      "shortDescription": "Free keyword difficulty estimator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Estimate ranking difficulty for any keyword using domain authority signals.",
       "heroImagePrompt": "product UI mock of keyword difficulty estimator on dark navy background with electric blue accents",
       "parentCategory": "keyword-tools"
     },
@@ -12364,7 +13939,7 @@
         "long-tail keyword generator for SEO",
         "long-tail keyword generator 2026"
       ],
-      "shortDescription": "Free long-tail keyword generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate long-tail keyword variations from a seed term using question and modifier patterns.",
       "heroImagePrompt": "product UI mock of long-tail keyword generator on dark navy background with electric blue accents",
       "parentCategory": "keyword-tools"
     },
@@ -12379,7 +13954,7 @@
         "search intent classifier for SEO",
         "search intent classifier 2026"
       ],
-      "shortDescription": "Free search intent classifier - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Classify any keyword as informational, navigational, commercial, or transactional.",
       "heroImagePrompt": "product UI mock of search intent classifier on dark navy background with electric blue accents",
       "parentCategory": "keyword-tools",
       "category": "Keyword & Research",
@@ -12399,7 +13974,7 @@
         "lsi keyword generator for SEO",
         "lsi keyword generator 2026"
       ],
-      "shortDescription": "Free lsi keyword generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate latent-semantic and related-term keyword suggestions for any topic.",
       "heroImagePrompt": "product UI mock of lsi keyword generator on dark navy background with electric blue accents",
       "parentCategory": "keyword-tools",
       "category": "Keyword & Research",
@@ -12419,7 +13994,7 @@
         "paa question extractor for SEO",
         "paa question extractor 2026"
       ],
-      "shortDescription": "Free paa question extractor - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Extract People Also Ask questions and structure them for FAQ schema.",
       "heroImagePrompt": "product UI mock of paa question extractor on dark navy background with electric blue accents",
       "parentCategory": "keyword-tools"
     },
@@ -12434,7 +14009,7 @@
         "keyword cluster builder for SEO",
         "keyword cluster builder 2026"
       ],
-      "shortDescription": "Free keyword cluster builder - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Group keywords into topical clusters that map to URL targets and content briefs.",
       "heroImagePrompt": "product UI mock of keyword cluster builder on dark navy background with electric blue accents",
       "parentCategory": "keyword-tools"
     },
@@ -12449,7 +14024,7 @@
         "robots.txt tester for SEO",
         "robots.txt tester 2026"
       ],
-      "shortDescription": "Free robots.txt tester - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Test whether a robots.txt rule allows or blocks any URL for any user-agent.",
       "heroImagePrompt": "product UI mock of robots.txt tester on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools"
     },
@@ -12464,7 +14039,7 @@
         "xml sitemap generator for SEO",
         "xml sitemap generator 2026"
       ],
-      "shortDescription": "Free xml sitemap generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate an XML sitemap from a URL list with lastmod and priority controls.",
       "heroImagePrompt": "product UI mock of xml sitemap generator on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools"
     },
@@ -12479,7 +14054,7 @@
         "hreflang tag generator for SEO",
         "hreflang tag generator 2026"
       ],
-      "shortDescription": "Free hreflang tag generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate hreflang tags for multilingual sites with x-default and region fallbacks.",
       "heroImagePrompt": "product UI mock of hreflang tag generator on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools",
       "category": "Technical SEO",
@@ -12499,7 +14074,7 @@
         "canonical tag checker for SEO",
         "canonical tag checker 2026"
       ],
-      "shortDescription": "Free canonical tag checker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Audit a page's canonical tag and flag conflicts with redirects or alternates.",
       "heroImagePrompt": "product UI mock of canonical tag checker on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools"
     },
@@ -12514,7 +14089,7 @@
         "http header inspector for SEO",
         "http header inspector 2026"
       ],
-      "shortDescription": "Free http header inspector - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Inspect HTTP response headers, status codes, and security headers for any URL.",
       "heroImagePrompt": "product UI mock of http header inspector on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools"
     },
@@ -12529,7 +14104,7 @@
         "redirect chain checker for SEO",
         "redirect chain checker 2026"
       ],
-      "shortDescription": "Free redirect chain checker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Trace redirect chains, count hops, and flag loops or excessive 301 stacks.",
       "heroImagePrompt": "product UI mock of redirect chain checker on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools",
       "category": "Domain & URL Tools",
@@ -12549,7 +14124,7 @@
         "mobile-friendly tester for SEO",
         "mobile-friendly tester 2026"
       ],
-      "shortDescription": "Free mobile-friendly tester - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Test mobile friendliness with viewport, tap-target, and font-size checks.",
       "heroImagePrompt": "product UI mock of mobile-friendly tester on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools"
     },
@@ -12564,7 +14139,7 @@
         "core web vitals checker for SEO",
         "core web vitals checker 2026"
       ],
-      "shortDescription": "Free core web vitals checker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Check LCP, INP, and CLS against the Core Web Vitals pass thresholds.",
       "heroImagePrompt": "product UI mock of core web vitals checker on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools"
     },
@@ -12579,7 +14154,7 @@
         "crawl budget estimator for SEO",
         "crawl budget estimator 2026"
       ],
-      "shortDescription": "Free crawl budget estimator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Estimate crawl budget consumption based on URL count, depth, and parameter sprawl.",
       "heroImagePrompt": "product UI mock of crawl budget estimator on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools"
     },
@@ -12594,7 +14169,7 @@
         "word counter for SEO",
         "word counter 2026"
       ],
-      "shortDescription": "Free word counter - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Count words, characters, sentences, and reading time in any block of text.",
       "heroImagePrompt": "product UI mock of word counter on dark navy background with electric blue accents",
       "parentCategory": "content-tools",
       "category": "Content & Writing",
@@ -12614,7 +14189,7 @@
         "readability score calculator for SEO",
         "readability score calculator 2026"
       ],
-      "shortDescription": "Free readability score calculator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Calculate Flesch, Flesch-Kincaid, Gunning Fog, and SMOG readability scores.",
       "heroImagePrompt": "product UI mock of readability score calculator on dark navy background with electric blue accents",
       "parentCategory": "content-tools"
     },
@@ -12629,7 +14204,7 @@
         "content gap analyzer for SEO",
         "content gap analyzer 2026"
       ],
-      "shortDescription": "Free content gap analyzer - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Compare two URL sets and surface topic and keyword gaps between them.",
       "heroImagePrompt": "product UI mock of content gap analyzer on dark navy background with electric blue accents",
       "parentCategory": "content-tools"
     },
@@ -12644,7 +14219,7 @@
         "meta tag generator for SEO",
         "meta tag generator 2026"
       ],
-      "shortDescription": "Free meta tag generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Compose title, description, robots, and canonical tags from a single form.",
       "heroImagePrompt": "product UI mock of meta tag generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools",
       "category": "Meta & On-Page SEO",
@@ -12664,7 +14239,7 @@
         "title tag optimizer for SEO",
         "title tag optimizer 2026"
       ],
-      "shortDescription": "Free title tag optimizer - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Score a title tag for length, keyword position, and SERP truncation.",
       "heroImagePrompt": "product UI mock of title tag optimizer on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -12679,7 +14254,7 @@
         "meta description generator for SEO",
         "meta description generator 2026"
       ],
-      "shortDescription": "Free meta description generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Compose a meta description with character budget, CTA, and keyword targeting.",
       "heroImagePrompt": "product UI mock of meta description generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -12694,7 +14269,7 @@
         "opengraph tag generator for SEO",
         "opengraph tag generator 2026"
       ],
-      "shortDescription": "Free opengraph tag generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate Open Graph tags for shareable cards on Facebook, LinkedIn, and Slack.",
       "heroImagePrompt": "product UI mock of opengraph tag generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -12709,7 +14284,7 @@
         "twitter card generator for SEO",
         "twitter card generator 2026"
       ],
-      "shortDescription": "Free twitter card generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate Twitter Card tags for summary, summary_large_image, and player cards.",
       "heroImagePrompt": "product UI mock of twitter card generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -12724,7 +14299,7 @@
         "serp snippet preview for SEO",
         "serp snippet preview 2026"
       ],
-      "shortDescription": "Free serp snippet preview - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Preview how a title and description will render in Google's search snippet.",
       "heroImagePrompt": "product UI mock of serp snippet preview on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -12739,7 +14314,7 @@
         "slug generator for SEO",
         "slug generator 2026"
       ],
-      "shortDescription": "Free slug generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Convert any title into a clean, lowercase, hyphenated URL slug.",
       "heroImagePrompt": "product UI mock of slug generator on dark navy background with electric blue accents",
       "parentCategory": "content-tools",
       "category": "Technical SEO",
@@ -12759,7 +14334,7 @@
         "title case converter for SEO",
         "title case converter 2026"
       ],
-      "shortDescription": "Free title case converter - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Convert text to AP, APA, Chicago, MLA, or sentence-case title formatting.",
       "heroImagePrompt": "product UI mock of title case converter on dark navy background with electric blue accents",
       "parentCategory": "content-tools"
     },
@@ -12774,7 +14349,7 @@
         "plagiarism checker for SEO",
         "plagiarism checker 2026"
       ],
-      "shortDescription": "Free plagiarism checker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Highlight potential duplicate phrases between two blocks of text.",
       "heroImagePrompt": "product UI mock of plagiarism checker on dark navy background with electric blue accents",
       "parentCategory": "content-tools"
     },
@@ -12789,7 +14364,7 @@
         "backlink quality checker for SEO",
         "backlink quality checker 2026"
       ],
-      "shortDescription": "Free backlink quality checker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Score a backlink against authority, relevance, anchor, and toxicity signals.",
       "heroImagePrompt": "product UI mock of backlink quality checker on dark navy background with electric blue accents",
       "parentCategory": "backlink-tools"
     },
@@ -12804,7 +14379,7 @@
         "domain authority estimator for SEO",
         "domain authority estimator 2026"
       ],
-      "shortDescription": "Free domain authority estimator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Estimate domain authority from referring-domain count and link velocity inputs.",
       "heroImagePrompt": "product UI mock of domain authority estimator on dark navy background with electric blue accents",
       "parentCategory": "backlink-tools"
     },
@@ -12819,7 +14394,7 @@
         "anchor text distribution for SEO",
         "anchor text distribution 2026"
       ],
-      "shortDescription": "Free anchor text distribution - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Analyze the distribution of branded, exact, partial, and generic anchors in a profile.",
       "heroImagePrompt": "product UI mock of anchor text distribution on dark navy background with electric blue accents",
       "parentCategory": "backlink-tools"
     },
@@ -12834,7 +14409,7 @@
         "broken link finder for SEO",
         "broken link finder 2026"
       ],
-      "shortDescription": "Free broken link finder - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Crawl a page and flag broken internal and outbound links with status codes.",
       "heroImagePrompt": "product UI mock of broken link finder on dark navy background with electric blue accents",
       "parentCategory": "backlink-tools"
     },
@@ -12849,7 +14424,7 @@
         "linkable asset idea generator for SEO",
         "linkable asset idea generator 2026"
       ],
-      "shortDescription": "Free linkable asset idea generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate linkable-asset ideas for any niche using proven format patterns.",
       "heroImagePrompt": "product UI mock of linkable asset idea generator on dark navy background with electric blue accents",
       "parentCategory": "backlink-tools"
     },
@@ -12864,7 +14439,7 @@
         "nap consistency checker for SEO",
         "nap consistency checker 2026"
       ],
-      "shortDescription": "Free nap consistency checker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Compare Name, Address, and Phone across citations and flag inconsistencies.",
       "heroImagePrompt": "product UI mock of nap consistency checker on dark navy background with electric blue accents",
       "parentCategory": "local-seo-tools",
       "category": "Local SEO",
@@ -12884,7 +14459,7 @@
         "citation audit tool for SEO",
         "citation audit tool 2026"
       ],
-      "shortDescription": "Free citation audit tool - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Audit local citations for completeness, accuracy, and high-authority directory coverage.",
       "heroImagePrompt": "product UI mock of citation audit tool on dark navy background with electric blue accents",
       "parentCategory": "local-seo-tools"
     },
@@ -12899,7 +14474,7 @@
         "google business profile audit for SEO",
         "google business profile audit 2026"
       ],
-      "shortDescription": "Free google business profile audit - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Audit a Google Business Profile for completeness, categories, and review signals.",
       "heroImagePrompt": "product UI mock of google business profile audit on dark navy background with electric blue accents",
       "parentCategory": "local-seo-tools",
       "category": "Local SEO",
@@ -12919,7 +14494,7 @@
         "local schema generator for SEO",
         "local schema generator 2026"
       ],
-      "shortDescription": "Free local schema generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate LocalBusiness schema with address, hours, geo, and review data.",
       "heroImagePrompt": "product UI mock of local schema generator on dark navy background with electric blue accents",
       "parentCategory": "local-seo-tools"
     },
@@ -12934,7 +14509,7 @@
         "map pack position tracker for SEO",
         "map pack position tracker 2026"
       ],
-      "shortDescription": "Free map pack position tracker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Track map-pack ranking position for a business across multiple geo-targeted queries.",
       "heroImagePrompt": "product UI mock of map pack position tracker on dark navy background with electric blue accents",
       "parentCategory": "local-seo-tools"
     },
@@ -12949,7 +14524,7 @@
         "geo modifier generator for SEO",
         "geo modifier generator 2026"
       ],
-      "shortDescription": "Free geo modifier generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate city, neighborhood, and metro geo modifiers for local keyword variations.",
       "heroImagePrompt": "product UI mock of geo modifier generator on dark navy background with electric blue accents",
       "parentCategory": "local-seo-tools"
     },
@@ -12964,7 +14539,7 @@
         "ai overview visibility checker for SEO",
         "ai overview visibility checker 2026"
       ],
-      "shortDescription": "Free ai overview visibility checker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Check whether a URL is cited inside Google AI Overviews for a target query.",
       "heroImagePrompt": "product UI mock of ai overview visibility checker on dark navy background with electric blue accents",
       "parentCategory": "ai-seo-tools"
     },
@@ -12979,7 +14554,7 @@
         "chatgpt citation tracker for SEO",
         "chatgpt citation tracker 2026"
       ],
-      "shortDescription": "Free chatgpt citation tracker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Track when a URL or brand is cited by ChatGPT for tracked prompt sets.",
       "heroImagePrompt": "product UI mock of chatgpt citation tracker on dark navy background with electric blue accents",
       "parentCategory": "ai-seo-tools"
     },
@@ -12994,7 +14569,7 @@
         "perplexity citation tracker for SEO",
         "perplexity citation tracker 2026"
       ],
-      "shortDescription": "Free perplexity citation tracker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Track Perplexity citations for a domain across tracked prompts and answer panels.",
       "heroImagePrompt": "product UI mock of perplexity citation tracker on dark navy background with electric blue accents",
       "parentCategory": "ai-seo-tools"
     },
@@ -13009,7 +14584,7 @@
         "ai content detector for SEO",
         "ai content detector 2026"
       ],
-      "shortDescription": "Free ai content detector - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Detect AI-generated patterns in text using perplexity and burstiness signals.",
       "heroImagePrompt": "product UI mock of ai content detector on dark navy background with electric blue accents",
       "parentCategory": "ai-seo-tools"
     },
@@ -13024,7 +14599,7 @@
         "ai title generator for SEO",
         "ai title generator 2026"
       ],
-      "shortDescription": "Free ai title generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate title tag candidates from a topic using SERP-aware patterns.",
       "heroImagePrompt": "product UI mock of ai title generator on dark navy background with electric blue accents",
       "parentCategory": "ai-seo-tools"
     },
@@ -13039,7 +14614,7 @@
         "ai faq generator for SEO",
         "ai faq generator 2026"
       ],
-      "shortDescription": "Free ai faq generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate FAQ questions and answers from a topic, primed for FAQ schema.",
       "heroImagePrompt": "product UI mock of ai faq generator on dark navy background with electric blue accents",
       "parentCategory": "ai-seo-tools"
     },
@@ -13054,7 +14629,7 @@
         "ai meta description generator for SEO",
         "ai meta description generator 2026"
       ],
-      "shortDescription": "Free ai meta description generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate meta description variants within a character budget for any topic.",
       "heroImagePrompt": "product UI mock of ai meta description generator on dark navy background with electric blue accents",
       "parentCategory": "ai-seo-tools"
     },
@@ -13069,7 +14644,7 @@
         "ai schema generator for SEO",
         "ai schema generator 2026"
       ],
-      "shortDescription": "Free ai schema generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate JSON-LD schema for any page type using your inputs and best-practice fields.",
       "heroImagePrompt": "product UI mock of ai schema generator on dark navy background with electric blue accents",
       "parentCategory": "ai-seo-tools"
     },
@@ -13084,7 +14659,7 @@
         "faq schema generator for SEO",
         "faq schema generator 2026"
       ],
-      "shortDescription": "Free faq schema generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate FAQ schema JSON-LD from question and answer pairs.",
       "heroImagePrompt": "product UI mock of faq schema generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -13099,7 +14674,7 @@
         "howto schema generator for SEO",
         "howto schema generator 2026"
       ],
-      "shortDescription": "Free howto schema generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate HowTo schema with step images, total time, and supply inputs.",
       "heroImagePrompt": "product UI mock of howto schema generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -13114,7 +14689,7 @@
         "article schema generator for SEO",
         "article schema generator 2026"
       ],
-      "shortDescription": "Free article schema generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate Article schema with headline, author, datePublished, and image fields.",
       "heroImagePrompt": "product UI mock of article schema generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -13129,7 +14704,7 @@
         "product schema generator for SEO",
         "product schema generator 2026"
       ],
-      "shortDescription": "Free product schema generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate Product schema with offers, aggregateRating, and review nodes.",
       "heroImagePrompt": "product UI mock of product schema generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -13144,7 +14719,7 @@
         "localbusiness schema generator for SEO",
         "localbusiness schema generator 2026"
       ],
-      "shortDescription": "Free localbusiness schema generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate LocalBusiness schema with hours, geo, and review snippet.",
       "heroImagePrompt": "product UI mock of localbusiness schema generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -13159,7 +14734,7 @@
         "breadcrumb schema generator for SEO",
         "breadcrumb schema generator 2026"
       ],
-      "shortDescription": "Free breadcrumb schema generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate BreadcrumbList schema from a URL path with itemListElement nodes.",
       "heroImagePrompt": "product UI mock of breadcrumb schema generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -13174,7 +14749,7 @@
         "videoobject schema generator for SEO",
         "videoobject schema generator 2026"
       ],
-      "shortDescription": "Free videoobject schema generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate VideoObject schema with thumbnailUrl, duration, and uploadDate fields.",
       "heroImagePrompt": "product UI mock of videoobject schema generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -13189,7 +14764,7 @@
         "review schema generator for SEO",
         "review schema generator 2026"
       ],
-      "shortDescription": "Free review schema generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate Review and AggregateRating schema for testimonial and rating widgets.",
       "heroImagePrompt": "product UI mock of review schema generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -13204,7 +14779,7 @@
         "event schema generator for SEO",
         "event schema generator 2026"
       ],
-      "shortDescription": "Free event schema generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate Event schema with location, startDate, and offers blocks for rich snippets.",
       "heroImagePrompt": "product UI mock of event schema generator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -13219,7 +14794,7 @@
         "cpc calculator for SEO",
         "cpc calculator 2026"
       ],
-      "shortDescription": "Free cpc calculator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Calculate cost-per-click from spend and clicks, with currency and date-range inputs.",
       "heroImagePrompt": "product UI mock of cpc calculator on dark navy background with electric blue accents",
       "parentCategory": "ppc-tools"
     },
@@ -13234,7 +14809,7 @@
         "roas calculator for SEO",
         "roas calculator 2026"
       ],
-      "shortDescription": "Free roas calculator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Calculate return on ad spend from revenue and ad spend with break-even analysis.",
       "heroImagePrompt": "product UI mock of roas calculator on dark navy background with electric blue accents",
       "parentCategory": "ppc-tools",
       "category": "PPC & Paid Ads",
@@ -13254,7 +14829,7 @@
         "ctr calculator for SEO",
         "ctr calculator 2026"
       ],
-      "shortDescription": "Free ctr calculator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Calculate click-through rate from impressions and clicks across campaigns.",
       "heroImagePrompt": "product UI mock of ctr calculator on dark navy background with electric blue accents",
       "parentCategory": "ppc-tools"
     },
@@ -13269,7 +14844,7 @@
         "quality score estimator for SEO",
         "quality score estimator 2026"
       ],
-      "shortDescription": "Free quality score estimator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Estimate Google Ads Quality Score from expected CTR, ad relevance, and landing-page signals.",
       "heroImagePrompt": "product UI mock of quality score estimator on dark navy background with electric blue accents",
       "parentCategory": "ppc-tools",
       "category": "PPC & Paid Ads",
@@ -13289,7 +14864,7 @@
         "ad copy generator for SEO",
         "ad copy generator 2026"
       ],
-      "shortDescription": "Free ad copy generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate Google Ads, Meta Ads, and LinkedIn Ads copy variants from a single brief.",
       "heroImagePrompt": "product UI mock of ad copy generator on dark navy background with electric blue accents",
       "parentCategory": "ppc-tools",
       "category": "PPC & Paid Ads",
@@ -13309,7 +14884,7 @@
         "utm builder for SEO",
         "utm builder 2026"
       ],
-      "shortDescription": "Free utm builder - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Build UTM-tagged campaign URLs with source, medium, campaign, term, and content parameters.",
       "heroImagePrompt": "product UI mock of utm builder on dark navy background with electric blue accents",
       "parentCategory": "ppc-tools"
     },
@@ -13324,7 +14899,7 @@
         "negative keyword generator for SEO",
         "negative keyword generator 2026"
       ],
-      "shortDescription": "Free negative keyword generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate negative keyword lists from a seed term using common irrelevant modifiers.",
       "heroImagePrompt": "product UI mock of negative keyword generator on dark navy background with electric blue accents",
       "parentCategory": "ppc-tools"
     },
@@ -13339,7 +14914,7 @@
         "index coverage checker for SEO",
         "index coverage checker 2026"
       ],
-      "shortDescription": "Free index coverage checker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Check whether a URL is indexed in Google using site: operator probes.",
       "heroImagePrompt": "product UI mock of index coverage checker on dark navy background with electric blue accents",
       "parentCategory": "indexing-tools"
     },
@@ -13354,7 +14929,7 @@
         "bulk indexing checker for SEO",
         "bulk indexing checker 2026"
       ],
-      "shortDescription": "Free bulk indexing checker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Check indexed status for many URLs at once using site: operator probes per URL.",
       "heroImagePrompt": "product UI mock of bulk indexing checker on dark navy background with electric blue accents",
       "parentCategory": "indexing-tools"
     },
@@ -13369,7 +14944,7 @@
         "crawl stats estimator for SEO",
         "crawl stats estimator 2026"
       ],
-      "shortDescription": "Free crawl stats estimator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Estimate crawl request volume, response size, and average response time per URL.",
       "heroImagePrompt": "product UI mock of crawl stats estimator on dark navy background with electric blue accents",
       "parentCategory": "indexing-tools"
     },
@@ -13384,7 +14959,7 @@
         "url inspector for SEO",
         "url inspector 2026"
       ],
-      "shortDescription": "Free url inspector - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Run URL Inspection style checks on a single URL: canonical, robots, indexability, schema.",
       "heroImagePrompt": "product UI mock of url inspector on dark navy background with electric blue accents",
       "parentCategory": "indexing-tools"
     },
@@ -13399,7 +14974,7 @@
         "cro heuristic checklist for SEO",
         "cro heuristic checklist 2026"
       ],
-      "shortDescription": "Free cro heuristic checklist - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Score a landing page against 30 CRO heuristics across copy, layout, proof, and CTA.",
       "heroImagePrompt": "product UI mock of cro heuristic checklist on dark navy background with electric blue accents",
       "parentCategory": "conversion-tools"
     },
@@ -13414,7 +14989,7 @@
         "above-the-fold tester for SEO",
         "above-the-fold tester 2026"
       ],
-      "shortDescription": "Free above-the-fold tester - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Test what renders above the fold at desktop, tablet, and mobile breakpoints.",
       "heroImagePrompt": "product UI mock of above-the-fold tester on dark navy background with electric blue accents",
       "parentCategory": "conversion-tools"
     },
@@ -13429,7 +15004,7 @@
         "cta strength analyzer for SEO",
         "cta strength analyzer 2026"
       ],
-      "shortDescription": "Free cta strength analyzer - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Score a CTA against 8 conversion criteria: clarity, urgency, proof, friction, value.",
       "heroImagePrompt": "product UI mock of cta strength analyzer on dark navy background with electric blue accents",
       "parentCategory": "conversion-tools"
     },
@@ -13444,7 +15019,7 @@
         "form field counter for SEO",
         "form field counter 2026"
       ],
-      "shortDescription": "Free form field counter - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Count form fields, required fields, and field types and benchmark against conversion data.",
       "heroImagePrompt": "product UI mock of form field counter on dark navy background with electric blue accents",
       "parentCategory": "conversion-tools"
     },
@@ -13459,7 +15034,7 @@
         "page speed to conversion estimator for SEO",
         "page speed to conversion estimator 2026"
       ],
-      "shortDescription": "Free page speed to conversion estimator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Estimate revenue impact from LCP and INP improvements on conversion rate.",
       "heroImagePrompt": "product UI mock of page speed to conversion estimator on dark navy background with electric blue accents",
       "parentCategory": "conversion-tools"
     },
@@ -13474,7 +15049,7 @@
         "monthly seo report generator for SEO",
         "monthly seo report generator 2026"
       ],
-      "shortDescription": "Free monthly seo report generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate a monthly SEO report from GA4 and Search Console exports with executive summary.",
       "heroImagePrompt": "product UI mock of monthly seo report generator on dark navy background with electric blue accents",
       "parentCategory": "reporting-tools"
     },
@@ -13489,7 +15064,7 @@
         "kpi tracker for SEO",
         "kpi tracker 2026"
       ],
-      "shortDescription": "Free kpi tracker - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Track SEO and PPC KPIs across weeks with target lines and variance flags.",
       "heroImagePrompt": "product UI mock of kpi tracker on dark navy background with electric blue accents",
       "parentCategory": "reporting-tools"
     },
@@ -13504,7 +15079,7 @@
         "rank tracking snapshot for SEO",
         "rank tracking snapshot 2026"
       ],
-      "shortDescription": "Free rank tracking snapshot - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Capture a one-time rank snapshot for a keyword list across desktop and mobile.",
       "heroImagePrompt": "product UI mock of rank tracking snapshot on dark navy background with electric blue accents",
       "parentCategory": "reporting-tools"
     },
@@ -13519,7 +15094,7 @@
         "traffic forecaster for SEO",
         "traffic forecaster 2026"
       ],
-      "shortDescription": "Free traffic forecaster - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Forecast organic traffic from keyword volume, CTR curve, and ranking probability inputs.",
       "heroImagePrompt": "product UI mock of traffic forecaster on dark navy background with electric blue accents",
       "parentCategory": "reporting-tools"
     },
@@ -13534,7 +15109,7 @@
         "pipeline attribution calculator for SEO",
         "pipeline attribution calculator 2026"
       ],
-      "shortDescription": "Free pipeline attribution calculator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Calculate pipeline attribution across SEO, paid, and direct touchpoints.",
       "heroImagePrompt": "product UI mock of pipeline attribution calculator on dark navy background with electric blue accents",
       "parentCategory": "reporting-tools"
     },
@@ -13549,7 +15124,7 @@
         "hashtag generator for SEO",
         "hashtag generator 2026"
       ],
-      "shortDescription": "Free hashtag generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate hashtag sets for Instagram, TikTok, LinkedIn, and Twitter from a topic.",
       "heroImagePrompt": "product UI mock of hashtag generator on dark navy background with electric blue accents",
       "parentCategory": "social-tools",
       "category": "Social Media & LinkedIn",
@@ -13569,7 +15144,7 @@
         "linkedin post optimizer for SEO",
         "linkedin post optimizer 2026"
       ],
-      "shortDescription": "Free linkedin post optimizer - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Score a LinkedIn post for hook, length, line breaks, and engagement triggers.",
       "heroImagePrompt": "product UI mock of linkedin post optimizer on dark navy background with electric blue accents",
       "parentCategory": "social-tools"
     },
@@ -13584,7 +15159,7 @@
         "twitter bio optimizer for SEO",
         "twitter bio optimizer 2026"
       ],
-      "shortDescription": "Free twitter bio optimizer - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Score a Twitter bio against character budget, keyword presence, and CTA strength.",
       "heroImagePrompt": "product UI mock of twitter bio optimizer on dark navy background with electric blue accents",
       "parentCategory": "social-tools"
     },
@@ -13599,7 +15174,7 @@
         "instagram caption generator for SEO",
         "instagram caption generator 2026"
       ],
-      "shortDescription": "Free instagram caption generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate Instagram caption variants with hook, value, and CTA in one tap.",
       "heroImagePrompt": "product UI mock of instagram caption generator on dark navy background with electric blue accents",
       "parentCategory": "social-tools"
     },
@@ -13614,7 +15189,7 @@
         "youtube title optimizer for SEO",
         "youtube title optimizer 2026"
       ],
-      "shortDescription": "Free youtube title optimizer - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Score a YouTube title for CTR signals: numbers, brackets, emotion, and keyword position.",
       "heroImagePrompt": "product UI mock of youtube title optimizer on dark navy background with electric blue accents",
       "parentCategory": "social-tools"
     },
@@ -13629,7 +15204,7 @@
         "youtube tag generator for SEO",
         "youtube tag generator 2026"
       ],
-      "shortDescription": "Free youtube tag generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate YouTube tag sets from a video topic using broad and long-tail patterns.",
       "heroImagePrompt": "product UI mock of youtube tag generator on dark navy background with electric blue accents",
       "parentCategory": "social-tools"
     },
@@ -13644,7 +15219,7 @@
         "pinterest pin title generator for SEO",
         "pinterest pin title generator 2026"
       ],
-      "shortDescription": "Free pinterest pin title generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate Pinterest pin title variants for vertical pins and idea pins.",
       "heroImagePrompt": "product UI mock of pinterest pin title generator on dark navy background with electric blue accents",
       "parentCategory": "social-tools"
     },
@@ -13659,7 +15234,7 @@
         "tiktok hook generator for SEO",
         "tiktok hook generator 2026"
       ],
-      "shortDescription": "Free tiktok hook generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate TikTok hook lines for the first three seconds across proven hook patterns.",
       "heroImagePrompt": "product UI mock of tiktok hook generator on dark navy background with electric blue accents",
       "parentCategory": "social-tools"
     },
@@ -13674,7 +15249,7 @@
         "social share image sizer for SEO",
         "social share image sizer 2026"
       ],
-      "shortDescription": "Free social share image sizer - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Resize and crop a single image into all required social share aspect ratios.",
       "heroImagePrompt": "product UI mock of social share image sizer on dark navy background with electric blue accents",
       "parentCategory": "social-tools"
     },
@@ -13689,7 +15264,7 @@
         "url shortener for SEO",
         "url shortener 2026"
       ],
-      "shortDescription": "Free url shortener - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Shorten a long URL into a clean, trackable redirect with optional UTM preservation.",
       "heroImagePrompt": "product UI mock of url shortener on dark navy background with electric blue accents",
       "parentCategory": "content-tools"
     },
@@ -13704,7 +15279,7 @@
         "html encoder decoder for SEO",
         "html encoder decoder 2026"
       ],
-      "shortDescription": "Free html encoder decoder - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Encode and decode HTML entities, URL components, and Base64 strings in one place.",
       "heroImagePrompt": "product UI mock of html encoder decoder on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools"
     },
@@ -13719,7 +15294,7 @@
         "htaccess generator for SEO",
         "htaccess generator 2026"
       ],
-      "shortDescription": "Free htaccess generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate .htaccess rules for redirects, force-https, gzip, and cache headers.",
       "heroImagePrompt": "product UI mock of htaccess generator on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools"
     },
@@ -13734,7 +15309,7 @@
         "schema validator for SEO",
         "schema validator 2026"
       ],
-      "shortDescription": "Free schema validator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Validate JSON-LD schema against Google's structured-data requirements per type.",
       "heroImagePrompt": "product UI mock of schema validator on dark navy background with electric blue accents",
       "parentCategory": "meta-tools"
     },
@@ -13749,9 +15324,49 @@
         "robots.txt generator for SEO",
         "robots.txt generator 2026"
       ],
-      "shortDescription": "Free robots.txt generator - run unlimited checks in your browser, no signup required.",
+      "shortDescription": "Generate a robots.txt file with allow, disallow, sitemap, and host directives.",
       "heroImagePrompt": "product UI mock of robots.txt generator on dark navy background with electric blue accents",
       "parentCategory": "technical-seo-tools"
+    },
+    {
+      "slug": "bulk-index-checker",
+      "name": "Bulk Index Checker",
+      "primaryKeyword": "bulk index checker",
+      "lsiKeywords": [
+        "bulk indexation checker",
+        "check if multiple URLs are indexed",
+        "site: operator bulk checker",
+        "Google index checker bulk",
+        "bulk URL indexed status"
+      ],
+      "shortDescription": "Open Google site: queries for many URLs in batched tabs to check indexed status.",
+      "heroImagePrompt": "product UI mock of a bulk index checker on dark navy background with electric blue accents",
+      "parentCategory": "meta-tools",
+      "category": "Meta & On-Page SEO",
+      "description": "Check multiple URLs at once for Google indexing status.",
+      "metaDescription": "Check multiple URLs at once for Google indexing status.",
+      "hasJs": true,
+      "toolType": "textarea"
+    },
+    {
+      "slug": "bulk-keyword-checker",
+      "name": "Bulk Keyword Checker",
+      "primaryKeyword": "bulk keyword checker",
+      "lsiKeywords": [
+        "bulk keyword rank checker",
+        "Google search bulk keywords",
+        "branded SERP checker",
+        "keyword rank tracker free",
+        "bulk SERP checker"
+      ],
+      "shortDescription": "Open Google branded SERP queries for many keywords at once with location targeting.",
+      "heroImagePrompt": "product UI mock of a bulk keyword rank checker on dark navy background with electric blue accents",
+      "parentCategory": "keyword-tools",
+      "category": "Keyword & Research",
+      "description": "Check search volume and competition metrics for multiple keywords at once.",
+      "metaDescription": "Check search volume and competition metrics for multiple keywords at once.",
+      "hasJs": true,
+      "toolType": "textarea"
     },
     {
       "slug": "character-counter",
@@ -13762,7 +15377,8 @@
       "description": "Count characters with and without spaces. Perfect for social media character limits.",
       "metaDescription": "Count characters with and without spaces. Perfect for social media character limits.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Count characters, words, lines, and reading time across any block of text."
     },
     {
       "slug": "keyword-density-checker",
@@ -13773,7 +15389,8 @@
       "description": "Analyze keyword frequency, density percentage, and top keywords in your content.",
       "metaDescription": "Analyze keyword frequency, density percentage, and top keywords in your content.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Check keyword frequency and density across a page or pasted text."
     },
     {
       "slug": "readability-checker",
@@ -13784,7 +15401,8 @@
       "description": "Check your content's readability score using Flesch-Kincaid and other formulas.",
       "metaDescription": "Check your content's readability score using Flesch-Kincaid and other formulas.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Score text on Flesch, Flesch-Kincaid, Gunning Fog, and grade-level readability."
     },
     {
       "slug": "plagiarism-sentence-checker",
@@ -13795,7 +15413,8 @@
       "description": "Check individual sentences for potential plagiarism and duplicate content issues.",
       "metaDescription": "Check individual sentences for potential plagiarism and duplicate content issues.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Highlight near-duplicate sentences between two blocks of pasted text."
     },
     {
       "slug": "lorem-ipsum-generator",
@@ -13806,7 +15425,8 @@
       "description": "Generate placeholder text in various lengths for design mockups and layouts.",
       "metaDescription": "Generate placeholder text in various lengths for design mockups and layouts.",
       "hasJs": true,
-      "toolType": "form"
+      "toolType": "form",
+      "shortDescription": "Generate Lorem Ipsum filler text in paragraphs, sentences, or words for layout mock-ups."
     },
     {
       "slug": "text-case-converter",
@@ -13817,7 +15437,8 @@
       "description": "Convert text between uppercase, lowercase, title case, sentence case, and more.",
       "metaDescription": "Convert text between uppercase, lowercase, title case, sentence case, and more.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Convert text between upper, lower, sentence, title, and camel case in one click."
     },
     {
       "slug": "article-rewriter-helper",
@@ -13828,7 +15449,8 @@
       "description": "Get suggestions to rephrase and improve your article content for uniqueness.",
       "metaDescription": "Get suggestions to rephrase and improve your article content for uniqueness.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Rewrite a paragraph at the click of a button, with synonym and tone suggestions."
     },
     {
       "slug": "headline-analyzer",
@@ -13839,7 +15461,8 @@
       "description": "Analyze your headline for emotional impact, word balance, and click potential.",
       "metaDescription": "Analyze your headline for emotional impact, word balance, and click potential.",
       "hasJs": true,
-      "toolType": "input"
+      "toolType": "input",
+      "shortDescription": "Score headline strength on emotion, power words, length, and CTR signals."
     },
     {
       "slug": "grammar-checker",
@@ -13850,7 +15473,8 @@
       "description": "Check your text for grammar, spelling, and punctuation errors.",
       "metaDescription": "Check your text for grammar, spelling, and punctuation errors.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Highlight common grammar, punctuation, and spelling slips across pasted text."
     },
     {
       "slug": "google-serp-preview",
@@ -13861,7 +15485,8 @@
       "description": "Preview how your page will appear in Google search results before publishing.",
       "metaDescription": "Preview how your page will appear in Google search results before publishing.",
       "hasJs": true,
-      "toolType": "form"
+      "toolType": "form",
+      "shortDescription": "Preview a page's title and description as they render in Google search results."
     },
     {
       "slug": "bulk-title-checker",
@@ -13872,7 +15497,8 @@
       "description": "Check multiple page titles for length, keywords, and optimization best practices.",
       "metaDescription": "Check multiple page titles for length, keywords, and optimization best practices.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Audit title tags for length, keyword position, and SERP truncation across many URLs."
     },
     {
       "slug": "meta-description-checker",
@@ -13883,7 +15509,8 @@
       "description": "Analyze your meta descriptions for length, keyword usage, and call-to-action presence.",
       "metaDescription": "Analyze your meta descriptions for length, keyword usage, and call-to-action presence.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Audit meta descriptions for length, keyword presence, and CTA strength across pages."
     },
     {
       "slug": "heading-analyzer",
@@ -13894,7 +15521,8 @@
       "description": "Analyze your page heading structure (H1-H6) for SEO best practices.",
       "metaDescription": "Analyze your page heading structure (H1-H6) for SEO best practices.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Audit H1-H6 structure on a page for hierarchy, length, and keyword coverage."
     },
     {
       "slug": "image-alt-text-generator",
@@ -13905,7 +15533,8 @@
       "description": "Generate descriptive, SEO-friendly alt text for your images.",
       "metaDescription": "Generate descriptive, SEO-friendly alt text for your images.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate alt text candidates for an image based on its filename and context."
     },
     {
       "slug": "canonical-tag-generator",
@@ -13916,7 +15545,8 @@
       "description": "Generate proper canonical tags to prevent duplicate content issues.",
       "metaDescription": "Generate proper canonical tags to prevent duplicate content issues.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate canonical link tags with self-canonical and cross-domain variants."
     },
     {
       "slug": "open-graph-preview",
@@ -13927,7 +15557,8 @@
       "description": "Preview how your content will appear when shared on social media platforms.",
       "metaDescription": "Preview how your content will appear when shared on social media platforms.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Preview how a URL renders as an Open Graph card on Facebook, LinkedIn, and Slack."
     },
     {
       "slug": "google-index-checker",
@@ -13938,18 +15569,8 @@
       "description": "Check if a specific URL is indexed by Google.",
       "metaDescription": "Check if a specific URL is indexed by Google.",
       "hasJs": true,
-      "toolType": "textarea"
-    },
-    {
-      "slug": "bulk-index-checker",
-      "name": "Bulk Index Checker",
-      "category": "Meta & On-Page SEO",
-      "primaryKeyword": "Bulk Index Checker",
-      "lsiKeywords": [],
-      "description": "Check multiple URLs at once for Google indexing status.",
-      "metaDescription": "Check multiple URLs at once for Google indexing status.",
-      "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Open a Google site: query for a URL to confirm whether the page is indexed."
     },
     {
       "slug": "serp-checker",
@@ -13960,7 +15581,8 @@
       "description": "Check your current search engine ranking position for specific keywords.",
       "metaDescription": "Check your current search engine ranking position for specific keywords.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Open a Google search for any keyword with location and device parameters."
     },
     {
       "slug": "robots-txt-generator",
@@ -13971,7 +15593,8 @@
       "description": "Generate a properly formatted robots.txt file for your website.",
       "metaDescription": "Generate a properly formatted robots.txt file for your website.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate a robots.txt file with allow, disallow, sitemap, and crawl-delay directives."
     },
     {
       "slug": "sitemap-generator",
@@ -13982,7 +15605,8 @@
       "description": "Create an XML sitemap for your website to improve search engine crawling.",
       "metaDescription": "Create an XML sitemap for your website to improve search engine crawling.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate an XML sitemap from a list of URLs with lastmod and priority hints."
     },
     {
       "slug": "htaccess-redirect-generator",
@@ -13993,7 +15617,8 @@
       "description": "Generate .htaccess redirect rules for URL migrations and restructuring.",
       "metaDescription": "Generate .htaccess redirect rules for URL migrations and restructuring.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate .htaccess 301 redirect rules from old-URL to new-URL pairs."
     },
     {
       "slug": "schema-generator",
@@ -14004,7 +15629,8 @@
       "description": "Generate JSON-LD structured data markup for rich search results.",
       "metaDescription": "Generate JSON-LD structured data markup for rich search results.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate JSON-LD schema for the page type you select using the inputs you provide."
     },
     {
       "slug": "json-ld-validator",
@@ -14015,7 +15641,8 @@
       "description": "Validate your JSON-LD structured data for syntax and schema.org compliance.",
       "metaDescription": "Validate your JSON-LD structured data for syntax and schema.org compliance.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Validate JSON-LD schema against Google's structured-data requirements."
     },
     {
       "slug": "url-encoder-decoder",
@@ -14026,7 +15653,8 @@
       "description": "Encode or decode URLs for safe web transmission.",
       "metaDescription": "Encode or decode URLs for safe web transmission.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Encode and decode URL components, query strings, and special characters."
     },
     {
       "slug": "http-status-checker",
@@ -14037,7 +15665,8 @@
       "description": "Check the HTTP status code of any URL for errors or redirects.",
       "metaDescription": "Check the HTTP status code of any URL for errors or redirects.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Check HTTP status codes, redirects, and response headers for any URL."
     },
     {
       "slug": "page-size-checker",
@@ -14048,7 +15677,8 @@
       "description": "Analyze total page size including HTML, CSS, JS, and images.",
       "metaDescription": "Analyze total page size including HTML, CSS, JS, and images.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Estimate total page size, request count, and largest resource for any URL."
     },
     {
       "slug": "core-web-vitals-guide",
@@ -14059,7 +15689,8 @@
       "description": "Interactive guide to understanding and improving Core Web Vitals metrics.",
       "metaDescription": "Interactive guide to understanding and improving Core Web Vitals metrics.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Reference guide to LCP, INP, and CLS thresholds, root causes, and proven fixes."
     },
     {
       "slug": "page-speed-analyzer",
@@ -14070,7 +15701,8 @@
       "description": "Analyze page speed metrics and get optimization recommendations.",
       "metaDescription": "Analyze page speed metrics and get optimization recommendations.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Run a quick PageSpeed analysis for a URL and surface the top wins."
     },
     {
       "slug": "xml-to-url-converter",
@@ -14081,7 +15713,8 @@
       "description": "Extract all URLs from an XML sitemap file for analysis.",
       "metaDescription": "Extract all URLs from an XML sitemap file for analysis.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Extract every URL from an XML sitemap into a clean copy-paste list."
     },
     {
       "slug": "keyword-suggestion-tool",
@@ -14092,7 +15725,8 @@
       "description": "Get keyword ideas and suggestions based on your seed keywords.",
       "metaDescription": "Get keyword ideas and suggestions based on your seed keywords.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate seed and long-tail keyword suggestions for any topic."
     },
     {
       "slug": "question-generator",
@@ -14103,7 +15737,8 @@
       "description": "Generate question-based keywords from any topic for FAQ and content ideas.",
       "metaDescription": "Generate question-based keywords from any topic for FAQ and content ideas.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate question-format keyword variants from a seed topic for FAQ targeting."
     },
     {
       "slug": "competitor-keyword-gap-planner",
@@ -14114,7 +15749,8 @@
       "description": "Identify keyword opportunities your competitors rank for but you don't.",
       "metaDescription": "Identify keyword opportunities your competitors rank for but you don't.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Plan keyword gap targets between you and a competitor URL list."
     },
     {
       "slug": "keyword-grouper",
@@ -14125,18 +15761,8 @@
       "description": "Group keywords into clusters based on semantic similarity and search intent.",
       "metaDescription": "Group keywords into clusters based on semantic similarity and search intent.",
       "hasJs": true,
-      "toolType": "textarea"
-    },
-    {
-      "slug": "bulk-keyword-checker",
-      "name": "Bulk Keyword Checker",
-      "category": "Keyword & Research",
-      "primaryKeyword": "Bulk Keyword Checker",
-      "lsiKeywords": [],
-      "description": "Check search volume and competition metrics for multiple keywords at once.",
-      "metaDescription": "Check search volume and competition metrics for multiple keywords at once.",
-      "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Group a keyword list into topical clusters that map to URL targets."
     },
     {
       "slug": "linkedin-post-formatter",
@@ -14147,7 +15773,8 @@
       "description": "Format and optimize your LinkedIn posts for maximum engagement and reach.",
       "metaDescription": "Format and optimize your LinkedIn posts for maximum engagement and reach.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Format a LinkedIn post with line breaks, emoji caps, and hook-line spacing."
     },
     {
       "slug": "linkedin-headline-generator",
@@ -14158,7 +15785,8 @@
       "description": "Generate compelling LinkedIn headlines that attract profile views.",
       "metaDescription": "Generate compelling LinkedIn headlines that attract profile views.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate LinkedIn headline variants from a role, value-prop, and target audience."
     },
     {
       "slug": "linkedin-summary-generator",
@@ -14169,7 +15797,8 @@
       "description": "Create a professional LinkedIn summary that showcases your expertise.",
       "metaDescription": "Create a professional LinkedIn summary that showcases your expertise.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate LinkedIn About section copy from a role, wins, and current focus."
     },
     {
       "slug": "twitter-thread-formatter",
@@ -14180,7 +15809,8 @@
       "description": "Format your content into engaging Twitter/X thread format.",
       "metaDescription": "Format your content into engaging Twitter/X thread format.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Format a long block of text into a numbered Twitter thread within character limits."
     },
     {
       "slug": "social-media-image-size-guide",
@@ -14191,7 +15821,8 @@
       "description": "Reference guide for optimal image sizes across all social media platforms.",
       "metaDescription": "Reference guide for optimal image sizes across all social media platforms.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Reference guide to image dimensions and aspect ratios across every social platform."
     },
     {
       "slug": "instagram-bio-generator",
@@ -14202,7 +15833,8 @@
       "description": "Create an engaging Instagram bio that attracts followers.",
       "metaDescription": "Create an engaging Instagram bio that attracts followers.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate Instagram bio variants from a niche, value-prop, and CTA."
     },
     {
       "slug": "social-post-scheduler-planner",
@@ -14213,7 +15845,8 @@
       "description": "Plan and schedule your social media content calendar.",
       "metaDescription": "Plan and schedule your social media content calendar.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Plan a weekly social post cadence across channels with topic and CTA prompts."
     },
     {
       "slug": "local-citation-finder",
@@ -14224,7 +15857,8 @@
       "description": "Find local citation opportunities and directory listings for your business.",
       "metaDescription": "Find local citation opportunities and directory listings for your business.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Find local citation opportunities for a business by category and city."
     },
     {
       "slug": "review-response-generator",
@@ -14235,7 +15869,8 @@
       "description": "Generate professional responses to customer reviews.",
       "metaDescription": "Generate professional responses to customer reviews.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate professional review responses for positive, neutral, and negative reviews."
     },
     {
       "slug": "local-keyword-generator",
@@ -14246,7 +15881,8 @@
       "description": "Generate location-specific keywords for local SEO targeting.",
       "metaDescription": "Generate location-specific keywords for local SEO targeting.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate local keyword variations from a seed term and city, neighborhood, or ZIP."
     },
     {
       "slug": "gbp-keyword-checker",
@@ -14257,7 +15893,8 @@
       "description": "Check how your Google Business Profile ranks for local keywords.",
       "metaDescription": "Check how your Google Business Profile ranks for local keywords.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Check whether a Google Business Profile is matching for target local keywords."
     },
     {
       "slug": "ai-search-prompt-tester",
@@ -14268,7 +15905,8 @@
       "description": "Test how AI search engines respond to prompts about your brand.",
       "metaDescription": "Test how AI search engines respond to prompts about your brand.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Test ChatGPT, Perplexity, and Gemini prompts for citation visibility on a topic."
     },
     {
       "slug": "ai-content-optimizer",
@@ -14279,7 +15917,8 @@
       "description": "Optimize your content structure for AI search engine comprehension.",
       "metaDescription": "Optimize your content structure for AI search engine comprehension.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Score a draft against AI Overview citation signals: entities, citations, structure."
     },
     {
       "slug": "brand-mention-tracker-guide",
@@ -14290,7 +15929,8 @@
       "description": "Guide to tracking your brand mentions across AI and traditional search.",
       "metaDescription": "Guide to tracking your brand mentions across AI and traditional search.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Reference guide for tracking brand mentions across web, social, and AI engines."
     },
     {
       "slug": "anchor-text-analyzer",
@@ -14301,7 +15941,8 @@
       "description": "Analyze your backlink anchor text distribution for optimization.",
       "metaDescription": "Analyze your backlink anchor text distribution for optimization.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Analyze the anchor text distribution of links pointing at a URL or domain."
     },
     {
       "slug": "guest-post-pitch-generator",
@@ -14312,7 +15953,8 @@
       "description": "Generate personalized guest post pitch emails for outreach.",
       "metaDescription": "Generate personalized guest post pitch emails for outreach.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate guest-post pitch email variants from your topic and target publication."
     },
     {
       "slug": "broken-link-outreach-template",
@@ -14323,7 +15965,8 @@
       "description": "Create outreach templates for broken link building campaigns.",
       "metaDescription": "Create outreach templates for broken link building campaigns.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Outreach email templates for broken-link building with proven response rates."
     },
     {
       "slug": "backlink-quality-checklist",
@@ -14334,7 +15977,8 @@
       "description": "Evaluate backlink quality with our comprehensive quality checklist.",
       "metaDescription": "Evaluate backlink quality with our comprehensive quality checklist.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Score a candidate backlink against authority, relevance, anchor, and toxicity criteria."
     },
     {
       "slug": "disavow-file-generator",
@@ -14345,7 +15989,8 @@
       "description": "Generate a Google disavow file to remove toxic backlink signals.",
       "metaDescription": "Generate a Google disavow file to remove toxic backlink signals.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate a Google Search Console disavow file from a toxic-link URL list."
     },
     {
       "slug": "product-description-optimizer",
@@ -14356,7 +16001,8 @@
       "description": "Optimize product descriptions for SEO and conversion.",
       "metaDescription": "Optimize product descriptions for SEO and conversion.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Optimize a product description for organic search, schema, and conversion signals."
     },
     {
       "slug": "ecommerce-schema-generator",
@@ -14367,7 +16013,8 @@
       "description": "Generate Product schema markup for e-commerce rich snippets.",
       "metaDescription": "Generate Product schema markup for e-commerce rich snippets.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate Product, Offer, and AggregateRating schema for an ecommerce page."
     },
     {
       "slug": "category-page-optimizer",
@@ -14378,7 +16025,8 @@
       "description": "Optimize e-commerce category pages for better organic rankings.",
       "metaDescription": "Optimize e-commerce category pages for better organic rankings.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Audit and optimize an ecommerce category page for ranking and faceted-nav signals."
     },
     {
       "slug": "seo-roi-calculator",
@@ -14389,7 +16037,8 @@
       "description": "Calculate the return on investment of your SEO campaigns.",
       "metaDescription": "Calculate the return on investment of your SEO campaigns.",
       "hasJs": true,
-      "toolType": "form"
+      "toolType": "form",
+      "shortDescription": "Calculate SEO ROI from traffic, conversion rate, AOV, and retainer cost inputs."
     },
     {
       "slug": "cpc-savings-calculator",
@@ -14400,7 +16049,8 @@
       "description": "Calculate how much you save on PPC by ranking organically.",
       "metaDescription": "Calculate how much you save on PPC by ranking organically.",
       "hasJs": true,
-      "toolType": "form"
+      "toolType": "form",
+      "shortDescription": "Estimate CPC savings from shifting paid traffic to organic ranked URLs."
     },
     {
       "slug": "domain-age-checker",
@@ -14411,7 +16061,8 @@
       "description": "Check the registration age and history of any domain name.",
       "metaDescription": "Check the registration age and history of any domain name.",
       "hasJs": true,
-      "toolType": "input"
+      "toolType": "input",
+      "shortDescription": "Check the WHOIS registration age of any domain and its renewal date."
     },
     {
       "slug": "website-cost-estimator",
@@ -14422,7 +16073,8 @@
       "description": "Estimate the cost of building or redesigning a website.",
       "metaDescription": "Estimate the cost of building or redesigning a website.",
       "hasJs": true,
-      "toolType": "form"
+      "toolType": "form",
+      "shortDescription": "Estimate website build cost from pages, complexity, and integration count."
     },
     {
       "slug": "cta-generator",
@@ -14433,7 +16085,8 @@
       "description": "Generate compelling calls-to-action for your website and landing pages.",
       "metaDescription": "Generate compelling calls-to-action for your website and landing pages.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate CTA copy variants from a value-prop, audience, and conversion goal."
     },
     {
       "slug": "ab-test-duration-calculator",
@@ -14444,7 +16097,8 @@
       "description": "Calculate how long to run your A/B test for statistical significance.",
       "metaDescription": "Calculate how long to run your A/B test for statistical significance.",
       "hasJs": true,
-      "toolType": "form"
+      "toolType": "form",
+      "shortDescription": "Calculate A/B test duration from traffic, conversion rate, and minimum detectable effect."
     },
     {
       "slug": "color-contrast-checker",
@@ -14455,7 +16109,8 @@
       "description": "Check text and background color contrast for WCAG accessibility compliance.",
       "metaDescription": "Check text and background color contrast for WCAG accessibility compliance.",
       "hasJs": true,
-      "toolType": "form"
+      "toolType": "form",
+      "shortDescription": "Check WCAG color contrast ratios for foreground and background pairs."
     },
     {
       "slug": "page-speed-checklist",
@@ -14466,7 +16121,8 @@
       "description": "Comprehensive checklist for optimizing page load performance.",
       "metaDescription": "Comprehensive checklist for optimizing page load performance.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Reference checklist of page speed wins across CSS, JS, images, and fonts."
     },
     {
       "slug": "email-subject-line-tester",
@@ -14477,7 +16133,8 @@
       "description": "Test and score your email subject lines for open rate potential.",
       "metaDescription": "Test and score your email subject lines for open rate potential.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Score email subject lines for length, power words, and spam triggers."
     },
     {
       "slug": "cold-email-generator",
@@ -14488,7 +16145,8 @@
       "description": "Generate personalized cold outreach emails for link building and business development.",
       "metaDescription": "Generate personalized cold outreach emails for link building and business development.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Generate cold-email variants from a prospect role, value-prop, and CTA."
     },
     {
       "slug": "google-ads-budget-calculator",
@@ -14499,7 +16157,8 @@
       "description": "Calculate your ideal Google Ads budget based on your goals and industry.",
       "metaDescription": "Calculate your ideal Google Ads budget based on your goals and industry.",
       "hasJs": true,
-      "toolType": "form"
+      "toolType": "form",
+      "shortDescription": "Calculate a Google Ads daily budget from monthly cap, CPC, and target click volume."
     },
     {
       "slug": "ppc-campaign-audit-checklist",
@@ -14510,7 +16169,8 @@
       "description": "Comprehensive checklist for auditing your PPC campaigns.",
       "metaDescription": "Comprehensive checklist for auditing your PPC campaigns.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Audit a Google Ads or Meta Ads campaign against 40 best-practice criteria."
     },
     {
       "slug": "bulk-expired-domain-checker",
@@ -14521,7 +16181,8 @@
       "description": "Check multiple domains for expiration status and availability.",
       "metaDescription": "Check multiple domains for expiration status and availability.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Check expired-domain availability and basic SEO metrics in batched queries."
     },
     {
       "slug": "domain-authority-checker",
@@ -14532,7 +16193,8 @@
       "description": "Check the domain authority score of any website.",
       "metaDescription": "Check the domain authority score of any website.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Estimate domain authority from referring-domain count and quality inputs."
     },
     {
       "slug": "broken-link-checker",
@@ -14543,7 +16205,8 @@
       "description": "Find broken links on any web page that need fixing.",
       "metaDescription": "Find broken links on any web page that need fixing.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Crawl a page and surface broken internal and outbound links with status codes."
     },
     {
       "slug": "bulk-url-issue-checker",
@@ -14554,7 +16217,8 @@
       "description": "Check multiple URLs for common technical issues.",
       "metaDescription": "Check multiple URLs for common technical issues.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Scan many URLs at once for common issues: redirects, status, canonical, meta gaps."
     },
     {
       "slug": "force-google-indexing",
@@ -14565,7 +16229,8 @@
       "description": "Guide and tools to request Google to index or re-index your pages.",
       "metaDescription": "Guide and tools to request Google to index or re-index your pages.",
       "hasJs": true,
-      "toolType": "textarea"
+      "toolType": "textarea",
+      "shortDescription": "Step-by-step guide to nudging Google's indexer when a URL stays out of the index."
     }
   ],
   "toolCategories": [
@@ -16090,6 +17755,23 @@
       ],
       "shortDescription": "SEO and digital marketing tailored for businesses in Ghana, with bilingual content and locally optimized link building, citations, and ad campaigns.",
       "heroImagePrompt": "skyline of major city in Ghana with subtle dark navy and electric blue overlay"
+    },
+    {
+      "code": "LB",
+      "slug": "lebanon",
+      "name": "Lebanon",
+      "region": "middle-east",
+      "currency": "LBP",
+      "primaryKeyword": "SEO services in Lebanon",
+      "lsiKeywords": [
+        "digital marketing Lebanon",
+        "PPC management Lebanon",
+        "local SEO Lebanon",
+        "SEO agency Lebanon",
+        "SEO expert Lebanon"
+      ],
+      "shortDescription": "SEO and digital marketing tailored for businesses in Lebanon, with bilingual content and locally optimized link building, citations, and ad campaigns.",
+      "heroImagePrompt": "skyline of major city in Lebanon with subtle dark navy and electric blue overlay"
     },
     {
       "slug": "usa",
@@ -26163,6 +27845,561 @@
       "heroImagePrompt": "skyline of Accra at dusk, dark navy filter with electric blue accents"
     },
     {
+      "slug": "seo-services-abha",
+      "name": "Abha",
+      "countryCode": "SA",
+      "primaryKeyword": "SEO services in Abha",
+      "lsiKeywords": [
+        "Abha SEO agency",
+        "local SEO Abha",
+        "digital marketing Abha",
+        "PPC management Abha",
+        "Abha SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Abha businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Abha at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-khobar",
+      "name": "Al Khobar",
+      "countryCode": "SA",
+      "primaryKeyword": "SEO services in Al Khobar",
+      "lsiKeywords": [
+        "Al Khobar SEO agency",
+        "local SEO Al Khobar",
+        "digital marketing Al Khobar",
+        "PPC management Al Khobar",
+        "Al Khobar SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Al Khobar businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Al Khobar at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-madinah",
+      "name": "Madinah",
+      "countryCode": "SA",
+      "primaryKeyword": "SEO services in Madinah",
+      "lsiKeywords": [
+        "Madinah SEO agency",
+        "local SEO Madinah",
+        "digital marketing Madinah",
+        "PPC management Madinah",
+        "Madinah SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Madinah businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Madinah at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-makkah",
+      "name": "Makkah",
+      "countryCode": "SA",
+      "primaryKeyword": "SEO services in Makkah",
+      "lsiKeywords": [
+        "Makkah SEO agency",
+        "local SEO Makkah",
+        "digital marketing Makkah",
+        "PPC management Makkah",
+        "Makkah SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Makkah businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Makkah at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-tabuk",
+      "name": "Tabuk",
+      "countryCode": "SA",
+      "primaryKeyword": "SEO services in Tabuk",
+      "lsiKeywords": [
+        "Tabuk SEO agency",
+        "local SEO Tabuk",
+        "digital marketing Tabuk",
+        "PPC management Tabuk",
+        "Tabuk SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Tabuk businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Tabuk at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-beirut",
+      "name": "Beirut",
+      "countryCode": "LB",
+      "primaryKeyword": "SEO services in Beirut",
+      "lsiKeywords": [
+        "Beirut SEO agency",
+        "local SEO Beirut",
+        "digital marketing Beirut",
+        "PPC management Beirut",
+        "Beirut SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Beirut businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Beirut at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-lusail",
+      "name": "Lusail",
+      "countryCode": "QA",
+      "primaryKeyword": "SEO services in Lusail",
+      "lsiKeywords": [
+        "Lusail SEO agency",
+        "local SEO Lusail",
+        "digital marketing Lusail",
+        "PPC management Lusail",
+        "Lusail SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Lusail businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Lusail at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-aalborg",
+      "name": "Aalborg",
+      "countryCode": "DK",
+      "primaryKeyword": "SEO services in Aalborg",
+      "lsiKeywords": [
+        "Aalborg SEO agency",
+        "local SEO Aalborg",
+        "digital marketing Aalborg",
+        "PPC management Aalborg",
+        "Aalborg SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Aalborg businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Aalborg at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-odense",
+      "name": "Odense",
+      "countryCode": "DK",
+      "primaryKeyword": "SEO services in Odense",
+      "lsiKeywords": [
+        "Odense SEO agency",
+        "local SEO Odense",
+        "digital marketing Odense",
+        "PPC management Odense",
+        "Odense SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Odense businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Odense at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-dortmund",
+      "name": "Dortmund",
+      "countryCode": "DE",
+      "primaryKeyword": "SEO services in Dortmund",
+      "lsiKeywords": [
+        "Dortmund SEO agency",
+        "local SEO Dortmund",
+        "digital marketing Dortmund",
+        "PPC management Dortmund",
+        "Dortmund SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Dortmund businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Dortmund at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-dusseldorf",
+      "name": "Dusseldorf",
+      "countryCode": "DE",
+      "primaryKeyword": "SEO services in Dusseldorf",
+      "lsiKeywords": [
+        "Dusseldorf SEO agency",
+        "local SEO Dusseldorf",
+        "digital marketing Dusseldorf",
+        "PPC management Dusseldorf",
+        "Dusseldorf SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Dusseldorf businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Dusseldorf at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-hanover",
+      "name": "Hanover",
+      "countryCode": "DE",
+      "primaryKeyword": "SEO services in Hanover",
+      "lsiKeywords": [
+        "Hanover SEO agency",
+        "local SEO Hanover",
+        "digital marketing Hanover",
+        "PPC management Hanover",
+        "Hanover SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Hanover businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Hanover at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-leipzig",
+      "name": "Leipzig",
+      "countryCode": "DE",
+      "primaryKeyword": "SEO services in Leipzig",
+      "lsiKeywords": [
+        "Leipzig SEO agency",
+        "local SEO Leipzig",
+        "digital marketing Leipzig",
+        "PPC management Leipzig",
+        "Leipzig SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Leipzig businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Leipzig at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-graz",
+      "name": "Graz",
+      "countryCode": "AT",
+      "primaryKeyword": "SEO services in Graz",
+      "lsiKeywords": [
+        "Graz SEO agency",
+        "local SEO Graz",
+        "digital marketing Graz",
+        "PPC management Graz",
+        "Graz SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Graz businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Graz at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-alicante",
+      "name": "Alicante",
+      "countryCode": "ES",
+      "primaryKeyword": "SEO services in Alicante",
+      "lsiKeywords": [
+        "Alicante SEO agency",
+        "local SEO Alicante",
+        "digital marketing Alicante",
+        "PPC management Alicante",
+        "Alicante SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Alicante businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Alicante at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-zaragoza",
+      "name": "Zaragoza",
+      "countryCode": "ES",
+      "primaryKeyword": "SEO services in Zaragoza",
+      "lsiKeywords": [
+        "Zaragoza SEO agency",
+        "local SEO Zaragoza",
+        "digital marketing Zaragoza",
+        "PPC management Zaragoza",
+        "Zaragoza SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Zaragoza businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Zaragoza at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-cordoba-argentina",
+      "name": "Cordoba",
+      "countryCode": "AR",
+      "primaryKeyword": "SEO services in Cordoba",
+      "lsiKeywords": [
+        "Cordoba SEO agency",
+        "local SEO Cordoba",
+        "digital marketing Cordoba",
+        "PPC management Cordoba",
+        "Cordoba SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Cordoba businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Cordoba at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-turku",
+      "name": "Turku",
+      "countryCode": "FI",
+      "primaryKeyword": "SEO services in Turku",
+      "lsiKeywords": [
+        "Turku SEO agency",
+        "local SEO Turku",
+        "digital marketing Turku",
+        "PPC management Turku",
+        "Turku SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Turku businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Turku at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-lille",
+      "name": "Lille",
+      "countryCode": "FR",
+      "primaryKeyword": "SEO services in Lille",
+      "lsiKeywords": [
+        "Lille SEO agency",
+        "local SEO Lille",
+        "digital marketing Lille",
+        "PPC management Lille",
+        "Lille SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Lille businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Lille at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-montpellier",
+      "name": "Montpellier",
+      "countryCode": "FR",
+      "primaryKeyword": "SEO services in Montpellier",
+      "lsiKeywords": [
+        "Montpellier SEO agency",
+        "local SEO Montpellier",
+        "digital marketing Montpellier",
+        "PPC management Montpellier",
+        "Montpellier SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Montpellier businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Montpellier at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-nantes",
+      "name": "Nantes",
+      "countryCode": "FR",
+      "primaryKeyword": "SEO services in Nantes",
+      "lsiKeywords": [
+        "Nantes SEO agency",
+        "local SEO Nantes",
+        "digital marketing Nantes",
+        "PPC management Nantes",
+        "Nantes SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Nantes businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Nantes at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-strasbourg",
+      "name": "Strasbourg",
+      "countryCode": "FR",
+      "primaryKeyword": "SEO services in Strasbourg",
+      "lsiKeywords": [
+        "Strasbourg SEO agency",
+        "local SEO Strasbourg",
+        "digital marketing Strasbourg",
+        "PPC management Strasbourg",
+        "Strasbourg SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Strasbourg businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Strasbourg at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-lausanne",
+      "name": "Lausanne",
+      "countryCode": "CH",
+      "primaryKeyword": "SEO services in Lausanne",
+      "lsiKeywords": [
+        "Lausanne SEO agency",
+        "local SEO Lausanne",
+        "digital marketing Lausanne",
+        "PPC management Lausanne",
+        "Lausanne SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Lausanne businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Lausanne at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-quebec-city",
+      "name": "Quebec City",
+      "countryCode": "CA",
+      "primaryKeyword": "SEO services in Quebec City",
+      "lsiKeywords": [
+        "Quebec City SEO agency",
+        "local SEO Quebec City",
+        "digital marketing Quebec City",
+        "PPC management Quebec City",
+        "Quebec City SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Quebec City businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Quebec City at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-debrecen",
+      "name": "Debrecen",
+      "countryCode": "HU",
+      "primaryKeyword": "SEO services in Debrecen",
+      "lsiKeywords": [
+        "Debrecen SEO agency",
+        "local SEO Debrecen",
+        "digital marketing Debrecen",
+        "PPC management Debrecen",
+        "Debrecen SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Debrecen businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Debrecen at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-genoa",
+      "name": "Genoa",
+      "countryCode": "IT",
+      "primaryKeyword": "SEO services in Genoa",
+      "lsiKeywords": [
+        "Genoa SEO agency",
+        "local SEO Genoa",
+        "digital marketing Genoa",
+        "PPC management Genoa",
+        "Genoa SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Genoa businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Genoa at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-palermo",
+      "name": "Palermo",
+      "countryCode": "IT",
+      "primaryKeyword": "SEO services in Palermo",
+      "lsiKeywords": [
+        "Palermo SEO agency",
+        "local SEO Palermo",
+        "digital marketing Palermo",
+        "PPC management Palermo",
+        "Palermo SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Palermo businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Palermo at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-groningen",
+      "name": "Groningen",
+      "countryCode": "NL",
+      "primaryKeyword": "SEO services in Groningen",
+      "lsiKeywords": [
+        "Groningen SEO agency",
+        "local SEO Groningen",
+        "digital marketing Groningen",
+        "PPC management Groningen",
+        "Groningen SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Groningen businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Groningen at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-poznan",
+      "name": "Poznan",
+      "countryCode": "PL",
+      "primaryKeyword": "SEO services in Poznan",
+      "lsiKeywords": [
+        "Poznan SEO agency",
+        "local SEO Poznan",
+        "digital marketing Poznan",
+        "PPC management Poznan",
+        "Poznan SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Poznan businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Poznan at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-braga",
+      "name": "Braga",
+      "countryCode": "PT",
+      "primaryKeyword": "SEO services in Braga",
+      "lsiKeywords": [
+        "Braga SEO agency",
+        "local SEO Braga",
+        "digital marketing Braga",
+        "PPC management Braga",
+        "Braga SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Braga businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Braga at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-curitiba",
+      "name": "Curitiba",
+      "countryCode": "BR",
+      "primaryKeyword": "SEO services in Curitiba",
+      "lsiKeywords": [
+        "Curitiba SEO agency",
+        "local SEO Curitiba",
+        "digital marketing Curitiba",
+        "PPC management Curitiba",
+        "Curitiba SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Curitiba businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Curitiba at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-fortaleza",
+      "name": "Fortaleza",
+      "countryCode": "BR",
+      "primaryKeyword": "SEO services in Fortaleza",
+      "lsiKeywords": [
+        "Fortaleza SEO agency",
+        "local SEO Fortaleza",
+        "digital marketing Fortaleza",
+        "PPC management Fortaleza",
+        "Fortaleza SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Fortaleza businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Fortaleza at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-cluj",
+      "name": "Cluj-Napoca",
+      "countryCode": "RO",
+      "primaryKeyword": "SEO services in Cluj-Napoca",
+      "lsiKeywords": [
+        "Cluj-Napoca SEO agency",
+        "local SEO Cluj-Napoca",
+        "digital marketing Cluj-Napoca",
+        "PPC management Cluj-Napoca",
+        "Cluj-Napoca SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Cluj-Napoca businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Cluj-Napoca at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-malmo",
+      "name": "Malmo",
+      "countryCode": "SE",
+      "primaryKeyword": "SEO services in Malmo",
+      "lsiKeywords": [
+        "Malmo SEO agency",
+        "local SEO Malmo",
+        "digital marketing Malmo",
+        "PPC management Malmo",
+        "Malmo SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Malmo businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Malmo at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-uppsala",
+      "name": "Uppsala",
+      "countryCode": "SE",
+      "primaryKeyword": "SEO services in Uppsala",
+      "lsiKeywords": [
+        "Uppsala SEO agency",
+        "local SEO Uppsala",
+        "digital marketing Uppsala",
+        "PPC management Uppsala",
+        "Uppsala SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Uppsala businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Uppsala at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-adana",
+      "name": "Adana",
+      "countryCode": "TR",
+      "primaryKeyword": "SEO services in Adana",
+      "lsiKeywords": [
+        "Adana SEO agency",
+        "local SEO Adana",
+        "digital marketing Adana",
+        "PPC management Adana",
+        "Adana SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Adana businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Adana at dusk, dark navy filter with electric blue accents"
+    },
+    {
+      "slug": "seo-services-bursa",
+      "name": "Bursa",
+      "countryCode": "TR",
+      "primaryKeyword": "SEO services in Bursa",
+      "lsiKeywords": [
+        "Bursa SEO agency",
+        "local SEO Bursa",
+        "digital marketing Bursa",
+        "PPC management Bursa",
+        "Bursa SEO expert"
+      ],
+      "shortDescription": "Local SEO, PPC, and content marketing for Bursa businesses that want to dominate Google Maps, the local pack, and generative search results.",
+      "heroImagePrompt": "skyline of Bursa at dusk, dark navy filter with electric blue accents"
+    },
+    {
       "slug": "seo-services-peshawar",
       "name": "Peshawar",
       "country": "Pakistan",
@@ -27880,6 +30117,86 @@
       "datePublished": "2026-01-15"
     },
     {
+      "slug": "ai-seo-geo-optimization",
+      "title": "AI SEO and GEO Optimization: A 2026 Operator's Playbook",
+      "primaryKeyword": "ai seo geo optimization",
+      "lsiKeywords": [
+        "ai seo geo optimization 2026",
+        "AI search",
+        "ranking factors",
+        "content strategy",
+        "search visibility"
+      ],
+      "shortDescription": "Practical guide on ai seo geo optimization with frameworks, examples, and templates you can apply this quarter.",
+      "heroImagePrompt": "abstract editorial graphic on dark navy with electric blue and neon green accents",
+      "category": "AI Search",
+      "datePublished": "2026-02-01"
+    },
+    {
+      "slug": "google-algorithm-updates",
+      "title": "Google Algorithm Updates: How to Read Them and What to Do",
+      "primaryKeyword": "google algorithm updates",
+      "lsiKeywords": [
+        "google algorithm updates 2026",
+        "AI search",
+        "ranking factors",
+        "content strategy",
+        "search visibility"
+      ],
+      "shortDescription": "Practical guide on google algorithm updates with frameworks, examples, and templates you can apply this quarter.",
+      "heroImagePrompt": "abstract editorial graphic on dark navy with electric blue and neon green accents",
+      "category": "SEO Strategy",
+      "datePublished": "2026-02-01"
+    },
+    {
+      "slug": "on-page-seo-optimization",
+      "title": "On-Page SEO Optimization: 2026 Checklist",
+      "primaryKeyword": "on-page SEO optimization",
+      "lsiKeywords": [
+        "on-page SEO optimization 2026",
+        "AI search",
+        "ranking factors",
+        "content strategy",
+        "search visibility"
+      ],
+      "shortDescription": "Practical guide on on-page SEO optimization with frameworks, examples, and templates you can apply this quarter.",
+      "heroImagePrompt": "abstract editorial graphic on dark navy with electric blue and neon green accents",
+      "category": "Technical SEO",
+      "datePublished": "2026-02-01"
+    },
+    {
+      "slug": "scandinavian-seo-guide",
+      "title": "Scandinavian SEO Guide: Ranking in Sweden, Norway, Denmark, Finland",
+      "primaryKeyword": "scandinavian SEO",
+      "lsiKeywords": [
+        "scandinavian SEO 2026",
+        "AI search",
+        "ranking factors",
+        "content strategy",
+        "search visibility"
+      ],
+      "shortDescription": "Practical guide on scandinavian SEO with frameworks, examples, and templates you can apply this quarter.",
+      "heroImagePrompt": "abstract editorial graphic on dark navy with electric blue and neon green accents",
+      "category": "International SEO",
+      "datePublished": "2026-02-01"
+    },
+    {
+      "slug": "technical-seo-audit-checklist",
+      "title": "Technical SEO Audit Checklist: 2026 Edition",
+      "primaryKeyword": "technical SEO audit checklist",
+      "lsiKeywords": [
+        "technical SEO audit checklist 2026",
+        "AI search",
+        "ranking factors",
+        "content strategy",
+        "search visibility"
+      ],
+      "shortDescription": "Practical guide on technical SEO audit checklist with frameworks, examples, and templates you can apply this quarter.",
+      "heroImagePrompt": "abstract editorial graphic on dark navy with electric blue and neon green accents",
+      "category": "Technical SEO",
+      "datePublished": "2026-02-01"
+    },
+    {
       "slug": "seo-strategy-guide-2025",
       "title": "The Ultimate SEO Strategy Guide for 2026: Rank #1 on Google",
       "category": "SEO Strategy",
@@ -28727,6 +31044,216 @@
         "SEO playbook"
       ],
       "shortDescription": "Download Site Migration Pre-Flight Checklist - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "content-writing-prompts",
+      "name": "Content Writing Prompts Pack",
+      "primaryKeyword": "content writing prompts pack",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download Content Writing Prompts Pack - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "free-seo-tools",
+      "name": "Free SEO Tools Bundle",
+      "primaryKeyword": "free seo tools bundle",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download Free SEO Tools Bundle - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "geo-aeo-guide",
+      "name": "GEO and AEO Optimization Guide",
+      "primaryKeyword": "geo and aeo optimization guide",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download GEO and AEO Optimization Guide - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "gmb-audit-checklist",
+      "name": "Google Business Profile Audit Checklist",
+      "primaryKeyword": "google business profile audit checklist",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download Google Business Profile Audit Checklist - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "google-operators",
+      "name": "Google Search Operators Cheatsheet",
+      "primaryKeyword": "google search operators cheatsheet",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download Google Search Operators Cheatsheet - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "internal-linking-guide",
+      "name": "Internal Linking Guide",
+      "primaryKeyword": "internal linking guide",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download Internal Linking Guide - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "keyword-clustering-guide",
+      "name": "Keyword Clustering Guide",
+      "primaryKeyword": "keyword clustering guide",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download Keyword Clustering Guide - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "link-building-toolkit",
+      "name": "Link Building Toolkit",
+      "primaryKeyword": "link building toolkit",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download Link Building Toolkit - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "linkedin-templates",
+      "name": "LinkedIn Content Templates",
+      "primaryKeyword": "linkedin content templates",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download LinkedIn Content Templates - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "monthly-report-template",
+      "name": "Monthly SEO Report Template",
+      "primaryKeyword": "monthly seo report template",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download Monthly SEO Report Template - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "page-speed-checklist",
+      "name": "Page Speed Optimization Checklist",
+      "primaryKeyword": "page speed optimization checklist",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download Page Speed Optimization Checklist - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "seo-career-roadmap",
+      "name": "SEO Career Roadmap",
+      "primaryKeyword": "seo career roadmap",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download SEO Career Roadmap - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "seo-proposal-template",
+      "name": "SEO Proposal Template",
+      "primaryKeyword": "seo proposal template",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download SEO Proposal Template - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "shopify-seo-guide",
+      "name": "Shopify SEO Guide",
+      "primaryKeyword": "shopify seo guide",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download Shopify SEO Guide - a battle-tested resource we use on real client engagements.",
+      "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
+    },
+    {
+      "slug": "technical-seo-checklist",
+      "name": "Technical SEO Checklist",
+      "primaryKeyword": "technical seo checklist",
+      "lsiKeywords": [
+        "free SEO resource",
+        "SEO download",
+        "SEO template",
+        "SEO checklist",
+        "SEO playbook"
+      ],
+      "shortDescription": "Download Technical SEO Checklist - a battle-tested resource we use on real client engagements.",
       "heroImagePrompt": "PDF cover mock with dark navy gradient and electric blue title"
     },
     {
