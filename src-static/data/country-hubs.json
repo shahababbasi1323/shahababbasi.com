@@ -1,19 +1,5 @@
 [
   {
-    "slug": "usa",
-    "name": "United States",
-    "country_code": "US",
-    "meta_title": "SEO & Digital Marketing Agency in the USA | 20 Cities Served",
-    "meta_description": "Expert SEO, PPC, and digital marketing across 20 major US cities. Data-driven strategies tailored for American businesses. Free audit.",
-    "hero_heading": "Digital Marketing Across the United States",
-    "hero_description": "From New York to Los Angeles, we help American businesses dominate search engines with data-driven SEO, PPC, and content strategies.",
-    "why_content": [
-      "The US digital market is the most competitive globally. Ranking on Google in American cities requires sophisticated multi-channel approaches combining technical SEO, high-authority link building, and conversion-focused content.",
-      "We understand local search nuances across the US - from hyper-competitive NYC to emerging tech hubs like Austin and Denver. Our strategies account for regional search behavior and city-level competition.",
-      "Whether you are a startup in San Francisco or a service provider in Chicago, our digital marketing services deliver measurable ROI in the American market."
-    ]
-  },
-  {
     "slug": "uk",
     "name": "United Kingdom",
     "country_code": "GB",

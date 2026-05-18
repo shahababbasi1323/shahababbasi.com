@@ -1239,8 +1239,16 @@ def write_static_files(brand: dict, all_pages: list[dict]) -> None:
     write_page("assets/.gitkeep", "")
     # CNAME for custom domain (blank by default - user can edit)
     write_page("CNAME", brand["domain"] + "\n")
-    # _redirects for Netlify/Cloudflare-style hosts
-    write_page("_redirects", "/* /404.html 404\n")
+    # _redirects for Netlify/Cloudflare-style hosts.
+    # 1) Permanent redirect duplicate country slug `usa` -> `united-states`
+    #    (same entity, separate slugs were inflating duplicate-content signal)
+    # 2) Fallback 404 catch-all.
+    redirects = [
+        "/locations/usa.html /locations/united-states.html 301",
+        "/usa /united-states.html 301",
+        "/* /404.html 404",
+    ]
+    write_page("_redirects", "\n".join(redirects) + "\n")
 
 
 # ---------------------------------------------------------------------------
