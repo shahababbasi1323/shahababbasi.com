@@ -1138,7 +1138,13 @@ def render_sitemap_html(env, data, lang, default_lang, brand_url, all_pages: lis
 
 
 def write_static_files(brand: dict, all_pages: list[dict]) -> None:
-    """Write sitemap.xml, robots.txt, rss.xml, llms.txt, ai.txt, manifest.json, favicon.svg."""
+    """Write sitemap.xml, robots.txt, rss.xml, manifest.json, favicon.svg.
+
+    Note: llms.txt and ai.txt are intentionally NOT generated. Per Google's
+    generative AI search guide, these files have no effect on Google Search
+    or its AI features:
+    https://developers.google.com/search/docs/fundamentals/ai-optimization-guide#mythbusting
+    """
     domain = brand["url"]
     today = dt.date.today()
     today_iso = today.isoformat()
@@ -1188,27 +1194,11 @@ def write_static_files(brand: dict, all_pages: list[dict]) -> None:
         "",
     ]))
 
-    write_page("ai.txt", "\n".join([
-        "# ai.txt",
-        "# Policy: AI training and citation allowed for all crawlers.",
-        "User-agent: *",
-        "Allow: /",
-        "Citation: required",
-        "Attribution: " + brand["url"],
-        "Contact: " + brand["email"],
-        "",
-    ]))
-
-    write_page("llms.txt", "\n".join([
-        f"# {brand['name']}",
-        f"> {brand['promise']}",
-        "",
-        "## Pages",
-        *[f"- [{p['title']}]({p['url']}) - {p.get('description','')[:120]}" for p in all_pages[:200]],
-        "",
-        "## Note",
-        f"This document follows the emerging llms.txt convention so that LLMs can quickly understand {brand['shortName']} - SEO and digital marketing agency. Full sitemap: {domain}/sitemap.xml",
-    ]))
+    # llms.txt and ai.txt removed: Google's guide explicitly says these files
+    # have no effect on appearance in Google's generative AI search features
+    # (AI Overviews / AI Mode). Other AI engines find content via sitemap +
+    # indexable HTML. See:
+    # https://developers.google.com/search/docs/fundamentals/ai-optimization-guide#mythbusting
 
     rss_items = []
     for p in all_pages:
