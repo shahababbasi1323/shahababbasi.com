@@ -52,7 +52,12 @@ Two equally valid setups:
 - 43 blog posts
 - 29 resource download pages
 - 22 languages (English at full depth, 21 stub clusters with localized chrome and hreflang clusters)
-- sitemap.xml, sitemap.html, robots.txt, rss.xml, llms.txt, ai.txt, manifest.json
+- sitemap.xml, sitemap.html, robots.txt, rss.xml, manifest.json
+
+Note: `llms.txt` and `ai.txt` are intentionally not generated. Per Google's
+[generative AI search guide](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide#mythbusting),
+those files have no effect on Google Search or its AI features. Content is
+discovered through the regular sitemap and indexable HTML.
 
 Every page has a unique title, meta description, JSON-LD schema (Organization, BreadcrumbList, Service, LocalBusiness, FAQPage, HowTo, BlogPosting, SoftwareApplication, etc.), breadcrumb nav, hreflang cluster across 22 languages, hidden CrawlerLinks block for crawl discovery, mega-menu navbar, and footer.
 
