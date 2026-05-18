@@ -56,7 +56,11 @@
 
 <section class="container-tight pb-12">
   <h2 class="font-display text-2xl font-bold">{{ item.name }} neighborhoods and landmarks we serve</h2>
-  <p class="mt-2 text-foreground/80 text-sm leading-relaxed">{{ item.name }} is one of the most competitive markets in {{ country.name }}, with thousands of local businesses fighting for attention. Whether your office is in the central business district, the financial district, or a residential neighborhood, our local SEO playbook is tuned to your service areas. We optimize Google Business Profile listings, citations, on-page content, and reviews across {{ item.name }} so that buyers searching for your services find you first - on Google Maps, in the local pack, and in AI-powered answer engines like ChatGPT, Perplexity, and Google AI Overviews. We have engineered local visibility for retail, professional services, healthcare, hospitality, and home services across {{ item.name }} and the broader {{ country.name }} market.</p>
+  {% if unique and unique.neighborhoods_paragraph %}
+  <p class="mt-2 text-foreground/80 text-sm leading-relaxed speakable" data-speakable>{{ unique.neighborhoods_paragraph }}</p>
+  {% else %}
+  <p class="mt-2 text-foreground/80 text-sm leading-relaxed">Our local SEO playbook is tuned to {{ item.name }} service areas across Google Maps, the local pack, and AI answer engines.</p>
+  {% endif %}
 </section>
 
 <section class="container-tight pb-12">

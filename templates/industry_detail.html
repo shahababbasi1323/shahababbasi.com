@@ -57,15 +57,20 @@
 
     <section id="playbook" class="scroll-mt-20 mb-14">
       <h2 class="font-display text-3xl font-bold">Our {{ item.name|lower }} growth playbook</h2>
-      <ol class="mt-4 space-y-3 text-foreground/85 text-sm">
-        <li><strong>1. Web design and dev for conversion:</strong> Map the journey, fix friction, hard-wire booking and lead intents.</li>
-        <li><strong>2. On-page SEO:</strong> Service pages and category architecture engineered to match {{ item.name|lower }} buyer queries.</li>
-        <li><strong>3. Technical SEO:</strong> Crawl, indexation, structured data, and schema for trust.</li>
-        <li><strong>4. PPC and paid social:</strong> Budget allocation that complements organic, not duplicates it.</li>
-        <li><strong>5. Local SEO and Map Pack:</strong> GBP and citations tuned to your service areas.</li>
-        <li><strong>6. AI / GEO / AEO optimization:</strong> Get cited inside ChatGPT, Perplexity, and Google AI Overviews answers.</li>
-        <li><strong>7. Reporting:</strong> Pipeline-tied dashboards, no vanity numbers.</li>
+      {% if unique and unique.playbook_steps %}
+      <ol class="mt-4 space-y-3 text-foreground/85 text-sm list-decimal pl-5">
+        {% for step in unique.playbook_steps %}<li>{{ step }}</li>{% endfor %}
       </ol>
+      {% else %}
+      <ol class="mt-4 space-y-3 text-foreground/85 text-sm list-decimal pl-5">
+        <li>Map the {{ item.name|lower }} buyer journey end-to-end.</li>
+        <li>Rebuild the technical foundation.</li>
+        <li>Stand up the review system.</li>
+        <li>Ship the content cadence.</li>
+        <li>Engineer the AI-citation layer.</li>
+        <li>Report monthly with revenue-attached KPIs.</li>
+      </ol>
+      {% endif %}
     </section>
 
     <section id="locations" class="scroll-mt-20 mb-14">
